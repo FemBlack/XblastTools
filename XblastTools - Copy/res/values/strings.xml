@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">Shadow Settings</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">Settings</string>
+    <string name="preview">Preview</string>
+    <string name="edit_message">Enter text</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="button_effects">Choose color</string>
+    <string name="shadow_settings">Shadow Settings</string>
+    <string name="ClockTextColor">Clock and Text Color</string>
+    <string name="shadowColor">Shadow Color</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+</resources>

@@ -105,13 +105,13 @@ public class Xmod implements IXposedHookLoadPackage,
 				XposedBridge.log(t);
 			}
 		}
-		/*if (lpparam.packageName.equals(Black.ANDROID)) {
+		if (lpparam.packageName.equals(Black.ANDROID)) {
 			try {
 				//BuildProp.handlePacakge(prefs, lpparam.classLoader);
 			} catch (Throwable t) {
 				XposedBridge.log(t);
 			}
-		}*/
+		}
 		
 		if (lpparam.packageName.equals(AdvRebootMenu.PACKAGE_NAME)) {
 			try {

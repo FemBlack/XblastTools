@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+
+    <SeekBar android:id="@+id/seekdx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="20"
+        />
+
+    <TextView android:id="@+id/progressdx"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <SeekBar android:id="@+id/seekdy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="20"
+        />
+
+    <TextView android:id="@+id/progressdy"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+     <SeekBar android:id="@+id/seekrad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        
+        />
+
+    <TextView android:id="@+id/progressrad"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/shadowColorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showColorPicker"
+        android:text="@string/shadowColor" />
+
+   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="15dp"
+            >
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonOkClicked"
+                android:text="@string/ok" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonCancelClicked"
+                android:text="@string/cancel" />
+
+        </LinearLayout>
+</LinearLayout>

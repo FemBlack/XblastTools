@@ -208,7 +208,7 @@ public class Traffic extends TextView {
 			// flag to reset the color
 			mTrafficColor = 0xFF33B5E5;
 		}
-		setTextColor(mTrafficColor);
+		setTextColor(mTrafficColor);dummy
 */
 		if (showTraffic && getConnectAvailable()) {
 			if (mAttached) {

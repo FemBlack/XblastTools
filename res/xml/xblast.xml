@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen android:title="@string/status_bar" >
+        <EditTextPreference
+            android:key="custom_text"
+            android:summary="@string/custom_text_summary"
+            android:title="@string/custom_text_title" />
+        
+        <de.robv.android.xposed.library.ui.ListPreferenceFixedSummary
+            android:key="font_list"
+            android:summary="@string/font_summary"
+            android:title="@string/font_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="sb_clock_color"
+            android:title="@string/sb_clock_color_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="amPm"
+            android:title="@string/hide_am_pm" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="center_clock"
+            android:title="@string/center_clock_title" />
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="traffic"
+            android:summary="@string/traffic_summary"
+            android:title="@string/traffic_title" />
+        
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            android:dependency="traffic"
+            android:key="traffic_color"
+            android:title="@string/traffic_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="ticker_color"
+            android:title="@string/ticker_color_title" />
+		<CheckBoxPreference
+                android:defaultValue="false"
+                android:key="hideAlarmClockIcon"
+                android:summaryOff="@string/hide_alarm_icon_off"
+                android:summaryOn="@string/hide_alarm_icon_on"
+                android:title="@string/hide_alarm_icon" />
+
+            <de.robv.android.xposed.library.ui.IntegerListPreference
+                android:defaultValue="0"
+                android:dependency="hideAlarmClockIcon"
+                android:entries="@array/smart_alarm_time_entries"
+                android:entryValues="@array/smart_alarm_time_values"
+                android:key="smartAlarmIconTime"
+                android:summary="@string/smart_alarm_icon_summary"
+                android:title="@string/smart_alarm_icon" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            
+            android:key="statusbar_color"
+            android:summary="@string/statusbar_color_summary"
+            android:title="@string/statusbar_color_title" />
+        
+        
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="wifi_signal_color"
+            android:title="@string/wifi_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="wifi_inout_color"
+            android:title="@string/wifi_inout_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="mobile_signal_color"
+            android:summary="@string/mobile_signal_color_summary"
+            android:title="@string/mobile_signal_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="mobile_inout_color"
+            android:title="@string/mobile_inout_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="battery_color"
+            android:title="@string/battery_color_title" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/notification_panel" >
+        <!-- <EditTextPreference
+            android:key="custom_text_np"
+            android:summary="@string/custom_text_np_summary"
+            android:title="@string/custom_text_np_title" />
+        
+        <de.robv.android.xposed.library.ui.ListPreferenceFixedSummary
+            android:key="font_list_np"
+            android:summary="@string/font_np_summary"
+            android:title="@string/font_title" /> -->
+        <!-- <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="np_clock_color"
+            android:title="@string/np_clock_color_title" /> -->
+         <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:key="notif_normal_color"
+            android:summary="@string/notif_normal_color_summary"
+            android:title="@string/notif_normal_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:key="notif_pressed_color"
+            android:summary="@string/notif_pressed_color_summary"
+            android:title="@string/notif_pressed_color_title" />
+
+        <Preference
+            android:key="nbg"
+            android:summary="@string/pref_description_notif_bg"
+            android:title="@string/pref_title_notif_bg" />
+
+        <!-- <ind.fem.black.xposed.mods.SeekBarDialogPreference
+            android:defaultValue="100"
+            android:key="nbg_alpha"
+            android:max="100"
+            android:summary="@string/notif_panel_bg_trans_summary"
+            android:title="@string/notif_panel_bg_trans_title"
+            custom:min="0"
+            custom:progressTextSuffix="%" /> -->
+        
+        <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d Percent"
+                max="100"
+                min="0"
+                android:defaultValue="100"
+                android:key="nbg_alpha"
+                android:summary="@string/notif_panel_bg_trans_summary"
+                android:title="@string/notif_panel_bg_trans_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="np_pu_pd_speed"
+            android:summary="@string/nbg_pu_pd_speed_summary"
+            android:title="@string/nbg_pu_pd_speed_title" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/fullscreen_caller_photo_title" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="fullscreen_caller_photo"
+            android:summary="@string/fullscreen_caller_photo_summary"
+            android:title="@string/fullscreen_caller_photo_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="fullscreen_caller_photo"
+            android:key="fullscreen_caller_sb"
+            android:summary="@string/fullscreen_caller_sb_summary"
+            android:title="@string/fullscreen_caller_sb_title" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:dependency="fullscreen_caller_photo"
+            android:key="call_banner_color"
+            android:summary="@string/Call_Banner_text_summary"
+            android:title="@string/Call_Banner_text_title" />
+
+        <de.robv.android.xposed.library.ui.ListPreferenceFixedSummary
+            android:dependency="fullscreen_caller_photo"
+            android:key="call_banner_font"
+            android:summary="@string/Call_Banner_font_summary"
+            android:title="@string/Call_Banner_font_title" />
+        
+        <!-- <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="fullscreen_caller_photo"
+            android:key="call_banner_font"
+            android:summary="@string/Call_Banner_font_summary"
+            android:title="@string/Call_Banner_font_title" /> -->
+
+        <Preference
+            android:dependency="fullscreen_caller_photo"
+            android:key="defaultCallerImage"
+            android:summary="@string/default_caller_image_summary"
+            android:title="@string/default_caller_image_title" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/carrier_label" >
+        <EditTextPreference
+            android:defaultValue="@string/default_carrier_label"
+            android:key="customCarrierLabelLS"
+            android:summary="@string/desc_carrier_label"
+            android:title="@string/custom_carrier_label_LS" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="CCLLS_color"
+            android:title="@string/CCLLS_title" />
+
+        <de.robv.android.xposed.library.ui.ListPreferenceFixedSummary
+            android:defaultValue="@string/small"
+            android:entries="@array/clock_size_entries"
+            android:entryValues="@array/clock_size_values"
+            android:key="clSize"
+            android:title="@string/carrier_label_size" />
+
+        <EditTextPreference
+            android:defaultValue="@string/default_carrier_label"
+            android:key="customCarrierLabelNC"
+            android:summary="@string/desc_carrier_label"
+            android:title="@string/custom_carrier_label_NC" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            
+            android:key="CCLNC_color"
+            android:title="@string/CCLNC_color_title" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="misc"
+        android:title="@string/pref_header_misc" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_all_rotation"
+            android:summary="@string/rotation_summary"
+            android:title="@string/rotation_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="advanced_reboot_menu"
+            android:summary="@string/poweroff_advanced_summary"
+            android:title="@string/advanced_reboot_title" />
+
+        <de.robv.android.xposed.library.ui.IntegerListPreference
+            
+            android:entries="@array/crt_mode_entries"
+            android:entryValues="@array/crt_mode_values"
+            android:key="crt_effect_mode"
+            android:title="@string/crt_off_effect" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="recents_clear_all"
+            android:summary="@string/recents_clear_all_summary"
+            android:title="@string/recents_clear_all_title" />
+        
+        <de.robv.android.xposed.library.ui.IntegerListPreference            
+            android:entries="@array/clear_all_position_entries"
+            android:entryValues="@array/clear_all_position_values"
+            android:key="clear_all_position"
+            android:dependency="recents_clear_all"
+            android:title="@string/clear_all_position_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="ram_usage_bar"
+            android:summary="@string/ram_usage_bar_summary"
+            android:title="@string/ram_usage_bar_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="holo_solid_black"
+            android:summary="@string/holo_bg_solid_black_summary"
+            android:title="@string/holo_bg_solid_black_title" />
+    </PreferenceScreen>
+    <!-- <PreferenceScreen
+                android:key="buildprop"
+                android:title="@string/build_prop_tweaks" >
+                <CheckBoxPreference
+                    android:key="boot_animation"
+                    android:summary="boot_animation_summary"
+                    android:title="@string/boot_animation_title" />
+
+                <EditTextPreference
+                    android:dependency="buildprop_enable"
+                    android:key="buildprop_board"
+                    android:summary="@string/set_a_custom_board_value"
+                    android:title="@string/board" />
+                <EditTextPreference
+                    android:dependency="buildprop_enable"
+                    android:key="buildprop_brand"
+                    android:summary="@string/set_a_custom_brand_value"
+                    android:title="@string/brand" />
+                <EditTextPreference
+                    android:dependency="buildprop_enable"
+                    android:key="buildprop_device"
+                    android:summary="@string/set_a_custom_device_value"
+                    android:title="@string/device" />
+                <EditTextPreference
+                    android:dependency="buildprop_enable"
+                    android:key="buildprop_model"
+                    android:summary="@string/set_a_custom_model_value"
+                    android:title="@string/model" />
+                <EditTextPreference
+                    android:dependency="buildprop_enable"
+                    android:key="buildprop_name"
+                    android:summary="@string/set_a_custom_name_value"
+                    android:title="@string/name" />
+            </PreferenceScreen> -->
+            <PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="buildprop"
+    android:title="@string/build_prop_tweaks" 
+    >
+
+    <!-- <PreferenceScreen android:key="reboot" />  -->
+
+    <PreferenceCategory android:key="general_category"
+       
+        android:title="@string/buildprop_title">
+
+       <!--  <PreferenceScreen
+            android:key="showbuildprop"
+            android:title="@string/showbuild_title"
+            android:summary="@string/showbuild_label">
+
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.aokp.romcontrol"
+                android:targetClass="com.aokp.romcontrol.util.ShowBuildProp" />
+
+        </PreferenceScreen> -->
+		<CheckBoxPreference
+	    android:key="boot_animation"
+	    android:defaultValue="false"
+	    android:summary="@string/boot_animation_summary"
+	    android:title="@string/boot_animation_title" />
+		
+		<CheckBoxPreference
+	    android:key="disable_adb_notif"
+	    android:defaultValue="false"
+	    
+	    android:title="@string/disable_adb_notif_title" />
+		
+		<CheckBoxPreference
+	    android:key="audio_video"
+	    android:defaultValue="false"
+	    android:summary="@string/audio_video_summary"	    
+	    android:title="@string/audio_video_title" />
+		
+		<CheckBoxPreference
+	    android:key="google_dns"
+	    android:defaultValue="false"
+	    	    
+	    android:title="@string/google_dns_title" />
+
+        <ListPreference android:key="pref_wifi_scan_interval"
+            android:dialogTitle="@string/pref_wifi_scan_interval_title"
+            android:title="@string/pref_wifi_scan_interval_title"
+            android:summary="@string/pref_wifi_scan_interval_summary"
+            android:entries="@array/entries_wifi_scan"
+            android:entryValues="@array/entries_wifi_scan"
+            android:persistent="true" />
+
+        <!-- <ListPreference android:key="pref_lcd_density"
+android:dialogTitle="@string/pref_lcd_density_title"
+android:title="@string/pref_lcd_density_title"
+android:summary="@string/pref_lcd_density_summary"
+android:entries="@array/entries_lcd_density"
+android:entryValues="@array/entries_lcd_density"
+android:persistent="true" /> -->
+
+        <ListPreference android:key="pref_max_events"
+            android:dialogTitle="@string/pref_max_events_title"
+            android:title="@string/pref_max_events_title"
+            android:summary="@string/pref_max_events_summary"
+            android:entries="@array/entries_max_events"
+            android:entryValues="@array/entries_max_events"
+            android:persistent="true" />
+
+        <ListPreference android:key="pref_ring_delay"
+            android:dialogTitle="@string/pref_ring_delay_title"
+            android:title="@string/pref_ring_delay_title"
+            android:summary="@string/pref_ring_delay_summary"
+            android:entries="@array/entries_ring_delay"
+            android:entryValues="@array/entries_ring_delay"
+            android:persistent="true" />
+
+        <ListPreference android:key="pref_vm_heapsize"
+            android:dialogTitle="@string/pref_vm_heapsize_title"
+            android:title="@string/pref_vm_heapsize_title"
+            android:summary="@string/pref_vm_heapsize_summary"
+            android:entries="@array/entries_vm_heapsize"
+            android:entryValues="@array/entries_vm_heapsize"
+            android:persistent="true" />
+
+        <ListPreference android:key="pref_fast_up"
+            android:dialogTitle="@string/pref_fast_up_title"
+            android:title="@string/pref_fast_up_title"
+            android:summary="@string/pref_fast_up_summary"
+            android:entries="@array/entries_fast_up_explain"
+            android:entryValues="@array/entries_fast_up"
+            android:persistent="true" />
+
+        <ListPreference android:key="pref_prox_delay"
+            android:dialogTitle="@string/pref_prox_delay_title"
+            android:title="@string/pref_prox_delay_title"
+            android:summary="@string/pref_prox_delay_summary"
+            android:entries="@array/entries_prox_delay_explain"
+            android:entryValues="@array/entries_prox_delay"
+            android:persistent="true" />
+
+        <EditTextPreference android:key="pref_mod_version"
+            android:dialogTitle="@string/pref_mod_version_title"
+            android:title="@string/pref_mod_version_title"
+            android:summary="@string/pref_mod_version_summary"
+            android:singleLine="true"
+            android:hint="@string/pref_mod_version_default"
+            android:persistent="true" />
+
+        <ListPreference android:key="pref_sleep"
+            android:dialogTitle="@string/pref_sleep_title"
+            android:title="@string/pref_sleep_title"
+            android:summary="@string/pref_sleep_summary"
+            android:entries="@array/entries_sleep_explain"
+            android:entryValues="@array/entries_sleep"
+            android:persistent="true" />
+
+        <CheckBoxPreference android:key="pref_tcp_stack"
+            android:title="@string/pref_tcp_stack_title"
+            android:summary="@string/pref_tcp_stack_summary"
+            android:persistent="true" />
+
+        <CheckBoxPreference android:key="pref_jit"
+            android:title="@string/pref_jit_title"
+            android:summary="@string/pref_jit_summary"
+            android:persistent="true" />
+
+        <CheckBoxPreference android:key="pref_check_in"
+            android:title="@string/pref_check_in_title"
+            android:summary="@string/pref_check_in_summary"
+            android:persistent="true" />
+
+        <CheckBoxPreference android:key="pref_g_speed"
+            android:title="@string/pref_g_speed_title"
+            android:summary="@string/pref_g_speed_summary"
+            android:persistent="true" />
+
+        <CheckBoxPreference android:key="pref_gpu"
+            android:title="@string/pref_gpu_title"
+            android:summary="@string/pref_gpu_summary"
+            android:persistent="true" />
+
+        <ListPreference
+            android:key="pref_sdcard_buffer"
+            android:dialogTitle="@string/pref_sdcard_buffer_title"
+            android:title="@string/pref_sdcard_buffer_title"
+            android:summary="@string/pref_sdcard_buffer_summary"
+            android:entries="@array/entries_sdcard_buffer_explain"
+            android:entryValues="@array/entries_sdcard_buffer"
+            android:persistent="true" />
+
+    </PreferenceCategory>
+
+   <!--  <PreferenceCategory android:title="@string/pc_init_d"
+        android:key="pc_init_d">
+
+        <CheckBoxPreference android:key="enable_init_d"
+            android:defaultValue="true"
+            android:title="@string/pt_enable_init_d"
+            android:summaryOn="@string/ps_enable_init_d"
+            android:summaryOff="@string/ps_enable_init_d" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pc_init_d_tweaks"
+            android:key="pc_init_d_tweaks">
+
+        <CheckBoxPreference android:key="pref_logcat"
+            android:title="@string/pref_logcat_title"
+            android:summaryOn="@string/pref_logcat_summary_on"
+            android:summaryOff="@string/pref_logcat_summary_off"
+            android:dependency="enable_init_d"
+            android:shouldDisableView="true"
+            android:persistent="true" />
+
+    </PreferenceCategory>
+ -->
+</PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/pref_quick_settings_title" >
+         <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d Tiles"
+                max="8"
+                min="3"
+                android:defaultValue="3"
+                android:key="quickSettingsColumns"
+                android:summary="@string/quick_setting_columns_summary"
+                android:title="@string/quick_setting_columns" /> 
+                
+               <!--  <MultiSelectListPreference 
+                android:key="pref_quick_settings"
+                android:title="@string/quick_settings_title"
+                android:summary="@string/quick_settings_summary" 
+                android:entries="@array/qs_tile_entries"
+                android:entryValues="@array/qs_tile_values"
+                android:defaultValue="@array/qs_tile_values" />
+    
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d Tiles"
+                max="8"
+                min="3"
+                android:defaultValue="3"
+                android:key="quickSettingsColumns"
+                android:summary="@string/quick_setting_columns_summary"
+                android:title="@string/quick_setting_columns" />
+    
+            <CheckBoxPreference 
+                android:key="pref_auto_switch_qs"
+                android:title="@string/pref_auto_switch_qs_title"
+                android:summary="@string/pref_auto_switch_qs_summary"
+                android:defaultValue="false" />
+    
+            <ListPreference
+                android:key="pref_quick_pulldown" 
+                android:title="@string/pref_quick_pulldown_title"
+                android:summary="@string/pref_quick_pulldown_summary"
+                android:entries="@array/quick_pulldown_entries"
+                android:entryValues="@array/quick_pulldown_values"
+                android:defaultValue="0" /> -->
+        
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/pref_about_title" >
+        <Preference
+            android:key="pref_about_app"
+            android:summary="@string/about_app"
+            android:title="@string/about_app_title" />
+        <Preference
+            android:key="pref_about_donate"
+            android:summary="@string/about_donate_summary"
+            android:title="@string/about_donate_title" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

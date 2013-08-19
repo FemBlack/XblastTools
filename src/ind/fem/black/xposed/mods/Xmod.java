@@ -155,8 +155,8 @@ public class Xmod implements IXposedHookLoadPackage,
 			XposedBridge.log(t);
 		}
 
-		if (prefs.getBoolean(XblastSettings.PREF_KEY_STATUSBAR_COLOR_ENABLE,
-				false)) {
+		if (prefs.getInt(
+				XblastSettings.PREF_KEY_STATUSBAR_COLOR, 0) != 0) {
 			// http://forum.xda-developers.com/showthread.php?t=1523703
 			try {
 				Constructor<?> constructLayoutParams = WindowManager.LayoutParams.class
@@ -247,11 +247,11 @@ public class Xmod implements IXposedHookLoadPackage,
 			return;
 		
 		final int statusBarColor = prefs.getInt(
-				XblastSettings.PREF_KEY_STATUSBAR_COLOR, 0xFFffffff);
+				XblastSettings.PREF_KEY_STATUSBAR_COLOR, 0);
 		/*final boolean notifBgTransEnabled = prefs.getBoolean(
 				TextEffectsActivity.CONST_NOTIF_TRANS_ENABLE, false);*/
-		final boolean statusBarColorEnabled = prefs.getBoolean(
-				XblastSettings.PREF_KEY_STATUSBAR_COLOR_ENABLE, false);
+		/*final boolean statusBarColorEnabled = prefs.getBoolean(
+				XblastSettings.PREF_KEY_STATUSBAR_COLOR_ENABLE, false);*/
 		
 		
 		try {
@@ -303,7 +303,7 @@ public class Xmod implements IXposedHookLoadPackage,
 				XposedBridge.log("notification_panel_bg is not available");
 			}
 		}*/
-		if (statusBarColorEnabled) {
+		if (statusBarColor != 0) {
 			try {
 				final int statusbarColor = statusBarColor;
 				resparam.res.setReplacement("com.android.systemui", "drawable",

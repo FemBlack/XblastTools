@@ -15,7 +15,7 @@ public class Clock {
 	public static void init(final XSharedPreferences prefs, ClassLoader classLoader) {
         XposedBridge.log(TAG + ": init");
         final int clockColor = prefs.getInt(XblastSettings.PREF_KEY_SB_CLOCK_COLOR, 0);
-        final boolean clockColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_SB_CLOCK_COLOR_ENABLE, false);
+        //final boolean clockColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_SB_CLOCK_COLOR_ENABLE, false);
         final String text = prefs.getString(XblastSettings.PREF_KEY_CUSTOM_TEXT, "");
 		/*final int shadowColor = prefs.getInt(
 				SeekBarActivity.CONST_SHADOW_COLOR, 0xFFffffff);
@@ -58,7 +58,7 @@ public class Clock {
 							TextView tv = (TextView) param.thisObject;
 							tv.append(" " + text);
 							
-							if(clockColor != 0 && clockColorEnabled) {
+							if(clockColor != 0) {
 								tv.setTextColor(clockColor);
 							}
 							Typeface tf = null; 
@@ -92,7 +92,7 @@ public class Clock {
 								tv.append(" " + textNp);
 							}*/
 							
-							if(clockColor != 0 && clockColorEnabled) {
+							if(clockColor != 0) {
 								tv.setTextColor(clockColor);	
 							}
 							Typeface tf = null; 

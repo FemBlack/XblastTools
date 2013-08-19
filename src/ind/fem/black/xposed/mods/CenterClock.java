@@ -425,9 +425,9 @@ public class CenterClock {
     	 
     	 if (prefs.getBoolean(XblastSettings.PREF_KEY_TRAFFIC, false)) {
          	int trafficColor = prefs.getInt(XblastSettings.PREF_KEY_TRAFFIC_COLOR, 0);
-             boolean trafficColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_TRAFFIC_COLOR_ENABLE, false);
+             //boolean trafficColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_TRAFFIC_COLOR_ENABLE, false);
              mTraffic = new Traffic(mContext);
-             if(trafficColorEnabled) {
+             if(trafficColor != 0) {
              	mTraffic.setTextColor(trafficColor);
              }
              mTraffic.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);

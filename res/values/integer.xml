@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<integer name="COLOR_WHITE">0xffffffff</integer>
+	<integer name="COLOR_HOLO_BLUE_LIGHT">0xff33b5e5</integer>
+	<integer name="COLOR_CUSTOM_CARRIER_LABEL_COLOR">0xff999999</integer>
+</resources>

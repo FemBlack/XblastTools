@@ -224,8 +224,8 @@ public class FullscreenPicCall {
                     prefs.reload();
                     if (!prefs.getBoolean("fullscreen_caller_photo", false))
                         return;
-                    
-                    if (!prefs.getBoolean("call_banner_color_enabled", false))
+                    int callBannerColor = prefs.getInt("call_banner_color", 0);
+                    if (callBannerColor == 0)
                         return;
                     
                     final String fontName = prefs.getString(XblastSettings.PREF_KEY_CALLBANNER_FONT_LIST,"Default");
@@ -234,7 +234,7 @@ public class FullscreenPicCall {
 						tf = Black.getSelectedFont(fontName);
 					}
                     
-                    int callBannerColor = prefs.getInt("call_banner_color", Color.BLACK);
+                    //int callBannerColor = prefs.getInt("call_banner_color", Color.BLACK);
                      
                     TextView mName  = (TextView) XposedHelpers.getObjectField(param.thisObject, "mName");
                      mName.setTextColor(callBannerColor);
@@ -294,12 +294,13 @@ public class FullscreenPicCall {
              if (!prefs.getBoolean("fullscreen_caller_photo", false))
                  return;
              
-             if (!prefs.getBoolean("call_banner_color_enabled", false))
+             int callBannerColor = prefs.getInt("call_banner_color", 0);
+             if (callBannerColor == 0)
                  return;
 			
 			XModuleResources modRes = XModuleResources.createInstance(path, resparam.res);
 			final Drawable d= modRes.getDrawable(R.drawable.local_ic_lockscreen_glowdot);
-			final int glowDotColor = prefs.getInt("call_banner_color", Color.WHITE);
+			final int glowDotColor = callBannerColor;
 			
 				resparam.res.setReplacement("android", "drawable", "ic_lockscreen_glowdot",new XResources.DrawableLoader() {
 					@Override

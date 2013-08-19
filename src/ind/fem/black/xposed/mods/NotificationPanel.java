@@ -121,9 +121,9 @@ public class NotificationPanel {
 				
 				//XModuleResources modRes = XModuleResources.createInstance(path, resparam.res);
 				//final Drawable d= modRes.getDrawable(R.drawable.local_ic_lockscreen_glowdot);
-				final int nbgNormalColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_NORMAL_COLOR, Color.WHITE);
-				final int nbgPressedColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_PRESSED_COLOR, Color.WHITE);
-				if (prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_NORMAL_COLOR_ENABLE, false)) {
+				final int nbgNormalColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_NORMAL_COLOR, 0);
+				final int nbgPressedColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_PRESSED_COLOR, 0);
+				if (nbgNormalColor != 0) {
 					XResources.setSystemWideReplacement("android", "drawable", "notification_bg_normal",new XResources.DrawableLoader() {
 						@Override
 						public Drawable newDrawable(XResources res, int id) throws Throwable {
@@ -139,7 +139,7 @@ public class NotificationPanel {
 					});
 				}
 				
-				if (prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_PRESSED_COLOR_ENABLE, false)) {
+				if (nbgPressedColor != 0) {
 					XResources.setSystemWideReplacement("android", "drawable", "notification_bg_normal_pressed",new XResources.DrawableLoader() {
 						@Override
 						public Drawable newDrawable(XResources res, int id) throws Throwable {

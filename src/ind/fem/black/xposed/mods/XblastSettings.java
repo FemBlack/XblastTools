@@ -43,13 +43,13 @@ public class XblastSettings extends Activity {
 	public static final String PREF_KEY_RAM_BAR_USAGE = "ram_usage_bar";
 	public static final String PREF_KEY_HOLO_BG_SOLID_BLACK = "holo_solid_black";
 	public static final String PREF_KEY_NBG_PULLUP_PULLDOWN_SPEED = "np_pu_pd_speed";
-    public static final String PREF_KEY_STATUSBAR_COLOR_ENABLE = "statusbar_color_enabled";
+    //public static final String PREF_KEY_STATUSBAR_COLOR_ENABLE = "statusbar_color_enabled";
     public static final String PREF_KEY_ABOUT = "pref_about_app";
     public static final String PREF_KEY_ABOUT_XPOSED = "pref_about_xposed";
     public static final String PREF_KEY_ABOUT_DONATE = "pref_about_donate";
     public static final String PREF_KEY_STATUSBAR_COLOR = "statusbar_color";
     public static final String PREF_KEY_SB_CLOCK_COLOR = "sb_clock_color";
-    public static final String PREF_KEY_SB_CLOCK_COLOR_ENABLE = "sb_clock_color_enabled";
+    //public static final String PREF_KEY_SB_CLOCK_COLOR_ENABLE = "sb_clock_color_enabled";
     public static final String PREF_KEY_CUSTOM_TEXT = "custom_text";
     public static final String PREF_KEY_FONT_LIST = "font_list";
     public static final String PREF_KEY_NP_CLOCK_COLOR = "np_clock_color";
@@ -58,11 +58,11 @@ public class XblastSettings extends Activity {
     public static final String PREF_KEY_CALLBANNER_FONT_LIST = "call_banner_font";
     public static final String PREF_KEY_NOTIF_NORMAL_COLOR = "notif_normal_color";
     public static final String PREF_KEY_NOTIF_PRESSED_COLOR = "notif_pressed_color";
-    public static final String PREF_KEY_NOTIF_NORMAL_COLOR_ENABLE = "notif_normal_color_enabled";
-    public static final String PREF_KEY_NOTIF_PRESSED_COLOR_ENABLE = "notif_pressed_color_enabled";
+    //public static final String PREF_KEY_NOTIF_NORMAL_COLOR_ENABLE = "notif_normal_color_enabled";
+    //public static final String PREF_KEY_NOTIF_PRESSED_COLOR_ENABLE = "notif_pressed_color_enabled";
     public static final String PREF_KEY_TRAFFIC = "traffic";
     public static final String PREF_KEY_TRAFFIC_COLOR = "traffic_color";
-    public static final String PREF_KEY_TRAFFIC_COLOR_ENABLE = "traffic_color_enabled";
+    //public static final String PREF_KEY_TRAFFIC_COLOR_ENABLE = "traffic_color_enabled";
     
     public static final String PREF_KEY_TICKER_COLOR = "ticker_color";
     
@@ -867,6 +867,44 @@ public class XblastSettings extends Activity {
                 mGpuPref.setChecked(true);
             } else {
                 mGpuPref.setChecked(false);;
+            }
+            
+            String dba = Helpers.findBuildPropValueOf(DISABLE_BOOT_ANIM_PROP);
+            if (!dba.equals(DISABLE)) {
+            	mDisableBootAnimationPref.setChecked(true);
+            } else {
+            	mDisableBootAnimationPref.setChecked(false);;
+            }
+            String dadbn = Helpers.findBuildPropValueOf(DISABLE_ADB_NOTIF_PROP);
+            if (!dadbn.equals(DISABLE)) {
+            	mHideadbPref.setChecked(true);
+            } else {
+            	mHideadbPref.setChecked(false);;
+            }
+            
+            String avh0 = Helpers.findBuildPropValueOf(AUDIO_VIDEO_PROP_0);
+            String avh1 = Helpers.findBuildPropValueOf(AUDIO_VIDEO_PROP_1);
+            String avh2 = Helpers.findBuildPropValueOf(AUDIO_VIDEO_PROP_2);
+            String avh3 = Helpers.findBuildPropValueOf(AUDIO_VIDEO_PROP_3);
+            String avh4 = Helpers.findBuildPropValueOf(AUDIO_VIDEO_PROP_4);
+            String avh5 = Helpers.findBuildPropValueOf(AUDIO_VIDEO_PROP_5);
+            String avh6 = Helpers.findBuildPropValueOf(AUDIO_VIDEO_PROP_6);
+            String avh7 = Helpers.findBuildPropValueOf(AUDIO_VIDEO_PROP_7);
+            if (!avh0.equals(DISABLE) && !avh1.equals(DISABLE) && !avh2.equals(DISABLE) && !avh3.equals(DISABLE) && !avh4.equals(DISABLE) && !avh5.equals(DISABLE) && !avh6.equals(DISABLE) && !avh7.equals(DISABLE)) {
+            	mAudioVideo.setChecked(true);
+            } else {
+            	mAudioVideo.setChecked(false);;
+            }
+            
+            String dns0 = Helpers.findBuildPropValueOf(GOOGLE_DNS_PROP_0);
+            String dns1 = Helpers.findBuildPropValueOf(GOOGLE_DNS_PROP_1);
+            String dns2 = Helpers.findBuildPropValueOf(GOOGLE_DNS_PROP_2);
+            String dns3 = Helpers.findBuildPropValueOf(GOOGLE_DNS_PROP_3);
+           
+            if (!dns0.equals(DISABLE) && !dns1.equals(DISABLE) && !dns2.equals(DISABLE) && !dns3.equals("1")) {
+            	mGoogleDns.setChecked(true);
+            } else {
+            	mGoogleDns.setChecked(false);;
             }
             /*if (initScriptLogcat.isFile()) {
                 mLogcatPref.setChecked(true);

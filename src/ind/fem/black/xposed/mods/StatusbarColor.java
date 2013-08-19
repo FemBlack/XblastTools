@@ -80,6 +80,7 @@ public class StatusbarColor {
                } catch (Throwable t) {
                	XposedBridge.log(CLASS_PHONE_STATUSBAR_VIEW + ": not found");
               }
+            final int bgColor = prefs.getInt(XblastSettings.PREF_KEY_STATUSBAR_COLOR, 0);
             if (panelBarClass != null) {
 	            XposedBridge.hookAllConstructors(panelBarClass, new XC_MethodHook() {
 	
@@ -87,11 +88,8 @@ public class StatusbarColor {
 	                protected void afterHookedMethod(final MethodHookParam param) throws Throwable {
 	                    prefs.reload();
 	                    mPanelBar = (View) param.thisObject;
-	                    if (prefs
-	    						.getBoolean(
-	    								XblastSettings.PREF_KEY_STATUSBAR_COLOR_ENABLE,
-	    								false)) {
-	                    int bgColor = prefs.getInt(XblastSettings.PREF_KEY_STATUSBAR_COLOR, Color.BLACK);
+	                    if (bgColor != 0) {
+	                   //int bgColor = prefs.getInt(XblastSettings.PREF_KEY_STATUSBAR_COLOR, Color.BLACK);
 	                    setStatusbarBgColor(bgColor);
 	
 	                    IntentFilter intentFilter = new IntentFilter(XblastSettings.ACTION_PREF_STATUSBAR_BGCOLOR_CHANGED);
@@ -106,11 +104,8 @@ public class StatusbarColor {
  	                protected void afterHookedMethod(final MethodHookParam param) throws Throwable {
  	                    prefs.reload();
  	                    mPhoneSbView = (View) param.thisObject;
- 	                    if (prefs
- 	    						.getBoolean(
- 	    								XblastSettings.PREF_KEY_STATUSBAR_COLOR_ENABLE,
- 	    								false)) {
- 	                    int bgColor = prefs.getInt(XblastSettings.PREF_KEY_STATUSBAR_COLOR, Color.BLACK);
+ 	                    if (bgColor != 0) {
+ 	                    //int bgColor = prefs.getInt(XblastSettings.PREF_KEY_STATUSBAR_COLOR, Color.BLACK);
  	                    setStatusbarBgColor1(bgColor);
  	
  	                    IntentFilter intentFilter = new IntentFilter(XblastSettings.ACTION_PREF_STATUSBAR_BGCOLOR_CHANGED);

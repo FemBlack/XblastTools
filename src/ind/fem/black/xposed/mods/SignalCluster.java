@@ -22,10 +22,10 @@ public class SignalCluster {
 						protected void afterHookedMethod(MethodHookParam param)
 								throws Throwable {
 							try {
-								if (prefs.getBoolean("mobile_signal_color_enabled", false)) {
+								if (prefs.getInt("mobile_signal_color", 0) != 0) {
 									ImageView mMobile = (ImageView) XposedHelpers.getObjectField(param.thisObject, "mMobile");
 									mMobile.setColorFilter(
-											prefs.getInt("mobile_signal_color", 0xFFffffff),
+											prefs.getInt("mobile_signal_color", 0),
 											Mode.SRC_IN);
 								}
 							} catch (Throwable t) {
@@ -33,10 +33,10 @@ public class SignalCluster {
 							}
 							
 							try {
-								if (prefs.getBoolean("mobile_signal_color_enabled", false)) {
+								if (prefs.getInt("mobile_signal_color", 0) != 0) {
 									ImageView mMobileType = (ImageView) XposedHelpers.getObjectField(param.thisObject, "mMobileType");
 									mMobileType.setColorFilter(
-											prefs.getInt("mobile_signal_color", 0xFFffffff),
+											prefs.getInt("mobile_signal_color", 0),
 											Mode.SRC_IN);
 								}
 							} catch (Throwable t) {
@@ -44,10 +44,10 @@ public class SignalCluster {
 							}
 							
 							try {
-								if (prefs.getBoolean("mobile_signal_color_enabled", false)) {
+								if (prefs.getInt("mobile_signal_color", 0) != 0) {
 									ImageView mAirplane = (ImageView) XposedHelpers.getObjectField(param.thisObject, "mAirplane");
 									mAirplane.setColorFilter(
-											prefs.getInt("mobile_signal_color", 0xFFffffff),
+											prefs.getInt("mobile_signal_color", 0),
 											Mode.SRC_IN);
 								}
 							} catch (Throwable t) {
@@ -55,10 +55,10 @@ public class SignalCluster {
 							}
 							
 							try {
-								if (prefs.getBoolean("mobile_inout_color_enabled", false)) {
+								if (prefs.getInt("mobile_inout_color", 0) != 0) {
 								ImageView mobile_inout = (ImageView) XposedHelpers.getObjectField(param.thisObject, "mMobileActivity");
 								mobile_inout.setColorFilter(
-										prefs.getInt("mobile_inout_color", 0xFFffffff),
+										prefs.getInt("mobile_inout_color", 0),
 										Mode.SRC_IN);
 								}
 							} catch (Throwable t) {
@@ -66,10 +66,10 @@ public class SignalCluster {
 							}
 							
 							try {
-								if (prefs.getBoolean("wifi_signal_color_enabled", false)) {
+								if (prefs.getInt("wifi_signal_color", 0) != 0) {
 								ImageView mWifi = (ImageView) XposedHelpers.getObjectField(param.thisObject, "mWifi");
 								mWifi.setColorFilter(
-										prefs.getInt("wifi_signal_color", 0xFFffffff),
+										prefs.getInt("wifi_signal_color", 0),
 										Mode.SRC_IN);
 								}
 							} catch (Throwable t) {
@@ -77,10 +77,10 @@ public class SignalCluster {
 							}
 							
 							try {
-								if (prefs.getBoolean("wifi_inout_color_enabled", false)) {
+								if (prefs.getInt("wifi_inout_color", 0) != 0) {
 								ImageView wifi_inout = (ImageView) XposedHelpers.getObjectField(param.thisObject, "mWifiActivity");
 								wifi_inout.setColorFilter(
-										prefs.getInt("wifi_inout_color", 0xFFffffff),
+										prefs.getInt("wifi_inout_color", 0),
 										Mode.SRC_IN);
 								}
 							} catch (Throwable t) {

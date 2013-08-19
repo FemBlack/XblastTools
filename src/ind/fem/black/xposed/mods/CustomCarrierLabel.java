@@ -67,11 +67,10 @@ public class CustomCarrierLabel {
 										if (size > 0) {
 											cclls.setTextSize(size);
 										}
-										
-										if (prefs.getBoolean("CCLLS_color_enabled",
-												false)) {
-											cclls.setTextColor(prefs.getInt(
-													"CCLLS_color", 0xFFffffff));
+										int CCLLSColor = prefs.getInt(
+												"CCLLS_color", 0);
+										if (CCLLSColor != 0) {
+											cclls.setTextColor(CCLLSColor);
 										}
 									} catch (Throwable t) {
 										XposedBridge.log(t);
@@ -98,11 +97,10 @@ public class CustomCarrierLabel {
 										if (size > 0) {
 											cclls.setTextSize(size);
 										}
-										
-										if (prefs.getBoolean("CCLLS_color_enabled",
-												false)) {
-											cclls.setTextColor(prefs.getInt(
-													"CCLLS_color", 0xFFffffff));
+										int CCLLS_color = prefs.getInt(
+												"CCLLS_color", 0);
+										if (CCLLS_color != 0) {
+											cclls.setTextColor(CCLLS_color);
 										}
 									} catch (Throwable t) {
 										XposedBridge.log(t);
@@ -161,9 +159,9 @@ public class CustomCarrierLabel {
 									
 				                   // View mStatusBarView = (View) XposedHelpers.getObjectField(param.thisObject, "mStatusBarView");
 				                    TextView mCarrierLabel = (TextView)XposedHelpers.getObjectField(param.thisObject, "mCarrierLabel");
-									
-										if (prefs.getBoolean("CCLNC_color_enabled", false)) {
-											mCarrierLabel.setTextColor(prefs.getInt("CCLNC_color", 0xFFffffff));
+				                    int CCLNC_color = prefs.getInt("CCLNC_color", 0);
+										if (CCLNC_color != 0) {
+											mCarrierLabel.setTextColor(CCLNC_color);
 										}
 										
 								} catch (Throwable t) {

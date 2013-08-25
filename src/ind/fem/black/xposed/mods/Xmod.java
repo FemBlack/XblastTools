@@ -79,12 +79,6 @@ public class Xmod implements IXposedHookLoadPackage,
 			XposedBridge.log(t);
 		}
 		
-		try {
-			//NotificationPanel.initZygote(prefs);
-		} catch (Throwable t) {
-			XposedBridge.log(t);
-		}
-		
 		try {			
 			NotificationPanel.initZygote(prefs);			
 		} catch (Throwable t) {
@@ -96,7 +90,14 @@ public class Xmod implements IXposedHookLoadPackage,
 	public void handleLoadPackage(final LoadPackageParam lpparam)
 			throws Throwable {
 
-		
+		/*if (lpparam.packageName.equals("com.android.settings")) {
+			try {
+				 AdvRebootMenu.init(prefs, lpparam.classLoader);
+			} catch (Throwable t) {
+				XposedBridge.log(t);
+			}
+
+		}*/
 		
 		if (lpparam.packageName.equals(FullscreenPicCall.PACKAGE_NAME) &&  (prefs.getBoolean("fullscreen_caller_photo", false))) {
 			try {
@@ -131,7 +132,7 @@ public class Xmod implements IXposedHookLoadPackage,
 		
 		try {
 			
-			if (Build.VERSION.SDK_INT == 17) {
+			if (Build.VERSION.SDK_INT >= 17) {
 				Nbg.init(prefs, lpparam.classLoader); 
 			}
 		} catch (Throwable t) {
@@ -226,13 +227,15 @@ public class Xmod implements IXposedHookLoadPackage,
 	public void handleInitPackageResources(InitPackageResourcesParam resparam)
 			throws Throwable {
 
-		
+		if (resparam.packageName.equals(Black.ANDROID)){
 		try {
+			//XposedBridge.log("etdfndfnxcvncvnvcbncvbncvb");
 			//Playstore.handleInit(resparam, prefs);
+			//NotificationPanel.handleInit(resparam, prefs);
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
-		
+	}
 		
 		
 		if (resparam.packageName.equals(FullscreenPicCall.PACKAGE_NAME) &&  (prefs.getBoolean("fullscreen_caller_photo", false))) {
@@ -248,6 +251,12 @@ public class Xmod implements IXposedHookLoadPackage,
 		
 		final int statusBarColor = prefs.getInt(
 				XblastSettings.PREF_KEY_STATUSBAR_COLOR, 0);
+		
+		try {
+			//StatusbarColor.handlePackage(resparam, prefs);
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
 		/*final boolean notifBgTransEnabled = prefs.getBoolean(
 				TextEffectsActivity.CONST_NOTIF_TRANS_ENABLE, false);*/
 		/*final boolean statusBarColorEnabled = prefs.getBoolean(

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ind.fem.black.xposed.mods"
     android:installLocation="internalOnly"
-    android:versionCode="1"
-    android:versionName="1.4.9" >
+    android:versionCode="2"
+    android:versionName="1.5.0" >
 
     <uses-sdk
         android:minSdkVersion="15"

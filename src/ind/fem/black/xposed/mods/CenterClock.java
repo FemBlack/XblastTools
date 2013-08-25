@@ -346,7 +346,8 @@ public class CenterClock {
                     mAnimFadeIn = res.getIdentifier("fade_in", "anim", "android");
                     
                     int tickerColor = prefs.getInt(XblastSettings.PREF_KEY_TICKER_COLOR, 0);
-                    if (tickerColor != 0) {
+                    boolean tickerColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_TICKER_COLOR_ENABLE, false);
+                    if (tickerColorEnabled) {
 	                    View mTickerView = (View) XposedHelpers.getObjectField(mPhoneStatusBar, "mTickerView");
 	                    ImageSwitcher mIconSwitcher = (ImageSwitcher) mTickerView.findViewById(res.getIdentifier("tickerIcon", "id", PACKAGE_NAME));
 	                    ImageView image = (ImageView) mIconSwitcher.getChildAt(0);
@@ -425,9 +426,9 @@ public class CenterClock {
     	 
     	 if (prefs.getBoolean(XblastSettings.PREF_KEY_TRAFFIC, false)) {
          	int trafficColor = prefs.getInt(XblastSettings.PREF_KEY_TRAFFIC_COLOR, 0);
-             //boolean trafficColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_TRAFFIC_COLOR_ENABLE, false);
+             boolean trafficColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_TRAFFIC_COLOR_ENABLE, false);
              mTraffic = new Traffic(mContext);
-             if(trafficColor != 0) {
+             if(trafficColorEnabled) {
              	mTraffic.setTextColor(trafficColor);
              }
              mTraffic.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);

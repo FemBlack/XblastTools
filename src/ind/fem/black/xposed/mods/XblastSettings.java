@@ -43,13 +43,13 @@ public class XblastSettings extends Activity {
 	public static final String PREF_KEY_RAM_BAR_USAGE = "ram_usage_bar";
 	public static final String PREF_KEY_HOLO_BG_SOLID_BLACK = "holo_solid_black";
 	public static final String PREF_KEY_NBG_PULLUP_PULLDOWN_SPEED = "np_pu_pd_speed";
-    //public static final String PREF_KEY_STATUSBAR_COLOR_ENABLE = "statusbar_color_enabled";
+    public static final String PREF_KEY_STATUSBAR_COLOR_ENABLE = "statusbar_color_enabled";
     public static final String PREF_KEY_ABOUT = "pref_about_app";
     public static final String PREF_KEY_ABOUT_XPOSED = "pref_about_xposed";
     public static final String PREF_KEY_ABOUT_DONATE = "pref_about_donate";
     public static final String PREF_KEY_STATUSBAR_COLOR = "statusbar_color";
     public static final String PREF_KEY_SB_CLOCK_COLOR = "sb_clock_color";
-    //public static final String PREF_KEY_SB_CLOCK_COLOR_ENABLE = "sb_clock_color_enabled";
+    public static final String PREF_KEY_SB_CLOCK_COLOR_ENABLE = "sb_clock_color_enabled";
     public static final String PREF_KEY_CUSTOM_TEXT = "custom_text";
     public static final String PREF_KEY_FONT_LIST = "font_list";
     public static final String PREF_KEY_NP_CLOCK_COLOR = "np_clock_color";
@@ -57,14 +57,47 @@ public class XblastSettings extends Activity {
     public static final String PREF_KEY_FONT_LIST_NP = "font_list_np";
     public static final String PREF_KEY_CALLBANNER_FONT_LIST = "call_banner_font";
     public static final String PREF_KEY_NOTIF_NORMAL_COLOR = "notif_normal_color";
+    public static final String PREF_KEY_NOTIF_NORMAL_COLOR_ENABLE = "notif_normal_color_enabled";
     public static final String PREF_KEY_NOTIF_PRESSED_COLOR = "notif_pressed_color";
-    //public static final String PREF_KEY_NOTIF_NORMAL_COLOR_ENABLE = "notif_normal_color_enabled";
-    //public static final String PREF_KEY_NOTIF_PRESSED_COLOR_ENABLE = "notif_pressed_color_enabled";
+    public static final String PREF_KEY_NOTIF_PRESSED_COLOR_ENABLE = "notif_pressed_color_enabled";
+    public static final String PREF_KEY_NOTIF_TITLE_COLOR = "notif_Title_text_color";
+    public static final String PREF_KEY_NOTIF_TITLE_COLOR_ENABLE = "notif_Title_text_color_enabled";
+    public static final String PREF_KEY_NOTIF_CONTENT_COLOR = "notif_Content_color";
+    public static final String PREF_KEY_NOTIF_CONTENT_COLOR_ENABLE = "notif_Content_color_enabled";
+    public static final String PREF_KEY_TOAST_TEXT_COLOR = "toast_text_color";
+    public static final String PREF_KEY_TOAST_TEXT_COLOR_ENABLE = "toast_text_color_enabled";
+    public static final String PREF_KEY_TOAST_BG_COLOR = "toast_bg_color";
+    public static final String PREF_KEY_TOAST_BG_COLOR_ENABLE = "toast_bg_color_enabled";
     public static final String PREF_KEY_TRAFFIC = "traffic";
     public static final String PREF_KEY_TRAFFIC_COLOR = "traffic_color";
-    //public static final String PREF_KEY_TRAFFIC_COLOR_ENABLE = "traffic_color_enabled";
+    public static final String PREF_KEY_TRAFFIC_COLOR_ENABLE = "traffic_color_enabled";
     
     public static final String PREF_KEY_TICKER_COLOR = "ticker_color";
+    public static final String PREF_KEY_TICKER_COLOR_ENABLE = "ticker_color_enabled";
+    
+    public static final String PREF_KEY_MOBILE_SIGNAL_COLOR = "mobile_signal_color";
+    public static final String PREF_KEY_MOBILE_SIGNAL_COLOR_ENABLE = "mobile_signal_color_enabled";
+    
+    public static final String PREF_KEY_MOBILE_INOUT_COLOR = "mobile_inout_color";
+    public static final String PREF_KEY_MOBILE_INOUT_COLOR_ENABLE = "mobile_inout_color_enabled";
+    
+    public static final String PREF_KEY_WIFI_SIGNAL_COLOR = "wifi_signal_color";
+    public static final String PREF_KEY_WIFI_SIGNAL_COLOR_ENABLE = "wifi_signal_color_enabled";
+    
+    public static final String PREF_KEY_WIFI_INOUT_COLOR = "wifi_inout_color";
+    public static final String PREF_KEY_WIFI_INOUT_COLOR_ENABLE = "wifi_inout_color_enabled";
+    
+    public static final String PREF_KEY_BATTERY_COLOR = "battery_color";
+    public static final String PREF_KEY_BATTERY_COLOR_ENABLE = "battery_color_enabled";
+    
+    public static final String PREF_KEY_CALL_BANNER_COLOR = "call_banner_color";
+    public static final String PREF_KEY_CALL_BANNER_COLOR_ENABLE = "call_banner_color_enabled";
+    
+    public static final String PREF_KEY_CCLLS_COLOR = "CCLLS_color";
+    public static final String PREF_KEY_CCLLS_COLOR_ENABLE = "CCLLS_color_enabled";
+    
+    public static final String PREF_KEY_CCLNC_COLOR = "CCLNC_color";
+    public static final String PREF_KEY_CCLNC_COLOR_ENABLE = "CCLNC_color_enabled";
     
     public static final String PREF_KEY_BOOT_ANIMATION = "boot_animation";
     
@@ -515,7 +548,7 @@ public class XblastSettings extends Activity {
             if (preference == mPrefAbout) {
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_app)));
             } else if (preference == mPrefAboutDonate) {
-                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_donate)));
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_version)));
             } else if (preference == mFullScreenCallerImagepref) {
             	intent = new Intent();
     	        //intent.setAction("ind.fem.black.xposed.mods.CallerImageActivity");

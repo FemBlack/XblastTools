@@ -6,17 +6,16 @@ import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.res.Resources;
-import android.content.res.XModuleResources;
 import android.content.res.XResources;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.TextView;
+import android.widget.Toast;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XSharedPreferences;
 import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.callbacks.XC_InitPackageResources.InitPackageResourcesParam;
 
 public class NotificationPanel {
 	
@@ -26,104 +25,95 @@ public class NotificationPanel {
 	  private static void log(String message) {
 	        XposedBridge.log(TAG + ": " + message);
 	    }
-	  
-	  public static void initZygote1(XSharedPreferences prefs) {
-			log("initZygote");
+	
+	public static void notificationTextColor(final XSharedPreferences prefs) {
 			
-			/*final boolean nbgEnabled = prefs.getBoolean("nbgEnabled", false);
-			final int ngbColor = prefs.getInt(XblastSettings.CONST_NGB_COLOR, -1);*/
-			/*try {
-				//final Class<?> notifClass = Class.forName("android.app.Notification");
-				XposedHelpers.findAndHookMethod(Notification.class, "makeContentView", new XC_MethodHook() {
-							@Override
-							protected void afterHookedMethod(MethodHookParam param)
-									throws Throwable {
-								try {
-									log("mContentView");
-									View mContentView = (View)param.thisObject;
-									log("mContentView" + mContentView);
-									Resources res = mContentView.getResources();
-									 	if(true) {
-									 		TextView title = (TextView) mContentView.findViewById(res.getIdentifier(
-							                        "title", "id", "android"));
-									 		log("title" + title);
-									 		title.setTextColor(Color.RED);
-									 	} 
-									 	log("makeContentView completed");
-								} catch (Throwable t) {
-									XposedBridge.log(t);
-								}
-								
-							}
-						});
-			} catch (Throwable t) {
-				XposedBridge.log(t);
-			}
-			*/
-			
-			/*try {
+			try {
 				findAndHookMethod(Notification.class, "setLatestEventInfo" , Context.class, CharSequence.class, CharSequence.class, PendingIntent.class, new XC_MethodHook() {
+					
 					@Override
 					protected void afterHookedMethod(MethodHookParam param) throws Throwable {
-						log("mContentView");
-						//Context mContext = (Context) getObjectField(param.thisObject, "mContext");
-						RemoteViews contentView = (RemoteViews) getObjectField(param.thisObject, "contentView");
-						CharSequence contentTitle = (CharSequence) getObjectField(param.thisObject, "contentTitle");
-						CharSequence contentText = (CharSequence) getObjectField(param.thisObject, "contentText");
-						log("contentView" + contentView);
-						log("contentTitle" + contentTitle);
-						log("contentText" + contentText);
+						log("setLatestEventInfo");
+						Context mContext = (Context) param.args[0];
 						
-						//Resources res = mContext.getResources();
-						 	if(true) {
-						 		TextView title = (TextView) mContentView.findViewById(res.getIdentifier(
-				                        "title", "id", "android"));
-						 		log("title" + title);
-						 		title.setTextColor(Color.RED);
-						 	} 
-						 	log("makeContentView completed");
-					}
-				});
-			} catch (Throwable t) {
-				XposedBridge.log(t);
-			}*/
-			
-			try {
-				findAndHookMethod(Notification.Builder.class, "buildUnstyled", new XC_MethodHook() {
-					@Override
-					protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-						log("mContentView");
-						Context mContext = (Context) getObjectField(param.thisObject, "mContext");
-						RemoteViews mContentView = (RemoteViews) getObjectField(param.thisObject, "mContentView");
-						RemoteViews mTickerView = (RemoteViews) getObjectField(param.thisObject, "mTickerView");
-						log("mContentView" + mContentView);
+						RemoteViews contentView = (RemoteViews) getObjectField(param.thisObject, "contentView");
 						Resources res = mContext.getResources();
-						 	/*if(true) {
-						 		TextView title = (TextView) mContentView.findViewById(res.getIdentifier(
-				                        "title", "id", "android"));
-						 		log("title" + title);
-						 		title.setTextColor(Color.RED);
-						 	} */
-						 	log("makeContentView completed");
+						int titleId = res.getIdentifier("title", "id", "android");
+						int textId = res.getIdentifier("text", "id", "android");
+						int infoId = res.getIdentifier("info", "id", "android");
+						int timeId = res.getIdentifier("time", "id", "android");
+						
+						Notification n = (Notification) param.thisObject;
+						int titleColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_TITLE_COLOR, 0);
+						boolean titleColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_TITLE_COLOR_ENABLE, false);
+						int contentColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_CONTENT_COLOR, 0);
+						boolean contentColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_CONTENT_COLOR_ENABLE, false);
+						if (titleColorEnabled) {
+							contentView.setTextColor(titleId, titleColor);
+							contentView.setTextColor(textId, titleColor);
+							if(n.when > 0) {
+								contentView.setTextColor(timeId, titleColor);
+							}
+						}
+						if (contentColorEnabled) {
+							contentView.setTextColor(infoId, contentColor);	
+						}
+						
+						log("setLatestEventInfo completed");
 					}
 				});
 			} catch (Throwable t) {
 				XposedBridge.log(t);
 			}
 			
-		
-
+			
 		}
+	
+	 public static void toastColor(final XSharedPreferences prefs) {
+		 try {
+				findAndHookMethod(Toast.class, "show" , new XC_MethodHook() {
+					
+					@Override
+					protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+						//log("show");
+						Context mContext = (Context) getObjectField(param.thisObject, "mContext");
+						View view = (View) getObjectField(param.thisObject, "mNextView");
+						Resources res = mContext.getResources();
+						int messageId = res.getIdentifier("message", "id", "android");
+						
+						int toastTextColor = prefs.getInt(XblastSettings.PREF_KEY_TOAST_TEXT_COLOR, 0);
+						boolean toastTextColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_TOAST_TEXT_COLOR_ENABLE, false);
+						int toastBgColor = prefs.getInt(XblastSettings.PREF_KEY_TOAST_BG_COLOR, 0);
+						boolean toastBgColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_TOAST_BG_COLOR_ENABLE, false);
+						
+						if (toastBgColorEnabled) {
+							view.setBackgroundColor(toastBgColor);
+						}
+						
+						if (toastTextColorEnabled) {
+							TextView toastView = (TextView) view.findViewById(messageId);
+							toastView.setTextColor(toastTextColor);
+						}
+						
+						//log("show completed");
+					}
+				});
+			} catch (Throwable t) {
+				XposedBridge.log(t);
+			}
+	 }
+	 
 	    public static void initZygote(XSharedPreferences prefs) {
-	        log("handlePackage");
+	        log("initZygote");
 	      
 			try {
-				
-				//XModuleResources modRes = XModuleResources.createInstance(path, resparam.res);
-				//final Drawable d= modRes.getDrawable(R.drawable.local_ic_lockscreen_glowdot);
+				notificationTextColor(prefs);
+				toastColor(prefs);
 				final int nbgNormalColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_NORMAL_COLOR, 0);
+				final boolean nbgNormalColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_NORMAL_COLOR_ENABLE, false);
 				final int nbgPressedColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_PRESSED_COLOR, 0);
-				if (nbgNormalColor != 0) {
+				final boolean nbgPressedColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_PRESSED_COLOR_ENABLE,false);
+				if (nbgNormalColorEnabled) {
 					XResources.setSystemWideReplacement("android", "drawable", "notification_bg_normal",new XResources.DrawableLoader() {
 						@Override
 						public Drawable newDrawable(XResources res, int id) throws Throwable {
@@ -137,9 +127,21 @@ public class NotificationPanel {
 							return new ColorDrawable(nbgNormalColor);
 						}
 					});
+					XResources.setSystemWideReplacement("android", "drawable", "notification_template_icon_bg",new XResources.DrawableLoader() {
+						@Override
+						public Drawable newDrawable(XResources res, int id) throws Throwable {
+							return new ColorDrawable(nbgNormalColor);
+						}
+					});
+					XResources.setSystemWideReplacement("android", "drawable", "notification_template_icon_low_bg",new XResources.DrawableLoader() {
+						@Override
+						public Drawable newDrawable(XResources res, int id) throws Throwable {
+							return new ColorDrawable(nbgNormalColor);
+						}
+					});
 				}
 				
-				if (nbgPressedColor != 0) {
+				if (nbgPressedColorEnabled) {
 					XResources.setSystemWideReplacement("android", "drawable", "notification_bg_normal_pressed",new XResources.DrawableLoader() {
 						@Override
 						public Drawable newDrawable(XResources res, int id) throws Throwable {
@@ -158,74 +160,8 @@ public class NotificationPanel {
 				log("Error in NotificationPanel");
 			}
 			
-			/*int sblecId = resparam.res.getIdentifier("status_bar_latest_event_content","layout", "android");
-			
-
-			log("status_bar_latest_event_content>>>" + sblecId);
-			
-			
-			
-			if (sblecId != 0) {
-				
-				try {
-					resparam.res.hookLayout("android", "layout",
-							"status_bar_latest_event_content", new XC_LayoutInflated() {
-								@Override
-								public void handleLayoutInflated(
-										LayoutInflatedParam liparam)
-										throws Throwable {
-									log(" status_bar_latest_event_content>>>inflated");
-											
-										View latestEvent = (View) liparam.view
-												.findViewById(liparam.res.getIdentifier(
-														"notification_template_base", "id", "android"));
-										if (latestEvent != null) {
-											if(true) {
-												TextView title = (TextView) latestEvent.findViewById(liparam.res.getIdentifier(
-														"title", "id", "com.android.systemui"));
-												title.setTextColor(Color.BLUE);
-										 	} 
-										}
-									
-							
-									log("status_bar_latest_event_content completed");
-									return;
-								}
-							});
-					
-					resparam.res.hookLayout("android", "layout",
-							"notification_template_base", new XC_LayoutInflated() {
-								@Override
-								public void handleLayoutInflated(
-										LayoutInflatedParam liparam)
-										throws Throwable {
-									log(" notification_template_base>>>inflated");
-											
-										View latestEvent = (View) liparam.view
-												.findViewById(liparam.res.getIdentifier(
-														"notification_template_base", "id", "android"));
-										if (latestEvent != null) {
-											if(true) {
-												TextView title = (TextView) latestEvent.findViewById(liparam.res.getIdentifier(
-														"title", "id", "com.android.systemui"));
-												title.setTextColor(Color.BLUE);
-										 	} 
-										}
-									
-							
-									log("notification_template_base completed");
-									return;
-								}
-							});
-				} catch (Throwable t) {
-					log("super_status_bar is not available");
-					XposedBridge.log(t);
-				}
-			} */
-			
 			log("Completed");
 
 	    }
-	    
-	   
+	
 }

@@ -224,8 +224,11 @@ public class FullscreenPicCall {
                     prefs.reload();
                     if (!prefs.getBoolean("fullscreen_caller_photo", false))
                         return;
-                    int callBannerColor = prefs.getInt("call_banner_color", 0);
-                    if (callBannerColor == 0)
+                    
+                    int callBannerColor = prefs.getInt(XblastSettings.PREF_KEY_CALL_BANNER_COLOR, 0);
+				    boolean callBannerEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_CALL_BANNER_COLOR_ENABLE, false);				     
+                    
+                    if (!callBannerEnabled)
                         return;
                     
                     final String fontName = prefs.getString(XblastSettings.PREF_KEY_CALLBANNER_FONT_LIST,"Default");
@@ -294,8 +297,10 @@ public class FullscreenPicCall {
              if (!prefs.getBoolean("fullscreen_caller_photo", false))
                  return;
              
-             int callBannerColor = prefs.getInt("call_banner_color", 0);
-             if (callBannerColor == 0)
+             int callBannerColor = prefs.getInt(XblastSettings.PREF_KEY_CALL_BANNER_COLOR, 0);
+			 boolean callBannerEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_CALL_BANNER_COLOR_ENABLE, false);	
+             
+			 if (!callBannerEnabled)
                  return;
 			
 			XModuleResources modRes = XModuleResources.createInstance(path, resparam.res);

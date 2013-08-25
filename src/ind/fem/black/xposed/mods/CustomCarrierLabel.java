@@ -46,6 +46,8 @@ public class CustomCarrierLabel {
 					XposedBridge
 							.log("com.android.internal.policy.impl.KeyguardStatusViewManager not found");
 				}
+				final int CCLLSColor = prefs.getInt(XblastSettings.PREF_KEY_CCLLS_COLOR, 0);
+				final boolean CCLLSColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_CCLLS_COLOR_ENABLE, false);
 				if (carrierTextClass != null) {
 					findAndHookMethod(
 							"com.android.internal.policy.impl.keyguard.CarrierText",
@@ -66,10 +68,9 @@ public class CustomCarrierLabel {
 										float size = Black.getTextSize(clTextSize);
 										if (size > 0) {
 											cclls.setTextSize(size);
-										}
-										int CCLLSColor = prefs.getInt(
-												"CCLLS_color", 0);
-										if (CCLLSColor != 0) {
+										}									
+										
+										if (CCLLSColorEnabled) {
 											cclls.setTextColor(CCLLSColor);
 										}
 									} catch (Throwable t) {
@@ -97,10 +98,9 @@ public class CustomCarrierLabel {
 										if (size > 0) {
 											cclls.setTextSize(size);
 										}
-										int CCLLS_color = prefs.getInt(
-												"CCLLS_color", 0);
-										if (CCLLS_color != 0) {
-											cclls.setTextColor(CCLLS_color);
+										
+										if (CCLLSColorEnabled) {
+											cclls.setTextColor(CCLLSColor);
 										}
 									} catch (Throwable t) {
 										XposedBridge.log(t);
@@ -155,18 +155,25 @@ public class CustomCarrierLabel {
 							@Override
 							protected void afterHookedMethod(MethodHookParam param)
 									throws Throwable {
-								try {
-									
-				                   // View mStatusBarView = (View) XposedHelpers.getObjectField(param.thisObject, "mStatusBarView");
-				                    TextView mCarrierLabel = (TextView)XposedHelpers.getObjectField(param.thisObject, "mCarrierLabel");
-				                    int CCLNC_color = prefs.getInt("CCLNC_color", 0);
-										if (CCLNC_color != 0) {
-											mCarrierLabel.setTextColor(CCLNC_color);
-										}
-										
-								} catch (Throwable t) {
-									XposedBridge.log(t);
+							try {
+								int CCLNC_color = prefs.getInt(
+										XblastSettings.PREF_KEY_CCLNC_COLOR, 0);
+								boolean CCLNC_colorEnabled = prefs
+										.getBoolean(
+												XblastSettings.PREF_KEY_CCLNC_COLOR_ENABLE,
+												false);
+
+								TextView mCarrierLabel = (TextView) XposedHelpers
+										.getObjectField(param.thisObject,
+												"mCarrierLabel");
+
+								if (CCLNC_colorEnabled) {
+									mCarrierLabel.setTextColor(CCLNC_color);
 								}
+
+							} catch (Throwable t) {
+								XposedBridge.log(t);
+							}
 							}
 						});
 			} catch (Throwable t) {

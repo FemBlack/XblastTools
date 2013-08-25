@@ -36,7 +36,7 @@
     <string name="pref_about_title">About</string>
     <string name="about_app_title">XBlast Tools</string>
     <string name="about_app">Coded by FemBlack@XDA. Touch to visit official thread.</string>
-    <string name="about_donate_title">Donate to ME</string>
+    <string name="about_donate_title">Google Play Version</string>
     <string name="about_donate_summary">Donate &amp; support me if you think this app is worth it.</string>
 	
 	<string name="fullscreen_caller_photo_title">Fullscreen Caller Photo</string>
@@ -208,6 +208,10 @@
      <string name="ticker_color_title">Ticker Color</string>
      <string name="google_dns_title">Google DNS Hack</string>
      
+     <string name="notif_Content_color_title">Notification Content Text Color</string>
+     <string name="notif_Title_text_color_title">Notification Title Text Color</string>
+     <string name="toast_text_color_title">Toast Color</string>
+     <string name="toast_bg_color_title">Toast Bg Color</string>
      <string name="clear_all_position_title">Clear All button Position</string>
      
      <string name="build_prop_tweaks">build.prop Tweaks</string>
@@ -348,4 +352,6 @@
     <string name="show_360_min_before">Show icon 6 hours before alarm</string>
     <string name="show_720_min_before">Show icon 12 hours before alarm</string>
     <string name="show_1440_min_before">Show icon 24 hours before alarm</string>
+    
+    
 </resources>

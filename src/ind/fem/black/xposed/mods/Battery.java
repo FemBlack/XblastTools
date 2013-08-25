@@ -111,8 +111,10 @@ public class Battery {
                     //XposedBridge.log("mIconViews" + mIconViews.size());
                     try {
                     	if(mIconViews.size() > 0) {
-                    		int batteryColor = prefs.getInt("battery_color", 0);
-            			if (batteryColor != 0) {
+                    		 int batteryColor = prefs.getInt(XblastSettings.PREF_KEY_BATTERY_COLOR, 0);
+						     boolean batteryColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_BATTERY_COLOR_ENABLE, false);
+                    		
+            			if (batteryColorEnabled) {
             				ImageView battery = mIconViews.get(0); 
             				battery.setColorFilter(batteryColor, Mode.SRC_IN);
             				/*int dockBatId = liparam.res.getIdentifier("dock_battery", "id",

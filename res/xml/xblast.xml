@@ -16,21 +16,36 @@
             android:summary="@string/font_summary"
             android:title="@string/font_title" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            alphaSlider="false"
-            showCheckbox="true"
-            
-            android:key="sb_clock_color"
-            android:title="@string/sb_clock_color_title" />
+        <PreferenceScreen
+            android:key="pref_cat_clock_settings"
+            android:title="@string/pref_cat_clock_settings_title">
 
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="amPm"
-            android:title="@string/hide_am_pm" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="center_clock"
-            android:title="@string/center_clock_title" />
+            <CheckBoxPreference 
+                android:key="pref_clock_hide"
+                android:disableDependentsState="true"
+                android:title="@string/pref_clock_hide_title"
+                android:defaultValue="false" />         
+            
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                alphaSlider="false"
+                android:dependency="pref_clock_hide"
+                showCheckbox="true"
+                android:key="sb_clock_color"
+                android:title="@string/sb_clock_color_title" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="pref_clock_hide"
+                android:key="amPm"
+                android:title="@string/hide_am_pm" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="pref_clock_hide"
+                android:key="center_clock"
+                android:title="@string/center_clock_title" />
+
+        </PreferenceScreen>
+        
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="traffic"
@@ -266,61 +281,31 @@
             android:key="CCLNC_color"
             android:title="@string/CCLNC_color_title" />
     </PreferenceScreen>
-    <PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:key="misc"
-        android:title="@string/pref_header_misc" >
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="enable_all_rotation"
-            android:summary="@string/rotation_summary"
-            android:title="@string/rotation_title" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="advanced_reboot_menu"
-            android:summary="@string/poweroff_advanced_summary"
-            android:title="@string/advanced_reboot_title" />
+    <PreferenceScreen 
+        android:key="pref_cat_volume_button"
+        android:title="@string/pref_cat_volume_button_title"
+        >
 
-        <de.robv.android.xposed.library.ui.IntegerListPreference
-            android:entries="@array/crt_mode_entries"
-            android:entryValues="@array/crt_mode_values"
-            android:key="crt_effect_mode"
-            android:title="@string/crt_off_effect" />
+        <CheckBoxPreference 
+            android:key="pref_vol_music_controls"
+            android:title="@string/vol_music_controls_title"
+            android:summary="@string/vol_music_controls_summary"
+            android:defaultValue="false" />
 
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="recents_clear_all"
-            android:summary="@string/recents_clear_all_summary"
-            android:title="@string/recents_clear_all_title" />
+        <CheckBoxPreference 
+            android:key="pref_safe_media_volume"
+            android:title="@string/pref_safe_media_volume_title"
+            android:summary="@string/pref_safe_media_volume_summary"
+            android:defaultValue="false" />
 
-        <de.robv.android.xposed.library.ui.IntegerListPreference
-            android:dependency="recents_clear_all"
-            android:entries="@array/clear_all_position_entries"
-            android:entryValues="@array/clear_all_position_values"
-            android:key="clear_all_position"
-            android:title="@string/clear_all_position_title" />
+         <ListPreference
+            android:key="pref_vol_key_cursor_control"
+            android:title="@string/vol_key_cursor_control_title"
+            android:summary="@string/vol_key_cursor_control_summary"
+            android:entries="@array/vol_key_cursor_control_entries"
+            android:entryValues="@array/vol_key_cursor_control_values"
+            android:defaultValue="0" />
 
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="ram_usage_bar"
-            android:summary="@string/ram_usage_bar_summary"
-            android:title="@string/ram_usage_bar_title" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="holo_solid_black"
-            android:summary="@string/holo_bg_solid_black_summary"
-            android:title="@string/holo_bg_solid_black_title" />
-         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="toast_text_color"
-            showCheckbox="true"
-            
-            android:title="@string/toast_text_color_title" />
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            alphaSlider="true"
-            showCheckbox="true"
-            android:key="toast_bg_color"
-            
-            android:title="@string/toast_bg_color_title" />
     </PreferenceScreen>
     <!--
          <PreferenceScreen
@@ -587,6 +572,60 @@ android:persistent="true" />
                 android:defaultValue="0" />
         -->
 
+    </PreferenceScreen>
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="misc"
+        android:title="@string/pref_header_misc" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_all_rotation"
+            android:summary="@string/rotation_summary"
+            android:title="@string/rotation_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="advanced_reboot_menu"
+            android:summary="@string/poweroff_advanced_summary"
+            android:title="@string/advanced_reboot_title" />
+
+        <de.robv.android.xposed.library.ui.IntegerListPreference
+            android:entries="@array/crt_mode_entries"
+            android:entryValues="@array/crt_mode_values"
+            android:key="crt_effect_mode"
+            android:title="@string/crt_off_effect" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="recents_clear_all"
+            android:summary="@string/recents_clear_all_summary"
+            android:title="@string/recents_clear_all_title" />
+
+        <de.robv.android.xposed.library.ui.IntegerListPreference
+            android:dependency="recents_clear_all"
+            android:entries="@array/clear_all_position_entries"
+            android:entryValues="@array/clear_all_position_values"
+            android:key="clear_all_position"
+            android:title="@string/clear_all_position_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="ram_usage_bar"
+            android:summary="@string/ram_usage_bar_summary"
+            android:title="@string/ram_usage_bar_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="holo_solid_black"
+            android:summary="@string/holo_bg_solid_black_summary"
+            android:title="@string/holo_bg_solid_black_title" />
+         <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="toast_text_color"
+            showCheckbox="true"            
+            android:title="@string/toast_text_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:key="toast_bg_color"            
+            android:title="@string/toast_bg_color_title" />
     </PreferenceScreen>
     <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"

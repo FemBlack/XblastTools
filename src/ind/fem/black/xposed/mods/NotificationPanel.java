@@ -21,7 +21,10 @@ public class NotificationPanel {
 	
 	private static final String TAG = "NotificationPanel";
     public static final String PACKAGE_NAME = "android";
-    
+    /*private static XSharedPreferences prefs;
+	private static InitPackageResourcesParam resparam;
+	private static XModuleResources moduleResources;*/
+	
 	  private static void log(String message) {
 	        XposedBridge.log(TAG + ": " + message);
 	    }
@@ -163,5 +166,56 @@ public class NotificationPanel {
 			log("Completed");
 
 	    }
+	    
+	   /* public static void doHook(XSharedPreferences prefs,
+				InitPackageResourcesParam resparam, XModuleResources moduleResources) {
+	    	NotificationPanel.prefs = prefs;
+	    	NotificationPanel.resparam = resparam;
+	    	NotificationPanel.moduleResources = moduleResources;
+	    	//setCloseHandleBar();
+	    }*/
+	    
+	    /*private static void setCloseHandleBar() {
+			resparam.res.setReplacement(Black.SYSTEM_UI, "drawable",
+					"status_bar_close", new XResources.DrawableLoader() {
+						@Override
+						public Drawable newDrawable(XResources res, int id)
+								throws Throwable {
+
+							Drawable[] layers = new Drawable[2];
+							if (prefs.getBoolean(
+									"notificationHandleBackgroundColorEnabled",
+									true)) {
+								layers[0] = new ColorDrawable(prefs.getInt(
+										"notificationHandleBackgroundColor",
+										Color.RED));
+							} else {
+								layers[0] = new ColorDrawable(Color.BLACK);
+							}
+							Drawable closeOn = moduleResources
+									.getDrawable(ind.fem.black.xposed.mods.R.drawable.status_bar_close);
+							closeOn.setColorFilter(
+									prefs.getInt("notificationHandleColor",
+											Color.GREEN),
+									PorterDuff.Mode.MULTIPLY);
+							layers[1] = closeOn;
+
+							return new LayerDrawable(layers);
+						}
+					});*/
+			/*if (prefs.getBoolean("notificationHandleBackgroundColorEnabled", false)) {
+				resparam.res.setReplacement(Black.SYSTEM_UI, "drawable",
+						"close_handler_divider", new XResources.DrawableLoader() {
+							@Override
+							public Drawable newDrawable(XResources res, int id)
+									throws Throwable {
+								return new ColorDrawable(prefs.getInt(
+										"notificationHandleBackgroundColor",
+										Color.BLACK));
+							}
+						});
+			}*/
+
+		//}
 	
 }

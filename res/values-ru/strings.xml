@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+ 	<string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">Параметры тени</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">Параметры</string>
+    <string name="preview">Предпросмотр</string>
+    <string name="edit_message">Ввести текст</string>
+    <string name="ok">Хорошо</string>
+    <string name="cancel">Отмена</string>
+    <string name="button_effects">Выбрать цвет</string>
+    <string name="shadow_settings">Параметры тени</string>
+    <string name="ClockTextColor">Цвет часов и текста</string>
+    <string name="shadowColor">Цвет тени</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    
+    
+    <!-- General settings -->
+    <string name="pref_header_general">Общие</string>
+    <string name="pref_title_notif_transperency">Прозрачность уведомлений</string>
+    <string name="pref_description_notif_transperency">Включить прозрачность фона уведомлений</string>
+	<string name="hide_am_pm">Скрыть AM PM</string>
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">Разные</string>
+    <string name="carrier_label">Ярлык оператора</string>
+    <string name="default_carrier_label">FemBlack</string>
+    <string name="desc_carrier_label">Пустое поле для оператора по умолчанию</string>
+	<string name="custom_carrier_label_LS">Свой ярлык оператора на экране блокировки</string>
+	<string name="custom_carrier_label_NC">Свой ярлык оператора в уведомлениях</string>
+	 <!-- About -->
+    <string name="pref_about_title">О программе</string>
+    <string name="about_app_title">XBlast Tools</string>
+    <string name="about_app">Разработка FemBlack@XDA. Нажать для перехода в официальный форум.</string>
+    <string name="about_donate_title">Версия Google Play</string>
+    <string name="about_donate_summary">Пожертвовать и поддержать меня, если Вы полагаете, что приложение того стоит.</string>
+	
+	<string name="fullscreen_caller_photo_title">Фото на весь экран</string>
+    <string name="fullscreen_caller_photo_summary">Отображение фотографии вызывающего на весь экран при входящем вызове</string>
+     <string name="hide">Скрыть</string>
+    <string name="small">Маленькое</string>
+    <string name="medium">Среднее</string>
+    <string name="large">Большое</string>
+    <string name="carrier_label_size_summary">Установить размер текста ярлыка оператора на экране блокировки</string>
+    <string name="carrier_label_size">Размер ярлыка оператора</string>
+    
+    <string name="clock_and_date">Часы и дата</string>
+    <string name="am_pm_style">Стиль AM PM</string>
+    
+    
+    <string name="default_caller_image_title">Изображение по умолчанию</string>
+    <string name="default_caller_image_summary">Выбрать изображение вызывающего по умолчанию для неизвестных контактов и контактов без картинки</string>
+    <string name="Call_Banner_text_summary">Цвет будет применён к имени контакта, номеру, мерцанию, и др.</string>
+    <string name="Call_Banner_text_title">Текст окна вызова</string>
+    <string name="default_caller_image_result_successful">Изображение вызывающего по умолчанию изменено</string>
+    <string name="default_caller_image_result_not_successful">Изображение вызывающего по умолчанию не изменено</string>
+    <string name="nbg_image_result_successful">Фон уведомлений изменён</string>
+    <string name="nbg_image_result_not_successful">Фон уведомлений не изменён</string>
+    
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">Мягкая перезагрузка</string>
+    <string name="reboot_confirm">Телефон будет перезагружен</string>
+    <string name="reboot_confirm_recovery">Телефон будет перезагружен в режим восстановления</string>
+    <string name="soft_reboot_confirm">Телефон перезагрузит SystemUI</string>
+    <string name="fastboot_confirm_recovery">Телефон перезапустится в загрузчик</string>
+    <string name="advanced_reboot_title">Расширенное меню выключения</string>
+    <string name="poweroff_advanced_summary">Включение расширенного меню выключения(мягкая перезагрузка, перезагрузка, восстановление, фастбут и снимок экрана)</string>
+    
+    <string name="pref_title_notif_bg">Фон уведомлений</string>
+    <string name="pref_description_notif_bg">Включить изображение или цвет для фона панели уведомлений</string>
+    <string name="pref_description_notif_bg_color">Включён цвет для фона уведомлений</string>
+    <string name="pref_description_notif_bg_img">Установлено изображение для фона уведомлений</string>
+    <string name="fullscreen_caller_sb_title">Отключить строку состояния</string>
+    <string name="fullscreen_caller_sb_summary">Строка состояния будет отключена во время вызова</string>
+    
+    <string name="Call_Banner_font_summary">Выбранный шрифт будет применён к имени контакта, номеру, и др.</string>
+    <string name="Call_Banner_font_title">Шрифт окна вызова</string>
+    
+    <string name="status_bar">Строка состояния</string>
+    <string name="notification_panel">Панель уведомлений</string>
+    <string name="center_clock_title">Часы по центру</string>
+    
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">Эффект CRT при выкл. экрана</string>
+    
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> свободно</string>   
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> занято</string>
+    
+    <string name="recents_clear_all_title">Очистить все недавние</string>
+    <string name="recents_clear_all_summary">Включает кнопку для очистки всех недавних задач в окне недавних приложений</string>
+    <string name="ram_usage_bar_title">Полоса RAM в недавних</string>
+    <string name="ram_usage_bar_summary">Показывает использование оперативной памяти в окне недавних приложений</string>
+    
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">Чёрный фон</string>
+    <string name="holo_bg_solid_black_summary">Использовать чёрный фон для темы Holo по умолчанию вместо чёрно-серого градиента</string>
+    
+    <string name="nbg_pu_pd_speed_title">Вытягивание уведомлений/скорость</string>
+    <string name="nbg_pu_pd_speed_summary">Увеличить скорость вытягивания/возврата уведомлений</string>
+
+    <string name="statusbar_color_summary">При прозрачном цвете строки состояния.\nПРИМЕЧАНИЕ: возможно, это будет выглядеть некрасиво, если Вы находитесь не на главном экране, поскольку большинство приложений ничего не размещают за строкой состояния</string>
+    <string name="statusbar_color_title">Фон строки состояния</string>
+    <string name="wifi_color_title">Цвет Wi-Fi</string>
+    <string name="wifi_inout_color_title">Цвет вкл-выкл Wi-Fi</string>
+    
+    <string name="mobile_signal_color_summary">Цвет будет применён к уровню моб. сигнала и типу соединения</string>
+    <string name="mobile_signal_color_title">Цвет моб. сигнала</string>
+    <string name="mobile_inout_color_title">Цвет вкл-выкл моб.сигнала</string>
+    <string name="battery_color_title">Цвет батареи</string>
+    
+    <string name="notif_panel_bg_trans_summary">0-полностью прозрачный, 100-матовый-применяется только к фоновому изображению панели уведомлений</string>
+    <string name="notif_panel_bg_trans_title">Прозрачность фона уведомлений</string>
+    
+    <string name="CCLLS_title">Цвет оператора на экр.блокировки</string>
+    <string name="CCLNC_color_title">Цвет оператора в уведомлениях</string>
+    
+    <string name="rotation_summary">Разрешить все углы вращения, включая сверху вниз</string>
+    <string name="rotation_title">Все углы вращения</string>
+    
+    <string name="sb_clock_color_title">Цвет часов</string>
+    <string name="np_clock_color_title">Цвет часов и даты</string>
+    
+     <string name="custom_text_summary">В часах строки состояния и панели уведомлений будет отображаться пользовательский текст</string>
+     <string name="custom_text_title">Свой текст</string>
+     
+     <string name="custom_text_np_summary">В часах панели уведомлений будет отображаться пользовательский текст</string>
+     <string name="custom_text_np_title">Свой текст</string>
+     
+     <string name="font_summary">Выбранный шрифт будет применён к часам строки состояния и панели уведомлений</string>
+     <string name="font_np_summary">Выбранный шрифт будет применён к часам панели уведомлений </string>
+     <string name="font_title">Шрифты</string>
+     
+     <string name="pref_quick_settings_title">Настройки JB</string>
+     <string name="quick_setting_columns_summary">Количество плиток быстрых настроек в ряду</string>
+     <string name="quick_setting_columns">Плитки быстр. настроек</string>
+     
+      <!--  QuickSettings settings -->
+    <string name="quick_settings_title">Быстр.настройки строки состояния</string>
+    <string name="quick_settings_summary">Позволяет показывать или скрывать плитки быстрых настроек в строке состояния</string>
+    <string name="qs_tile_user_profile">Профиль пользователя</string>
+    <string name="qs_tile_airplane_mode">Режим полёта</string>
+    <string name="qs_tile_battery">Статус батареи</string>
+    <string name="qs_tile_wifi">Wi-Fi</string>
+    <string name="qs_tile_bluetooth">Bluetooth</string>
+    <string name="qs_tile_gps">GPS</string>
+    <string name="qs_tile_mobile_data">Моб. данные</string>
+    <string name="qs_tile_network_mode">Режим сети</string>
+    <string name="qs_tile_data_usage">Исп. данных</string>
+    <string name="qs_tile_audio">Профили аудио</string>
+    <string name="qs_tile_brightness">Яркость</string>
+    <string name="qs_tile_screen_timeout">Задержка выкл.экрана</string>
+    <string name="qs_tile_autorotation">Автоповорот</string>
+    <string name="qs_tile_sync">Синхронизация</string>
+    <string name="qs_tile_wifi_ap">Точка доступа Wi-Fi</string>
+    <string name="qs_tile_torch">Фонарь</string>
+    <string name="qs_tile_xblasttools">XBlast Tools</string>
+    <string name="qs_tile_sleep">Сон</string>
+    <string name="qs_tile_quickrecord">Быстр. запись</string>
+    
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">Плиток в ряду</string>
+    <string name="pref_qs_tiles_per_row_summary">Определяет количество плиток быстрых настроек, отображаемых в одном ряду. Плитки будут пропорционально уменьшены. Применимо к портретному режиму.</string>
+    
+    <!-- Auto-switch QuickSettings -->
+    <string name="pref_auto_switch_qs_title">Автопереключение быстрых настроек</string>
+    <string name="pref_auto_switch_qs_summary">Быстрые настройки будут автоматически отображаться при вытягивании строки состояния вниз, если уведомления отсутствуют</string>
+
+    <!-- Quick pulldown -->
+    <string name="pref_quick_pulldown_title">Быстрое вытягивание</string>
+    <string name="pref_quick_pulldown_summary">Край строки состояния вытягивает быстрые настройки</string>
+    <string name="quick_pulldown_off">Выкл</string>
+    <string name="quick_pulldown_right">Правый</string>
+    <string name="quick_pulldown_left">Левый</string>
+    
+    <!-- QuickSettings strings -->
+    <string name="quick_settings_sync_on">Синхр.вкл</string>
+    <string name="quick_settings_sync_off">Синхр.выкл</string>
+    <string name="quick_settings_wifi_ap_on">ТД Wi-Fi вкл</string>
+    <string name="quick_settings_wifi_ap_off">ТД Wi-Fi выкл</string>
+    <string name="quick_settings_torch_on">Фонарь вкл</string>
+    <string name="quick_settings_torch_off">Фонарь выкл</string>
+    <string name="quick_settings_torch_off_notif">Нажать для вкл</string>
+    <string name="quick_settings_qr_playing">Проигрывается&#8230;</string>
+    <string name="quick_settings_qr_recording">Запись&#8230;</string>
+    <string name="quick_settings_qr_recorded">Записано</string>
+    <string name="quick_settings_qr_record">Длит.нажатие для записи</string>
+    <string name="quick_settings_qr_recording_notif">Нажать для остановки записи</string>
+    
+    <string name="notif_normal_color_title">Цвет фона уведомлений</string>
+    <string name="notif_pressed_color_title">Цвет уведомл.при нажатии</string>
+    <string name="notif_normal_color_summary">Цвет фона ряда уведомлений</string>
+    <string name="notif_pressed_color_summary">Цвет ряда уведомлений при нажатии</string>
+    
+     <string name="boot_animation_summary">Анимация загрузки будет отключена</string>
+     <string name="boot_animation_title">Откл. бутанимацию</string>
+     
+     <string name="disable_adb_notif_summary">Уведомление ADB Notification будет скрыто</string>
+     <string name="disable_adb_notif_title">Скрыть уведомл. ADB</string>
+     
+     <string name="audio_video_summary">Улучшает качество записи аудио и видео</string>
+     <string name="audio_video_title">Улучш. аудио и видео</string>
+     
+     <string name="ticker_color_title">Цвет тикера</string>
+     <string name="google_dns_title">Улучш. Google DNS</string>
+     
+     <string name="notif_Content_color_title">Цвет текста уведомл.</string>
+     <string name="notif_Title_text_color_title">Цвет заголовка уведомл.</string>
+     <string name="toast_text_color_title">Цвет всплыв.уведомл.</string>
+     <string name="toast_bg_color_title">Фон всплыв.уведомл.</string>
+     <string name="clear_all_position_title">Кнопка "Заверш.всё"</string>
+     
+     <string name="build_prop_tweaks">Твики build.prop</string>
+     
+    <!-- Traffic -->
+    <string name="traffic_title">Индикатор скорости сети</string>
+    <string name="traffic_summary">Скорость сети отображается только при трафике</string>
+    <string name="traffic_color_title">Цвет индикатора скорости</string>
+   
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string>
+    <string name="propmodder_title_summary">@null</string>
+    <string name="buildprop_title">Моды Build.prop</string>
+    <string name="nonprop_cat_title">Моды, включающие скрипт init.d</string>
+    <string name="pc_tweaks">Твики</string>
+    <string name="pc_init_d">Вкл/откл твики</string>
+    <string name="pc_init_d_tweaks">Настроить твики</string>
+
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">Системные твики</string>
+    <string name="pt_enable_init_d">Вкл твики при запуске</string>
+    <string name="pt_zipalign">Выравнивание zip apk</string>
+    <string name="pt_enable_sd_boost">Вкл ускорение SD</string>
+    <string name="pt_sd_boost">Величина Read ahead</string>
+    <string name="pt_fix_permissions">Фикс. разрешений</string>
+    <string name="pt_clear_cache">Очистка кэша</string>
+    <string name="pt_enable_sysctl">Вкл sysctl</string>
+    <string name="pt_enable_cron">Вкл планирование задач</string>
+
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">ВЫ БЫЛИ ПРЕДУПРЕЖДЕНЫ</string>
+    <string name="main_warning_summary">Здесь изменяется Ваш build.prop, расположенный в \'/system/build.prop\' МЫ НЕ НЕСЁМ ОТВЕТСТВЕННОСТИ ЗА ВАШИ ДЕЙСТВИЯ! Ваше устройство - Ваша ответственность</string>
+    <string name="pref_wifi_scan_interval_title">Интервал сканир. Wifi</string>
+    <string name="pref_wifi_scan_interval_summary">Время между сканир.wifi при отсутствии сохранённых точек доступа (требуется перезагрузка)</string>
+    <string name="pref_wifi_scan_alt_summary">Время между сканир.wifi: %s</string>
+    <string name="pref_lcd_density_title">Плотность LCD</string>
+    <string name="pref_lcd_density_summary">Плотность экрана для большего разрешения(требуется перезагрузка)</string>
+    <string name="pref_max_events_title">Макс. кол-во событий Windows Manager в секунду</string>
+
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">Текущая величина, контролирующая количество событий, которое система может позволить в секунду (требуется перезагрузка)</string>
+    <string name="pref_max_events_alt_summary">Макс.кол-во системн.событий: %s</string>
+    <string name="pref_usb_mode_title">Режим USB по умолчанию</string>
+    <string name="pref_usb_mode_summary">Определяет настройки по умолчанию при подключению к компьютеру через USB (требуется перезагрузка))</string>
+    <string name="pref_ring_delay_title">Задержка звонка телефона</string>
+    <string name="pref_ring_delay_summary">Количество времени от регистрации системой входящего вызова до срабатывания звонка (требуется перезагрузка)</string>
+    <string name="pref_ring_delay_alt_summary">Задержка вход.звонка: %s</string>
+    <string name="pref_vm_heapsize_title">Размер heap Дэлвик-кэша</string>
+    <string name="pref_vm_heapsize_summary">Управление размером кэша, к которому имеет доступ вирт. машина Дэлвик (требуется перезагрузка)</string>
+    <string name="pref_vm_heapsize_alt_summary">Размер кэша Дэлвик: %s</string>
+    <string name="propmodder_warning_title">НЕОБХОДИМ РУТ</string>
+    <string name="propmodder_warning">Программа меняет системные значения в /system/build.prop НЕ ИСПОЛЬЗУЙТЕ, если не знаете, что Вы делаете. Мы (n00bware, автор PropModder) не несём ответственности за РАБОТУ Вашего устройства. Вас предупредили</string>
+    <string name="showbuild_title">Показать build.prop</string>
+    <string name="showbuild_dialog">Это Ваш /system/build.prop</string>
+    <string name="showbuild_loading">Загрузка build.prop\u2026</string>
+    <string name="showbuild_error">Ошибка загрузки build.prop\u2026</string>
+    <string name="showbuild_unknown">Неизвестно</string>
+    <string name="showbuild_version">Версия</string>
+    <string name="showbuild_label">Будет отображён build.prop, Вы увидите, что в него включено</string>
+    <string name="pref_fast_up_title">Настройка скорости передачи HSUPA</string>
+    <string name="pref_fast_up_summary">*ПРЕДУПРЕЖДЕНИЕ* если Вы поменяете это значение, необходимые величины будут добавлены в Ваш build.prop, если их там ещё нет (требуется перезагрузка)</string>
+    <string name="pref_fast_up_alt_summary">Fast up активен: %s</string>
+    <string name="pref_disable_boot_anim_title">Откл. бутанимацию</string>
+    <string name="pref_disable_boot_anim_summary">Отключить системную анимацию загрузки (требуется перезагрузка)</string>
+    <string name="clear_custom_bootanimation">Очистка польз.бутанимации</string>
+    <string name="set_custom_bootanimation">Установка пользовательской ...</string>
+    <string name="pref_prox_delay_title">Задержка датчика приближения</string>
+    <string name="pref_prox_delay_summary">Во время вызова экран отключается, при удалении устройства от лица, эта задержка определяет, через какое время экран включается (требуется перезагрузка)</string>
+    <string name="pref_prox_delay_alt_summary">Датчик приближения установлен на: %s</string>
+    <string name="pref_logcat_title">Откл логкат</string>
+    <string name="pref_logcat_summary_on">При отключенном логкате усложняется чтение отладочной информации</string>
+    <string name="pref_logcat_summary_off">Логкат видимый, его отключение даёт небольшое ускорение системе</string>
+    <string name="pref_mod_version_title">Изменение Вашего номера сборки</string>
+    <string name="pref_mod_version_summary">Это вопрос эстетики и не улучшает системные показатели</string>
+    <string name="pref_mod_version_alt_summary">Номер сборки: %s</string>
+    <string name="pref_mod_version_default">PropModder!!!</string>
+    <string name="pref_sleep_title">Режим сна PM</string>
+    <string name="pref_sleep_summary">Изменение политики сна в ночное время</string>
+    <string name="pref_sleep_alt_summary">Текущий режим сна: %s</string>
+    <string name="pref_jit_title">Компилятор Just In Time</string>
+    <string name="pref_jit_summary">Вкл/откл компилятор JIT в ВМ Дэлвик</string>
+    <string name="pref_tcp_stack_title">Оптимизация TCP-стека</string>
+    <string name="pref_tcp_stack_summary">Изменение размера буфера для лучшей производительности</string>
+    <string name="pref_check_in_title">Служба проверки</string>
+    <string name="pref_check_in_summary">Остановка отправки системных данных в Google</string>
+    <string name="pref_sdcard_buffer_title">Настройка скорости SD-карты</string>
+    <string name="pref_sdcard_buffer_summary">Изменение размера буфера SD-карты для лучшей производительности</string>
+    <string name="pref_sdcard_buffer_alt_summary">Буфер SD-карты: %s</string>
+    <string name="pref_g_speed_title">Настройка скорости 3G</string>
+    <string name="pref_g_speed_summary">Увеличение скорости 3g</string>
+    <string name="pref_gpu_title">Ускорение GPU</string>
+    <string name="pref_gpu_summary">Включение аппаратного ускорения, чтобы GPU управляло интерфейсом вместо CPU</string>
+    <string name="pref_vvmail_title">VVMail (ТОЛЬКО прошивки Sense)</string>
+    <string name="pref_vvmail_summary">Принудительная совместимость прошивок Sense с VVMail</string>
+    
+     <string name="ps_enable_init_d">Вкл/откл твики при загрузке</string>
+     
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">Постоянное удаление лога (сохраняется после перезагрузки)</string>
+    <string name="remove_logcat_till_reboot">Удалять лог до перезагрузки (НЕ сохраняется после перезагрузки)</string>
+    <string name="enable_logcat">Вкл логирование (необходима перезагрузка)</string>
+    <string name="disable">Отключить</string>
+    <string name="power_collapse_suspend">Приостановка Power Collapse</string>
+    <string name="power_collapse">Power Collapse (лучше)</string>
+    <string name="apps_sleep">Сон приложений</string>
+    <string name="slow_clock">Показать часы</string>
+    <string name="wait_for_interrupt">Ожидание прерывания</string>
+    <string name="sdcard_128_kb">128 кБ</string>
+    <string name="sdcard_1024_kb">1024 кБ</string>
+    <string name="sdcard_2048_kb">2048 кБ (рекомендуется)</string>
+    <string name="sdcard_3072_kb">3072 кБ</string>
+    <string name="sdcard_4096_kb">4096 кБ</string>
+    <string name="sdcard_5120_kb">5120 кБ</string>
+    <string name="sdcard_6144_kb">6144 кБ</string>
+    <string name="remove">Убрать</string>
+    <string name="hsupa_disabled">HSUPA откл (ограничено)</string>
+    <string name="hsupa_enabled">HSUPA вкл</string>
+    <string name="hsupa_enabled_uncapped">HSUPA вкл (неогранич.)</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string>
+    <string name="ps_enable_init_d">Вкл/откл твики при загрузке</string>
+    <string name="ps_zipalign">Выравнивание zip любых неоптимизированных приложений при каждой загрузке</string>
+    <string name="ps_enable_sd_boost">Вкл/выкл ускорение SD-карты</string>
+    <string name="ps_sd_boost">Установить величину read ahead в кБ</string>
+    <string name="ps_fix_permissions">Фикс. разрешений для приложений при каждой загрузке</string>
+    <string name="ps_clear_cache">Очистка кэша данных при каждой загрузке</string>
+    <string name="ps_enable_sysctl">Вкл твики sysctl при загрузке</string>
+    <string name="ps_enable_cron">Включить запланированные задачи крона</string>
+    
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">Значок будильника видимый</string>
+    <string name="hide_alarm_icon_on">Значок будильника скрыт</string>
+    <string name="hide_alarm_icon">Скрыть значок будильника</string>
+    <string name="smart_alarm_icon">Умный значок будильника</string>
+    <string name="smart_alarm_icon_summary">Показать значок будильника в определённое время перед сигналом</string>
+    <string name="always_hide">Всегда скрывать значок</string>
+    <string name="show_15_min_before">Показать значок за 15 мин до сигнала</string>
+    <string name="show_30_min_before">Показать значок за 30 мин до сигнала</string>
+    <string name="show_60_min_before">Показать значок за 1 ч до сигнала</string>
+    <string name="show_180_min_before">Показать значок за 3 ч до сигнала</string>
+    <string name="show_360_min_before">Показать значок за 6 ч до сигнала</string>
+    <string name="show_720_min_before">Показать значок за 12 ч до сигнала</string>
+    <string name="show_1440_min_before">Показать значок за 24 ч до сигнала</string>
+    
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">Параметры часов</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">Скрыть часы</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">Снизу справа</string>
+    <string name="clear_all_pos_bottom_left">Снизу слева</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">Затухание</string>
+    <string name="horizontal_effect">Горизонт.эффект</string>
+    <string name="vertical_effect">Вертик.эффект</string>
+    
+    <!-- Backup & Restore  -->
+    <string name="restore">Восстановить</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="no_backups">Нет рез.копий</string>
+    <string name="reset">Сброс</string>
+     <string name="restoring_backup">Восстановление из копии</string>
+    <string name="backup_name">Имя копии</string>
+    <string name="save_successful">Восстановление успешно</string>
+    <string name="save_unsuccessful">Save Unsuccessful</string>
+    <string name="clearing_settings">Очистка настроек</string>
+    <string name="reset_successful">Сброс успешный</string>
+    <string name="backup_restored">Копия восстановлена</string>
+    <string name="reboot_required">Необходима перезагрузка</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Твики клав.громкости</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">Безоп.громкость медиа</string>
+    <string name="pref_safe_media_volume_summary">Активация или отключение безопасной громеости наушников при прослушивании медиа</string>
+    
+    <string name="vol_music_controls_title">Переключение треков громкостью</string>
+    <string name="vol_music_controls_summary">Переключение треков длит. нажатием клавиш громкости при отключенном экране</string>
+    
+    <string name="vol_key_cursor_control_title">Упр.курсором громкостью</string>
+    <string name="vol_key_cursor_control_summary">Управление курсором с использованием клавиш громкости в тексте</string>
+    <string name="vol_key_cursor_control_off">Отключено</string>
+    <string name="vol_key_cursor_control_on">Громкость вверх/вниз передвигает курсор влево/вправо</string>
+    <string name="vol_key_cursor_control_on_reverse">Громкость вверх/вниз передвигает курсор вправо/влево</string>
+    
+</resources>

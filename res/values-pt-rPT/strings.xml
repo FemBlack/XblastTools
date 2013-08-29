@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="title_activity_settings">Definições</string>
+
+    <!-- Strings related to Settings -->
+
+ 	<string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">Definições de sombra</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">Definições</string>
+    <string name="preview">Pré-visualização</string>
+    <string name="edit_message">Inserir texto</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="button_effects">Escolher cor</string>
+    <string name="shadow_settings">Definições de sombra</string>
+    <string name="ClockTextColor">Cor do texto e do relógio</string>
+    <string name="shadowColor">Cor da sombra</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    
+    
+    <!-- General settings -->
+    <string name="pref_header_general">Geral</string>
+    <string name="pref_title_notif_transperency">Transparência da notificação</string>
+    <string name="pref_description_notif_transperency">Ativar transparência para o fundo da notificação</string>
+	<string name="hide_am_pm">Ocultar AM PM</string>
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">Diversos</string>
+    <string name="carrier_label">Rótulo da operadora</string>
+    <string name="default_carrier_label">FemBlack</string>
+    <string name="desc_carrier_label">Deixar em branco para rótulo da operadora padrão</string>
+	<string name="custom_carrier_label_LS">Rótulo personalizado da operadora no ecrã de bloqueio</string>
+	<string name="custom_carrier_label_NC">Rótulo personalizado da operadora no painel de notificações</string>
+	 <!-- About -->
+    <string name="pref_about_title">Sobre</string>
+    <string name="about_app_title">XBlast Tools</string>
+    <string name="about_app">Codificado por FemBlack@XDA. Toque para visitar o tópico oficial.</string>
+    <string name="about_donate_title">Versão Google Play</string>
+    <string name="about_donate_summary">Doar &amp; apoie-me, se acha que esta aplicação vale a pena.</string>
+	
+	<string name="fullscreen_caller_photo_title">Foto em ecrã completo de quem liga</string>
+    <string name="fullscreen_caller_photo_summary">Exibe a foto em ecrã completo no ecrã de chamadas recebidas</string>
+     <string name="hide">Ocultar</string>
+    <string name="small">Pequeno</string>
+    <string name="medium">Médio</string>
+    <string name="large">Grande</string>
+    <string name="carrier_label_size_summary">Set the Carrier Label text size in Lockscreen</string>
+    <string name="carrier_label_size">Tamanho do rótulo da operadora no ecrã de bloqueio</string>
+    
+    <string name="clock_and_date">Relógio &amp; Data</string>
+    <string name="am_pm_style">Estilo AM PM</string>
+    
+    
+    <string name="default_caller_image_title">Selecione a imagem padrão de quem liga</string>
+    <string name="default_caller_image_summary">Selecione a imagem padrão para contactos desconhecidos &amp; Contactos que não tem imagem</string>
+    <string name="Call_Banner_text_summary">Color will be applied to ContactName , Number, Glowdot, etc</string>
+    <string name="Call_Banner_text_title">Cor do texto da insígnia das chamadas</string>
+    <string name="default_caller_image_result_successful">A imagem padrão da pessoa que liga foi alterada</string>
+    <string name="default_caller_image_result_not_successful">A imagem padrão da pessoa que liga não foi alterada</string>
+    <string name="nbg_image_result_successful">A imagem de fundo do painel de notificações foi alterada</string>
+    <string name="nbg_image_result_not_successful">A imagem de fundo do painel de notificações não foi alterada</string>
+    
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">Reinício suave</string>
+    <string name="reboot_confirm">O dispositivo vai reiniciar</string>
+    <string name="reboot_confirm_recovery">O dispositivo irá reiniciar em recuperação</string>
+    <string name="soft_reboot_confirm">O dispositivo irá reiniciar o sistema da interface do usuário</string>
+    <string name="fastboot_confirm_recovery">O dispositivo irá reiniciar em bootloader</string>
+    <string name="advanced_reboot_title">Menu de desligar avançado</string>
+    <string name="poweroff_advanced_summary">Ativa o menu de desligar avançado(Reinício suave, Reiniciar, Reiniciar em recuperação, Fastboot &amp; Captura de ecrã)</string>
+    
+    <string name="pref_title_notif_bg">Imagem de fundo do painel de notificações</string>
+    <string name="pref_description_notif_bg">Ativa uma imagem ou cor para o fundo da notificação</string>
+    <string name="pref_description_notif_bg_color">Conjunto de cores para o fundo da notificação</string>
+    <string name="pref_description_notif_bg_img">Conjunto de imagens para o fundo da notificação</string>
+    <string name="fullscreen_caller_sb_title">Desativa a barra de status</string>
+    <string name="fullscreen_caller_sb_summary">A barra de status irá ser desativada durante as chamadas</string>
+    
+    <string name="Call_Banner_font_summary">O tipo de letra selecionada será aplicada ao nome do contacto, Número, etc</string>
+    <string name="Call_Banner_font_title">O tipo de letra do texto da insígnia das chamadas</string>
+    
+    <string name="status_bar">Barra de status</string>
+    <string name="notification_panel">Painel de notificações</string>
+    <string name="center_clock_title">Centrar o relógio</string>
+    
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">Efeito CRT ao desligar o ecrã</string>
+    
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> livre</string>   
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> usada</string>
+    
+    <string name="recents_clear_all_title">Limpar todas as tarefas recentes</string>
+    <string name="recents_clear_all_summary">Ativa o botão para limpar todas as tarefas recentes de uma vez no diálogo aplicações recentes</string>
+    <string name="ram_usage_bar_title">Barra da memória RAM recente</string>
+    <string name="ram_usage_bar_summary">Exibe o uso da memória RAM no diálogo de aplicações recentes</string>
+    
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">Fundo preto sólido</string>
+    <string name="holo_bg_solid_black_summary">Usar o fundo preto sólido no tema holo padrão do sistema em vez do gradiente preto-cinzento</string>
+    
+    <string name="nbg_pu_pd_speed_title">Velocidade da notificação ao levantar/baixar</string>
+    <string name="nbg_pu_pd_speed_summary">Aumenta a velocidade da notificação ao levantar/baixar</string>
+
+    <string name="statusbar_color_summary">Quando a cor da barra de status é transparente.\nNOTA: Isto provavelmente irá parecer estranho se não estiver no ecrã principal porque a maioria das aplicações não aplica nada atrás da barra de status</string>
+    <string name="statusbar_color_title">Cor do fundo da barra de status</string>
+    <string name="wifi_color_title">Cor do sinal Wi-Fi</string>
+    <string name="wifi_inout_color_title">Cor da Wi-Fi dentro-fora</string>
+    
+    <string name="mobile_signal_color_summary">A cor irá ser aplicada ao sinal da rede móvel &amp; Tipo da rede móvel</string>
+    <string name="mobile_signal_color_title">Cor do sinal da rede móvel</string>
+    <string name="mobile_inout_color_title">Cor do sinal dentro-fora da rede móvel</string>
+    <string name="battery_color_title">Cor da bateria</string>
+    
+    <string name="notif_panel_bg_trans_summary">0-Completamente Transparente, 100-Opaco-Aplicado apenas na imagem de fundo do painel de notificações</string>
+    <string name="notif_panel_bg_trans_title">Notification panel bg image transparency</string>
+    
+    <string name="CCLLS_title">Cor do rótulo da operadora no ecrã de bloqueio</string>
+    <string name="CCLNC_color_title">Cor do rótulo da operadora no painel de notificações</string>
+    
+    <string name="rotation_summary">Ativar todos os ângulos de rotação, inclusive de cabeça para baixo</string>
+    <string name="rotation_title">Ativa todos os ângulos de rotação</string>
+    
+    <string name="sb_clock_color_title">Cor do relógio</string>
+    <string name="np_clock_color_title">Relógio &amp; Cor da data</string>
+    
+     <string name="custom_text_summary">O texto personalizado será exibido juntamente com o relógio na barra de status &amp; Painel de notificações</string>
+     <string name="custom_text_title">Texto personalizado</string>
+     
+     <string name="custom_text_np_summary">O texto personalizado será exibido juntamente com o relógio na barra de status no Painel de notificações</string>
+     <string name="custom_text_np_title">Texto personalizado</string>
+     
+     <string name="font_summary">O tipo de letra selecionado será aplicado no relógio da barra de status &amp; Painel de notificações</string>
+     <string name="font_np_summary">O tipo de letra selecionado será aplicado no relógio da barra de status no Painel de notificações</string>
+     <string name="font_title">Tipos de letra</string>
+     
+     <string name="pref_quick_settings_title">Ajustes JB</string>
+     <string name="quick_setting_columns_summary">Número de azulejos de configurações rápidas por linha</string>
+     <string name="quick_setting_columns">Azulejos de configurações rápidas</string>
+     
+      <!--  QuickSettings settings -->
+    <string name="quick_settings_title">Azulejos de configurações rápidas da barra de status</string>
+    <string name="quick_settings_summary">Permite exibir ou ocultar os azulejos de configurações rápidas na barra de status</string>
+    <string name="qs_tile_user_profile">Perfil do usuário</string>
+    <string name="qs_tile_airplane_mode">Modo avião</string>
+    <string name="qs_tile_battery">Estado da bateria</string>
+    <string name="qs_tile_wifi">Wi-Fi</string>
+    <string name="qs_tile_bluetooth">Bluetooth</string>
+    <string name="qs_tile_gps">GPS</string>
+    <string name="qs_tile_mobile_data">Dados móveis</string>
+    <string name="qs_tile_network_mode">Modo de rede</string>
+    <string name="qs_tile_data_usage">Uso de dados</string>
+    <string name="qs_tile_audio">Perfis de áudio</string>
+    <string name="qs_tile_brightness">Brilho</string>
+    <string name="qs_tile_screen_timeout">Tempo limite do ecrã</string>
+    <string name="qs_tile_autorotation">Rotação automática</string>
+    <string name="qs_tile_sync">Sincronização</string>
+    <string name="qs_tile_wifi_ap">Pontos de acesso Wi-Fi</string>
+    <string name="qs_tile_torch">Lanterna</string>
+    <string name="qs_tile_xblasttools">XBlast Tools</string>
+    <string name="qs_tile_sleep">Dormir</string>
+    <string name="qs_tile_quickrecord">Registo rápido</string>
+    
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">Azulejos por linha</string>
+    <string name="pref_qs_tiles_per_row_summary">Define quantos azulejos de configurações rápidas a exibir por linha. Os azulejos serão redimensionados adequadamente. Aplica-se para o modo retrato.</string>
+    
+    <!-- Auto-switch QuickSettings -->
+    <string name="pref_auto_switch_qs_title">Trocar automaticamente as configurações rápidas</string>
+    <string name="pref_auto_switch_qs_summary">As configurações rápidas serão exibidas quando a barra de status for baixada e não existam notificações</string>
+
+    <!-- Quick pulldown -->
+    <string name="pref_quick_pulldown_title">Baixar rápido</string>
+    <string name="pref_quick_pulldown_summary">A borda da barra de status puxa para baixo as configurações rápidas</string>
+    <string name="quick_pulldown_off">Desligado</string>
+    <string name="quick_pulldown_right">Direita</string>
+    <string name="quick_pulldown_left">Esquerda</string>
+    
+    <!-- QuickSettings strings -->
+    <string name="quick_settings_sync_on">Sincronização ligada</string>
+    <string name="quick_settings_sync_off">Sincronização desligada</string>
+    <string name="quick_settings_wifi_ap_on">Pontos de acesso Wi-Fi ligado</string>
+    <string name="quick_settings_wifi_ap_off">Pontos de acesso Wi-Fi desligado</string>
+    <string name="quick_settings_torch_on">Lanterna ligada</string>
+    <string name="quick_settings_torch_off">Lanterna desligada</string>
+    <string name="quick_settings_torch_off_notif">Toque para desligar</string>
+    <string name="quick_settings_qr_playing">A reproduzir&#8230;</string>
+    <string name="quick_settings_qr_recording">A gravar&#8230;</string>
+    <string name="quick_settings_qr_recorded">Gravado</string>
+    <string name="quick_settings_qr_record">Pressão longa para gravar</string>
+    <string name="quick_settings_qr_recording_notif">Toque para parar de gravar</string>
+    
+    <string name="notif_normal_color_title">Cor do fundo da notificação</string>
+    <string name="notif_pressed_color_title">Cor da notificação quando é pressionada</string>
+    <string name="notif_normal_color_summary">Cor do fundo da linha da notificação</string>
+    <string name="notif_pressed_color_summary">Cor da linha da notificação de estado quando é pressionada</string>
+    
+     <string name="boot_animation_summary">A animação de inicialização será desativada</string>
+     <string name="boot_animation_title">Desativa a animação de inicialização</string>
+     
+     <string name="disable_adb_notif_summary">A notificação ADB será ocultada</string>
+     <string name="disable_adb_notif_title">Oculta a notificação ADB</string>
+     
+     <string name="audio_video_summary">Melhora a qualidade da gravação de áudio e vídeo</string>
+     <string name="audio_video_title">Hack áudio e vídeo</string>
+     
+     <string name="ticker_color_title">Cor do relógio</string>
+     <string name="google_dns_title">Hack Google DNS</string>
+     
+     <string name="notif_Content_color_title">Cor do conteúdo do texto da notificação</string>
+     <string name="notif_Title_text_color_title">Cor do texto do azulejo da notificação</string>
+     <string name="toast_text_color_title">Cor da notificação toast</string>
+     <string name="toast_bg_color_title">Cor do fundo da notificação toast</string>
+     <string name="clear_all_position_title">Posição do botão Limpar Tudo</string>
+     
+     <string name="build_prop_tweaks">Ajustes do build.prop</string>
+     
+    <!-- Traffic -->
+    <string name="traffic_title">Velocidade do indicador de rede</string>
+    <string name="traffic_summary">A velocidade de rede só aparece quando há tráfego</string>
+    <string name="traffic_color_title">Cor do indicador da velocidade de rede</string>
+   
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string>
+    <string name="propmodder_title_summary">@null</string>
+    <string name="buildprop_title">Módulos do build.prop</string>
+    <string name="nonprop_cat_title">Módulos que envolvem o script init.d</string>
+    <string name="pc_tweaks">Ajustes</string>
+    <string name="pc_init_d">Ativar/Desativar os ajustes</string>
+    <string name="pc_init_d_tweaks">Personalizar os ajustes</string>
+
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">Ajustes do sistema</string>
+    <string name="pt_enable_init_d">Ativar os ajustes de inicialização</string>
+    <string name="pt_zipalign">Aplicações optimizadas</string>
+    <string name="pt_enable_sd_boost">Ativar o impulsionamento do cartão de memória</string>
+    <string name="pt_sd_boost">Valor de leitura do cartão de memória</string>
+    <string name="pt_fix_permissions">Corrigir as permissões</string>
+    <string name="pt_clear_cache">Limpar o cache</string>
+    <string name="pt_enable_sysctl">Ativar o sysctl</string>
+    <string name="pt_enable_cron">Ativar tarefas agendadas</string>
+
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">VOCÊ FOI ADVERTIDO</string>
+    <string name="main_warning_summary">Esta área faz modificações no seu build.prop. Ele modifica o seu \'/system/build.prop\' NÃO SOMOS RESPONSÁVEIS PELAS SUAS AÇÕES! O dispositivo é da sua responsabilidade</string>
+    <string name="pref_wifi_scan_interval_title">Intervalo de exame da Wifi</string>
+    <string name="pref_wifi_scan_interval_summary">O tempo entre a procura de wifi quando não há pontos de acesso disponíveis (requer reinício)</string>
+    <string name="pref_wifi_scan_alt_summary">Tempo entre a procura de wifi: %s</string>
+    <string name="pref_lcd_density_title">Densidade do LCD</string>
+    <string name="pref_lcd_density_summary">Este é o ecrã de densidade que permite um visual em mais alta definição (requer reinício)</string>
+    <string name="pref_max_events_title">O máximo de eventos por segundo do gerenciador de janelas</string>
+
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">Isto é o valor do tempo de execução que controla o número de eventos que o sistema permitirá num segundo (requer reinício)</string>
+    <string name="pref_max_events_alt_summary">Número máximo de eventos do sistema: %s</string>
+    <string name="pref_usb_mode_title">Modo USB por defeito</string>
+    <string name="pref_usb_mode_summary">Isto decide qual a definição padrão quando esta ligado ao computador através de USB (requer reinício)</string>
+    <string name="pref_ring_delay_title">Atraso do toque do telefone</string>
+    <string name="pref_ring_delay_summary">A quantidade de tempo a partir de quando o sistema regista uma chamada telefônica até que o toque começa (requer reinício)</string>
+    <string name="pref_ring_delay_alt_summary">Atraso das chamadas recebidas: %s</string>
+    <string name="pref_vm_heapsize_title">Tamanho do dalvik cache</string>
+    <string name="pref_vm_heapsize_summary">Isto controla o tamanho do cache a que o dalvik vm tem acesso (requer reinício)</string>
+    <string name="pref_vm_heapsize_alt_summary">Tamanho do cache do dalvik vm: %s</string>
+    <string name="propmodder_warning_title">É NECESSÁRIO ROOT</string>
+    <string name="propmodder_warning">Este programa altera as propriedades no /system/build.prop NÃO USE se não sabe o que está a fazer. Nós (n00bware, criadores do PropModder) não somos responsáveis ​​pelo PERÍODO do seu dispositivo. Você foi avisado</string>
+    <string name="showbuild_title">Exibir o build.prop</string>
+    <string name="showbuild_dialog">Este é o seu /system/build.prop</string>
+    <string name="showbuild_loading">A carregar o build.prop\u2026</string>
+    <string name="showbuild_error">Erro ao carregar o build.prop\u2026</string>
+    <string name="showbuild_unknown">Desconhecido</string>
+    <string name="showbuild_version">Versão</string>
+    <string name="showbuild_label">Isto irá exibir o build.prop para que possa ver o que está dentro dele</string>
+    <string name="pref_fast_up_title">Hack de velocidade do carregamento HSUPA</string>
+    <string name="pref_fast_up_summary">*Aviso* se alterar este valor ele irá adicionar os valores necessários ao seu build.prop se eles não estiverem presentes (requer reinício)</string>
+    <string name="pref_fast_up_alt_summary">O fast up está ativado: %s</string>
+    <string name="pref_disable_boot_anim_title">Desativar a animação de inicialização</string>
+    <string name="pref_disable_boot_anim_summary">Desativa a animação de inicialização do sistema (requer reinício)</string>
+    <string name="clear_custom_bootanimation">Limpar a animação de inicialização personalizada</string>
+    <string name="set_custom_bootanimation">Definir personalizada...</string>
+    <string name="pref_prox_delay_title">Atraso do sensor de próximidade</string>
+    <string name="pref_prox_delay_summary">Este valor controla o atraso que o ecrã leva a ligar-se quando afasta o dispositivo do rosto durante uma chamada (requer reinício)</string>
+    <string name="pref_prox_delay_alt_summary">Sensor de próximidade definido para: %s</string>
+    <string name="pref_logcat_title">Desativar o relatório de erro</string>
+    <string name="pref_logcat_summary_on">Relatório de erro desativado, torna a leitura de relatórios de erro mais difícil</string>
+    <string name="pref_logcat_summary_off">Relatório de erro visível, desativá-lo proporciona um ligeiro impulso no sistema</string>
+    <string name="pref_mod_version_title">Alterar o número de compilação</string>
+    <string name="pref_mod_version_summary">Isto é apenas estético e não melhora o sistema</string>
+    <string name="pref_mod_version_alt_summary">Número de compilação: %s</string>
+    <string name="pref_mod_version_default">PropModder!!!</string>
+    <string name="pref_sleep_title">Modo dormir PM</string>
+    <string name="pref_sleep_summary">Alterar a política do sono noturno</string>
+    <string name="pref_sleep_alt_summary">Modo dormir atual: %s</string>
+    <string name="pref_jit_title">Compilador Just In Time</string>
+    <string name="pref_jit_summary">Ativa/Desativa o compilador JIT Compiler no dalvik vm</string>
+    <string name="pref_tcp_stack_title">Optimia o TCP</string>
+    <string name="pref_tcp_stack_summary">Altera o tamanho do buffer para uma melhor performance</string>
+    <string name="pref_check_in_title">Confirmar em serviço</string>
+    <string name="pref_check_in_summary">Parar de enviar o uso de dados do sistema para o Google</string>
+    <string name="pref_sdcard_buffer_title">Hack de velocidade do cartão de memória</string>
+    <string name="pref_sdcard_buffer_summary">Alterar o tamanho do buffer do cartão de memória para uma melhor performance</string>
+    <string name="pref_sdcard_buffer_alt_summary">Tamanho do buffer do cartão de memória: %s</string>
+    <string name="pref_g_speed_title">Hack de velocidade 3G</string>
+    <string name="pref_g_speed_summary">Velocidade 3G sem cobertura</string>
+    <string name="pref_gpu_title">Aceleração da GPU</string>
+    <string name="pref_gpu_summary">Para ativar a aceleração de hardware em que a GPU controla a interface do usuário em vez da CPU</string>
+    <string name="pref_vvmail_title">VVMail (Apenas Roms Sense)</string>
+    <string name="pref_vvmail_summary">Forçar a compatibilidade de ROMs Sense com VVMail</string>
+    
+     <string name="ps_enable_init_d">Ativar/Desativar ajustes de arranque</string>
+     
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">Remover permanentemente o relatório (persiste através de reinicialização)</string>
+    <string name="remove_logcat_till_reboot">Remove o relatório até reiniciar (Não persiste através de reinicialização)</string>
+    <string name="enable_logcat">Ativar relatórios de erro (requer reinício)</string>
+    <string name="disable">Desativar</string>
+    <string name="power_collapse_suspend">Colapso de energia suspenso</string>
+    <string name="power_collapse">Colapso de energia (O melhor)</string>
+    <string name="apps_sleep">Adormecer aplicações</string>
+    <string name="slow_clock">Relógio lento</string>
+    <string name="wait_for_interrupt">Esperar por Interrupção</string>
+    <string name="sdcard_128_kb">128 kb</string>
+    <string name="sdcard_1024_kb">1024 kb</string>
+    <string name="sdcard_2048_kb">2048 kb (recomemdado)</string>
+    <string name="sdcard_3072_kb">3072 kb</string>
+    <string name="sdcard_4096_kb">4096 kb</string>
+    <string name="sdcard_5120_kb">5120 kb</string>
+    <string name="sdcard_6144_kb">6144 kb</string>
+    <string name="remove">Remover</string>
+    <string name="hsupa_disabled">HSUPA Desativado (Com cobertura)</string>
+    <string name="hsupa_enabled">HSUPA Ativado</string>
+    <string name="hsupa_enabled_uncapped">HSUPA Ativado (Sem cobertura)</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string>
+    <string name="ps_enable_init_d">Ativar/Desativar ajustes de arranque</string>
+    <string name="ps_zipalign">Optimizar aplicações não optimizadas em cada inicialização</string>
+    <string name="ps_enable_sd_boost">Ativar/Desativar o impulsionamento da velocidade do cartão de memória</string>
+    <string name="ps_sd_boost">Definir o valor de leitura em kb</string>
+    <string name="ps_fix_permissions">Corrigir permissões para as aplicações em cada inicialização</string>
+    <string name="ps_clear_cache">Limpar o cache de dados em cada inicialização</string>
+    <string name="ps_enable_sysctl">Ativar os ajustes sysctl em cada inicialização</string>
+    <string name="ps_enable_cron">Ativar os cron jobs agendados</string>
+    
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">O ícone do alarme está visível</string>
+    <string name="hide_alarm_icon_on">O ícone do alarme está oculto</string>
+    <string name="hide_alarm_icon">Ocultar o ícone do despertador</string>
+    <string name="smart_alarm_icon">Ícone do alarme inteligente</string>
+    <string name="smart_alarm_icon_summary">Exibir o ícone do alarme antes do alarme no tempo especificado</string>
+    <string name="always_hide">Ocultar sempre o ícone</string>
+    <string name="show_15_min_before">Exibir o ícone 15 minutos antes do alarme</string>
+    <string name="show_30_min_before">Exibir o ícone 30 minutos antes do alarme</string>
+    <string name="show_60_min_before">Exibir o ícone 1 hora antes do alarme</string>
+    <string name="show_180_min_before">Exibir o ícone 3 horas antes do alarme</string>
+    <string name="show_360_min_before">Exibir o ícone 6 horas antes do alarme</string>
+    <string name="show_720_min_before">Exibir o ícone 12 horas antes do alarme</string>
+    <string name="show_1440_min_before">Exibir o ícone 24 horas antes do alarme</string>
+    
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">Definições do relógio</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">Ocultar o relógio</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">Inferior direito</string>
+    <string name="clear_all_pos_bottom_left">Inferior esquerdo</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">Efeito desvanecer</string>
+    <string name="horizontal_effect">Efeito horizontal</string>
+    <string name="vertical_effect">Efeito vertical</string>
+    
+    <!-- Backup & Restore -->
+	<string name="restore">Restaurar</string>
+	<string name="save">Guardar</string>
+	<string name="delete">Apagar</string>
+	<string name="no_backups">Não há Backups</string>
+	<string name="reset">Restabelecer</string>
+	<string name="restoring_backup">A restaurar o Backup</string>
+	<string name="backup_name">Nome do Backup</string>
+	<string name="save_successful">Foi guardado com sucesso</string>
+	<string name="save_unsuccessful">Não foi guardado</string>
+	<string name="clearing_settings">A limpar definições</string>
+	<string name="reset_successful">Restabelecido com sucesso</string>
+	<string name="backup_restored">Backup restaurado</string>
+	<string name="reboot_required">É necessário reiniciar</string> 
+	
+	  <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Botão de volume Ajustes</string>
+    <string name="pref_safe_media_volume_title">Volume de segurança para mãos-livres</string>
+    <string name="pref_safe_media_volume_summary">Ativa ou desativa o volume de segurança do áudio mãos-livres</string>
+    <string name="vol_music_controls_title">Mudar de faixa utilizado teclas de volume</string>
+    <string name="vol_music_controls_summary">As teclas de volume mudam de faixa após manter a respectiva tecla pressionada com o ecrã desligado</string>
+    <string name="vol_key_cursor_control_title">Tecla de Volume controla cursor</string>
+    <string name="vol_key_cursor_control_summary">As teclas de volume controlam o cursor em campos de texto</string>
+    <string name="vol_key_cursor_control_off">Desativado</string>
+    <string name="vol_key_cursor_control_on">Teclas de Volume +/- movem o cursor para a esquerda/direita</string>
+    <string name="vol_key_cursor_control_on_reverse">Teclas de Volume +/- movem o cursor para a direita/esquerda</string>
+</resources>

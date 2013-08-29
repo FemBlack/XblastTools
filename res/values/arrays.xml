@@ -25,8 +25,8 @@
     
   
    <string-array name="clear_all_position_entries"> 
-        <item name="right">Bottom Right</item>
-        <item name="left">Bottom Left</item>
+        <item name="right">@string/clear_all_pos_bottom_right</item>
+        <item name="left">@string/clear_all_pos_bottom_left</item>
     </string-array>
     <string-array name="clear_all_position_values">
         <item name="right">1</item>
@@ -36,9 +36,9 @@
     
      <string-array name="crt_mode_entries">       
         <item name="nothing">@string/remove</item>
-        <item name="Fade">Fade Effect</item>
-        <item name="h-effect">Horizontal Effect</item>
-        <item name="v-effect">Vertical Effect</item>
+        <item name="Fade">@string/fade_effect</item>
+        <item name="h-effect">@string/horizontal_effect</item>
+        <item name="v-effect">@string/vertical_effect</item>
     </string-array>
     <string-array name="crt_mode_values">
         <item name="nothing">4</item>
@@ -66,7 +66,7 @@
         <item>@string/qs_tile_torch</item>
         <item>@string/qs_tile_sleep</item>
         <item>@string/qs_tile_quickrecord</item>
-        <item>@string/qs_tile_gravitybox</item>
+        <item>@string/qs_tile_xblasttools</item>
     </string-array>
 
     <string-array name="qs_tile_values" translatable="false">
@@ -344,6 +344,18 @@
         <item name="show_360_min_before">360</item>
         <item name="show_720_min_before">720</item>
         <item name="show_1440_min_before">1440</item>
+    </string-array>
+    
+     <string-array name="vol_key_cursor_control_entries" translatable="false">
+        <item>@string/vol_key_cursor_control_off</item>
+        <item>@string/vol_key_cursor_control_on</item>
+        <item>@string/vol_key_cursor_control_on_reverse</item>
+    </string-array>
+
+    <string-array name="vol_key_cursor_control_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
     
 </resources>

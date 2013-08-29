@@ -6,7 +6,6 @@ import android.widget.TextView;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XSharedPreferences;
 import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.XposedHelpers;
 
 public class Clock {
 	
@@ -39,7 +38,7 @@ public class Clock {
 		findAndHookMethod("com.android.systemui.statusbar.policy.Clock",
 				classLoader, "updateClock", new XC_MethodHook() {
 			
-					@Override
+					/*@Override
 					protected void beforeHookedMethod(MethodHookParam param)
 							throws Throwable {
 						try {
@@ -50,7 +49,7 @@ public class Clock {
 						} catch (Throwable t) {
 							XposedBridge.log(t);
 						}
-					}
+					}*/
 					@Override
 					protected void afterHookedMethod(MethodHookParam param)
 							throws Throwable {

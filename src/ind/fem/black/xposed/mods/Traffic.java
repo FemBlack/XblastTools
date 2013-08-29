@@ -13,17 +13,16 @@ import android.os.Message;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
-import de.robv.android.xposed.XposedBridge;
 
 public class Traffic extends TextView {
 	private boolean mAttached;
-	TrafficStats mTrafficStats;
-	boolean showTraffic;
-	Handler mHandler;
+	private TrafficStats mTrafficStats;
+	private boolean showTraffic;
+	private Handler mHandler;
 	private Context mContext;
-	Handler mTrafficHandler;
-	float speed;
-	float totalRxBytes;
+	private Handler mTrafficHandler;
+	private float speed;
+	private float totalRxBytes;
 	//protected int mTrafficColor = com.android.internal.R.color.holo_blue_light;
 
 	//private ColorUtils.ColorSettingInfo mLastTextColor;

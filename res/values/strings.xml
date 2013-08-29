@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <string name="title_activity_settings">Settings</string>
@@ -20,12 +21,12 @@
     <string name="twenty_four_hour_time_format">HH:mm</string>
     
     
-    <!-- Example General settings -->
+    <!-- General settings -->
     <string name="pref_header_general">General</string>
     <string name="pref_title_notif_transperency">Notification Transperency</string>
     <string name="pref_description_notif_transperency">Enable transperency for the notification background</string>
 	<string name="hide_am_pm">Hide AM PM</string>
-    <!-- Example settings for Notifications -->
+    <!-- settings for Notifications -->
     <string name="pref_header_misc">Miscellaneous</string>
     <string name="carrier_label">Carrier Label</string>
     <string name="default_carrier_label">FemBlack</string>
@@ -87,8 +88,7 @@
         <!-- CRT effect screen off animation -->
     <string name="crt_off_effect">CRT screen off effect</string>
     
-    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> free</string>
-   
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> free</string>   
     <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> used</string>
     
     <string name="recents_clear_all_title">Clear all recent tasks</string>
@@ -158,7 +158,7 @@
     <string name="qs_tile_sync">Synchronization</string>
     <string name="qs_tile_wifi_ap">Wi-Fi Access Point</string>
     <string name="qs_tile_torch">Torch</string>
-    <string name="qs_tile_gravitybox">GravityBox</string>
+    <string name="qs_tile_xblasttools">XBlast Tools</string>
     <string name="qs_tile_sleep">Sleep</string>
     <string name="qs_tile_quickrecord">Quick Record</string>
     
@@ -216,7 +216,8 @@
      
      <string name="build_prop_tweaks">build.prop Tweaks</string>
      
-     <string name="traffic_title">Network Speed Indicator</string>
+    <!-- Traffic -->
+    <string name="traffic_title">Network Speed Indicator</string>
     <string name="traffic_summary">Network Speed only appear when you have traffic</string>
     <string name="traffic_color_title">Network Speed Indicator Color</string>
    
@@ -339,6 +340,7 @@
     <string name="ps_enable_sysctl">Enable sysctl tweaks on boot</string>
     <string name="ps_enable_cron">Enable scheduled cron jobs</string>
     
+     <!-- Smart Alarm Icon -->
     <string name="hide_alarm_icon_off">Alarm Icon is Visible</string>
     <string name="hide_alarm_icon_on">Alarm Icon is Hidden</string>
     <string name="hide_alarm_icon">Hide Alarm Clock icon</string>
@@ -353,5 +355,49 @@
     <string name="show_720_min_before">Show icon 12 hours before alarm</string>
     <string name="show_1440_min_before">Show icon 24 hours before alarm</string>
     
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">Clock Settings</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">Hide Clock</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">Bottom Right</string>
+    <string name="clear_all_pos_bottom_left">Bottom Left</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">Fade Effect</string>
+    <string name="horizontal_effect">Horizontal Effect</string>
+    <string name="vertical_effect">Vertical Effect</string>
+    
+    <!-- Backup & Restore  -->
+    <string name="restore">Restore</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="no_backups">No Backups</string>
+    <string name="reset">Reset</string>
+     <string name="restoring_backup">Restoring Backup</string>
+    <string name="backup_name">Backup Name</string>
+    <string name="save_successful">Save Successful</string>
+    <string name="save_unsuccessful">Save Unsuccessful</string>
+    <string name="clearing_settings">Clearing Settings</string>
+    <string name="reset_successful">Reset Successful</string>
+    <string name="backup_restored">Backup Restored</string>
+    <string name="reboot_required">Reboot Required</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Volume Button Tweaks</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">Safe headset media volume</string>
+    <string name="pref_safe_media_volume_summary">Activates or deactivates safe headset media volume feature</string>
+    
+    <string name="vol_music_controls_title">Volume keys skip track</string>
+    <string name="vol_music_controls_summary">Skip tracks on volume keys long-press while screen is off</string>
+    
+    <string name="vol_key_cursor_control_title">Volume key cursor control</string>
+    <string name="vol_key_cursor_control_summary">Controls cursor using volume keys in text fields</string>
+    <string name="vol_key_cursor_control_off">Disabled</string>
+    <string name="vol_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="vol_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     
 </resources>

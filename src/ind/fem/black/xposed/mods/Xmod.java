@@ -2,12 +2,14 @@ package ind.fem.black.xposed.mods;
 
 import java.lang.reflect.Constructor;
 
+
 import android.content.res.XModuleResources;
 import android.content.res.XResources;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import android.provider.MediaStore.Audio;
 import android.view.WindowManager;
 import de.robv.android.xposed.IXposedHookInitPackageResources;
 import de.robv.android.xposed.IXposedHookLoadPackage;
@@ -23,14 +25,14 @@ public class Xmod implements IXposedHookLoadPackage,
 		IXposedHookInitPackageResources, IXposedHookZygoteInit {
 	public static XSharedPreferences prefs;	
 	private static String MODULE_PATH = null;
-	
+	private static XModuleResources modRes;
 	
 	public void initZygote(StartupParam startupParam) {		
 		loadPrefs();
 		getPhoneDetails();
 
 		 MODULE_PATH = startupParam.modulePath;
-		 XModuleResources modRes = XModuleResources.createInstance(MODULE_PATH, null);
+		 modRes = XModuleResources.createInstance(MODULE_PATH, null);
 		try {
 			XResources.setSystemWideReplacement("android", "bool",
 					"config_allowAllRotations", prefs.getBoolean(
@@ -81,6 +83,21 @@ public class Xmod implements IXposedHookLoadPackage,
 		
 		try {			
 			NotificationPanel.initZygote(prefs);			
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
+		try {			
+			VolumeKeySkipTrack.initZygote(prefs);			
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
+		try {			
+			VolKeyCursor.initZygote(prefs);			
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
+		try {			
+			SafeVolume.initZygote(prefs);			
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
@@ -312,6 +329,11 @@ public class Xmod implements IXposedHookLoadPackage,
 				XposedBridge.log("notification_panel_bg is not available");
 			}
 		}*/
+		try {
+			//NotificationPanel.doHook(prefs, resparam, modRes);
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
 		if (statusBarColor != 0) {
 			try {
 				final int statusbarColor = statusBarColor;

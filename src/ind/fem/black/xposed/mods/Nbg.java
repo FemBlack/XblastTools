@@ -5,7 +5,6 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 import java.io.File;
 
 import android.content.Context;
-import android.content.res.XResources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -16,8 +15,6 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XSharedPreferences;
 import de.robv.android.xposed.XposedBridge;
@@ -28,7 +25,7 @@ import de.robv.android.xposed.callbacks.XC_LayoutInflated.LayoutInflatedParam;
 
 public class Nbg {
 private static final String TAG = "Nbg";
-static Context mContext;
+private static Context mContext;
 public static final String CLASS_NOTIFICATIONPANAL_VIEW = "com.android.systemui.statusbar.phone.NotificationPanelView";
 
 private static void log(String message) {
@@ -230,33 +227,6 @@ private static void log(String message) {
 
 	}
 
-	private static void handleUpdateTextResources(final XSharedPreferences prefs, ClassLoader classLoader) {
-		XposedHelpers.findAndHookMethod("com.android.systemui.statusbar.phone.PhoneStatusBar", classLoader,
-				"updateTextResources", new XC_MethodHook() {
-					@Override
-					protected void afterHookedMethod(MethodHookParam param)
-							throws Throwable {
-						if (prefs.getBoolean(
-								"notificationTitleBarTextColorEnabled", true)) {
-							String[] titleTexts = new String[] {
-									"mOngoingNotificationText",
-									"mLatestNotificationText",
-									"mNoNotificationText", "mClearButton" };
-							int titleColor = prefs.getInt(
-									"notificationTitleBarTextColor",
-									Color.RED);
-							for (final String titleText : titleTexts) {
-								TextView textView = (TextView) XposedHelpers
-										.getObjectField(param.thisObject,
-												titleText);
-								textView.setTextColor(titleColor);
-							}
-						}
-					}
-				});
-	}
-	
-	
 	public static void applyDimens(InitPackageResourcesParam resparam , final XSharedPreferences prefs) {
 		try {
 			log("dimension started");

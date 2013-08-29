@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="title_activity_settings">設定</string>
+
+    <!-- Strings related to Settings -->
+
+ 	<string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">影の設定</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">設定</string>
+    <string name="preview">プレビュー</string>
+    <string name="edit_message">文字を入力</string>
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="button_effects">色を選択</string>
+    <string name="shadow_settings">影の設定</string>
+    <string name="ClockTextColor">時計と文字の色</string>
+    <string name="shadowColor">影の色</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    
+    
+    <!-- General settings -->
+    <string name="pref_header_general">基本</string>
+    <string name="pref_title_notif_transperency">通知領域の透過</string>
+    <string name="pref_description_notif_transperency">通知領域の背景を透過します。</string>
+	<string name="hide_am_pm">AM PMの非表示化</string>
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">その他</string>
+    <string name="carrier_label">キャリアラベル</string>
+    <string name="default_carrier_label">FemBlack</string>
+    <string name="desc_carrier_label">空にするとデフォルトのキャリアラベルになります。</string>
+	<string name="custom_carrier_label_LS">ロック画面のキャリアラベル</string>
+	<string name="custom_carrier_label_NC">通知領域のキャリアラベル</string>
+	 <!-- About -->
+    <string name="pref_about_title">このアプリについて</string>
+    <string name="about_app_title">XBlast Tools</string>
+    <string name="about_app">Coded by FemBlack@XDA. タップで公式スレに移動します</string>
+    <string name="about_donate_title">Google Play バージョン</string>
+    <string name="about_donate_summary">寄付 &amp; お気に召したらサポートをお願いいたします。</string>
+	
+	<string name="fullscreen_caller_photo_title">発信者画像の全画面化</string>
+    <string name="fullscreen_caller_photo_summary">着信時に相手の画像を全画面表示します。</string>
+     <string name="hide">非表示</string>
+    <string name="small">小</string>
+    <string name="medium">中</string>
+    <string name="large">大</string>
+    <string name="carrier_label_size_summary">ロック画面のキャリアラベルの文字サイズを設定します。</string>
+    <string name="carrier_label_size">ロック画面のキャリアラベルサイズ</string>
+    
+    <string name="clock_and_date">時計と日付</string>
+    <string name="am_pm_style">AM PM スタイル</string>
+    
+    
+    <string name="default_caller_image_title">デフォルト発信者画像の選択</string>
+    <string name="default_caller_image_summary">電話帳登録外や画像が設定されていない発信者用の画像を設定します。</string>
+    <string name="Call_Banner_text_summary">発信者名や電話番号などに適用されます。</string>
+    <string name="Call_Banner_text_title">着信時文字の色</string>
+    <string name="default_caller_image_result_successful">デフォルト発信者画像を変更しました</string>
+    <string name="default_caller_image_result_not_successful">デフォルト発信者画像を変更できませんでした</string>
+    <string name="nbg_image_result_successful">通知領域の背景画像を変更しました</string>
+    <string name="nbg_image_result_not_successful">通知領域の背景画像を変更できませんでした</string>
+    
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">ソフトリブート</string>
+    <string name="reboot_confirm">端末を再起動します。</string>
+    <string name="reboot_confirm_recovery">リカバリに再起動します。</string>
+    <string name="soft_reboot_confirm">SystemUIに再起動します。</string>
+    <string name="fastboot_confirm_recovery">bootloaderに再起動します。</string>
+    <string name="advanced_reboot_title">電源メニューの追加</string>
+    <string name="poweroff_advanced_summary">電源メニューにソフトリブート、スクリーンショット、リカバリに再起動などを追加します。</string>
+    
+    <string name="pref_title_notif_bg">通知領域の背景</string>
+    <string name="pref_description_notif_bg">通知領域の背景を選択した画像や色に変更します。</string>
+    <string name="pref_description_notif_bg_color">色を通知領域の背景に設定しました</string>
+    <string name="pref_description_notif_bg_img">画像を通知領域の背景に設定しました</string>
+    <string name="fullscreen_caller_sb_title">ステータスバーの無効化</string>
+    <string name="fullscreen_caller_sb_summary">通話中にステータスバーを非表示にします。</string>
+    
+    <string name="Call_Banner_font_summary">発信者名や電話番号などに適用されます。</string>
+    <string name="Call_Banner_font_title">通話中文字のフォント</string>
+    
+    <string name="status_bar">ステータスバー</string>
+    <string name="notification_panel">通知領域</string>
+    <string name="center_clock_title">時計の中央化</string>
+    
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">CRT画面オフ効果</string>
+    
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> 空き</string>   
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> 使用中</string>
+    
+    <string name="recents_clear_all_title">全てのアプリを終了</string>
+    <string name="recents_clear_all_summary">アプリ履歴で最近のタスクを終了させるボタンを表示します。</string>
+    <string name="ram_usage_bar_title">RAMバーの追加</string>
+    <string name="ram_usage_bar_summary">アプリ履歴にRAM使用率を表示します。</string>
+    
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">背景の単色化</string>
+    <string name="holo_bg_solid_black_summary">Holoテーマのグラデーション背景の代わりに黒一色の背景を使うようにします。</string>
+    
+    <string name="nbg_pu_pd_speed_title">通知領域のプルダウン/アップ速度</string>
+    <string name="nbg_pu_pd_speed_summary">通知領域のプルダウン/アップ速度を高速化します。</string>
+
+    <string name="statusbar_color_summary">ステータスバーの色を変更します。\n注意: 透過するとホーム画面以外では表示がおかしくなる場合があります。</string>
+    <string name="statusbar_color_title">ステータスバー背景の色</string>
+    <string name="wifi_color_title">Wi-Fiシグナルの色</string>
+    <string name="wifi_inout_color_title">Wi-Fi受信/送信の色</string>
+    
+    <string name="mobile_signal_color_summary">データ通信の電波、タイプの色に使われます。</string>
+    <string name="mobile_signal_color_title">データ通信電波の色</string>
+    <string name="mobile_inout_color_title">データ通信受信/送信の色</string>
+    <string name="battery_color_title">バッテリーの色</string>
+    
+    <string name="notif_panel_bg_trans_summary">0-完全透過 100-不透明-通知領域の背景画像にのみ適用されます。</string>
+    <string name="notif_panel_bg_trans_title">通知領域の背景画像の透過度</string>
+    
+    <string name="CCLLS_title">ロック画面のキャリアラベルの色</string>
+    <string name="CCLNC_color_title">通知領域のキャリアラベルの色</string>
+    
+    <string name="rotation_summary">全ての画面の向きに変更できるようにします。</string>
+    <string name="rotation_title">画面の向きの自由化</string>
+    
+    <string name="sb_clock_color_title">時計の色</string>
+    <string name="np_clock_color_title">時計と日付の色</string>
+    
+     <string name="custom_text_summary">カスタムテキストはステータスバーと通知領域の時計の隣に表示されます。</string>
+     <string name="custom_text_title">カスタムテキスト</string>
+     
+     <string name="custom_text_np_summary">カスタムテキストは通知領域の時計の隣に表示されます。</string>
+     <string name="custom_text_np_title">カスタムテキスト</string>
+     
+     <string name="font_summary">選択したフォントはステータスバーと通知領域の時計に適用されます。</string>
+     <string name="font_np_summary">選択したフォントは通知領域の時計に適用されます。</string>
+     <string name="font_title">フォント</string>
+     
+     <string name="pref_quick_settings_title">JB システム調整</string>
+     <string name="quick_setting_columns_summary">クイック設定の一行ごとのタイル数</string>
+     <string name="quick_setting_columns">クイック設定のタイル数</string>
+     
+      <!--  QuickSettings settings -->
+    <string name="quick_settings_title">ステータスバーのクイック設定タイル</string>
+    <string name="quick_settings_summary">ステータスバーにクイック設定タイルを表示するかどうか設定します。</string>
+    <string name="qs_tile_user_profile">ユーザープロファイル</string>
+    <string name="qs_tile_airplane_mode">機内モード</string>
+    <string name="qs_tile_battery">電池使用量</string>
+    <string name="qs_tile_wifi">Wi-Fi</string>
+    <string name="qs_tile_bluetooth">Bluetooth</string>
+    <string name="qs_tile_gps">GPS</string>
+    <string name="qs_tile_mobile_data">データ通信</string>
+    <string name="qs_tile_network_mode">ネットワークモード</string>
+    <string name="qs_tile_data_usage">データ使用量</string>
+    <string name="qs_tile_audio">音楽プロファイル</string>
+    <string name="qs_tile_brightness">画面の明るさ</string>
+    <string name="qs_tile_screen_timeout">スリープ</string>
+    <string name="qs_tile_autorotation">画面の自動回転</string>
+    <string name="qs_tile_sync">自動同期</string>
+    <string name="qs_tile_wifi_ap">Wi-Fiアクセスポイント</string>
+    <string name="qs_tile_torch">トーチ</string>
+    <string name="qs_tile_xblasttools">XBlast Tools</string>
+    <string name="qs_tile_sleep">スリープ</string>
+    <string name="qs_tile_quickrecord">クイック録音</string>
+    
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">一行ごとのタイル数</string>
+    <string name="pref_qs_tiles_per_row_summary">一行ごとに表示するクイック設定のタイル数を設定します。タイルは設定に応じてリサイズされ、縦画面にのみ適用されます。</string>
+    
+    <!-- Auto-switch QuickSettings -->
+    <string name="pref_auto_switch_qs_title">クイック設定の自動切り替え</string>
+    <string name="pref_auto_switch_qs_summary">通知がないときに通知領域をプルダウンするとクイック設定を表示するようにします。</string>
+
+    <!-- Quick pulldown -->
+    <string name="pref_quick_pulldown_title">クイックプルダウン</string>
+    <string name="pref_quick_pulldown_summary">ステータスバーの角をプルダウンしてクイック設定を表示します。</string>
+    <string name="quick_pulldown_off">オフ</string>
+    <string name="quick_pulldown_right">右</string>
+    <string name="quick_pulldown_left">左</string>
+    
+    <!-- QuickSettings strings -->
+    <string name="quick_settings_sync_on">同期オン</string>
+    <string name="quick_settings_sync_off">同期オフ</string>
+    <string name="quick_settings_wifi_ap_on">Wi-Fi APオン</string>
+    <string name="quick_settings_wifi_ap_off">Wi-Fi APオフ</string>
+    <string name="quick_settings_torch_on">トーチオン</string>
+    <string name="quick_settings_torch_off">トーチオフ</string>
+    <string name="quick_settings_torch_off_notif">タップでオフにする</string>
+    <string name="quick_settings_qr_playing">再生中&#8230;</string>
+    <string name="quick_settings_qr_recording">録音中&#8230;</string>
+    <string name="quick_settings_qr_recorded">録音済み</string>
+    <string name="quick_settings_qr_record">長押しで録音</string>
+    <string name="quick_settings_qr_recording_notif">タップで録音を停止する</string>
+    
+    <string name="notif_normal_color_title">通知背景の色</string>
+    <string name="notif_pressed_color_title">通知押下時の色</string>
+    <string name="notif_normal_color_summary">通知の背景の色を設定します。</string>
+    <string name="notif_pressed_color_summary">通知を押した時の色を設定します。</string>
+    
+     <string name="boot_animation_summary">起動時のアニメーションを無効化します。</string>
+     <string name="boot_animation_title">起動時アニメの無効化</string>
+     
+     <string name="disable_adb_notif_summary">ADB通知を非表示にします。</string>
+     <string name="disable_adb_notif_title">ADB通知の非表示化</string>
+     
+     <string name="audio_video_summary">録音/録画品質を改善します。</string>
+     <string name="audio_video_title">録音/録画品質の改善</string>
+     
+     <string name="ticker_color_title">ティッカーの色</string>
+     <string name="google_dns_title">Google DNSに変更</string>
+     
+     <string name="notif_Content_color_title">通知内容の文字色</string>
+     <string name="notif_Title_text_color_title">通知タイトルの文字色</string>
+     <string name="toast_text_color_title">トーストの文字色</string>
+     <string name="toast_bg_color_title">トーストの背景色</string>
+     <string name="clear_all_position_title">アプリ終了ボタンの位置</string>
+     
+     <string name="build_prop_tweaks">build.propの変更</string>
+     
+    <!-- Traffic -->
+    <string name="traffic_title">通信速度の表示</string>
+    <string name="traffic_summary">通信している時だけ速度が表示されます。</string>
+    <string name="traffic_color_title">通信速度の文字色</string>
+   
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string>
+    <string name="propmodder_title_summary">@null</string>
+    <string name="buildprop_title">Build.propの変更</string>
+    <string name="nonprop_cat_title">init.dスクリプトに関係しています</string>
+    <string name="pc_tweaks">システム調整</string>
+    <string name="pc_init_d">システム調整の有効化/無効化</string>
+    <string name="pc_init_d_tweaks">システム調整のカスタマイズ</string>
+
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">システム調整</string>
+    <string name="pt_enable_init_d">起動時に適用する</string>
+    <string name="pt_zipalign">apkをzipalign</string>
+    <string name="pt_enable_sd_boost">SDを高速化</string>
+    <string name="pt_sd_boost">読み込みヘッド値</string>
+    <string name="pt_fix_permissions">権限の修正</string>
+    <string name="pt_clear_cache">キャシュの消去</string>
+    <string name="pt_enable_sysctl">sysctlの有効化</string>
+    <string name="pt_enable_cron">タスクのスケジュールの有効化</string>
+
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">警告</string>
+    <string name="main_warning_summary">build.propに変更を加えます。自己責任でご使用ください!</string>
+    <string name="pref_wifi_scan_interval_title">Wi-Fiスキャン間隔</string>
+    <string name="pref_wifi_scan_interval_summary">Wi-Fiに接続していない時のスキャンの間隔を変更します。 (要再起動)</string>
+    <string name="pref_wifi_scan_alt_summary">スキャン間隔: %s</string>
+    <string name="pref_lcd_density_title">LCD 解像度</string>
+    <string name="pref_lcd_density_summary">画面の解像度を変更します。(要再起動、不具合が起こる可能性あり)</string>
+    <string name="pref_max_events_title">ウインドウマネージャの一秒ごとの最大イベント数</string>
+
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">一秒ごとの最大イベント数を変更します。(要再起動)</string>
+    <string name="pref_max_events_alt_summary">最大イベント数: %s</string>
+    <string name="pref_usb_mode_title">デフォルトUSBモード</string>
+    <string name="pref_usb_mode_summary">USBで接続した時のデフォルトモードを設定します。(要再起動)</string>
+    <string name="pref_ring_delay_title">着信時の遅延</string>
+    <string name="pref_ring_delay_summary">着信音が鳴るまでの遅延を変更します。(要再起動)</string>
+    <string name="pref_ring_delay_alt_summary">着信時の遅延: %s</string>
+    <string name="pref_vm_heapsize_title">Dalvikキャッシュヒープサイズ</string>
+    <string name="pref_vm_heapsize_summary">Dalvik VMキャッシュのサイズを変更します。(要再起動)</string>
+    <string name="pref_vm_heapsize_alt_summary">Dalvik VMキャッシュサイズ: %s</string>
+    <string name="propmodder_warning_title">root必須です</string>
+    <string name="propmodder_warning">/system/build.propの値を変更します。何をしているかわからなければ使わないでください。PropModderの開発者、n00bwareは責任を持ちません。</string>
+    <string name="showbuild_title">build.propを表示</string>
+    <string name="showbuild_dialog">/system/build.propです。</string>
+    <string name="showbuild_loading">build.propを読み込み中\u2026</string>
+    <string name="showbuild_error">build.propを読み込めません\u2026</string>
+    <string name="showbuild_unknown">不明</string>
+    <string name="showbuild_version">バージョン</string>
+    <string name="showbuild_label">build.propを表示します。</string>
+    <string name="pref_fast_up_title">HSUPAアップロード速度の変更</string>
+    <string name="pref_fast_up_summary">*警告* 変更すると値がbuild.propに書き込まれます。(要再起動)</string>
+    <string name="pref_fast_up_alt_summary">高速化: %s</string>
+    <string name="pref_disable_boot_anim_title">起動時アニメの無効化</string>
+    <string name="pref_disable_boot_anim_summary">起動時のアニメーションを無効化します。(要再起動)</string>
+    <string name="clear_custom_bootanimation">カスタムアニメーションを消去</string>
+    <string name="set_custom_bootanimation">カスタムを設定...</string>
+    <string name="pref_prox_delay_title">近接センサーの遅延</string>
+    <string name="pref_prox_delay_summary">通話時に顔から画面を離したときに画面をオンにするまでの遅延を設定します。(要再起動)</string>
+    <string name="pref_prox_delay_alt_summary">近接センサーの遅延: %s</string>
+    <string name="pref_logcat_title">logcatの無効化</string>
+    <string name="pref_logcat_summary_on">Logcatは無効です。</string>
+    <string name="pref_logcat_summary_off">Logcatは有効です、無効にするとシステムが高速化される場合があります。</string>
+    <string name="pref_mod_version_title">ビルド番号の変更</string>
+    <string name="pref_mod_version_summary">システムの動作には関係ありません。</string>
+    <string name="pref_mod_version_alt_summary">ビルド番号: %s</string>
+    <string name="pref_mod_version_default">PropModder!!!</string>
+    <string name="pref_sleep_title">PMスリープモード</string>
+    <string name="pref_sleep_summary">スリープポリシーを変更します。</string>
+    <string name="pref_sleep_alt_summary">スリープモード: %s</string>
+    <string name="pref_jit_title">JITコンパイラ</string>
+    <string name="pref_jit_summary">JITコンパイラを有効化/無効化します。</string>
+    <string name="pref_tcp_stack_title">TCPスタックの最適化</string>
+    <string name="pref_tcp_stack_summary">バッファサイズを調整します。</string>
+    <string name="pref_check_in_title">使用状況の送信</string>
+    <string name="pref_check_in_summary">Googleへの使用状況の送信を停止します。</string>
+    <string name="pref_sdcard_buffer_title">SDカード速度の変更</string>
+    <string name="pref_sdcard_buffer_summary">SDカードのバッファサイズを変更します。</string>
+    <string name="pref_sdcard_buffer_alt_summary">バッファサイズ: %s</string>
+    <string name="pref_g_speed_title">3G速度の調整</string>
+    <string name="pref_g_speed_summary">3G速度を高速化します。</string>
+    <string name="pref_gpu_title">GPUアクセラレーション</string>
+    <string name="pref_gpu_summary">GPUでUIを描画するようにします。</string>
+    <string name="pref_vvmail_title">VVMail (Sense ROM用)</string>
+    <string name="pref_vvmail_summary">Sense ROMでVVMailを使えるようにします。</string>
+    
+     <string name="ps_enable_init_d">起動時の適用を有効化/無効化</string>
+     
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">ログの完全削除(再起動まで継続)</string>
+    <string name="remove_logcat_till_reboot">再起動するまでログを削除します。</string>
+    <string name="enable_logcat">ログの有効化(要再起動)</string>
+    <string name="disable">無効</string>
+    <string name="power_collapse_suspend">Power Collapse Suspend</string>
+    <string name="power_collapse">Power Collapse (おすすめ)</string>
+    <string name="apps_sleep">アプリのスリープ</string>
+    <string name="slow_clock">クロックの低速化</string>
+    <string name="wait_for_interrupt">割り込みを待機</string>
+    <string name="sdcard_128_kb">128 kb</string>
+    <string name="sdcard_1024_kb">1024 kb</string>
+    <string name="sdcard_2048_kb">2048 kb (おすすめ)</string>
+    <string name="sdcard_3072_kb">3072 kb</string>
+    <string name="sdcard_4096_kb">4096 kb</string>
+    <string name="sdcard_5120_kb">5120 kb</string>
+    <string name="sdcard_6144_kb">6144 kb</string>
+    <string name="remove">削除</string>
+    <string name="hsupa_disabled">HSUPA無効(制限中)</string>
+    <string name="hsupa_enabled">HSUPA有効</string>
+    <string name="hsupa_enabled_uncapped">HSUPA有効(制限なし)</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string>
+    <string name="ps_enable_init_d">起動時の適用の有効化/無効化</string>
+    <string name="ps_zipalign">起動毎にapkをzipalignする</string>
+    <string name="ps_enable_sd_boost">起動時にSDカード速度調整を有効化/無効化</string>
+    <string name="ps_sd_boost">kbで設定</string>
+    <string name="ps_fix_permissions">起動毎に権限を修正</string>
+    <string name="ps_clear_cache">起動毎にキャッシュを消去</string>
+    <string name="ps_enable_sysctl">起動時にsysctlを有効化</string>
+    <string name="ps_enable_cron">スケジュールを有効化</string>
+    
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">アラームアイコンは表示中です。</string>
+    <string name="hide_alarm_icon_on">アラームアイコンは非表示中です。</string>
+    <string name="hide_alarm_icon">アラームアイコンの非表示化</string>
+    <string name="smart_alarm_icon">スマートアラームアイコン</string>
+    <string name="smart_alarm_icon_summary">指定したアラーム前にのみアラームアイコンを表示します。</string>
+    <string name="always_hide">常時非表示</string>
+    <string name="show_15_min_before">アラーム15分前に表示</string>
+    <string name="show_30_min_before">アラーム30分前に表示</string>
+    <string name="show_60_min_before">アラーム1時間前に表示</string>
+    <string name="show_180_min_before">アラーム3時間前に表示</string>
+    <string name="show_360_min_before">アラーム6時間前に表示</string>
+    <string name="show_720_min_before">アラーム12時間前に表示</string>
+    <string name="show_1440_min_before">アラーム24時間前に表示</string>
+    
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">時計設定</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">時計の非表示化</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">右下</string>
+    <string name="clear_all_pos_bottom_left">左下</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">フェード効果</string>
+    <string name="horizontal_effect">横向きの効果</string>
+    <string name="vertical_effect">縦向きの効果</string>
+    
+    <!-- Backup & Restore  -->
+    <string name="restore">リストア</string>
+    <string name="save">保存</string>
+    <string name="delete">削除</string>
+    <string name="no_backups">バックアップなし</string>
+    <string name="reset">初期化</string>
+     <string name="restoring_backup">バックアップのりストア中</string>
+    <string name="backup_name">バックアップ名</string>
+    <string name="save_successful">保存しました</string>
+    <string name="save_unsuccessful">保存に失敗しました</string>
+    <string name="clearing_settings">設定の消去中</string>
+    <string name="reset_successful">初期化しました</string>
+    <string name="backup_restored">リストアしました</string>
+    <string name="reboot_required">再起動してください</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">音量ボタンの変更</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">安全な音量の設定</string>
+    <string name="pref_safe_media_volume_summary">ヘッドセットの音量の警告を有効化/無効化します。</string>
+    
+    <string name="vol_music_controls_title">音量キーで曲をスキップ</string>
+    <string name="vol_music_controls_summary">画面オフ時に音量キーを長押しすると曲をスキップします。</string>
+    
+    <string name="vol_key_cursor_control_title">音量キーカーソル操作</string>
+    <string name="vol_key_cursor_control_summary">テキスト入力欄で音量キーでカーソルを操作できるようにできます。</string>
+    <string name="vol_key_cursor_control_off">無効</string>
+    <string name="vol_key_cursor_control_on">音量上/下でカーソルを左/右に移動</string>
+    <string name="vol_key_cursor_control_on_reverse">音量上/下でカーソルを右/左に移動</string>
+    
+</resources>

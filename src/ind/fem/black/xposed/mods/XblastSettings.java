@@ -1,24 +1,37 @@
 package ind.fem.black.xposed.mods;
 
+import ind.fem.black.xposed.dialogs.RestoreDialog;
+import ind.fem.black.xposed.dialogs.RestoreDialog.RestoreDialogListener;
+import ind.fem.black.xposed.dialogs.SaveDialog;
+
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.util.Collection;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.NotificationManager;
+import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.preference.CheckBoxPreference;
 import android.preference.EditTextPreference;
 import android.preference.ListPreference;
@@ -27,15 +40,18 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceGroup;
+import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.text.InputFilter;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 import de.devmil.common.ui.color.ColorSelectorDialog;
 import de.robv.android.xposed.library.ui.ListPreferenceFixedSummary;
 
-public class XblastSettings extends Activity {
+public class XblastSettings extends Activity implements RestoreDialogListener{
     
     public static final String PREF_KEY_ENABLE_ALL_ROTATION = "enable_all_rotation";
     public static final String PREF_KEY_POWEROFF_ADVANCED = "poweroff";
@@ -109,6 +125,13 @@ public class XblastSettings extends Activity {
 	
 	public static final String ACTION_PREF_STATUSBAR_BGCOLOR_CHANGED = "xblast.intent.action.SB_BGCOLOR_CHANGED";
 	public static final String EXTRA_SB_BGCOLOR = "bgColor";
+	public static final String PREF_KEY_STATUSBAR_CLOCK_HIDE = "pref_clock_hide";
+	public static final String PREF_KEY_STATUSBAR_CLOCK_AMPM_HIDE = "amPm";
+	public static final String PREF_KEY_STATUSBAR_CENTER_CLOCK = "center_clock";
+	public static final String ACTION_PREF_CLOCK_CHANGED = "xblast.intent.action.CENTER_CLOCK_CHANGED";
+	public static final String EXTRA_CENTER_CLOCK = "centerClock";
+    public static final String EXTRA_CLOCK_HIDE = "clockHide";
+    public static final String EXTRA_AMPM_HIDE = "ampmHide";
 	
 	public static final String ACTION_PREF_QUICKSETTINGS_CHANGED = "xblast.intent.action.QUICKSETTINGS_CHANGED";
     public static final String EXTRA_QS_PREFS = "qsPrefs";
@@ -125,8 +148,19 @@ public class XblastSettings extends Activity {
     public static final String PREF_KEY_QUICK_SETTINGS = "pref_quick_settings";
     public static final String PREF_KEY_QUICK_SETTINGS_TILES_PER_ROW = "quickSettingsColumns";
     public static final String PREF_KEY_QUICK_SETTINGS_AUTOSWITCH = "pref_auto_switch_qs";
+    public static final String PREF_KEY_VOL_MUSIC_CONTROLS = "pref_vol_music_controls";
+    public static final String PREF_KEY_SAFE_MEDIA_VOLUME = "pref_safe_media_volume";
+    
+    public static final String ACTION_PREF_SAFE_MEDIA_VOLUME_CHANGED = "xblast.intent.action.SAFE_MEDIA_VOLUME_CHANGED";
+    public static final String EXTRA_SAFE_MEDIA_VOLUME_ENABLED = "enabled";
+    
+    public static final String PREF_KEY_VOL_KEY_CURSOR_CONTROL = "pref_vol_key_cursor_control";
+    public static final int VOL_KEY_CURSOR_CONTROL_OFF = 0;
+    public static final int VOL_KEY_CURSOR_CONTROL_ON = 1;
+    public static final int VOL_KEY_CURSOR_CONTROL_ON_REVERSE = 2;
 	
 	private static Context mContext;
+	private static PreferenceManager mPreferenceManager;
    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -327,7 +361,7 @@ public class XblastSettings extends Activity {
             // are in the same package, they are executed in the context of the hooked package
             getPreferenceManager().setSharedPreferencesMode(Context.MODE_WORLD_READABLE);
             addPreferencesFromResource(ind.fem.black.xposed.mods.R.xml.xblast);
-           
+            mPreferenceManager = getPreferenceManager();
             mPrefs = getPreferenceScreen().getSharedPreferences();      
             mPrefAbout = (Preference) findPreference(PREF_KEY_ABOUT);
             mFullScreenCallerImagepref = findPreference("defaultCallerImage");
@@ -518,7 +552,20 @@ public class XblastSettings extends Activity {
            if (key.equals(PREF_KEY_STATUSBAR_COLOR)) {
                intent.setAction(ACTION_PREF_STATUSBAR_BGCOLOR_CHANGED);
                intent.putExtra(EXTRA_SB_BGCOLOR, prefs.getInt(PREF_KEY_STATUSBAR_COLOR, Color.BLACK));
-           }/* else if (key.equals(PREF_KEY_QUICK_SETTINGS)) {
+           } else if (key.equals(PREF_KEY_STATUSBAR_CLOCK_AMPM_HIDE)) {
+               intent.setAction(ACTION_PREF_CLOCK_CHANGED);
+               intent.putExtra(EXTRA_AMPM_HIDE, prefs.getBoolean(
+                       PREF_KEY_STATUSBAR_CLOCK_AMPM_HIDE, false));
+           } else if (key.equals(PREF_KEY_STATUSBAR_CLOCK_HIDE)) {
+               intent.setAction(ACTION_PREF_CLOCK_CHANGED);
+               intent.putExtra(EXTRA_CLOCK_HIDE, prefs.getBoolean(PREF_KEY_STATUSBAR_CLOCK_HIDE, false));
+           } else if (key.equals(PREF_KEY_SAFE_MEDIA_VOLUME)) {
+               intent.setAction(ACTION_PREF_SAFE_MEDIA_VOLUME_CHANGED);
+               intent.putExtra(EXTRA_SAFE_MEDIA_VOLUME_ENABLED,
+                       prefs.getBoolean(PREF_KEY_SAFE_MEDIA_VOLUME, false));
+           }
+           
+           /* else if (key.equals(PREF_KEY_QUICK_SETTINGS)) {
                intent.setAction(ACTION_PREF_QUICKSETTINGS_CHANGED);
                String[] qsPrefs = mQuickSettings.getValues().toArray(new String[0]);
                intent.putExtra(EXTRA_QS_PREFS, qsPrefs);
@@ -734,8 +781,8 @@ public class XblastSettings extends Activity {
 
         private void rebootRequired() {
         	
-        	Toast.makeText(mContext, "Reboot Required....",
-                    Toast.LENGTH_SHORT).show();
+        	Toast.makeText(mContext, R.string.reboot_required, Toast.LENGTH_SHORT)
+			.show();
                     //prefSet.addPreference(mRebootMsg);
                     //mRebootMsg.setTitle("Reboot required");
                    // mRebootMsg.setSummary("values will take effect on next boot");
@@ -948,7 +995,139 @@ public class XblastSettings extends Activity {
 		
 		}
 
-	
-    
+    @Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.menu, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		
+		case R.id.action_save:
+			new SaveDialog().show(getFragmentManager(), "save");
+			break;
+		case R.id.action_restore:
+			new RestoreDialog().show(getFragmentManager(), "restore");
+			break;
+
+		default:
+			break;
+		}
+		return true;
+
+	}
+
+	@Override
+	public void onRestoreDefaults() {
+		mPreferenceManager.getSharedPreferences().edit().clear().commit();
+		//PreferenceManager.setDefaultValues(this, R.xml.xblast, false);
+		Toast.makeText(this, R.string.reset_successful, Toast.LENGTH_SHORT)
+				.show();
+		 Intent intent = getIntent();
+		    finish();
+		    startActivity(intent);
+		    
+		Toast.makeText(this, R.string.reboot_required, Toast.LENGTH_SHORT)
+			.show();
+		//RebootNotification.notify(this, 999, false);
+	}
+
+	@Override
+	public void onRestoreBackup(final File backup) {
+		new RestoreBackupTask(backup).execute();
+	}
+
+	class RestoreBackupTask extends AsyncTask<Void, Void, Void> {
+
+		private ProgressDialog progressDialog;
+		private File backup;
+
+		public RestoreBackupTask(File backup) {
+			this.backup = backup;
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			//unregisterPrefsReceiver();
+			progressDialog = new ProgressDialog(XblastSettings.this);
+			progressDialog.setIndeterminate(true);
+			progressDialog.setMessage(getString(R.string.restoring_backup));
+			progressDialog.show();
+		}
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			ObjectInputStream input = null;
+			try {
+				input = new ObjectInputStream(new FileInputStream(backup));
+				Editor prefEdit = mPreferenceManager.getSharedPreferences()
+						.edit();
+				prefEdit.clear();
+				@SuppressWarnings("unchecked")
+				Map<String, ?> entries = (Map<String, ?>) input.readObject();
+				for (Entry<String, ?> entry : entries.entrySet()) {
+					Object v = entry.getValue();
+					String key = entry.getKey();
+
+					if (v instanceof Boolean)
+						prefEdit.putBoolean(key, ((Boolean) v).booleanValue());
+					else if (v instanceof Float)
+						prefEdit.putFloat(key, ((Float) v).floatValue());
+					else if (v instanceof Integer)
+						prefEdit.putInt(key, ((Integer) v).intValue());
+					else if (v instanceof Long)
+						prefEdit.putLong(key, ((Long) v).longValue());
+					else if (v instanceof String)
+						prefEdit.putString(key, ((String) v));
+				}
+				prefEdit.commit();
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					if (input != null) {
+						input.close();
+					}
+				} catch (IOException ex) {
+					ex.printStackTrace();
+				}
+			}
+			SystemClock.sleep(1500);
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Void result) {
+			super.onPostExecute(result);
+			progressDialog.dismiss();
+			Toast.makeText(XblastSettings.this, R.string.backup_restored,
+					Toast.LENGTH_SHORT).show();
+			 Intent intent = getIntent();
+			    finish();
+			    startActivity(intent);
+			Toast.makeText(XblastSettings.this, R.string.reboot_required, Toast.LENGTH_SHORT)
+				.show();
+			//RebootNotification.notify(NottachXposed.this, 999, false);
+			//registerPrefsReceiver();
+		}
+		
+		/*private void registerPrefsReceiver() {
+			mPreferenceManager.getSharedPreferences()
+					.registerOnSharedPreferenceChangeListener(this);
+		}
+		private void unregisterPrefsReceiver() {
+			mPreferenceManager.getSharedPreferences()
+					.unregisterOnSharedPreferenceChangeListener(this);
+		}*/
+		
+
+	}
     }
 

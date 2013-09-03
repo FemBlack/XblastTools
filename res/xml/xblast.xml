@@ -490,14 +490,14 @@ android:persistent="true" />
                 android:summary="@string/pref_gpu_summary"
                 android:title="@string/pref_gpu_title" />
 
-            <ListPreference
+            <!-- <ListPreference
                 android:dialogTitle="@string/pref_sdcard_buffer_title"
                 android:entries="@array/entries_sdcard_buffer_explain"
                 android:entryValues="@array/entries_sdcard_buffer"
                 android:key="pref_sdcard_buffer"
                 android:persistent="true"
                 android:summary="@string/pref_sdcard_buffer_summary"
-                android:title="@string/pref_sdcard_buffer_title" />
+                android:title="@string/pref_sdcard_buffer_title" /> -->
         </PreferenceCategory>
 
         <!--

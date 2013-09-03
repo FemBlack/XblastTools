@@ -40,7 +40,7 @@
     <string name="about_donate_title">Donar mediante Versión Google Play</string>
     <string name="about_donate_summary">Donar y ayudarme, si tu crees que esta aplicación vale la pena.</string>
 	
-	<string name="fullscreen_caller_photo_title">Pantalla completa de llamadas con foto</string>
+	<string name="fullscreen_caller_photo_title">Personalizar llamadas entrantes</string>
     <string name="fullscreen_caller_photo_summary">Muestra pantalla completa en llamadas entrantes con foto</string>
      <string name="hide">Ocultar</string>
     <string name="small">Pequeño</string>
@@ -54,7 +54,7 @@
     
     
     <string name="default_caller_image_title">Selecciona la imagen por defecto de las llamadas entrantes</string>
-    <string name="default_caller_image_summary">Selecciona la imagen por defecto para las llamadas entrantes de desconocidos y contanctos sin foto</string>
+    <string name="default_caller_image_summary">Selecciona la imagen por defecto para las llamadas entrantes de desconocidos y contantos sin foto</string>
     <string name="Call_Banner_text_summary">Color a aplicar para Nombre de contactos, número, etc.</string>
     <string name="Call_Banner_text_title">Color texto llamadas entrantes</string>
     <string name="default_caller_image_result_successful">Imagen por defecto cambiada</string>
@@ -63,30 +63,30 @@
     <string name="nbg_image_result_not_successful">Imagen de la cortina de notificaciones no cambiada</string>
     
     <!-- Reboot confirmation -->
-    <string name="soft_reboot">Reincio software</string>
+    <string name="soft_reboot">Reinicio software</string>
     <string name="reboot_confirm">El teléfono se reiniciará</string>
     <string name="reboot_confirm_recovery">El teléfono se reiniciará dentro del recovery</string>
     <string name="soft_reboot_confirm">El teléfono reiniciará el SystemUI</string>
     <string name="fastboot_confirm_recovery">Reinicio rápido</string>
     <string name="advanced_reboot_title">Opciones avanzadas del menú de apagado</string>
-    <string name="poweroff_advanced_summary">Activa la opciones avanzadas del menú de apagado(Reinicio por software, Reiniciar, reiniciar en recovery, Reinicio rápido y Captura de pantalla)</string>
+    <string name="poweroff_advanced_summary">Activa la opciones avanzadas del menú de apagado(Reinicio por software, Reiniciar, Reiniciar en recovery, Reinicio rápido y Captura de pantalla)</string>
     
     <string name="pref_title_notif_bg">Fondo cortina de notificaciones</string>
-    <string name="pref_description_notif_bg">Habilitar imagen o colorpara el fondo de la cortina de notificaciones</string>
+    <string name="pref_description_notif_bg">Habilitar imagen o color,para el fondo de la cortina de notificaciones</string>
     <string name="pref_description_notif_bg_color">Establecer color para el fondo de la cortina de notificaciones</string>
     <string name="pref_description_notif_bg_img">Establecer imagen para el fondo de la cortina de notificaciones</string>
     <string name="fullscreen_caller_sb_title">Desactivar barra de estado</string>
     <string name="fullscreen_caller_sb_summary">La barra de estado se desactivará durante la llamada</string>
     
     <string name="Call_Banner_font_summary">La fuente seleccionada se aplicará a Nombre contactos, numero, etc.</string>
-    <string name="Call_Banner_font_title">Fuente de texto durante las llamada</string>
+    <string name="Call_Banner_font_title">Fuente de texto durante las llamadas</string>
     
     <string name="status_bar">Barra de estado</string>
     <string name="notification_panel">Cortina panel de notificaciones</string>
     <string name="center_clock_title">Reloj centrado</string>
     
         <!-- CRT effect screen off animation -->
-    <string name="crt_off_effect">Efecto pantalla  apagado CRT</string>
+    <string name="crt_off_effect">Efecto pantalla apagado CRT</string>
     
     <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> libre</string>   
     <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> usada</string>
@@ -132,16 +132,16 @@
      <string name="custom_text_np_title">Texto personalizado</string>
      
      <string name="font_summary">La fuente seleccionada se aplicará al reloj y texto personalizado  de la barra de estado y  cortina de notificaciones</string>
-     <string name="font_np_summary">La fuene seleccionada se aplicará al reloj de la cortina de notificaciones </string>
+     <string name="font_np_summary">La fuente seleccionada se aplicará al reloj de la cortina de notificaciones </string>
      <string name="font_title">Fuentes</string>
      
      <string name="pref_quick_settings_title">JB Tweaks</string>
-     <string name="quick_setting_columns_summary">Número de fichas rápidas por columna</string>
-     <string name="quick_setting_columns">Columna de fichas rápidas</string>
+     <string name="quick_setting_columns_summary">Número de cuadriculas por fila</string>
+     <string name="quick_setting_columns">Panel de configuración rápida</string>
      
       <!--  QuickSettings settings -->
     <string name="quick_settings_title">Fichas de ajustes rápidos en barra de estado</string>
-    <string name="quick_settings_summary">Permite mostras o ocultar las fichas de ajustes rápidos en barra de estado</string>
+    <string name="quick_settings_summary">Permite mostrar o ocultar las fichas de ajustes rápidos en barra de estado</string>
     <string name="qs_tile_user_profile">Perfil de usuario</string>
     <string name="qs_tile_airplane_mode">Modo avión</string>
     <string name="qs_tile_battery">Estado bateria</string>
@@ -163,8 +163,8 @@
     <string name="qs_tile_quickrecord">Grabación rápida</string>
     
      <!-- QuickSettings tiles per row -->
-    <string name="pref_qs_tiles_per_row_title">Fichas por fila</string>
-    <string name="pref_qs_tiles_per_row_summary">Define cuántas fichas de ajustes rápidos, se mostraran por cada fila. Las fichas se cambiarán en consecuencia. Se aplica en modo retrato.</string>
+    <string name="pref_qs_tiles_per_row_title">Cuadriculas por fila</string>
+    <string name="pref_qs_tiles_per_row_summary">Define cuántas cuadrículas de ajustes rápidos, se mostraran por cada fila. Las cuadrículas se cambiarán en consecuencia. Se aplica en modo retrato.</string>
     
     <!-- Auto-switch QuickSettings -->
     <string name="pref_auto_switch_qs_title">Auto-cambio Ajuste rápidos</string>
@@ -191,35 +191,35 @@
     <string name="quick_settings_qr_record">Pulsación larga para grabar</string>
     <string name="quick_settings_qr_recording_notif">Tocar para parar la grabación</string>
     
-    <string name="notif_normal_color_title">Notificación color de fondo</string>
-    <string name="notif_pressed_color_title">Notificación color al presionar</string>
-    <string name="notif_normal_color_summary">Color del fondo de la fila de notificación</string>
-    <string name="notif_pressed_color_summary">Color del fondo de la fila de notificacion al pulsar estado</string>
+    <string name="notif_normal_color_title">Color fondo de las notificaciones</string>
+    <string name="notif_pressed_color_title">Color de fondo al presionar la notificación</string>
+    <string name="notif_normal_color_summary">Color del fondo de la fila  de las  notificaciones</string>
+    <string name="notif_pressed_color_summary">Color del fondo de la fila de las  notificacion al presionar</string>
     
      <string name="boot_animation_summary">La animación de aranque se desactivará</string>
      <string name="boot_animation_title">Desactivar animación de aranque</string>
      
      <string name="disable_adb_notif_summary">La notificación ADB se ocultará</string>
-     <string name="disable_adb_notif_title">Ocultar notificaciñon ADB</string>
+     <string name="disable_adb_notif_title">Ocultar notificación ADB</string>
      
-     <string name="audio_video_summary">Mejora en la calidad de grabación de audio y videoImproves Audio and Video recording quality</string>
+     <string name="audio_video_summary">Mejora en la calidad de grabación de audio y video</string>
      <string name="audio_video_title">Mejora en Audio y Video</string>
      
-     <string name="ticker_color_title">Tabla de color</string>
-     <string name="google_dns_title">Mejor Google DNS</string>
+     <string name="ticker_color_title">Color de las notificaciones emergentes</string>
+     <string name="google_dns_title">Mejorar Google DNS</string>
      
-     <string name="notif_Content_color_title">Color de fondo de la notificaciónlor</string>
-     <string name="notif_Title_text_color_title">Color de texto de la notificación</string>
+     <string name="notif_Content_color_title">Color del fondo de la notificación</string>
+     <string name="notif_Title_text_color_title">Color del texto de la notificación</string>
      <string name="toast_text_color_title">Color del texto de los avisos emergentes</string>
      <string name="toast_bg_color_title">Color del fondo de los avisos emergentes</string>
-     <string name="clear_all_position_title">Borrar todos las posiciones de botón</string>
+     <string name="clear_all_position_title">Posición del botón Borrar todo</string>
      
      <string name="build_prop_tweaks">build.prop Tweaks</string>
      
     <!-- Traffic -->
     <string name="traffic_title">Indicador de velocidad de red</string>
     <string name="traffic_summary">Velocidad de red, solo aparece cuando exista tráfico de datos.</string>
-    <string name="traffic_color_title">Color indicador velocidad de red</string>
+    <string name="traffic_color_title">Color del indicador velocidad de red</string>
    
     <!-- PropModder -->
     <string name="propmodder_title">PropModder</string>
@@ -253,14 +253,14 @@
 
     <!--TODO find good explanation of this value -->
     <string name="pref_max_events_summary">Este es un valor de tiempo de ejecución que controla el número de eventos que el sistema permitirá en un segundo (requiere reinicio)</string>
-    <string name="pref_max_events_alt_summary">Número máxmo de eventos del sistema: %s</string>
+    <string name="pref_max_events_alt_summary">Número máximo de eventos del sistema: %s</string>
     <string name="pref_usb_mode_title">Modo USB predeterminado</string>
     <string name="pref_usb_mode_summary">Decide cuál es el valor por defecto, cuando se conecta a un ordenador a través de USB(requiere reinicio)</string>
     <string name="pref_ring_delay_title">Retardo del timbre del teléfono</string>
     <string name="pref_ring_delay_summary">La cantidad de tiempo desde que el sistema registra una llamada telefónica entrante hasta que suena el timbre(requiere reinicio)</string>
     <string name="pref_ring_delay_alt_summary">Retardo de las llamadas entrantes: %s</string>
     <string name="pref_vm_heapsize_title">Dalvik cache tamaño de la pila</string>
-    <string name="pref_vm_heapsize_summary">Esto controlo el tamaño de la caché Dalvik VM tiene acceso (requiere reinicio)</string>
+    <string name="pref_vm_heapsize_summary">Esto controla el tamaño de la caché Dalvik VM tiene acceso (requiere reinicio)</string>
     <string name="pref_vm_heapsize_alt_summary">Dalvik VM  tamaño de la caché: %s</string>
     <string name="propmodder_warning_title">Es necesario ROOT</string>
     <string name="propmodder_warning">Este programa cambia las propiedades del sistema en  /system/build.prop NO LO USE  si no sabe lo que esta haciendo. Nosotros (n00bware, fabricantes de PropModder) no somos responsable de la perdida de su aparato. Usted ha sido advertido</string>
@@ -269,7 +269,7 @@
     <string name="showbuild_loading">Cargando build.prop\u2026</string>
     <string name="showbuild_error">Error cargando build.prop\u2026</string>
     <string name="showbuild_unknown">Desconocido</string>
-    <string name="showbuild_version">Version</string>
+    <string name="showbuild_version">Versión</string>
     <string name="showbuild_label">Esto mostrará el build.prop para que puede ver cuál está en él</string>
     <string name="pref_fast_up_title">HSUPA cargar mejora velocidad</string>
     <string name="pref_fast_up_summary">*ADVERTENCIA* si tu cambias este valor, se añade a los valores necesarios para su build.prop si no están presentes(requiere reinicio)</string>
@@ -279,7 +279,7 @@
     <string name="clear_custom_bootanimation">Borrar animación de arranque personalizado</string>
     <string name="set_custom_bootanimation">Establecer personalización...</string>
     <string name="pref_prox_delay_title">Retardo proximidad sensor</string>
-    <string name="pref_prox_delay_summary">Cuando esté en la pantalla de llamada esta apagada, cuando el dispositivo se aleja  de la cara este valor de retardo controla cuánto tiempo antes se enciende (requiere reinicio)</string>
+    <string name="pref_prox_delay_summary">Cuando durante la llamada la pantalla esta apagada,y el dispositivo se aleja  de la cara este valor de retardo controla cuánto tiempo transcurre antes de que se encienda (requiere reinicio)</string>
     <string name="pref_prox_delay_alt_summary">Establecer proximidad sensor a: %s</string>
     <string name="pref_logcat_title">Desactivar logcat</string>
     <string name="pref_logcat_summary_on">Logcat desactivado, hace que la lectura logcats difícil</string>
@@ -300,8 +300,8 @@
     <string name="pref_sdcard_buffer_title">Mejora velocidad Sdcard</string>
     <string name="pref_sdcard_buffer_summary">Modifica el tamaño del búfer de la sdcard buffer-size para un mejor rendimiento</string>
     <string name="pref_sdcard_buffer_alt_summary">Tamaño búfer Sdcard: %s</string>
-    <string name="pref_g_speed_title">Mejor velocidad 3G</string>
-    <string name="pref_g_speed_summary">Destape velocidad 3g</string>
+    <string name="pref_g_speed_title">Mejorar velocidad 3G</string>
+    <string name="pref_g_speed_summary">Subir velocidad 3g</string>
     <string name="pref_gpu_title">Acelaración GPU</string>
     <string name="pref_gpu_summary">Para habilitar la acelación de hardware en la GPU, controla la interfaz de usuario de la CPU</string>
     <string name="pref_vvmail_title">VVMail (Solamente Sense ROMs )</string>
@@ -311,7 +311,7 @@
      
       <!-- Promodder and initD arrays explainations -->
     <string name="remove_logcat">Permite eliminar registro (persiste luego de un reinicio)</string>
-    <string name="remove_logcat_till_reboot">Eliminar registro hasta reinicio (no persistirá  luiego de un reinicio)</string>
+    <string name="remove_logcat_till_reboot">Eliminar registro hasta reinicio (no persistirá  luego de un reinicio)</string>
     <string name="enable_logcat">Activar el registro(requiere reinicio)</string>
     <string name="disable">Desactivar</string>
     <string name="power_collapse_suspend">Power Colapso Suspender</string>
@@ -343,7 +343,7 @@
      <!-- Smart Alarm Icon -->
     <string name="hide_alarm_icon_off">Icono alarma esta visible</string>
     <string name="hide_alarm_icon_on">Icono alarma esta oculto</string>
-    <string name="hide_alarm_icon">Ocultar icono de la alarme del reloj</string>
+    <string name="hide_alarm_icon">Ocultar icono de la alarma del reloj</string>
     <string name="smart_alarm_icon">Icono inteligente de alarma</string>
     <string name="smart_alarm_icon_summary">Mostrar  el icono de la alarma en el tiempo especificado antes de la alarma</string>
     <string name="always_hide">Icono siempre oculto</string>
@@ -367,7 +367,7 @@
     <string name="fade_effect">Efecto desvanecer</string>
     <string name="horizontal_effect">Efecto horizontal</string>
     <string name="vertical_effect">Efecto vertical</string>
-    
+        
     <!-- Backup & Restore -->
 	<string name="restore">Restaurar</string>
 	<string name="save">Guardar</string>

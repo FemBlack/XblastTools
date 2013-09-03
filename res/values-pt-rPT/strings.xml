@@ -46,7 +46,7 @@
     <string name="small">Pequeno</string>
     <string name="medium">Médio</string>
     <string name="large">Grande</string>
-    <string name="carrier_label_size_summary">Set the Carrier Label text size in Lockscreen</string>
+    <string name="carrier_label_size_summary">Define o tamanho do texto do rótulo da operadora no ecrã de bloqueio</string>
     <string name="carrier_label_size">Tamanho do rótulo da operadora no ecrã de bloqueio</string>
     
     <string name="clock_and_date">Relógio &amp; Data</string>
@@ -55,7 +55,7 @@
     
     <string name="default_caller_image_title">Selecione a imagem padrão de quem liga</string>
     <string name="default_caller_image_summary">Selecione a imagem padrão para contactos desconhecidos &amp; Contactos que não tem imagem</string>
-    <string name="Call_Banner_text_summary">Color will be applied to ContactName , Number, Glowdot, etc</string>
+    <string name="Call_Banner_text_summary">A cor será aplicada ao nome do contacto, número, pontos brilhantes, etc</string>
     <string name="Call_Banner_text_title">Cor do texto da insígnia das chamadas</string>
     <string name="default_caller_image_result_successful">A imagem padrão da pessoa que liga foi alterada</string>
     <string name="default_caller_image_result_not_successful">A imagem padrão da pessoa que liga não foi alterada</string>
@@ -114,7 +114,7 @@
     <string name="battery_color_title">Cor da bateria</string>
     
     <string name="notif_panel_bg_trans_summary">0-Completamente Transparente, 100-Opaco-Aplicado apenas na imagem de fundo do painel de notificações</string>
-    <string name="notif_panel_bg_trans_title">Notification panel bg image transparency</string>
+    <string name="notif_panel_bg_trans_title">Transparência da imagem de fundo do painel de notificações</string>
     
     <string name="CCLLS_title">Cor do rótulo da operadora no ecrã de bloqueio</string>
     <string name="CCLNC_color_title">Cor do rótulo da operadora no painel de notificações</string>
@@ -367,31 +367,37 @@
     <string name="fade_effect">Efeito desvanecer</string>
     <string name="horizontal_effect">Efeito horizontal</string>
     <string name="vertical_effect">Efeito vertical</string>
-    
-    <!-- Backup & Restore -->
-	<string name="restore">Restaurar</string>
-	<string name="save">Guardar</string>
-	<string name="delete">Apagar</string>
-	<string name="no_backups">Não há Backups</string>
-	<string name="reset">Restabelecer</string>
-	<string name="restoring_backup">A restaurar o Backup</string>
-	<string name="backup_name">Nome do Backup</string>
-	<string name="save_successful">Foi guardado com sucesso</string>
-	<string name="save_unsuccessful">Não foi guardado</string>
-	<string name="clearing_settings">A limpar definições</string>
-	<string name="reset_successful">Restabelecido com sucesso</string>
-	<string name="backup_restored">Backup restaurado</string>
-	<string name="reboot_required">É necessário reiniciar</string> 
 	
-	  <!-- Volume Button Tweaks -->
-    <string name="pref_cat_volume_button_title">Botão de volume Ajustes</string>
-    <string name="pref_safe_media_volume_title">Volume de segurança para mãos-livres</string>
-    <string name="pref_safe_media_volume_summary">Ativa ou desativa o volume de segurança do áudio mãos-livres</string>
-    <string name="vol_music_controls_title">Mudar de faixa utilizado teclas de volume</string>
-    <string name="vol_music_controls_summary">As teclas de volume mudam de faixa após manter a respectiva tecla pressionada com o ecrã desligado</string>
-    <string name="vol_key_cursor_control_title">Tecla de Volume controla cursor</string>
-    <string name="vol_key_cursor_control_summary">As teclas de volume controlam o cursor em campos de texto</string>
+	 <!-- Backup & Restore  -->
+    <string name="restore">Restaurar</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Apagar</string>
+    <string name="no_backups">Sem Backups</string>
+    <string name="reset">Restabelecer</string>
+     <string name="restoring_backup">A restaurar o Backup</string>
+    <string name="backup_name">Nome do Backup</string>
+    <string name="save_successful">Guardado com sucesso</string>
+    <string name="save_unsuccessful">Não foi guardado</string>
+    <string name="clearing_settings">A limpar definições</string>
+    <string name="reset_successful">Foi restabelecido com sucesso</string>
+    <string name="backup_restored">O backup foi restaurado</string>
+    <string name="reboot_required">É necessário reiniciar</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Ajustes do botão do volume</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">Volume de segurança do fone de ouvido</string>
+    <string name="pref_safe_media_volume_summary">Ativa ou desativa o volume de segurança do fone de ouvido</string>
+    
+    <string name="vol_music_controls_title">O botão do volume controla a música</string>
+    <string name="vol_music_controls_summary">O botão do volume troca de música após manter o respectivo botão pressionado quando o ecrã está desligado</string>
+    
+    <string name="vol_key_cursor_control_title">Controlar o cursor com o botão do volume</string>
+    <string name="vol_key_cursor_control_summary">Controla o cursor usando o botão do volume nos campos de texto</string>
     <string name="vol_key_cursor_control_off">Desativado</string>
-    <string name="vol_key_cursor_control_on">Teclas de Volume +/- movem o cursor para a esquerda/direita</string>
-    <string name="vol_key_cursor_control_on_reverse">Teclas de Volume +/- movem o cursor para a direita/esquerda</string>
+    <string name="vol_key_cursor_control_on">Volume +/- movem o cursor para a esquerda/direita</string>
+    <string name="vol_key_cursor_control_on_reverse">Volume +/- movem o cursor para a direita/esquerda</string>
+    
 </resources>

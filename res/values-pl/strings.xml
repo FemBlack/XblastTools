@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="title_activity_settings">Ustawienia</string>
+
+    <!-- Strings related to Settings -->
+
+ 	<string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">Ustawienia cienia</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="preview">Podgląd</string>
+    <string name="edit_message">Wpisz tekst</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Anuluj</string>
+    <string name="button_effects">Wybierz kolor</string>
+    <string name="shadow_settings">Ustawienia cienia</string>
+    <string name="ClockTextColor">Zegar i Kolor tekstu</string>
+    <string name="shadowColor">Kolor Cienia</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    
+    
+    <!-- General settings -->
+    <string name="pref_header_general">Ogólne</string>
+    <string name="pref_title_notif_transperency">Przeźroczystość Powiadomienia</string>
+    <string name="pref_description_notif_transperency">Włącz przezroczystość dla tła powiadomień</string>
+	<string name="hide_am_pm">Ukryj AM/PM</string>
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">Pozostałe</string>
+    <string name="carrier_label">Panek Operatora</string>
+    <string name="default_carrier_label">FemBlack</string>
+    <string name="desc_carrier_label">Pozostaw puste dla domyślnej nazwy panelu operatora.</string>
+	<string name="custom_carrier_label_LS">Własny Napis. Ekran Startowy</string>
+	<string name="custom_carrier_label_NC">Własny Napis. Panel Powiadomień</string>
+	 <!-- About -->
+    <string name="pref_about_title">O Mnie</string>
+    <string name="about_app_title">XBlast Tools</string>
+    <string name="about_app">Autor FemBlack@XDA. Dotknij, aby odwiedzić oficjalną strone WWW.</string>
+    <string name="about_donate_title"> Wersja Google Play</string>
+    <string name="about_donate_summary">Kup &amp; i wesprzyj mnie, jeśli uważasz że ta aplikacja jest tego warta.</string>
+	
+	<string name="fullscreen_caller_photo_title">Pełny Ekran/Zdjęcie Rozmówcy</string>
+    <string name="fullscreen_caller_photo_summary">Wyświetla pełnoekranowe zdjęcie rozmówcy na panelu, podczas połączeń.</string>
+     <string name="hide">Ukryj</string>
+    <string name="small">Mały</string>
+    <string name="medium">Średni</string>
+    <string name="large">Duży</string>
+    <string name="carrier_label_size_summary">Rozmiar Tekstu. Ekran Startowy</string>
+    <string name="carrier_label_size">Rozmiar Tekstu. Ekran Startowy</string>
+    
+    <string name="clock_and_date">Zegar &amp; Data</string>
+    <string name="am_pm_style">Styl AM/PM</string>
+    
+    
+    <string name="default_caller_image_title">Wybierz Domyślne Zdjęcie Rozmówcy</string>
+    <string name="default_caller_image_summary">Wybierz domyślne zdjęcie dla nieznanego rozmówcy &amp; kontaktów, które nie mają własnego zdjęcia.</string>
+    <string name="Call_Banner_text_summary">Wybrany kolor zostanie zastosowany dla Nazwy kontaktu, Numer tel. itp.</string>
+    <string name="Call_Banner_text_title">CallBanner Kolor Czcionki</string>
+    <string name="default_caller_image_result_successful">Zmieniono domyślny obraz rozmówcy</string>
+    <string name="default_caller_image_result_not_successful">Nie zmieniono domyślnego obrazu rozmówcy</string>
+    <string name="nbg_image_result_successful">Zmieniono tło panelu powiadomień</string>
+    <string name="nbg_image_result_not_successful">Nie zmieniono tła panelu powiadomień</string>
+    
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">Soft Reboot</string>
+    <string name="reboot_confirm">Telefon uruchomi się ponownie</string>
+    <string name="reboot_confirm_recovery">Telefon uruchomi się ponownie w tryb Recover</string>
+    <string name="soft_reboot_confirm">Telefon uruchomi ponownie SystemUI</string>
+    <string name="fastboot_confirm_recovery">Telefon przejdzie w tryb Fastboot</string>
+    <string name="advanced_reboot_title">Zaawansowane Menu Power-Off</string>
+    <string name="poweroff_advanced_summary">Włącza zaawansowane menu Power-Off(Soft Reboot, Reboot, Reboot Recovery, Fastboot &amp; Screenshot)</string>
+    
+    <string name="pref_title_notif_bg">Tło Dla Panelu Powiadomień</string>
+    <string name="pref_description_notif_bg">Zmień obraz lub kolor dla tła panelu powiadomień.</string>
+    <string name="pref_description_notif_bg_color">Zmieniono kolor dla tła panelu powiadomień</string>
+    <string name="pref_description_notif_bg_img">Zmieniono kolor dla tła panelu powiadomień</string>
+    <string name="fullscreen_caller_sb_title">Ukryj Pasek Stanu</string>
+    <string name="fullscreen_caller_sb_summary">Pasek stanu zostanie ukryty, podczas wykonywanych połączeń.</string>
+    
+    <string name="Call_Banner_font_summary">Wybrana czcionka zostanie zastosowana dla Nazwy kontaktu, Numeru tel. itp.</string>
+    <string name="Call_Banner_font_title">CallBanner Czcionka</string>
+    
+    <string name="status_bar">Pasek Stanu</string>
+    <string name="notification_panel">Panel Powiadomień</string>
+    <string name="center_clock_title">Wypośrodkowany Zegar</string>
+    
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">CRT efekt wygaszenia ekranu</string>
+    
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> wolne</string>   
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> użyte</string>
+    
+    <string name="recents_clear_all_title">Ostatnio Uruchomione Apk</string>
+    <string name="recents_clear_all_summary">Pokazuje przycisk, dzięki któremu czyścimy historię ostatnio uruchomionych aplikacji, w panelu ostatnio uruchomione aplikacje.</string>
+    <string name="ram_usage_bar_title">Pasek Pamięci RAM</string>
+    <string name="ram_usage_bar_summary">Pokazuje użycie pamięci RAM, w panelu ostanio uruchomione aplikacje.</string>
+    
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">Stałe Czarne Tło</string>
+    <string name="holo_bg_solid_black_summary">Użyj stałego czarnego tła dla domyślnego motywu Holo systemu, zamiast gradientu czarno-szary.</string>
+    
+    <string name="nbg_pu_pd_speed_title">Panel Powiadomień Góra/Dół</string>
+    <string name="nbg_pu_pd_speed_summary">Zwiększa prędkość rozwijanego panelu powiadomień, Góra/Dół.</string>
+
+    <string name="statusbar_color_summary">Kiedy kolor pasku stanu jest przezroczysty.\nUWAGA: Prawdopodobnie będzie to wtedy wyglądać trochę dziwnie, jeśli nie jesteś na ekranie głównym. Ponieważ przy większośći aplikacji, tło paska stanu chowa się za uruchomioną aplikacją.</string>
+    <string name="statusbar_color_title">Kolor Tła Dla Pasku Stanu</string>
+    <string name="wifi_color_title">Wi-Fi Kolor Sygnału</string>
+    <string name="wifi_inout_color_title">Wi-Fi Kolor Upload/Download</string>
+    
+    <string name="mobile_signal_color_summary">Kolor zostanie zastosowany dla sygnału telefonii komórkowej &amp; rodzaju sieci.</string>
+    <string name="mobile_signal_color_title">Zasięg Kolor Sygnału</string>
+    <string name="mobile_inout_color_title">Zasięg Kolor Upload/Download</string>
+    <string name="battery_color_title">Bateria Kolor</string>
+    
+    <string name="notif_panel_bg_trans_summary">0-Całkowicie przezroczysty, 100-Nieprzezroczysty-Stosowany tylko dla tła obrazu, ekranu powiadomień.</string>
+    <string name="notif_panel_bg_trans_title">Przejrzystość Tła Obrazu.</string>
+    
+    <string name="CCLLS_title">Kolor. Ekran Startowy</string>
+    <string name="CCLNC_color_title">Kolor. Panel Powiadomień</string>
+    
+    <string name="rotation_summary">Włącz Auto Rotację, w tym również do góry nogami.</string>
+    <string name="rotation_title">Włącz Auto Rotację</string>
+    
+    <string name="sb_clock_color_title">Kolor Zegara</string>
+    <string name="np_clock_color_title">Kolor Zegara &amp; Daty</string>
+    
+     <string name="custom_text_summary">Twój tekst zostanie wyświetlony obok zegara na pasku stanu &amp; panelu powiadomień.</string>
+     <string name="custom_text_title">Własny Tekst</string>
+     
+     <string name="custom_text_np_summary">Twój tekst zostanie wyświetlony obok zegara w panelu powiadomień</string>
+     <string name="custom_text_np_title">Własny Tekst</string>
+     
+     <string name="font_summary">Wybrana czcionka zostanie zastosowana dla zegara na pasku stanu &amp; panelu powiadomień</string>
+     <string name="font_np_summary">Wybrana czcionka zostanie zastosowana dla zegara w panelu powiadomień.</string>
+     <string name="font_title">Czcionki</string>
+     
+     <string name="pref_quick_settings_title">JB Tweaks</string>
+     <string name="quick_setting_columns_summary">Liczba przycisków szybkich ustawień w rzędzie.</string>
+     <string name="quick_setting_columns">Szybkie ustawienia - przyciski</string>
+     
+      <!--  QuickSettings settings -->
+    <string name="quick_settings_title">Pasek stanu Szybkie Ustawienia/Przyciski</string>
+    <string name="quick_settings_summary">Pozwala wyświetlić lub ukryć szybkie ustawienia dla przycisków na pasku stanu</string>
+    <string name="qs_tile_user_profile">Profil użytkownika</string>
+    <string name="qs_tile_airplane_mode">Tryb samolotowy</string>
+    <string name="qs_tile_battery">Status Baterii</string>
+    <string name="qs_tile_wifi">Wi-Fi</string>
+    <string name="qs_tile_bluetooth">Bluetooth</string>
+    <string name="qs_tile_gps">GPS</string>
+    <string name="qs_tile_mobile_data">Transfer Danych</string>
+    <string name="qs_tile_network_mode">Ustawienia Sieci</string>
+    <string name="qs_tile_data_usage">Licznik Danych</string>
+    <string name="qs_tile_audio">Profil Dźwięku</string>
+    <string name="qs_tile_brightness">Jasność</string>
+    <string name="qs_tile_screen_timeout">Wygaszanie Ekranu</string>
+    <string name="qs_tile_autorotation">Auto Rotacja</string>
+    <string name="qs_tile_sync">Synchronizacja</string>
+    <string name="qs_tile_wifi_ap">Wi-Fi Punkty Dostępu</string>
+    <string name="qs_tile_torch">Latarka</string>
+    <string name="qs_tile_xblasttools">XBlast Tools</string>
+    <string name="qs_tile_sleep">Uśpienie</string>
+    <string name="qs_tile_quickrecord">Szybkie Nagrywanie</string>
+    
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">Liczba Przycisków</string>
+    <string name="pref_qs_tiles_per_row_summary">Określa ile przycisków Szybkich Ustawień wyświetlić w jednym rzędzie. Przyciski te zostaną odpowiednio zmienione. Dotyczy trybu pionowego.</string>
+    
+    <!-- Auto-switch QuickSettings -->
+    <string name="pref_auto_switch_qs_title">Automatyczny Przełącznik Szybkie Ustawienia</string>
+    <string name="pref_auto_switch_qs_summary">Szybkie ustawienia, pokażą się automatycznie, gdy pasek stanu jest ciągnięty w dół, podczas gdy nie ma żadnych powiadomień.</string>
+
+    <!-- Quick pulldown -->
+    <string name="pref_quick_pulldown_title">Szybkie Rozwijanie</string>
+    <string name="pref_quick_pulldown_summary">Krawędź paska stanu ściąga w dół panel szybkich ustawień.</string>
+    <string name="quick_pulldown_off">Koniec</string>
+    <string name="quick_pulldown_right">Prawo</string>
+    <string name="quick_pulldown_left">Lewo</string>
+    
+    <!-- QuickSettings strings -->
+    <string name="quick_settings_sync_on">Sync on</string>
+    <string name="quick_settings_sync_off">Sync off</string>
+    <string name="quick_settings_wifi_ap_on">Wi-Fi AP on</string>
+    <string name="quick_settings_wifi_ap_off">Wi-Fi AP off</string>
+    <string name="quick_settings_torch_on">Latarka on</string>
+    <string name="quick_settings_torch_off">Latarka off</string>
+    <string name="quick_settings_torch_off_notif">Dotknij, aby wyłączyć.</string>
+    <string name="quick_settings_qr_playing">Odtwarzanie&#8230;</string>
+    <string name="quick_settings_qr_recording">Nagrywanie&#8230;</string>
+    <string name="quick_settings_qr_recorded">Nagrane</string>
+    <string name="quick_settings_qr_record">Przytrzymaj, aby nagrać</string>
+    <string name="quick_settings_qr_recording_notif">Dotknij, aby zatrzymać nagrywanie</string>
+    
+    <string name="notif_normal_color_title">Kolor Tła Powiadomienia</string>
+    <string name="notif_pressed_color_title">Potwierdzenie O Dotnięciu Kolor</string>
+    <string name="notif_normal_color_summary">Kolor tła wiersza powiadomień.</string>
+    <string name="notif_pressed_color_summary">Potwierdzenie wizualne, po dotknięciu powiadomienia.</string>
+    
+     <string name="boot_animation_summary">Animacja startowa zostanie wyłączona.</string>
+     <string name="boot_animation_title">Wyłącz Animacje Startową</string>
+     
+     <string name="disable_adb_notif_summary">Powiadomienie dla ADB zostanie ukryte.</string>
+     <string name="disable_adb_notif_title">Powiadomienia ADB</string>
+     
+     <string name="audio_video_summary">Poprawia jakość audio i video nagrywanie.</string>
+     <string name="audio_video_title">Audio and Video Hack</string>
+     
+     <string name="ticker_color_title">Kolor.Pasek inf</string>
+     <string name="google_dns_title">Google DNS Hack</string>
+     
+     <string name="notif_Content_color_title">Treść, Kolor Powiadomienia</string>
+     <string name="notif_Title_text_color_title">Tytuł, Kolor Powiadomienia</string>
+     <string name="toast_text_color_title">Monit, Kolor Treści</string>
+     <string name="toast_bg_color_title">Monit, Kolor Tła</string>
+     <string name="clear_all_position_title">Ustal Pozycje Dla Przycisku</string>
+     
+     <string name="build_prop_tweaks">build.prop Tweaks</string>
+     
+    <!-- Traffic -->
+    <string name="traffic_title">Prędkość Sieci. Wskaźnik</string>
+    <string name="traffic_summary">Prędkość pobierania danych pojawi się tylko wtedy, gdy działa pobieranie danych.</string>
+    <string name="traffic_color_title">Kolor Wskaźnika</string>
+   
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string>
+    <string name="propmodder_title_summary">@null</string>
+    <string name="buildprop_title">Build.prop Modyfikacje</string>
+    <string name="nonprop_cat_title">Mody z udziałem init.d script</string>
+    <string name="pc_tweaks">Tweaks</string>
+    <string name="pc_init_d">Włącz/Wyłącz Tweaks</string>
+    <string name="pc_init_d_tweaks">Dostosuj Tweaks</string>
+
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">System Tweaks</string>
+    <string name="pt_enable_init_d">Włącz uruchamianie tweaks</string>
+    <string name="pt_zipalign">Zipalign apks</string>
+    <string name="pt_enable_sd_boost">Włącz SD boost</string>
+    <string name="pt_sd_boost">Read ahead value</string>
+    <string name="pt_fix_permissions">Fix permissions</string>
+    <string name="pt_clear_cache">Wyczyść cache</string>
+    <string name="pt_enable_sysctl">Włącz sysctl</string>
+    <string name="pt_enable_cron">Włącz zaplanowane zadania</string>
+
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">ZOSTAŁEŚ OSTRZEŻONY</string>
+    <string name="main_warning_summary">Obszar ten wprowadza zmiany do twojego build.prop. To zmieni twoje \'/system/build.prop\' NIE ODPOWIADAMY za twoje czyny! Twoje urządzenie, twoja odpowiedzialność.</string>
+    <string name="pref_wifi_scan_interval_title">Wifi Przedział Skanowania</string>
+    <string name="pref_wifi_scan_interval_summary">Czas między ponownym skanowaniem, gdy nie zapisane punkty dostępu są dostępne. (wymaga ponownego uruchomienia)</string>
+    <string name="pref_wifi_scan_alt_summary">Czas ponownego skanowania Wi-Fi: %s</string>
+    <string name="pref_lcd_density_title">LCD Zagęszczenie</string>
+    <string name="pref_lcd_density_summary">Jest to zagęszczenie ekranu, które pozwala na bardziej lepszy wygląd rozdzielczości. (wymaga ponownego uruchomienia)</string>
+    <string name="pref_max_events_title">Manager Okien max/s</string>
+
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">Jest to wartość, która kontroluje czas pracy, liczby zdarzeń systemu uruchomionych na sekundę. (wymaga ponownego uruchomienia)</string>
+    <string name="pref_max_events_alt_summary">Maksymalna liczba zdarzeń w systemie: %s</string>
+    <string name="pref_usb_mode_title">Domyślny Tryb USB</string>
+    <string name="pref_usb_mode_summary">To decyduje, co jest ustawieniem domyślnym, kiedy podłączysz smartfona do komputera za pomocą kabla USB. (wymaga ponownego uruchomienia)</string>
+    <string name="pref_ring_delay_title">Opóźnienie Dzwonka Telefonu</string>
+    <string name="pref_ring_delay_summary">Jest to czas, od kiedy system rejestruje połączenie przychodzące, aż do momentu kiedy dzwonek zaczyna nas informować o połączeniu. (wymaga ponownego uruchomienia)</string>
+    <string name="pref_ring_delay_alt_summary">Opóźnienie połączenia przychodzącego: %s</string>
+    <string name="pref_vm_heapsize_title">Dalvik cache heapsize</string>
+    <string name="pref_vm_heapsize_summary">To kontroluje rozmiar pamięci podręcznej Dalvik VM która ma dostęp do (wymaga ponownego uruchomienia)</string>
+    <string name="pref_vm_heapsize_alt_summary">Dalvik VM cache size: %s</string>
+    <string name="propmodder_warning_title">WYMAGANY ROOT</string>
+    <string name="propmodder_warning">Ten program zmienia właściwości systemu w /system/build.prop NIE UŻYWAĆ, jeśli nie wiesz do czego służy. My (n00bware, twórcy PropModder) Nie ponosimy odpowiedzialności za twoje urządzenie. Zostałeś ostrzeżony.</string>
+    <string name="showbuild_title">Pokaż build.prop</string>
+    <string name="showbuild_dialog">To jest twój /system/build.prop</string>
+    <string name="showbuild_loading">Ładuję build.prop\u2026</string>
+    <string name="showbuild_error">Błąd ładowania build.prop\u2026</string>
+    <string name="showbuild_unknown">Brak danych</string>
+    <string name="showbuild_version">wersja</string>
+    <string name="showbuild_label">To pokaże build.prop więc można zobaczyć, co w niej jest</string>
+    <string name="pref_fast_up_title">HSUPA upload speed hack</string>
+    <string name="pref_fast_up_summary">*UWAGA* W przypadku zmiany tej wartości, potrzebne będzie dodanie tych wartości do twojego build.prop jeżeli jeszcze ich tam nie ma. (wymaga ponownego uruchomienia)</string>
+    <string name="pref_fast_up_alt_summary">Znaleziono aktywne szybkości: %s</string>
+    <string name="pref_disable_boot_anim_title">Wyłącz Animacje Startową</string>
+    <string name="pref_disable_boot_anim_summary">Wyłącz system boot Animacje (wymaga ponownego uruchomienia)</string>
+    <string name="clear_custom_bootanimation">Usuń własną Animacje Startową</string>
+    <string name="set_custom_bootanimation">Ustaw własną...</string>
+    <string name="pref_prox_delay_title">Opóźnienie Czujnik zbliżeniowy</string>
+    <string name="pref_prox_delay_summary">Kiedy jesteś w trakcie rozmowy, ekran jest wyłączony. Gdy odsuwasz urządzenie od twarzy/ucha, wartość opóźnienia kontroluje jak długo ekran się nie włącza. (wymaga ponownego uruchomienia)</string>
+    <string name="pref_prox_delay_alt_summary">Czujnik zbliżeniowy ustawiono na: %s</string>
+    <string name="pref_logcat_title">Wyłącz logcat</string>
+    <string name="pref_logcat_summary_on">Logcat wyłączone, sprawia że ​​czytanie logcats jest trudniejsze.</string>
+    <string name="pref_logcat_summary_off">Logcat jest widoczny, wyłączenie ma zapewnić niewielki wzrost w systemie.</string>
+    <string name="pref_mod_version_title">Zmień Swój Numer Kompilacji</string>
+    <string name="pref_mod_version_summary">Służy celom estetycznym i nie ma wpływu na system</string>
+    <string name="pref_mod_version_alt_summary">Numer kompilacji: %s</string>
+    <string name="pref_mod_version_default">PropModder!!!</string>
+    <string name="pref_sleep_title">Tryb Uśpienia PM</string>
+    <string name="pref_sleep_summary">Zmień politykę nocnego snu.</string>
+    <string name="pref_sleep_alt_summary">Obecny tryb uśpienia: %s</string>
+    <string name="pref_jit_title">JIT kompilator</string>
+    <string name="pref_jit_summary">włącza/wyłącza JIT kompilator w dalvik vm</string>
+    <string name="pref_tcp_stack_title">Optymalizuj TCP Stack</string>
+    <string name="pref_tcp_stack_summary">Zmodyfikuj rozmiar bufora dla lepszej wydajności.</string>
+    <string name="pref_check_in_title">Sprawdź Serwis</string>
+    <string name="pref_check_in_summary">Zatrzymaj wysyłanie danych o użytkowaniu systemu do Google.</string>
+    <string name="pref_sdcard_buffer_title">Sdcard speed hack</string>
+    <string name="pref_sdcard_buffer_summary">Modyfikuj kartę SD -Odczyt- zmień rozmiar dla lepszej jej wydajności.</string>
+    <string name="pref_sdcard_buffer_alt_summary">Karta SD odczyt rozmiar: %s</string>
+    <string name="pref_g_speed_title">3G Speed Hack</string>
+    <string name="pref_g_speed_summary">Uncap 3g speed</string>
+    <string name="pref_gpu_title">GPU Akceleracja</string>
+    <string name="pref_gpu_summary">Aby włączyć akcelerację sprzętową, gdzie GPU kontroluje UI zamiast CPU.</string>
+    <string name="pref_vvmail_title">VVMail (Sense ROMs TYLKO)</string>
+    <string name="pref_vvmail_summary">force Sense ROMS compatibility with VVMail</string>
+    
+     <string name="ps_enable_init_d">Włączanie/wyłączanie poprawek tweaks</string>
+     
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">Trwałe usuwanie dziennika (ustąpi przez restarcie)</string>
+    <string name="remove_logcat_till_reboot">Usuń logi do restartu (NIE będzie się utrzymywać przy restarcie)</string>
+    <string name="enable_logcat">Włącz rejestrowanie (wymaga ponownego uruchomienia)</string>
+    <string name="disable">Wyłącz</string>
+    <string name="power_collapse_suspend">Power Collapse Suspend</string>
+    <string name="power_collapse">Power Collapse (Best)</string>
+    <string name="apps_sleep">Apps Sleep</string>
+    <string name="slow_clock">Slow Clock</string>
+    <string name="wait_for_interrupt">Wait For Interrupt</string>
+    <string name="sdcard_128_kb">128 kb</string>
+    <string name="sdcard_1024_kb">1024 kb</string>
+    <string name="sdcard_2048_kb">2048 kb (rekomendowany)</string>
+    <string name="sdcard_3072_kb">3072 kb</string>
+    <string name="sdcard_4096_kb">4096 kb</string>
+    <string name="sdcard_5120_kb">5120 kb</string>
+    <string name="sdcard_6144_kb">6144 kb</string>
+    <string name="remove">Usuń</string>
+    <string name="hsupa_disabled">HSUPA Wyłączone (Ograniczone)</string>
+    <string name="hsupa_enabled">HSUPA Włączone</string>
+    <string name="hsupa_enabled_uncapped">HSUPA Włączone (Nieograniczone)</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string>
+    <string name="ps_enable_init_d">Włączanie/wyłączanie poprawek tweaks</string>
+    <string name="ps_zipalign">Zipalign wszelkie niezestrojone aplikacji przy każdym starcie systemu</string>
+    <string name="ps_enable_sd_boost">Włączanie/wyłączanie karty SD zwiększenie prędkości</string>
+    <string name="ps_sd_boost">Ustaw wartość odczytu z wyprzedzeniem w kb</string>
+    <string name="ps_fix_permissions">Napraw uprawnienia dla aplikacji przy każdym starcie systemu</string>
+    <string name="ps_clear_cache">Wyczyść cache danych przy każdym starcie systemu</string>
+    <string name="ps_enable_sysctl">Włącz sysctl tweaks przy każdym starcie systemu</string>
+    <string name="ps_enable_cron">Włącz zaplanowane cron jobs</string>
+    
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">Ikona alarmu jest widoczna.</string>
+    <string name="hide_alarm_icon_on">Ikona alarmu jest ukryta.</string>
+    <string name="hide_alarm_icon">Ukryj Ikonę Alarmu</string>
+    <string name="smart_alarm_icon">Inteligentna Ikona Alarmu</string>
+    <string name="smart_alarm_icon_summary">Pokaż ikonę alarmu na ustalony czas, przed załączeniem alarmu.</string>
+    <string name="always_hide">Ukryj ikonę na zawsze</string>
+    <string name="show_15_min_before">Pokaż ikonę 15 minut przed alarmem</string>
+    <string name="show_30_min_before">Pokaż ikonę 30 minut przed alarmem</string>
+    <string name="show_60_min_before">Pokaż ikonę 1 godzinę przed alarmem</string>
+    <string name="show_180_min_before">Pokaż ikonę 3 godziny przed alarmem</string>
+    <string name="show_360_min_before">Pokaż ikonę 6 godzin przed alarmem</string>
+    <string name="show_720_min_before">Pokaż ikonę 12 godzin przed alarmem</string>
+    <string name="show_1440_min_before">Pokaż ikonę 24 godzin przed alarmem</string>
+    
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">Ustawienia Zegara</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">Ukryj Zegar</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">Prawa strona</string>
+    <string name="clear_all_pos_bottom_left">Lewa strona</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">Efekt zanikania</string>
+    <string name="horizontal_effect">Poziomy</string>
+    <string name="vertical_effect">Pionowy</string>
+    
+    <!-- Backup & Restore  -->
+    <string name="restore">Przywróć</string>
+    <string name="save">Zapisz</string>
+    <string name="delete">Kasuj</string>
+    <string name="no_backups">Brak kopii zapasowej.</string>
+    <string name="reset">Reset</string>
+     <string name="restoring_backup">Przywracanie kopii zapasowej</string>
+    <string name="backup_name">Nazwa kopii zapasowej</string>
+    <string name="save_successful">Zapisano</string>
+    <string name="save_unsuccessful">Nie Zapisano</string>
+    <string name="clearing_settings">Wyczyść ustawienia</string>
+    <string name="reset_successful">Resetowanie Pomyślne</string>
+    <string name="backup_restored">Przywrócono kopie zapasową</string>
+    <string name="reboot_required">Wymaga ponownego uruchomienia</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Przycisk Głośności Tweaks</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">Bezpieczna Głośność, Zestaw Słuchawkowy</string>
+    <string name="pref_safe_media_volume_summary">Włącza i wyłącza bezpieczną funkcję głośności mediów, dla zestawu słuchawkowego.</string>
+    
+    <string name="vol_music_controls_title">Klawisz Głośności, Następny Utwór</string>
+    <string name="vol_music_controls_summary">Przytrzymaj klawisz i uruchom następny utwór, kiedy ekran telefonu jest wyłączony. Działa w trakcie słuchania muzyki.</string>
+    
+    <string name="vol_key_cursor_control_title">Klawisz Głośności, Kursor</string>
+    <string name="vol_key_cursor_control_summary">Sterowanie kursorem za pomocą przycisków głośności w polach tekstowych.</string>
+    <string name="vol_key_cursor_control_off">Wyłączone</string>
+    <string name="vol_key_cursor_control_on">Klawisz głośności góra/dół przesuwa kursor w lewo/w prawo</string>
+    <string name="vol_key_cursor_control_on_reverse">Klawisz głośności góra/dół przesuwa kursor w prawo/lewo</string>
+    
+</resources>

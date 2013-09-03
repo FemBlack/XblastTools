@@ -1,5 +1,6 @@
 package ind.fem.black.xposed.mods;
 
+import ind.fem.black.xposed.dialogs.MoveApptoDataFolderDialog;
 import ind.fem.black.xposed.dialogs.RestoreDialog;
 import ind.fem.black.xposed.dialogs.RestoreDialog.RestoreDialogListener;
 import ind.fem.black.xposed.dialogs.SaveDialog;
@@ -7,15 +8,17 @@ import ind.fem.black.xposed.dialogs.SaveDialog;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DialogFragment;
+import android.app.Fragment;
 import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
@@ -48,6 +51,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.ramdroid.roottools.ex.AsyncShell;
+import com.ramdroid.roottools.ex.ErrorCode;
+import com.ramdroid.roottools.ex.ErrorCode.OutputListener;
+import com.stericson.RootTools.RootTools;
+
 import de.devmil.common.ui.color.ColorSelectorDialog;
 import de.robv.android.xposed.library.ui.ListPreferenceFixedSummary;
 
@@ -166,8 +175,18 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = getWindow().getContext();
+        
+        checkPrerequisite();
+        
         if (savedInstanceState == null)
             getFragmentManager().beginTransaction().replace(android.R.id.content, new PrefsFragment()).commit();
+    }
+    
+    @Override
+    public void onResume()
+    {
+      super.onResume();
+      checkPrerequisite();
     }
 
     public static class PrefsFragment extends PreferenceFragment implements OnSharedPreferenceChangeListener, Preference.OnPreferenceChangeListener {
@@ -198,9 +217,9 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private static final String PROP_EXISTS_CMD = "grep -q %s /system/build.prop";
         private static final String DISABLE = "disable";
         private static final String SHOWBUILD_PATH = "/system/tmp/showbuild";
-        private static final String INIT_SCRIPT_LOGCAT = "/system/etc/init.d/72logcat";
-        private static final String INIT_SCRIPT_SDCARD = "/system/etc/init.d/72sdcard";
-        private static final String INIT_SCRIPT_TEMP_PATH = "/system/tmp/init_script";
+       // private static final String INIT_SCRIPT_LOGCAT = "/system/etc/init.d/72logcat";
+        //private static final String INIT_SCRIPT_SDCARD = "/system/etc/init.d/72sdcard";
+       // private static final String INIT_SCRIPT_TEMP_PATH = "/system/tmp/init_script";
         private static final String WIFI_SCAN_PREF = "pref_wifi_scan_interval";
         private static final String WIFI_SCAN_PROP = "wifi.supplicant_scan_interval";
         private static final String WIFI_SCAN_PERSIST_PROP = "persist.wifi_scan_interval";
@@ -262,7 +281,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private static final String CHECK_IN_PERSIST_PROP = "persist_check_in";
         private static final String CHECK_IN_PROP = "ro.config.nocheckin";
         private static final String CHECK_IN_PROP_HTC = "ro.config.htc.nocheckin";
-        private static final String SDCARD_BUFFER_PREF = "pref_sdcard_buffer";
+        //private static final String SDCARD_BUFFER_PREF = "pref_sdcard_buffer";
         private static final String SDCARD_BUFFER_PRESIST_PROP = "persist_sdcard_buffer";
         private static final String SDCARD_BUFFER_DEFAULT = System.getProperty(SDCARD_BUFFER_PRESIST_PROP);
         private static final String THREE_G_PREF = "pref_g_speed";
@@ -333,7 +352,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private CheckBoxPreference mTcpStackPref;
         private CheckBoxPreference mJitPref;
         private CheckBoxPreference mCheckInPref;
-        private ListPreference mSdcardBufferPref;
+        //private ListPreference mSdcardBufferPref;
         private CheckBoxPreference m3gSpeedPref;
         private CheckBoxPreference mGpuPref;
         private CheckBoxPreference mDisableBootAnimationPref;
@@ -343,10 +362,10 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private CheckBoxPreference mAudioVideo;
         private CheckBoxPreference mGoogleDns;
 
-        private File tmpDir = new File("/system/tmp");
+       /* private File tmpDir = new File("/system/tmp");
         private File init_d = new File("/system/etc/init.d");
         private File initScriptLogcat = new File(INIT_SCRIPT_LOGCAT);
-        private File initScriptSdcard = new File(INIT_SCRIPT_SDCARD);
+        private File initScriptSdcard = new File(INIT_SCRIPT_SDCARD);*/
 
         //handler for command processor
         private final CMDProcessor cmd = new CMDProcessor();
@@ -439,7 +458,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             mPrefAboutDonate = (Preference) findPreference(PREF_KEY_ABOUT_DONATE);
             
             //prefSet = getPreferenceScreen();
-            System.out.println("inside mod");
+            
            /* mRebootMsg = (PreferenceScreen) findPreference(REBOOT_PREF);
             removePreference(mRebootMsg);*/
 
@@ -494,8 +513,8 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
 
             //TODO check all init.d scripts for buffer values to display in summary
             // for now we will just let it go with a generic summary displayed
-            mSdcardBufferPref = (ListPreference) findPreference(SDCARD_BUFFER_PREF);
-            mSdcardBufferPref.setOnPreferenceChangeListener(this);
+            //mSdcardBufferPref = (ListPreference) findPreference(SDCARD_BUFFER_PREF);
+            //mSdcardBufferPref.setOnPreferenceChangeListener(this);
 
             m3gSpeedPref = (CheckBoxPreference) findPreference(THREE_G_PREF);
 
@@ -510,9 +529,13 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             mGoogleDns = (CheckBoxPreference) findPreference(GOOGLE_DNS_PREF);
 
             updateScreen();
-
+           
             //Mounting takes the most time so lets avoid doing it if possible
-            if (!tmpDir.isDirectory() || !init_d.isDirectory()) NEEDS_SETUP = true;
+            /*if (!tmpDir.isDirectory() || !init_d.isDirectory()) {
+            	NEEDS_SETUP = true;
+            }
+            	
+            	
 
             if (NEEDS_SETUP) {
                 try {
@@ -529,7 +552,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                     mount("ro");
                     NEEDS_SETUP = false;
                 }
-            }
+            }*/
         }
 
         @Override
@@ -718,7 +741,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                 } else if (preference == mSleepPref) {
                      return doMod(SLEEP_PERSIST_PROP, SLEEP_PROP,
                             newValue.toString());
-                } else if (preference == mSdcardBufferPref) {
+                } /*else if (preference == mSdcardBufferPref) {
                     boolean returnValue = false;
                     mount("rw");
                     if (newValue.toString() == DISABLE) {
@@ -733,7 +756,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                     mount("ro");
                     rebootRequired();
                     return returnValue;
-                }
+                }*/
             }
 
             return false;
@@ -790,7 +813,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
 
         public boolean mount(String read_value) {
             Log.d(TAG, "Remounting /system " + read_value);
-            return cmd.su.runWaitFor(String.format(REMOUNT_CMD, read_value)).success();
+            return RootTools.remount("/system", read_value);
         }
 
         public boolean propExists(String prop) {
@@ -809,7 +832,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             }
         }
 
-        public boolean initLogcat(boolean swap0) {
+        /*public boolean initLogcat(boolean swap0) {
             if (swap0) {
                 cmd.su.runWaitFor(String.format("echo 'rm /dev/log/main' > %s", INIT_SCRIPT_LOGCAT)).success();
                 return cmd.su.runWaitFor(String.format("chmod 555 %s", INIT_SCRIPT_LOGCAT)).success();
@@ -825,9 +848,9 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             } else {
                 return cmd.su.runWaitFor(String.format("rm -f %s", INIT_SCRIPT_LOGCAT)).success();
             }
-        }
+        }*/
 
-        public boolean enableInit() {
+        /*public boolean enableInit() {
             FileWriter wAlive;
             try {
                 wAlive = new FileWriter("/system/tmp/initscript");
@@ -844,7 +867,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                 e.printStackTrace();
             }
             return false;
-        }
+        }*/
 
         public boolean backupBuildProp() {
             Log.d(TAG, "Backing up build.prop to /system/tmp/pm_build.prop");
@@ -1129,5 +1152,43 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
 		
 
 	}
-    }
+	
+	private boolean appIsInstalledInMountASEC() {
+		//System.out.println("black......" + getApplicationInfo().sourceDir);
+		return getApplicationInfo().sourceDir.contains("asec/");
+	}
+	
+	private void checkPrerequisite() {
+		final boolean flag = appIsInstalledInMountASEC();
+		AsyncShell.gotRoot(new OutputListener() {
+            @Override
+            public void onResult(int errorCode, List<String> output) {
+                if (errorCode == ErrorCode.NONE) {
+                    if(flag) {
+                    	try
+                        {
+                          Runtime.getRuntime().exec("rm " + XblastSettings.this.getExternalCacheDir().getAbsolutePath() + "/tmp.apk");
+                        }
+                        catch (Exception localException1)
+                        {
+                          localException1.printStackTrace();
+                        }
+                    }
+                    if(flag) {
+                    	Fragment  MoveApptoDataFolderFragment =  XblastSettings.this.getFragmentManager().findFragmentByTag("MoveApptoDataFolder");
+                        if (MoveApptoDataFolderFragment == null) {
+                        	MoveApptoDataFolderFragment = MoveApptoDataFolderDialog.newInstance();
+                        	((DialogFragment) MoveApptoDataFolderFragment).show(getFragmentManager(), "MoveApptoDataFolder");
+                        }
+                        
+                    	//new MoveApptoDataFolderDialog().show(getFragmentManager(), "MoveApptoDataFolder");
+                    }
+                } else {
+                	XblastSettings.this.finish();
+                }
+            }
+        });		
+		
+	}
+}
 

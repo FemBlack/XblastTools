@@ -38,7 +38,7 @@
     <string name="about_app_title">XBlast Tools</string>
     <string name="about_app">Codificado por FemBlack@XDA. Toque para visitar o tópico oficial.</string>
     <string name="about_donate_title">Versão Google Play</string>
-    <string name="about_donate_summary">Doar &amp; apoie-me, se acha que esta aplicação vale a pena.</string>
+    <string name="about_donate_summary">Doe &amp; apoie-me, se acha que esta aplicação vale a pena.</string>
 	
 	<string name="fullscreen_caller_photo_title">Foto em ecrã completo de quem liga</string>
     <string name="fullscreen_caller_photo_summary">Exibe a foto em ecrã completo no ecrã de chamadas recebidas</string>
@@ -125,14 +125,14 @@
     <string name="sb_clock_color_title">Cor do relógio</string>
     <string name="np_clock_color_title">Relógio &amp; Cor da data</string>
     
-     <string name="custom_text_summary">O texto personalizado será exibido juntamente com o relógio na barra de status &amp; Painel de notificações</string>
+     <string name="custom_text_summary">O texto personalizado será exibido juntamente com o relógio na barra de status &amp; painel de notificações</string>
      <string name="custom_text_title">Texto personalizado</string>
      
-     <string name="custom_text_np_summary">O texto personalizado será exibido juntamente com o relógio na barra de status no Painel de notificações</string>
+     <string name="custom_text_np_summary">O texto personalizado será exibido juntamente com o relógio na barra de status no painel de notificações</string>
      <string name="custom_text_np_title">Texto personalizado</string>
      
-     <string name="font_summary">O tipo de letra selecionado será aplicado no relógio da barra de status &amp; Painel de notificações</string>
-     <string name="font_np_summary">O tipo de letra selecionado será aplicado no relógio da barra de status no Painel de notificações</string>
+     <string name="font_summary">O tipo de letra selecionado será aplicado no relógio da barra de status &amp; painel de notificações</string>
+     <string name="font_np_summary">O tipo de letra selecionado será aplicado no relógio da barra de status no painel de notificações</string>
      <string name="font_title">Tipos de letra</string>
      
      <string name="pref_quick_settings_title">Ajustes JB</string>
@@ -293,7 +293,7 @@
     <string name="pref_sleep_alt_summary">Modo dormir atual: %s</string>
     <string name="pref_jit_title">Compilador Just In Time</string>
     <string name="pref_jit_summary">Ativa/Desativa o compilador JIT Compiler no dalvik vm</string>
-    <string name="pref_tcp_stack_title">Optimia o TCP</string>
+    <string name="pref_tcp_stack_title">Optimiza o TCP</string>
     <string name="pref_tcp_stack_summary">Altera o tamanho do buffer para uma melhor performance</string>
     <string name="pref_check_in_title">Confirmar em serviço</string>
     <string name="pref_check_in_summary">Parar de enviar o uso de dados do sistema para o Google</string>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="title_activity_settings">Instellingen</string>
+
+    <!-- Strings related to Settings -->
+
+ 	<string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">Shaduw Instellingen</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="preview">Voorbeeld</string>
+    <string name="edit_message">Tekst invoeren</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuleer</string>
+    <string name="button_effects">Kies kleur</string>
+    <string name="shadow_settings">Shaduw Instellingen</string>
+    <string name="ClockTextColor">Klok en Tekst Kleur</string>
+    <string name="shadowColor">Shaduw Kleur</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    
+    
+    <!-- General settings -->
+    <string name="pref_header_general">Algemeen</string>
+    <string name="pref_title_notif_transperency">Notificatie Transparantie</string>
+    <string name="pref_description_notif_transperency">Inschakelen transparantie voor de notificatie achtergrond</string>
+	<string name="hide_am_pm">Verberg AM PM</string>
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">Diversen</string>
+    <string name="carrier_label">Leverancier Label</string>
+    <string name="default_carrier_label">FemBlack</string>
+    <string name="desc_carrier_label">Laat leeg voor standaard leverancier label</string>
+	<string name="custom_carrier_label_LS">Aangepast Leverancier Label in Lockscreen</string>
+	<string name="custom_carrier_label_NC">Aangepast Leverancier Label in Notificaties</string>
+	 <!-- About -->
+    <string name="pref_about_title">Over</string>
+    <string name="about_app_title">XBlast Tools</string>
+    <string name="about_app">Gecodeerd door FemBlack@XDA. Raak aan om officiÃ«le thread te bezoeken.</string>
+    <string name="about_donate_title">Google Play Versie</string>
+    <string name="about_donate_summary">Doneer &amp; ondersteun me als je denkt dat deze app het waard is.</string>
+	
+	<string name="fullscreen_caller_photo_title">Volledig Scherm Beller Foto</string>
+    <string name="fullscreen_caller_photo_summary">Toont foto op volledig scherm bij inkomende oproep</string>
+     <string name="hide">Verberg</string>
+    <string name="small">Klein</string>
+    <string name="medium">Middel</string>
+    <string name="large">Groot</string>
+    <string name="carrier_label_size_summary">Stel de Leverancier Label tekstgrootte in op Lockscreen</string>
+    <string name="carrier_label_size">Leverancier Label Grootte in Lockscreen</string>
+    
+    <string name="clock_and_date">Klok &amp; Datum</string>
+    <string name="am_pm_style">AM PM Stijl</string>
+    
+    
+    <string name="default_caller_image_title">Selecteer Standaard Beller afbeelding</string>
+    <string name="default_caller_image_summary">Selecteer Standaard Beller afbeelding voor onbekende contacten &amp; Contacten zonder foto</string>
+    <string name="Call_Banner_text_summary">Kleur zal worden toegepast op Kontaktnaam, Nummer, Gloeidot, etc</string>
+    <string name="Call_Banner_text_title">BelBanner Tekst Kleur</string>
+    <string name="default_caller_image_result_successful">Standaard Beller Afbeelding Verandert</string>
+    <string name="default_caller_image_result_not_successful">Standaard Beller Afbeelding niet Verandert</string>
+    <string name="nbg_image_result_successful">Notificatie Ag Foto Verandert</string>
+    <string name="nbg_image_result_not_successful">Notificatie Ag Foto niet Verandert</string>
+    
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">Zachte Herstart</string>
+    <string name="reboot_confirm">Uw toestel zal herstarten</string>
+    <string name="reboot_confirm_recovery">Uw toestel zal herstarten naar recovery</string>
+    <string name="soft_reboot_confirm">Uw toestel zal de SystemUI herstarten</string>
+    <string name="fastboot_confirm_recovery">Uw toestel zal naar bootloader gaan</string>
+    <string name="advanced_reboot_title">Geavanceerd Uitschakel menu</string>
+    <string name="poweroff_advanced_summary">Activeert geavanceerd uitschakel menu(Zachte Herstart, Herstart, Herstart naar recovery, Fastboot &amp; Schermafbeelding)</string>
+    
+    <string name="pref_title_notif_bg">Notificatie Paneel Ag</string>
+    <string name="pref_description_notif_bg">Activeer afbeelding of kleur voor de notificatie achtergrond</string>
+    <string name="pref_description_notif_bg_color">Kleur ingesteld voor notificatie achtergrond</string>
+    <string name="pref_description_notif_bg_img">Afbeelding ingesteld voor notificatie achtergrond</string>
+    <string name="fullscreen_caller_sb_title">Deactiveer status balk</string>
+    <string name="fullscreen_caller_sb_summary">Status balk zal Uitgeschakeld zijn tijdens gesprek</string>
+    
+    <string name="Call_Banner_font_summary">Geselecteerd Lettertype zal worden toegepast op ContactNaam, Nummer, etc</string>
+    <string name="Call_Banner_font_title">GesprekBanner Tekst Lettertype</string>
+    
+    <string name="status_bar">Status Balk</string>
+    <string name="notification_panel">Notificatie Paneel</string>
+    <string name="center_clock_title">Midden klok</string>
+    
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">CRT scherm uit effect</string>
+    
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> vrij</string>   
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> gebruikt</string>
+    
+    <string name="recents_clear_all_title">Verwijder alle recente taken</string>
+    <string name="recents_clear_all_summary">Actveert knop om alle recente taken in recente apps in Ã©Ã©n keer te wissen</string>
+    <string name="ram_usage_bar_title">Recente RAM balk</string>
+    <string name="ram_usage_bar_summary">Toont RAM gebruik in recente apps dialoog</string>
+    
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">Volledig zwarte achtergrond</string>
+    <string name="holo_bg_solid_black_summary">Gebruik volledig zwarte achtergrond voor standaard Holo systeem thema inplaats van zwart-grijs overgang</string>
+    
+    <string name="nbg_pu_pd_speed_title">Notificatie Trekneer/Trekop Snelheid</string>
+    <string name="nbg_pu_pd_speed_summary">Verhoog de snelheid van de Notificatie Trekneer/Trekop</string>
+
+    <string name="statusbar_color_summary">Als de Statusbalk Kleur transparant is.\nNOTA: Dit zal er waarschijnlijk raar uitzien als u niet op het hoofdscherm bent omdat de meeste applicaties niks achter de statusbalk zetten</string>
+    <string name="statusbar_color_title">Status Balk Achtergrond Kleur</string>
+    <string name="wifi_color_title">Wi-Fi Signaal Kleur</string>
+    <string name="wifi_inout_color_title">Wi-Fi In-Uit Kleur</string>
+    
+    <string name="mobile_signal_color_summary">Kleur zal toegepast worden op Mobiel Signaal &amp; Mobiel Type</string>
+    <string name="mobile_signal_color_title">Mobiel Signaal Kleur</string>
+    <string name="mobile_inout_color_title">Mobiel In-Uit Kleur</string>
+    <string name="battery_color_title">Batterij Kleur</string>
+    
+    <string name="notif_panel_bg_trans_summary">0-Compleet transparant, 100-Opaak-Toegepast enkel voor Notificatiee panel Ag Afbeelding</string>
+    <string name="notif_panel_bg_trans_title">Notificatie paneel Ag afbeelding transparantie</string>
+    
+    <string name="CCLLS_title">LeverancierLabel Kleur in Lockscreen</string>
+    <string name="CCLNC_color_title">LeverancierLabel Kleur in Notificatie</string>
+    
+    <string name="rotation_summary">Inschakelen alle rotatie richtingen, ook Ondersteboven</string>
+    <string name="rotation_title">Inschakelen alle rotatie richtingen</string>
+    
+    <string name="sb_clock_color_title">Klok Kleur</string>
+    <string name="np_clock_color_title">Klok &amp; Datum Kleur</string>
+    
+     <string name="custom_text_summary">Aangepaste tekst will zal worden getoond met de klok in de Status Balk &amp; Notificatie paneel</string>
+     <string name="custom_text_title">Aangepaste tekst</string>
+     
+     <string name="custom_text_np_summary">Aangepaste tekst will zal worden getoond met de klok in het Notificatie paneel</string>
+     <string name="custom_text_np_title">Aangepaste Tekst</string>
+     
+     <string name="font_summary">Geselecteerd lettertype zal worden toegepast op de klok in Status Balk &amp; Notificatie paneel</string>
+     <string name="font_np_summary">Geselecteerd lettertype zal worden toegepast op de klok in het Notificatie paneel </string>
+     <string name="font_title">Lettertypes</string>
+     
+     <string name="pref_quick_settings_title">JB Tweaks</string>
+     <string name="quick_setting_columns_summary">Aantal snelle instelling tegels per rij</string>
+     <string name="quick_setting_columns">Snelle instelling tegels</string>
+     
+      <!--  QuickSettings settings -->
+    <string name="quick_settings_title">Statusbalk Snelle instelling tegels</string>
+    <string name="quick_settings_summary">Laat toe om instelling tegels te tonen in Status Balk</string>
+    <string name="qs_tile_user_profile">Gebruikers profiel</string>
+    <string name="qs_tile_airplane_mode">Vliegtuig modus</string>
+    <string name="qs_tile_battery">Batterij status</string>
+    <string name="qs_tile_wifi">Wi-Fi</string>
+    <string name="qs_tile_bluetooth">Bluetooth</string>
+    <string name="qs_tile_gps">GPS</string>
+    <string name="qs_tile_mobile_data">Mobiele data</string>
+    <string name="qs_tile_network_mode">Netwerk modus</string>
+    <string name="qs_tile_data_usage">Data gebruik</string>
+    <string name="qs_tile_audio">Audio profielen</string>
+    <string name="qs_tile_brightness">Helderheid</string>
+    <string name="qs_tile_screen_timeout">Scherm time-out</string>
+    <string name="qs_tile_autorotation">Auto rotatie</string>
+    <string name="qs_tile_sync">Synchronisatie</string>
+    <string name="qs_tile_wifi_ap">Wi-Fi Toegangspunt</string>
+    <string name="qs_tile_torch">Lamp</string>
+    <string name="qs_tile_xblasttools">XBlast Tools</string>
+    <string name="qs_tile_sleep">Slaap</string>
+    <string name="qs_tile_quickrecord">Snel Opnamen</string>
+    
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">Tegels per rij</string>
+    <string name="pref_qs_tiles_per_row_summary">Definieer hoeveel Snelinstelling tegels te tonen per ene rij. Tegelgrootte wordt navenant aangepast. Geldig in portret modus.</string>
+    
+    <!-- Auto-switch QuickSettings -->
+    <string name="pref_auto_switch_qs_title">Auto-schakelaar Snelinstellingen</string>
+    <string name="pref_auto_switch_qs_summary">Snelinstellingen zullen automatisch openen als status balk is neergetrokken terwijl er geen notificaties zijn</string>
+
+    <!-- Quick pulldown -->
+    <string name="pref_quick_pulldown_title">Snel Neerhalen</string>
+    <string name="pref_quick_pulldown_summary">Rand van de status balk trekt Snelinstellingen neer</string>
+    <string name="quick_pulldown_off">Uit</string>
+    <string name="quick_pulldown_right">Rechts</string>
+    <string name="quick_pulldown_left">Links</string>
+    
+    <!-- QuickSettings strings -->
+    <string name="quick_settings_sync_on">Sync aan</string>
+    <string name="quick_settings_sync_off">Sync uit</string>
+    <string name="quick_settings_wifi_ap_on">Wi-Fi AP aan</string>
+    <string name="quick_settings_wifi_ap_off">Wi-Fi AP uit</string>
+    <string name="quick_settings_torch_on">Lamp aan</string>
+    <string name="quick_settings_torch_off">Lamp uit</string>
+    <string name="quick_settings_torch_off_notif">Aanraken om uit te schakelen</string>
+    <string name="quick_settings_qr_playing">Afspelen&#8230;</string>
+    <string name="quick_settings_qr_recording">Opnemen&#8230;</string>
+    <string name="quick_settings_qr_recorded">Opgenomen</string>
+    <string name="quick_settings_qr_record">Lang Drukken om op te nemen</string>
+    <string name="quick_settings_qr_recording_notif">Aanraken om opnemen te stoppen</string>
+    
+    <string name="notif_normal_color_title">Notificatie achtergrond kleur</string>
+    <string name="notif_pressed_color_title">Notificatie ingedrukt kleur</string>
+    <string name="notif_normal_color_summary">Kleur van de notificatie rij achtergrond</string>
+    <string name="notif_pressed_color_summary">Kleur van de notificatie rij als ingedrukt</string>
+    
+     <string name="boot_animation_summary">Boot Animatie zal worden getoond</string>
+     <string name="boot_animation_title">Uitschakelen Boot Animatie</string>
+     
+     <string name="disable_adb_notif_summary">ADB Notificatie zal verborgen zijn</string>
+     <string name="disable_adb_notif_title">Verberg ADB Notificatie</string>
+     
+     <string name="audio_video_summary">Verbetert Audio en Video opname kwaliteit</string>
+     <string name="audio_video_title">Audio en Video Hack</string>
+     
+     <string name="ticker_color_title">Tikker Kleur</string>
+     <string name="google_dns_title">Google DNS Hack</string>
+     
+     <string name="notif_Content_color_title">Notificatie Content Tekst Kleur</string>
+     <string name="notif_Title_text_color_title">Notificatie Titel Tekst Kleur</string>
+     <string name="toast_text_color_title">Toast Kleur</string>
+     <string name="toast_bg_color_title">Toast Ag Kleur</string>
+     <string name="clear_all_position_title">Alles Wissen knop Positie</string>
+     
+     <string name="build_prop_tweaks">build.prop Tweaks</string>
+     
+    <!-- Traffic -->
+    <string name="traffic_title">Netwerk Snelheid Indicator</string>
+    <string name="traffic_summary">Network Snelheid wordt enkel getoond als er verkeer is</string>
+    <string name="traffic_color_title">Netwerk Snelheid Indicator kleur</string>
+   
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string>
+    <string name="propmodder_title_summary">@null</string>
+    <string name="buildprop_title">Build.prop mods</string>
+    <string name="nonprop_cat_title">Mods aangaande init.d script</string>
+    <string name="pc_tweaks">Tweaks</string>
+    <string name="pc_init_d">Activeer/Deactiveer Tweaks</string>
+    <string name="pc_init_d_tweaks">Aanpassen Tweaks</string>
+
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">Systeem Tweaks</string>
+    <string name="pt_enable_init_d">Activeer op-start tweaks</string>
+    <string name="pt_zipalign">Zipalign apks</string>
+    <string name="pt_enable_sd_boost">Activeer SD boost</string>
+    <string name="pt_sd_boost">Vooruitlees waarde</string>
+    <string name="pt_fix_permissions">Herstel permissies</string>
+    <string name="pt_clear_cache">Wissen cache</string>
+    <string name="pt_enable_sysctl">Activeer sysctl</string>
+    <string name="pt_enable_cron">Activeer geplande taak</string>
+
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">U BENT GEWAARSCHUWD</string>
+    <string name="main_warning_summary">Dit gebied verandert uw build.prop. Het hackt uw \'/system/build.prop\' WIJ ZIJN NIET VERANTWOORDELIJK VOOR UW AKTIES! Uw toestel uw verantwoordelijkheid</string>
+    <string name="pref_wifi_scan_interval_title">Wifi scan interval</string>
+    <string name="pref_wifi_scan_interval_summary">De tijd tussen wifi scans wanneer geen opgeslagen toegangspunten beschikbaar zijn (vereist herstart)</string>
+    <string name="pref_wifi_scan_alt_summary">Tiid tussen wifi scans: %s</string>
+    <string name="pref_lcd_density_title">LCD dichtheid</string>
+    <string name="pref_lcd_density_summary">Dit is de scherm dichtheid die een meer hoge definitie uiterlijk toelaat (vereist herstart)</string>
+    <string name="pref_max_events_title">Windows Manager\'s max gebeurtenissen per seconde</string>
+
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">Dit is een runtime waarde die het aantal gebeurtenissen controlleert die het systeem toelaat in een seconde (vereist herstart)</string>
+    <string name="pref_max_events_alt_summary">Max aantal systeem gebeurtenissen: %s</string>
+    <string name="pref_usb_mode_title">Standaard USB modus</string>
+    <string name="pref_usb_mode_summary">Dit beslist wat de standaard instelling is als u een computer via USB aansluit(vereist herstart)</string>
+    <string name="pref_ring_delay_title">Telefoon beltoon vertraging</string>
+    <string name="pref_ring_delay_summary">De tijd van wanneer het systeem een inkomend gesprek registreert tot wanneer de beltoon start (vereist herstart)</string>
+    <string name="pref_ring_delay_alt_summary">Inkomend Gesprek Vertraging: %s</string>
+    <string name="pref_vm_heapsize_title">Dalvik cache heapsize</string>
+    <string name="pref_vm_heapsize_summary">Dit controleert de grootte van de cache waar Dalvik VM toegang tot heeft (vereist herstart)</string>
+    <string name="pref_vm_heapsize_alt_summary">Dalvik VM cache grootte: %s</string>
+    <string name="propmodder_warning_title">ROOT IS NODIG</string>
+    <string name="propmodder_warning">Dit programma verandert systeem eigenschappen in /system/build.prop GEBRUIK NIET als u niet weet wat u doet. Wij (n00bware, makers of PropModder) zijn niet verantwoordelijk voor uw toestel PUNT. U bent gewaarschuwd!</string>
+    <string name="showbuild_title">Toon build.prop</string>
+    <string name="showbuild_dialog">Dit is uw /system/build.prop</string>
+    <string name="showbuild_loading">Laden build.prop\u2026</string>
+    <string name="showbuild_error">Fout laden build.prop\u2026</string>
+    <string name="showbuild_unknown">Onbekend</string>
+    <string name="showbuild_version">Versie</string>
+    <string name="showbuild_label">Dit zal uw build.prop tonen zodat u kan zien wat er in staat</string>
+    <string name="pref_fast_up_title">HSUPA upload snelheid hack</string>
+    <string name="pref_fast_up_summary">*WAARSCHUWING* als u deze waarde verandert zal het de benodigde waardes aanpassen in uw build.prop als ze er niet reeds instaan (vereist herstart)</string>
+    <string name="pref_fast_up_alt_summary">Fast up actief gevonden: %s</string>
+    <string name="pref_disable_boot_anim_title">Opstart Animatie Uitschakelen</string>
+    <string name="pref_disable_boot_anim_summary">Systeem opstart animatie uitschakelen (vereist herstart)</string>
+    <string name="clear_custom_bootanimation">Aangepaste opstart animatie verwijderen</string>
+    <string name="set_custom_bootanimation">Instellen aangepast...</string>
+    <string name="pref_prox_delay_title">Nabijheid sensor vertraging</string>
+    <string name="pref_prox_delay_summary">Als je aan het bellen bent is het scherm uit, Deze waarde bepaalt hoe lang het duurt voor het scherm weer aan gaat als je het toestel van je gezicht verwijdert (vereist herstart)</string>
+    <string name="pref_prox_delay_alt_summary">Nabijheid sensor ingesteld op: %s</string>
+    <string name="pref_logcat_title">Uitscakelen logcat</string>
+    <string name="pref_logcat_summary_on">Logcat uitgeschakeld, maakt het lezen van logcats moeilijk</string>
+    <string name="pref_logcat_summary_off">Logcat bekijkbaar, uitschakelen geeft een lichte snelheidswinst in het systeem</string>
+    <string name="pref_mod_version_title">Verander uw Versie Nummer</string>
+    <string name="pref_mod_version_summary">Dit is esthetisch en verbeterd het systeem niet</string>
+    <string name="pref_mod_version_alt_summary">Versie Nummer: %s</string>
+    <string name="pref_mod_version_default">PropModder!!!</string>
+    <string name="pref_sleep_title">PM Slaap modus</string>
+    <string name="pref_sleep_summary">Aanpassen Nachttijd slaap beleid</string>
+    <string name="pref_sleep_alt_summary">Huidige Slaap Modus: %s</string>
+    <string name="pref_jit_title">Juist op Tijd Compileerder</string>
+    <string name="pref_jit_summary">inschakelen/uitschakelen JOT Compileerder in dalvik vm</string>
+    <string name="pref_tcp_stack_title">Optimalizeren TCP Stack</string>
+    <string name="pref_tcp_stack_summary">aanpassen van buffer-grootte voor betere performantie</string>
+    <string name="pref_check_in_title">Check in dienst</string>
+    <string name="pref_check_in_summary">Stop met system gebruik data naar Google te zenden</string>
+    <string name="pref_sdcard_buffer_title">Sd-kaart snelheid hack</string>
+    <string name="pref_sdcard_buffer_summary">Aanpassen van de sd-kaart buffer-grootte voor betere performantie</string>
+    <string name="pref_sdcard_buffer_alt_summary">Sd-kaart buffer grootte: %s</string>
+    <string name="pref_g_speed_title">3G Snelheid Hack</string>
+    <string name="pref_g_speed_summary">Verbeter 3g snelheid</string>
+    <string name="pref_gpu_title">GPU Acceleratie</string>
+    <string name="pref_gpu_summary">Om hardware acceleratie in te schakelen als de GPU de UI kontroleert i.p.v. de CPU</string>
+    <string name="pref_vvmail_title">VVMail (ALLEEN Sense ROMs)</string>
+    <string name="pref_vvmail_summary">voor Sense ROMS comptabiliteit met VVMail</string>
+    
+     <string name="ps_enable_init_d">Inschakelen/Uitschakelen opstart tweaks</string>
+     
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">Permanent log verwijderen(Blijft bij herstart)</string>
+    <string name="remove_logcat_till_reboot">Verwijder log tot herstart (Zal NIET blijven bij herstart)</string>
+    <string name="enable_logcat">Inschakelen logging (vereist herstart)</string>
+    <string name="disable">Uitschakelen</string>
+    <string name="power_collapse_suspend">Power Collapsen Suspendeer</string>
+    <string name="power_collapse">Power Collapsen (Beste)</string>
+    <string name="apps_sleep">Apps Slaap</string>
+    <string name="slow_clock">Trage Klok</string>
+    <string name="wait_for_interrupt">Wachten op Interrupt</string>
+    <string name="sdcard_128_kb">128 kb</string>
+    <string name="sdcard_1024_kb">1024 kb</string>
+    <string name="sdcard_2048_kb">2048 kb (recommended)</string>
+    <string name="sdcard_3072_kb">3072 kb</string>
+    <string name="sdcard_4096_kb">4096 kb</string>
+    <string name="sdcard_5120_kb">5120 kb</string>
+    <string name="sdcard_6144_kb">6144 kb</string>
+    <string name="remove">Verwijderen</string>
+    <string name="hsupa_disabled">HSUPA Uitgeschakeld (Capped)</string>
+    <string name="hsupa_enabled">HSUPA Ingeschakeld</string>
+    <string name="hsupa_enabled_uncapped">HSUPA Ingeschakeld (Uncapped)</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string>
+    <string name="ps_enable_init_d">Inschakelen/Uitschakelen opstart tweaks</string>
+    <string name="ps_zipalign">Zipuitlijnen alle niet uitgelijnde apps bij elke start</string>
+    <string name="ps_enable_sd_boost">Inschakelen/Uitschakelen SD-kaart snelheid boost</string>
+    <string name="ps_sd_boost">Instellen vooruitlees waarde in kb</string>
+    <string name="ps_fix_permissions">Herstel permissies voor apps bij elke start</string>
+    <string name="ps_clear_cache">Wis data cache bij elke start</string>
+    <string name="ps_enable_sysctl">Inschakelen sysctl tweaks bij start</string>
+    <string name="ps_enable_cron">Inschakelen geplande cron jobs</string>
+    
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">Alarm Icoon is Zichtbaar</string>
+    <string name="hide_alarm_icon_on">Alarm Icoon is Verborgen</string>
+    <string name="hide_alarm_icon">Verberg Alarm klok icoon</string>
+    <string name="smart_alarm_icon">Slim Alarm Icoon</string>
+    <string name="smart_alarm_icon_summary">Toon het alarm icoon op een specifieke tijd voor alarm</string>
+    <string name="always_hide">Verberg icoon altijd</string>
+    <string name="show_15_min_before">Toon icoon 15 min voor alarm</string>
+    <string name="show_30_min_before">Toon icoon 30 min voor alarm</string>
+    <string name="show_60_min_before">Toon icoon 1 uur voor alarm</string>
+    <string name="show_180_min_before">Toon icoon 3 uur voor alarm</string>
+    <string name="show_360_min_before">Toon icoon 6 uur voor alarm</string>
+    <string name="show_720_min_before">Toon icoon 12 uur voor alarm</string>
+    <string name="show_1440_min_before">Toon icoon 24 uur voor alarm</string>
+    
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">Klok Instellingen</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">Verberg Klok</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">Beneden Rechts</string>
+    <string name="clear_all_pos_bottom_left">Beneden Links</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">Vervaag Effect</string>
+    <string name="horizontal_effect">Horizontaal Effect</string>
+    <string name="vertical_effect">Verticaal Effect</string>
+    
+    <!-- Backup & Restore  -->
+    <string name="restore">Herstellen</string>
+    <string name="save">Opslaan</string>
+    <string name="delete">Verwijderen</string>
+    <string name="no_backups">Geen Backups</string>
+    <string name="reset">Resetten</string>
+     <string name="restoring_backup">Backup  Terugzetten</string>
+    <string name="backup_name">Backup Naam</string>
+    <string name="save_successful">Opslaan Succesvol</string>
+    <string name="save_unsuccessful">Opslaan Niet succesvol</string>
+    <string name="clearing_settings">Wissen Instellingen</string>
+    <string name="reset_successful">Resetten Succesvol</string>
+    <string name="backup_restored">Backup Teruggezet</string>
+    <string name="reboot_required">Herstart Vereist</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Volume Knoppen Tweaks</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">Veilig hoofdtelefoon media volume</string>
+    <string name="pref_safe_media_volume_summary">Activeert of deactiveert veilig hoofdtelefoon media volume functie</string>
+    
+    <string name="vol_music_controls_title">Volume Knoppen nummer overslaan</string>
+    <string name="vol_music_controls_summary">Nummers overslaan met volume knoppen lang-indrukken als scherm uit is</string>
+    
+    <string name="vol_key_cursor_control_title">Volume knop cursor controle</string>
+    <string name="vol_key_cursor_control_summary">Controleert de cursor met volume knoppen in tekst velden</string>
+    <string name="vol_key_cursor_control_off">Utgeschakeld</string>
+    <string name="vol_key_cursor_control_on">Volume op/neer verplaatst de cursor links/rechts</string>
+    <string name="vol_key_cursor_control_on_reverse">Volume op/neer verplaatst de cursor rechts/links</string>
+    
+</resources>

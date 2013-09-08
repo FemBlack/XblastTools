@@ -400,4 +400,34 @@
     <string name="vol_key_cursor_control_on">Volume up/down moves cursor left/right</string>
     <string name="vol_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     
+    <!-- Move Apps to Internal Storage -->
+    
+    <string name="move_internal_storage">Move XBlast Tools to Internal Storage</string>
+    <string name="move_message">App needs to be moved to internal storage to work properly.\n\n(Start the app again after you select Move and the app closes)</string>
+    <string name="move_Xblast">Moving XBlast Tools</string>
+    <string name="move_failed">Failed to move app to internal storage!</string>
+    <string name="quit">Quit</string>
+    <string name="move">Move</string>
+    
+     <!-- Notification Panal Bg -->
+     <string name="image">Image</string>
+     <string name="color">Color</string>
+     <string name="move">Move</string>
+     <string name="select_color">Select Color</string>
+     
+     <!-- XDream -->
+     <string name="xdream_title">XDream</string>
+     <string name="xdream_bg_color_title">Day-Dream Background Color</string>
+     <string name="pref_xdream_bg_Image_title">Day-Dream Background Image</string>
+     <string name="xdream_bg_clcok_title">Day-Dream Clock Color</string>
+     <string name="xdream_image_result_successful">Day-Dream Background Image Changed</string>
+     <string name="xdream_image_result_not_successful">Day-Dream Background Image not Changed</string>
+     
+     <string name="xdream_bg_Image_trans_summary">0-Complete transparent, 100-Opaque-Applied only for Day-Dream Background image</string>
+     <string name="xdream_bg_Image_trans_title">Day-Dream Background image transparency</string>
+     
+     <!-- G+ -->
+     <string name="gplus_summary">Follow me on G+</string>
+     <string name="gplus_title">XBlast G+ Community</string>
+    
 </resources>

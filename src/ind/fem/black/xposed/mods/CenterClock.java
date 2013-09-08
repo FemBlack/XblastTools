@@ -1,15 +1,9 @@
 package ind.fem.black.xposed.mods;
-import java.util.Calendar;
-import java.util.Locale;
-import java.util.TimeZone;
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
-import android.text.SpannableStringBuilder;
-import android.text.format.DateFormat;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +39,7 @@ public class CenterClock {
     private static boolean mClockCentered = false;
     private static int mClockOriginalPaddingLeft;
     private static boolean mClockHide = false;
-    private static boolean mAmPmHide = false;
+    //private static boolean mAmPmHide = false;
     
     private static Traffic mTraffic;
     private static LinearLayout mTrafficLayout;
@@ -63,17 +57,17 @@ public class CenterClock {
                 //setClockPosition(intent.getBooleanExtra(XblastSettings.EXTRA_CENTER_CLOCK, false));
             }
             
-            if (intent.hasExtra(XblastSettings.EXTRA_AMPM_HIDE)) {
+            /*if (intent.hasExtra(XblastSettings.EXTRA_AMPM_HIDE)) {
                 mAmPmHide = intent.getBooleanExtra(XblastSettings.EXTRA_AMPM_HIDE, false);
                 if (mClock != null) {
                     XposedHelpers.callMethod(mClock, "updateClock");
                 }
-            }
+            }*/
             
             if (intent.hasExtra(XblastSettings.EXTRA_CLOCK_HIDE)) {
                 mClockHide = intent.getBooleanExtra(XblastSettings.EXTRA_CLOCK_HIDE, false);
                 if (mClock != null) {
-                    XposedHelpers.callMethod(mClock, "updateClock");
+                	mClock.setVisibility(mClockHide ? View.GONE : View.VISIBLE);
                 }
             }
         }
@@ -94,7 +88,7 @@ public class CenterClock {
     		int twsbId = resparam.res.getIdentifier("tw_status_bar", "layout",
     				"com.android.systemui");
     		mClockHide = prefs.getBoolean(XblastSettings.PREF_KEY_STATUSBAR_CLOCK_HIDE, false);
-    		mAmPmHide = prefs.getBoolean(XblastSettings.PREF_KEY_STATUSBAR_CLOCK_AMPM_HIDE, false);
+    		//mAmPmHide = prefs.getBoolean(XblastSettings.PREF_KEY_STATUSBAR_CLOCK_AMPM_HIDE, false);
     		if (ssbId != 0) {
     			//log("inside super_status_bar>>>");
     		try {
@@ -115,7 +109,7 @@ public class CenterClock {
                     	}
                     }
                     	
-
+                   
                     mRootView = (ViewGroup) mIconArea.getParent().getParent();
                     if (mRootView == null) return;
 
@@ -124,9 +118,11 @@ public class CenterClock {
                     if (mClock == null) return;
                    // ModStatusbarColor.setClock(mClock);
                     // use this additional field to identify the instance of Clock that resides in status bar
-                    XposedHelpers.setAdditionalInstanceField(mClock, "sbClock", true);
+                    //XposedHelpers.setAdditionalInstanceField(mClock, "sbClock", true);
                     mClockOriginalPaddingLeft = mClock.getPaddingLeft();
-                    
+                    if (mClockHide) {
+                        mClock.setVisibility(View.GONE);
+                    }
                    
                     
                     // inject new clock layout
@@ -156,7 +152,7 @@ public class CenterClock {
 
                     prefs.reload();
                     
-                    updateClockSettings();
+                    //updateClockSettings();
                     //flag = true;
                     setClockPosition(prefs.getBoolean("center_clock", false), resparam);
                     return;
@@ -194,8 +190,12 @@ public class CenterClock {
                                 liparam.res.getIdentifier("clock", "id", PACKAGE_NAME));
                         if (mClock == null) return;
 
-                        XposedHelpers.setAdditionalInstanceField(mClock, "sbClock", true);
+                        //XposedHelpers.setAdditionalInstanceField(mClock, "sbClock", true);
                         mClockOriginalPaddingLeft = mClock.getPaddingLeft();
+                        
+                        if (mClockHide) {
+                            mClock.setVisibility(View.GONE);
+                        }
                         
                         // inject new clock layout
                         mLayoutClock = new LinearLayout(liparam.view.getContext());
@@ -213,7 +213,7 @@ public class CenterClock {
                         log("mLayoutClock & mTrafficLayout injected");
 
                         prefs.reload();
-                        updateClockSettings();
+                        //updateClockSettings();
                         //flag = true;
                         setClockPosition(prefs.getBoolean("center_clock", false), resparam);
                         return;
@@ -258,8 +258,12 @@ public class CenterClock {
                         	return;
                         }
 
-                        XposedHelpers.setAdditionalInstanceField(mClock, "sbClock", true);
+                        //XposedHelpers.setAdditionalInstanceField(mClock, "sbClock", true);
                         mClockOriginalPaddingLeft = mClock.getPaddingLeft();
+                        
+                        if (mClockHide) {
+                            mClock.setVisibility(View.GONE);
+                        }
                         
                         // inject new clock layout
                         mLayoutClock = new LinearLayout(liparam.view.getContext());
@@ -278,7 +282,7 @@ public class CenterClock {
                         log("mLayoutClock & mTrafficLayout injected");
 
                         prefs.reload();
-                        updateClockSettings();
+                        //updateClockSettings();
                         //flag = true;
                         setClockPosition(prefs.getBoolean("center_clock", false), resparam);
                         return;
@@ -321,9 +325,12 @@ public class CenterClock {
                             	XposedBridge.log("mClock");
                             	return;
                             }
-                            XposedHelpers.setAdditionalInstanceField(mClock, "sbClock", true);
+                            //XposedHelpers.setAdditionalInstanceField(mClock, "sbClock", true);
                             mClockOriginalPaddingLeft = mClock.getPaddingLeft();
                             
+                            if (mClockHide) {
+                                mClock.setVisibility(View.GONE);
+                            }
                             // inject new clock layout
                             mLayoutClock = new LinearLayout(liparam.view.getContext());
                             mLayoutClock.setLayoutParams(new LinearLayout.LayoutParams(
@@ -341,7 +348,7 @@ public class CenterClock {
                             log("mLayoutClock & mTrafficLayout injected");
 
                             prefs.reload();
-                            updateClockSettings();
+                            //updateClockSettings();
                             //flag = true;
                             setClockPosition(prefs.getBoolean("center_clock", false), resparam);
                             return;
@@ -415,6 +422,16 @@ public class CenterClock {
                 }
             });
 
+           /* XposedHelpers.findAndHookMethod(phoneStatusBarClass, "showClock", boolean.class, new XC_MethodHook() {
+                @Override
+                protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+                    if (mClock == null) return;
+
+                    boolean visible = (Boolean) param.args[0] && !mClockHide;
+                    mClock.setVisibility(visible ? View.VISIBLE : View.GONE);
+                }
+            });*/
+            
             XposedHelpers.findAndHookMethod(tickerClass, "tickerDone", new XC_MethodHook() {
 
                 @Override
@@ -473,6 +490,7 @@ public class CenterClock {
     private static void setClockPosition(boolean center, final InitPackageResourcesParam resparam) {
         if (mClockCentered == center || mClock == null ||
                 mIconArea == null || mLayoutClock == null) {
+        	log("setClockPosition returned without center clock");
             return;
         }
 
@@ -506,7 +524,7 @@ public class CenterClock {
 
         mClockCentered = center;
     }
-    
+   /* private static final boolean DEBUG = true;
     private static void  updateClockSettings() {
     	
     	XposedHelpers.findAndHookMethod(mClock.getClass(), "getSmallTime", new XC_MethodHook() {
@@ -524,32 +542,48 @@ public class CenterClock {
                     }
                     
                     mClock.setVisibility(View.VISIBLE);
+                    if (DEBUG) log("Is statusbar clock: " + (sbClock == null ? "false" : "true"));
                     Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
                     String clockText = param.getResult().toString();
-                   
+                    if (DEBUG) log("Original clockText: '" + clockText + "'");
                     String amPm = calendar.getDisplayName(
                             Calendar.AM_PM, Calendar.SHORT, Locale.getDefault());
-                   
+                    if (DEBUG) log("Locale specific AM/PM string: '" + amPm + "'");
                     int amPmIndex = clockText.indexOf(amPm);
-                   
+                    if (DEBUG) log("Original AM/PM index: " + amPmIndex);
                     if (mAmPmHide && amPmIndex != -1) {
-                        clockText = clockText.replace(amPm, "");
+                        clockText = clockText.replace(amPm, "").trim();
+                        if (DEBUG) log("AM/PM removed. New clockText: '" + clockText + "'");
                         amPmIndex = -1;
-                       
-                    } else if (!DateFormat.is24HourFormat(mClock.getContext()) && amPmIndex == -1) {
+                    } else if (!mAmPmHide
+                                && !DateFormat.is24HourFormat(mClock.getContext())
+                                && amPmIndex == -1) {
                         // insert AM/PM if missing
                         clockText += " " + amPm;
-                        amPmIndex = clockText.indexOf(amPm);                       
+                        amPmIndex = clockText.indexOf(amPm);
+                        if (DEBUG) log("AM/PM added. New clockText: '" + clockText + "'; New AM/PM index: " + amPmIndex);
                     }
+                    CharSequence dow = "";
+                    // apply day of week only to statusbar clock, not the notification panel clock
+                    
+                    clockText = dow + clockText;
                     SpannableStringBuilder sb = new SpannableStringBuilder(clockText);
-                    /*sb.setSpan(new RelativeSizeSpan(0.7f), 0, 0, 
-                            Spannable.SPAN_EXCLUSIVE_INCLUSIVE);*/
+                    sb.setSpan(new RelativeSizeSpan(0.7f), 0, dow.length(),
+                            Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
+                    if (amPmIndex > -1) {
+                        int offset = Character.isWhitespace(clockText.charAt(dow.length() + amPmIndex - 1)) ?
+                                1 : 0;
+                        sb.setSpan(new RelativeSizeSpan(0.7f), dow.length() + amPmIndex - offset,
+                                dow.length() + amPmIndex + amPm.length(),
+                                Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
+                    }
+                    if (DEBUG) log("Final clockText: '" + sb + "'");
                     param.setResult(sb);
                 }
             }
         });
     	
-    }
+    }*/
     
     
 }

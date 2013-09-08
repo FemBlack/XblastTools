@@ -6,6 +6,7 @@ import android.widget.TextView;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XSharedPreferences;
 import de.robv.android.xposed.XposedBridge;
+import de.robv.android.xposed.XposedHelpers;
 
 public class Clock {
 	
@@ -33,29 +34,30 @@ public class Clock {
         final String textNp = prefs.getString(XblastSettings.PREF_KEY_CUSTOM_TEXT_NP, "");
         final String fontNameNp = prefs.getString(XblastSettings.PREF_KEY_FONT_LIST_NP,"Default");*/
 		 
-		
+        final boolean mAmPmHide = prefs.getBoolean(XblastSettings.PREF_KEY_STATUSBAR_CLOCK_AMPM_HIDE, false);
+        
 
 		findAndHookMethod("com.android.systemui.statusbar.policy.Clock",
 				classLoader, "updateClock", new XC_MethodHook() {
 			
-					/*@Override
+					@Override
 					protected void beforeHookedMethod(MethodHookParam param)
 							throws Throwable {
 						try {
-							if (prefs.getBoolean("amPm", false)) {
+							if (mAmPmHide) {
 								XposedHelpers.setIntField(param.thisObject,
 										"AM_PM_STYLE", 2);
 							}
 						} catch (Throwable t) {
-							XposedBridge.log(t);
+							XposedBridge.log("AM_PM_STYLE");
 						}
-					}*/
+					}
 					@Override
 					protected void afterHookedMethod(MethodHookParam param)
 							throws Throwable {
 						try {
 							TextView tv = (TextView) param.thisObject;
-							tv.append(" " + text);
+							tv.append(" " + text + " ");
 							
 							if(clockColorEnabled) {
 								tv.setTextColor(clockColor);

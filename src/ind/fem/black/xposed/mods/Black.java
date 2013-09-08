@@ -33,21 +33,7 @@ public class Black {
 	public static final String WALLET = "com.google.android.apps.walletnfcrel";
 	public static final String HANGOUTS = "com.google.android.talk";
 	public static final String FLASH_BAR_SERVICE = "com.sec.android.app.FlashBarService";
-	public static final String TOUCH_WIZ = "touchwiz";
-	public static final String SYS_SCOPE = "com.sec.android.app.sysscope";
-	public static final String LAUNCHER = "com.sec.android.app.launcher";
-	public static final String NOVA_LAUNCHER = "com.teslacoilsw.launcher";
-	public static final String ADW_LAUNCHER = "org.adw.launcher";
-	public static final String BUZZ_LAUNCHER = "com.buzzpia.aqua.launcher";
-	public static final String GO_LAUNCHER = "com.gau.go.launcherex";
-	public static final String ACTION_LAUNCHER = "com.chrislacy.actionlauncher.pro";
-	public static final String APEX_LAUNCHER = "com.anddoes.launcher";
-	public static final String HOLO_LAUNCHER = "com.mobint.hololauncher";
-	public static final String HOLO_LAUNCHER_HD = "com.mobint.hololauncher.hd";
-
-	public static final String[] LAUNCHERS_LIST = new String[] { LAUNCHER,
-			NOVA_LAUNCHER, ADW_LAUNCHER, BUZZ_LAUNCHER, GO_LAUNCHER,
-			ACTION_LAUNCHER, APEX_LAUNCHER, HOLO_LAUNCHER, HOLO_LAUNCHER_HD };
+	public static final String DESKCLOCK = "com.android.deskclock";
 
     // Device type reference
     private static int mDeviceType = -1;

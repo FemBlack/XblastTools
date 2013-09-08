@@ -1,5 +1,7 @@
 package ind.fem.black.xposed.dialogs;
 
+import ind.fem.black.xposed.mods.R;
+
 import java.util.List;
 
 import android.app.AlertDialog;
@@ -25,13 +27,13 @@ public class MoveApptoDataFolderDialog extends DialogFragment
   public Dialog onCreateDialog(Bundle paramBundle)
   {
     setCancelable(false);
-    return new AlertDialog.Builder(getActivity()).setTitle("Move XBlast Tools to Internal Storage").setMessage("App needs to be moved to internal storage to work properly.\n\n(Start the app again after you select Move and the app closes)").setCancelable(false).setPositiveButton("Move", new DialogInterface.OnClickListener()
+    return new AlertDialog.Builder(getActivity()).setTitle(R.string.move_internal_storage).setMessage(R.string.move_message).setCancelable(false).setPositiveButton(R.string.move, new DialogInterface.OnClickListener()
     {
       public void onClick(DialogInterface dialogInterface, int value)
       {
         try
         {
-          ProgressDialog.show(MoveApptoDataFolderDialog.this.getActivity(), "", "Moving XBlast Tools", true);
+          ProgressDialog.show(MoveApptoDataFolderDialog.this.getActivity(), "", getResources().getString(R.string.move_internal_storage), true);
           String str1 = "cat " + MoveApptoDataFolderDialog.this.getActivity().getApplicationInfo().sourceDir + " > " + MoveApptoDataFolderDialog.this.getActivity().getExternalCacheDir().getAbsolutePath() + "/tmp.apk";
           String str2 = "pm install -r -f " + MoveApptoDataFolderDialog.this.getActivity().getExternalCacheDir().getAbsolutePath() + "/tmp.apk";
          
@@ -46,11 +48,11 @@ public class MoveApptoDataFolderDialog extends DialogFragment
         catch (Exception localException)
         {
           localException.printStackTrace();
-          Toast.makeText(MoveApptoDataFolderDialog.this.getActivity(), "Failed to move app to internal storage!", Toast.LENGTH_SHORT).show();
+          Toast.makeText(MoveApptoDataFolderDialog.this.getActivity(), R.string.move_failed, Toast.LENGTH_SHORT).show();
           MoveApptoDataFolderDialog.this.getActivity().finish();
         }
       }
-    }).setNegativeButton("Quit", new DialogInterface.OnClickListener()
+    }).setNegativeButton(R.string.quit, new DialogInterface.OnClickListener()
     {
       public void onClick(DialogInterface paramAnonymousDialogInterface, int paramAnonymousInt)
       {    	 

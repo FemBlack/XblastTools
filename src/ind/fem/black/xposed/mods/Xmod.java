@@ -2,14 +2,12 @@ package ind.fem.black.xposed.mods;
 
 import java.lang.reflect.Constructor;
 
-
 import android.content.res.XModuleResources;
 import android.content.res.XResources;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.provider.MediaStore.Audio;
 import android.view.WindowManager;
 import de.robv.android.xposed.IXposedHookInitPackageResources;
 import de.robv.android.xposed.IXposedHookLoadPackage;
@@ -101,6 +99,7 @@ public class Xmod implements IXposedHookLoadPackage,
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
+		
 
 	}
 
@@ -115,6 +114,15 @@ public class Xmod implements IXposedHookLoadPackage,
 			}
 
 		}*/
+		
+		if (lpparam.packageName.equals(Black.DESKCLOCK) &&  Build.VERSION.SDK_INT >= 17) {
+			try {			
+				XBlastDream.handleLoadPackage(prefs,lpparam.classLoader);			
+			} catch (Throwable t) {
+				XposedBridge.log(t);
+			}
+		}
+		
 		
 		if (lpparam.packageName.equals(FullscreenPicCall.PACKAGE_NAME) &&  (prefs.getBoolean("fullscreen_caller_photo", false))) {
 			try {
@@ -134,14 +142,15 @@ public class Xmod implements IXposedHookLoadPackage,
 
 		}
 		if (lpparam.packageName.equals(AdvRebootMenu.PACKAGE_NAME)) {
-		try {
-			if (Black.findClassInPhone(CrtEffect.CLASS_DISPLAY_POWER_STATE) && Black.findClassInPhone(CrtEffect.CLASS_ELECTRON_BEAM_STATE) && prefs.getInt("crt_effect_mode", 4) != 4) {
-			CrtEffect.init(prefs);
+			try {
+				if (Black.findClassInPhone(CrtEffect.CLASS_DISPLAY_POWER_STATE) && Black.findClassInPhone(CrtEffect.CLASS_ELECTRON_BEAM_STATE) && prefs.getInt("crt_effect_mode", 4) != 4) {
+				CrtEffect.init(prefs);
+				}
+			} catch (Throwable t) {
+				XposedBridge.log(t);
 			}
-		} catch (Throwable t) {
-			XposedBridge.log(t);
 		}
-		}
+		
 		if (!lpparam.packageName.equals("com.android.systemui")) {
 			return;
 		}

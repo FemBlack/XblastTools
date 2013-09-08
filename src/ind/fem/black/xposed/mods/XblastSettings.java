@@ -15,11 +15,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
-import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -33,12 +33,12 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.preference.CheckBoxPreference;
 import android.preference.EditTextPreference;
 import android.preference.ListPreference;
-import android.preference.MultiSelectListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceFragment;
@@ -125,6 +125,12 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     public static final String PREF_KEY_CCLNC_COLOR_ENABLE = "CCLNC_color_enabled";
     
     public static final String PREF_KEY_BOOT_ANIMATION = "boot_animation";
+    public static final String PREF_KEY_XDREAM_BG_COLOR = "pref_xdream_bg_color";
+    public static final String PREF_KEY_XDREAM_BG_COLOR_ENABLE = "pref_xdream_bg_color_enabled";
+    public static final String PREF_KEY_XDREAM_CLOCK_COLOR = "pref_xdream_clock_color";
+    public static final String PREF_KEY_XDREAM_CLOCK_COLOR_ENABLE = "pref_xdream_clock_color_enabled";
+    public static final String PREF_KEY_XDREAM_BG_IMAGE = "pref_xdream_bg_Image";
+    public static final String PREF_KEY_XDREAM_BG_IMAGE_ALPHA = "pref_xdream_bg_Image_alpha";
     
     public final static String VERSION = "version";
     public static int SELECTED_NBG_COLOR = -1;
@@ -148,15 +154,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     
     public static final String ACTION_PREF_BOOTANIMATION_CHANGED = "xblast.intent.action.BOOTANIMATION_CHANGED";
     
-    public static final String EXTRA_QS_AUTOSWITCH = "qsAutoSwitch";
-    public static final String EXTRA_QUICK_PULLDOWN = "quickPulldown";
-    public static final String PREF_KEY_QUICK_PULLDOWN = "pref_quick_pulldown";
-    public static final int QUICK_PULLDOWN_OFF = 0;
-    public static final int QUICK_PULLDOWN_RIGHT = 1;
-    public static final int QUICK_PULLDOWN_LEFT = 2;
-    public static final String PREF_KEY_QUICK_SETTINGS = "pref_quick_settings";
-    public static final String PREF_KEY_QUICK_SETTINGS_TILES_PER_ROW = "quickSettingsColumns";
-    public static final String PREF_KEY_QUICK_SETTINGS_AUTOSWITCH = "pref_auto_switch_qs";
+    
     public static final String PREF_KEY_VOL_MUSIC_CONTROLS = "pref_vol_music_controls";
     public static final String PREF_KEY_SAFE_MEDIA_VOLUME = "pref_safe_media_volume";
     
@@ -167,6 +165,8 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     public static final int VOL_KEY_CURSOR_CONTROL_OFF = 0;
     public static final int VOL_KEY_CURSOR_CONTROL_ON = 1;
     public static final int VOL_KEY_CURSOR_CONTROL_ON_REVERSE = 2;
+    public static final String PREF_KEY_GOOGLE_PLUS = "pref_about_gplus";
+    
 	
 	private static Context mContext;
 	private static PreferenceManager mPreferenceManager;
@@ -196,12 +196,15 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         
         private Preference mPrefAbout;
         private Preference mPrefAboutDonate;
+        private Preference mPrefGplus;
         Preference mNbgpref;
         Preference mFullScreenCallerImagepref;
         ListPreferenceFixedSummary mFontlistpref;
         ListPreferenceFixedSummary mCbfontlistpref;
         ListPreferenceFixedSummary mNpfontlistpref;
-        private MultiSelectListPreference mQuickSettings;
+        
+        private Preference mXDreamBgImagepref;
+        private ColorPickerPreference mXDreamBgColorEnabledpref;
         
         Map< CharSequence, String > fontsMap = null;
         
@@ -209,11 +212,6 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private static final String APPEND_CMD = "echo \"%s=%s\" >> /system/build.prop";
         private static final String KILL_PROP_CMD = "busybox sed -i \"/%s/D\" /system/build.prop";
         private static final String REPLACE_CMD = "busybox sed -i \"/%s/ c %<s=%s\" /system/build.prop";
-        private static final String LOGCAT_CMD = "busybox sed -i \"/log/ c %s\" /system/etc/init.d/72propmodder_script";
-        private static final String SDCARD_BUFFER_CMD = "echo %s > /sys/devices/virtual/bdi/179:0/read_ahead_kb";
-        private static final String REBOOT_PREF = "reboot";
-        private static final String FIND_CMD = "grep -q \"%s\" /system/build.prop";
-        private static final String REMOUNT_CMD = "busybox mount -o %s,remount -t yaffs2 /dev/block/mtdblock1 /system";
         private static final String PROP_EXISTS_CMD = "grep -q %s /system/build.prop";
         private static final String DISABLE = "disable";
         private static final String SHOWBUILD_PATH = "/system/tmp/showbuild";
@@ -232,10 +230,6 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private static final String MAX_EVENTS_PROP = "windowsmgr.max_events_per_sec";
         private static final String MAX_EVENTS_PERSIST_PROP = "persist.max_events";
         private static final String MAX_EVENTS_DEFAULT = System.getProperty(MAX_EVENTS_PROP);
-        private static final String USB_MODE_PREF = "pref_usb_mode";
-        private static final String USB_MODE_PROP = "ro.default_usb_mode";
-        private static final String USB_MODE_PERSIST_PROP = "persist.usb_mode";
-        private static final String USB_MODE_DEFAULT = System.getProperty(USB_MODE_PROP);
         private static final String RING_DELAY_PREF = "pref_ring_delay";
         private static final String RING_DELAY_PROP = "ro.telephony.call_ring.delay";
         private static final String RING_DELAY_PERSIST_PROP = "persist.call_ring.delay";
@@ -252,16 +246,10 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private static final String PROX_DELAY_PROP = "mot.proximity.delay";
         private static final String PROX_DELAY_PERSIST_PROP = "persist.prox.delay";
         private static final String PROX_DELAY_DEFAULT = System.getProperty(PROX_DELAY_PROP);
-        private static final String LOGCAT_PREF = "pref_logcat";
-        private static final String LOGCAT_PERSIST_PROP = "persist.logcat";
-        private static final String LOGCAT_ALIVE_PATH = "/system/etc/init.d/72propmodder_script";
-        private static final String LOGCAT_ENABLE = "rm /dev/log/main";
         private static final String MOD_VERSION_PREF = "pref_mod_version";
         private static final String MOD_VERSION_PROP = "ro.build.display.id";
         private static final String MOD_VERSION_PERSIST_PROP = "persist.build.display.id";
         private static final String MOD_VERSION_DEFAULT = System.getProperty(MOD_VERSION_PROP);
-        private static final String MOD_BUTTON_TEXT = "doMod";
-        private static final String MOD_VERSION_TEXT = "Mods by PropModder";
         private static final String SLEEP_PREF = "pref_sleep";
         private static final String SLEEP_PROP = "pm.sleep_mode";
         private static final String SLEEP_PERSIST_PROP = "persist.sleep";
@@ -281,9 +269,6 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private static final String CHECK_IN_PERSIST_PROP = "persist_check_in";
         private static final String CHECK_IN_PROP = "ro.config.nocheckin";
         private static final String CHECK_IN_PROP_HTC = "ro.config.htc.nocheckin";
-        //private static final String SDCARD_BUFFER_PREF = "pref_sdcard_buffer";
-        private static final String SDCARD_BUFFER_PRESIST_PROP = "persist_sdcard_buffer";
-        private static final String SDCARD_BUFFER_DEFAULT = System.getProperty(SDCARD_BUFFER_PRESIST_PROP);
         private static final String THREE_G_PREF = "pref_g_speed";
         private static final String THREE_G_PERSIST_PROP = "persist_3g_speed";
         private static final String THREE_G_PROP_0 = "ro.ril.enable.3g.prefix";
@@ -324,21 +309,10 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private static final String GOOGLE_DNS_PROP_2 = "net.dns1";
         private static final String GOOGLE_DNS_PROP_3 = "net.dns2";
         
-        private boolean NEEDS_SETUP = false;
-
-        private String placeholder;
-        private String tcpstack0;
-        private String jitVM;
-
         private String ModPrefHolder = System.getProperty(MOD_VERSION_PERSIST_PROP,
         		System.getProperty(MOD_VERSION_PROP, MOD_VERSION_DEFAULT));
 
-        //handles for our menu hard key press
-        private final int MENU_MARKET = 1;
-        private final int MENU_REBOOT = 2;
-        private int NOTE_ID;
-
-       //private PreferenceScreen mRebootMsg;
+        //private PreferenceScreen mRebootMsg;
         private ListPreference mWifiScanPref;
         // private ListPreference mLcdDensityPref;
         private ListPreference mMaxEventsPref;
@@ -357,8 +331,6 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private CheckBoxPreference mGpuPref;
         private CheckBoxPreference mDisableBootAnimationPref;
         private CheckBoxPreference mHideadbPref;
-        private AlertDialog mAlertDialog;
-        private NotificationManager mNotificationManager;
         private CheckBoxPreference mAudioVideo;
         private CheckBoxPreference mGoogleDns;
 
@@ -381,13 +353,21 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             getPreferenceManager().setSharedPreferencesMode(Context.MODE_WORLD_READABLE);
             addPreferencesFromResource(ind.fem.black.xposed.mods.R.xml.xblast);
             mPreferenceManager = getPreferenceManager();
-            mPrefs = getPreferenceScreen().getSharedPreferences();      
+            mPrefs = getPreferenceScreen().getSharedPreferences();
+            
+            if (Build.VERSION.SDK_INT < 17) {
+            	PreferenceScreen xblastScreen = (PreferenceScreen) findPreference("XBlast");
+                PreferenceScreen xDreamScreen = (PreferenceScreen) findPreference("xDream");
+                
+                xblastScreen.removePreference(xDreamScreen);
+            }
+            
+            
             mPrefAbout = (Preference) findPreference(PREF_KEY_ABOUT);
             mFullScreenCallerImagepref = findPreference("defaultCallerImage");
             mFontlistpref = (ListPreferenceFixedSummary) findPreference(PREF_KEY_FONT_LIST);
             mCbfontlistpref = (ListPreferenceFixedSummary) findPreference(PREF_KEY_CALLBANNER_FONT_LIST);
-            mQuickSettings = (MultiSelectListPreference) findPreference(PREF_KEY_QUICK_SETTINGS);
-            //mNpfontlistpref = (ListPreferenceFixedSummary) findPreference(PREF_KEY_FONT_LIST_NP);
+           
             
             fontsMap = FontManager.enumerateFonts();
     		Collection<CharSequence> fontNameCollection = fontsMap.keySet();
@@ -401,6 +381,13 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             mCbfontlistpref.setEntries(fontNameArray);  
             mCbfontlistpref.setEntryValues(fontNameArray);
             
+            mXDreamBgImagepref = findPreference(PREF_KEY_XDREAM_BG_IMAGE);
+            mXDreamBgColorEnabledpref = (ColorPickerPreference) findPreference(PREF_KEY_XDREAM_BG_COLOR);
+            
+            
+            if(mXDreamBgColorEnabledpref!= null && mXDreamBgColorEnabledpref.isEnabled()) {
+            	mXDreamBgImagepref.setEnabled(false);
+            }
             //mNpfontlistpref.setEntries(fontNameArray);  
             //mNpfontlistpref.setEntryValues(fontNameArray);
             
@@ -409,7 +396,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
       	  {
         	    public boolean onPreferenceClick(final Preference paramAnonymousPreference)
         	    {
-        	      new AlertDialog.Builder(mContext).setCancelable(true).setTitle("Notification Panal Bg").setNeutralButton("Image", new DialogInterface.OnClickListener()
+        	      new AlertDialog.Builder(mContext).setCancelable(true).setTitle(R.string.pref_title_notif_bg).setNeutralButton(R.string.image, new DialogInterface.OnClickListener()
         	      {
         	        public void onClick(DialogInterface paramAnonymous2DialogInterface, int paramAnonymous2Int)
         	        {
@@ -418,7 +405,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         		        intent.setClassName(Black.PACKAGE_NAME, "ind.fem.black.xposed.mods.NbgImageActivity");
         		        startActivity(intent);
         	        }
-        	      }).setPositiveButton("Color", new DialogInterface.OnClickListener()
+        	      }).setPositiveButton(R.string.color, new DialogInterface.OnClickListener()
         	      {
         	        public void onClick(DialogInterface paramAnonymous2DialogInterface, int paramAnonymous2Int)
         	        {
@@ -433,7 +420,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         								//TextEffectsActivity.editor.commit();
         							}
         						}, SELECTED_NBG_COLOR);
-        				dlg.setTitle("Select new color");
+        				dlg.setTitle(R.string.select_color);
         				// b.setBackgroundColor( SELECTED_COLOR );
         				// b.getBackground().setColorFilter(SELECTED_COLOR,PorterDuff.Mode.MULTIPLY);
         				dlg.show();
@@ -455,7 +442,8 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                 mPrefAbout.setTitle(getActivity().getTitle() + version);
             }
             
-            mPrefAboutDonate = (Preference) findPreference(PREF_KEY_ABOUT_DONATE);
+            mPrefAboutDonate =  findPreference(PREF_KEY_ABOUT_DONATE);
+            mPrefGplus = findPreference(PREF_KEY_GOOGLE_PLUS);
             
             //prefSet = getPreferenceScreen();
             
@@ -586,25 +574,17 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                intent.setAction(ACTION_PREF_SAFE_MEDIA_VOLUME_CHANGED);
                intent.putExtra(EXTRA_SAFE_MEDIA_VOLUME_ENABLED,
                        prefs.getBoolean(PREF_KEY_SAFE_MEDIA_VOLUME, false));
-           }
+           } else if (key.equals(PREF_KEY_XDREAM_BG_COLOR_ENABLE)) {
+          		System.out.println("PREF_KEY_XDREAM_BG_COLOR_ENABLE");
+          		if(mXDreamBgColorEnabledpref!= null && mXDreamBgColorEnabledpref.isEnabled()) {
+                	mXDreamBgImagepref.setEnabled(false);
+                	
+                } else if(mXDreamBgColorEnabledpref!= null) {
+                	mXDreamBgImagepref.setEnabled(true);
+                }
+          }
            
-           /* else if (key.equals(PREF_KEY_QUICK_SETTINGS)) {
-               intent.setAction(ACTION_PREF_QUICKSETTINGS_CHANGED);
-               String[] qsPrefs = mQuickSettings.getValues().toArray(new String[0]);
-               intent.putExtra(EXTRA_QS_PREFS, qsPrefs);
-           } else if (key.equals(PREF_KEY_QUICK_SETTINGS_TILES_PER_ROW)) {
-               intent.setAction(ACTION_PREF_QUICKSETTINGS_CHANGED);
-               intent.putExtra(EXTRA_QS_COLS, Integer.valueOf(
-                       prefs.getInt(PREF_KEY_QUICK_SETTINGS_TILES_PER_ROW, 3)));
-           } else if (key.equals(PREF_KEY_QUICK_SETTINGS_AUTOSWITCH)) {
-               intent.setAction(ACTION_PREF_QUICKSETTINGS_CHANGED);
-               intent.putExtra(EXTRA_QS_AUTOSWITCH,
-                       prefs.getBoolean(PREF_KEY_QUICK_SETTINGS_AUTOSWITCH, false));
-           } else if (key.equals(PREF_KEY_QUICK_PULLDOWN)) {
-               intent.setAction(ACTION_PREF_QUICKSETTINGS_CHANGED);
-               intent.putExtra(EXTRA_QUICK_PULLDOWN, Integer.valueOf(
-                       prefs.getString(PREF_KEY_QUICK_PULLDOWN, "0")));
-           } */
+          
            if (intent.getAction() != null) {
                getActivity().sendBroadcast(intent);
            }
@@ -621,9 +601,13 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_version)));
             } else if (preference == mFullScreenCallerImagepref) {
             	intent = new Intent();
-    	        //intent.setAction("ind.fem.black.xposed.mods.CallerImageActivity");
     	        intent.setClassName(PACKAGE_NAME, "ind.fem.black.xposed.mods.CallerImageActivity");
-            }
+            } else if (preference == mXDreamBgImagepref) {
+            	intent = new Intent();
+    	        intent.setClassName(PACKAGE_NAME, "ind.fem.black.xposed.mods.XDreamImageActivity");
+            } else if (preference == mPrefGplus) {
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_google_plus)));
+            } 
             
             boolean value;
            /* if (preference == mLogcatPref) {

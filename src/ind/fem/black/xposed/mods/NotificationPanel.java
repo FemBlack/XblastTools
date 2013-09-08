@@ -95,7 +95,9 @@ public class NotificationPanel {
 						
 						if (toastTextColorEnabled) {
 							TextView toastView = (TextView) view.findViewById(messageId);
-							toastView.setTextColor(toastTextColor);
+							if (toastView != null) {
+								toastView.setTextColor(toastTextColor);
+							}
 						}
 						
 						//log("show completed");

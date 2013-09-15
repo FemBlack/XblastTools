@@ -3,7 +3,9 @@ package ind.fem.black.xposed.mods;
 import java.util.Map;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.GradientDrawable.Orientation;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 import de.robv.android.xposed.XposedBridge;
@@ -133,4 +135,31 @@ public class Black {
 			}
 			return font;
 	    }
+	    
+	    public static Orientation getGradientOrientation(int orientation) {
+			
+			if(orientation == 1) {
+				return Orientation.BOTTOM_TOP;	
+			} else if(orientation == 2) {
+				return Orientation.RIGHT_LEFT;	
+			} else if(orientation == 3) {
+				return Orientation.LEFT_RIGHT;	
+			} else if(orientation == 4) {
+				return Orientation.TR_BL;	
+			} else if(orientation == 5) {
+				return Orientation.BR_TL;	
+			} else if(orientation == 6) {
+				return Orientation.BL_TR;	
+			} else if(orientation == 7) {
+				return Orientation.TL_BR;	
+			}
+			return Orientation.TOP_BOTTOM;
+		}
+	    
+	public static int enlight(int color, float amount) {
+		float[] hsv = new float[3];
+		Color.colorToHSV(color, hsv);
+		hsv[2] = Math.min(1.0f, amount * hsv[2]);
+		return Color.HSVToColor(hsv);
+	}
 }

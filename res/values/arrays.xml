@@ -47,61 +47,7 @@
         <item name="v-effect">3</item>
     </string-array>
     
-    <string-array name="qs_tile_entries" translatable="false">
-        <item>@string/qs_tile_user_profile</item>
-        <item>@string/qs_tile_airplane_mode</item>
-        <item>@string/qs_tile_battery</item>
-        <item>@string/qs_tile_wifi</item>
-        <item>@string/qs_tile_bluetooth</item>
-        <item>@string/qs_tile_gps</item>
-        <item>@string/qs_tile_mobile_data</item>
-        <item>@string/qs_tile_network_mode</item>
-        <item>@string/qs_tile_data_usage</item>
-        <item>@string/qs_tile_audio</item>
-        <item>@string/qs_tile_brightness</item>
-        <item>@string/qs_tile_screen_timeout</item>
-        <item>@string/qs_tile_autorotation</item>
-        <item>@string/qs_tile_sync</item>
-        <item>@string/qs_tile_wifi_ap</item>
-        <item>@string/qs_tile_torch</item>
-        <item>@string/qs_tile_sleep</item>
-        <item>@string/qs_tile_quickrecord</item>
-        <item>@string/qs_tile_xblasttools</item>
-    </string-array>
-
-    <string-array name="qs_tile_values" translatable="false">
-        <item>user_textview</item>
-        <item>airplane_mode_textview</item>
-        <item>battery_textview</item>
-        <item>wifi_textview</item>
-        <item>bluetooth_textview</item>
-        <item>gps_textview</item>
-        <item>data_conn_textview</item>
-        <item>network_mode_tileview</item>
-        <item>rssi_textview</item>
-        <item>audio_profile_textview</item>
-        <item>brightness_textview</item>
-        <item>timeout_textview</item>
-        <item>auto_rotate_textview</item>
-        <item>sync_tileview</item>
-        <item>wifi_ap_tileview</item>
-        <item>torch_tileview</item>
-        <item>sleep_tileview</item>
-        <item>quickrecord_tileview</item>
-        <item>gravitybox_tileview</item>
-    </string-array>
     
-    <string-array name="quick_pulldown_entries" translatable="false">
-        <item>@string/quick_pulldown_off</item>
-        <item>@string/quick_pulldown_right</item>
-        <item>@string/quick_pulldown_left</item>
-    </string-array>
-
-    <string-array name="quick_pulldown_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
     
      <!-- Propmodder and initD support -->
     <string-array name="entries_wifi_scan" translatable="false">
@@ -356,6 +302,28 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+    
+    <string-array name="gradient_color_orientation_entries" translatable="false">
+        <item>@string/top_bottom</item>
+        <item>@string/bottom_top</item>
+        <item>@string/right_left</item>
+        <item>@string/left_right</item>
+        <item>@string/tr_bl</item>
+        <item>@string/br_tl</item>
+        <item>@string/bl_tr</item>
+        <item>@string/tl_br</item>
+    </string-array>
+
+    <string-array name="gradient_color_orientation_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
     </string-array>
     
 </resources>

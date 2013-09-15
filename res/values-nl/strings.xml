@@ -400,4 +400,38 @@
     <string name="vol_key_cursor_control_on">Volume op/neer verplaatst de cursor links/rechts</string>
     <string name="vol_key_cursor_control_on_reverse">Volume op/neer verplaatst de cursor rechts/links</string>
     
+    <!-- Move Apps to Internal Storage -->
+
+    <string name="move_internal_storage">Verplaats XBlast Tools naar Interne opslag</string>
+    <string name="move_message">App moet verplaatst worden naar interne opslag om juist te werken.\n\n(Start de app opnieuw nadat u verplaats selecteert en de app sluit)</string>
+    <string name="move_Xblast">Verplaatsen XBlast Tools</string>
+    <string name="move_failed">App naar interne opslag verplaatsen Mislukt!</string>
+    <string name="quit">Stoppen</string>
+    <string name="move">Verplaats</string>
+
+    <!-- Notification Panal Bg -->
+    <string name="image">Afbeelding</string>
+    <string name="color">Kleur</string>
+    <string name="move">Verplaats</string>
+    <string name="select_color">Selecteer kleur</string>
+
+    <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Dag-Droom Achtergrond Kleur</string>
+    <string name="pref_xdream_bg_Image_title">Dag-Droom Achtergrond Afbeelding</string>
+    <string name="xdream_bg_clcok_title">Dag-Droom Klok Kleur</string>
+    <string name="xdream_image_result_successful">Dag-Droom Achtergrond Afbeelding Veranderd</string>
+    <string name="xdream_image_result_not_successful">Dag-Droom Achtergrond Afbeelding Niet Veranderd</string>
+    <string name="xdream_bg_Image_trans_summary">0-Compleet transparant, 100-Ondoorzichtig-Toegepast enkel voor Dag-Droom Achtergrond afbeelding</string>
+    <string name="xdream_bg_Image_trans_title">Dag-Droom Achtergrond transparantie</string>
+    <string name="custom_Dream_Text_summary">Laat Leeg voor Geen waarde</string>
+    <string name="custom_Dream_Text_title">Aangepaste Tekst in Dag-Droom</string>
+    <string name="custom_Dream_Text_size_title">Aangepaste Tekst Grootte in Dag-Droom </string>
+    <string name="dream_font_summary">Geselecteerd lettertype wordt toegepast op Klok &amp; Aangepaste tekst</string>
+    <string name="dream_font_title">Dag-Droom Lettertype</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">Volg me op G+</string>
+    <string name="gplus_title">XBlast G+ Community</string>
+    
 </resources>

@@ -400,4 +400,38 @@
     <string name="vol_key_cursor_control_on">Volume +/- movem o cursor para a esquerda/direita</string>
     <string name="vol_key_cursor_control_on_reverse">Volume +/- movem o cursor para a direita/esquerda</string>
     
+    <!-- Move Apps to Internal Storage -->
+
+    <string name="move_internal_storage">Mover o XBlast Tools para o armazenamento interno</string>
+    <string name="move_message">A aplicação precisa de ser movida para o armazenamento interno para funcionar corretamente.\n\n(Iniciar a aplicação novamente depois de selecionar "mover" e a aplicação encerrar)</string>
+    <string name="move_Xblast">A mover o XBlast Tools</string>
+    <string name="move_failed">Falha ao mover a aplicação para o armazenamento interno!</string>
+    <string name="quit">Desistir</string>
+    <string name="move">Mover</string>
+
+    <!-- Notification Panal Bg -->
+    <string name="image">Imagem</string>
+    <string name="color">Cor</string>
+    <string name="move">Mover</string>
+    <string name="select_color">Selecionar Cor</string>
+
+    <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Cor do plano de fundo do Day-Dream</string>
+    <string name="pref_xdream_bg_Image_title">Imagem do plano de fundo do Day-Dream</string>
+    <string name="xdream_bg_clcok_title">Cor do relógio do Day-Dream</string>
+    <string name="xdream_image_result_successful">A imagem do plano de fundo do Day-Dream foi alterada</string>
+    <string name="xdream_image_result_not_successful">A imagem do plano de fundo do Day-Dream não foi alterada</string>
+    <string name="xdream_bg_Image_trans_summary">0-Completamente Transparente, 100-Opaco-Aplicado apenas para a imagem do plano de fundo do Day-Dream</string>
+    <string name="xdream_bg_Image_trans_title">Transparência da imagem do plano de fundo do Day-Dream</string>
+    <string name="custom_Dream_Text_summary">Deixar em branco para nenhum valor</string>
+    <string name="custom_Dream_Text_title">Texto personalizado no Day-Dream</string>
+    <string name="custom_Dream_Text_size_title">Tamanho do texto personalizado no Day-Dream </string>
+    <string name="dream_font_summary">O tipo de letra selecinado será aplicado no relógio &amp; texto personalizado</string>
+    <string name="dream_font_title">Tipo de letra do Day-Dream</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">Siga-me no G+</string>
+    <string name="gplus_title">Comunidade XBlast G+</string>
+    
 </resources>

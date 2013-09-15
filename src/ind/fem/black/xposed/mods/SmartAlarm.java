@@ -111,6 +111,8 @@ public class SmartAlarm {
 	    map.put(dayNames[Calendar.FRIDAY],Calendar.FRIDAY);
 	    map.put(dayNames[Calendar.SATURDAY],Calendar.SATURDAY);
 	    map.put(dayNames[Calendar.SUNDAY],Calendar.SUNDAY);
+	    
+	    log("map" + map.toString());
 	    // Yeah, knowing next alarm will help.....
 	    String nextAlarm = Settings.System.getString(context.getContentResolver(),Settings.System.NEXT_ALARM_FORMATTED).trim();
 	    log("nextAlarm" + nextAlarm);

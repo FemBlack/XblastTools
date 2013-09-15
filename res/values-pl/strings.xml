@@ -400,4 +400,38 @@
     <string name="vol_key_cursor_control_on">Klawisz głośności góra/dół przesuwa kursor w lewo/w prawo</string>
     <string name="vol_key_cursor_control_on_reverse">Klawisz głośności góra/dół przesuwa kursor w prawo/lewo</string>
     
+    <!-- Move Apps to Internal Storage -->
+
+    <string name="move_internal_storage">Przenieś XBlast Tools Do Pamięci Wewn.</string>
+    <string name="move_message">Aplikacja musi być przeniesiona do pamięci wewnętrznej, aby działać poprawnie.\n\n(Uruchom aplikację ponownie po przeniesieniu i po jej zamknięciu.)</string>
+    <string name="move_Xblast">Przenoszenie</string>
+    <string name="move_failed">Nie można przenieść aplikacji do pamięci wewnętrznej!</string>
+    <string name="quit">Zrezygnuj</string>
+    <string name="move">Przenieś</string>
+
+    <!-- Notification Panal Bg -->
+    <string name="image">Obraz</string>
+    <string name="color">kolor</string>
+    <string name="move">Przenieś</string>
+    <string name="select_color">Wybierz kolor</string>
+
+    <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Kolor Tła</string>
+    <string name="pref_xdream_bg_Image_title">Obraz Tła</string>
+    <string name="xdream_bg_clcok_title">Kolor Zegara</string>
+    <string name="xdream_image_result_successful">Zmieniono Tło Obrazu</string>
+    <string name="xdream_image_result_not_successful">Nie zmnieniono Tła Obrazu</string>
+    <string name="xdream_bg_Image_trans_summary">0-Całkowicie przezroczysty, 100-Nieprzezroczysty-Stosowany tylko dla tła obrazu.</string>
+    <string name="xdream_bg_Image_trans_title">Przejrzystość Tła Obrazu</string>
+    <string name="custom_Dream_Text_summary">Pozostaw puste bez żadnej wartości</string>
+    <string name="custom_Dream_Text_title">Własny Tekst</string>
+    <string name="custom_Dream_Text_size_title">Rozmiar Własnego Tekstu</string>
+    <string name="dream_font_summary">Wybrana czcionka zostanie zastosowana dla zegara &amp; własnego tekstu</string>
+    <string name="dream_font_title">Czionka</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">Śledź mnie na G+</string>
+    <string name="gplus_title">XBlast G+ Społeczność</string>
+    
 </resources>

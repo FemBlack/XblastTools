@@ -131,6 +131,9 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     public static final String PREF_KEY_XDREAM_CLOCK_COLOR_ENABLE = "pref_xdream_clock_color_enabled";
     public static final String PREF_KEY_XDREAM_BG_IMAGE = "pref_xdream_bg_Image";
     public static final String PREF_KEY_XDREAM_BG_IMAGE_ALPHA = "pref_xdream_bg_Image_alpha";
+    public static final String PREF_KEY_XDREAM_CUSTOM_TEXT = "customDreamText";
+    public static final String PREF_KEY_XDREAM_CUSTOM_TEXT_SIZE = "customDreamTextSize";
+    public static final String PREF_KEY_XDREAM_FONT_LIST = "dream_font_list";
     
     public final static String VERSION = "version";
     public static int SELECTED_NBG_COLOR = -1;
@@ -167,6 +170,22 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     public static final int VOL_KEY_CURSOR_CONTROL_ON_REVERSE = 2;
     public static final String PREF_KEY_GOOGLE_PLUS = "pref_about_gplus";
     
+    public static final String PREF_KEY_REMAINING_SB_ICONS_COLOR = "remaining_sb_icons_color";
+    public static final String PREF_KEY_REMAINING_SB_ICONS_COLOR_ENABLE = "remaining_sb_icons_color_enabled";
+    
+    public static final String PREF_KEY_GRADIENT_SETTINGS_ENABLE = "gradient_Settings_enable";
+    public static final String PREF_KEY_NOTIF_GRADIENT_COLOR = "notifi_gradient_color";
+    public static final String PREF_KEY_NOTIF_GRADIENT_COLOR_ENABLE = "notifi_gradient_color_enabled";
+    public static final String PREF_KEY_XDREAM_GRADIENT_COLOR = "xdream_gradient_color";
+    public static final String PREF_KEY_XDREAM_GRADIENT_COLOR_ENABLE = "xdream_gradient_color_enabled";
+    public static final String PREF_KEY_GRADIENT_COLOR_ORIENTATION = "gradient_color_orientation";
+    
+    public static final String PREF_KEY_HOLO_BG_COLOR = "holo_bg_color";
+    public static final String PREF_KEY_HOLO_BG_COLOR_ENABLE = "holo_bg_color_enabled";
+    public static final String PREF_KEY_HOLO_BG_IMAGE = "holo_bg_Image";
+    public static final String PREF_KEY_HOLO_GRADIENT_COLOR = "holo_gradient_color";
+    public static final String PREF_KEY_HOLO_GRADIENT_COLOR_ENABLE = "holo_gradient_color_enabled";
+    
 	
 	private static Context mContext;
 	private static PreferenceManager mPreferenceManager;
@@ -202,9 +221,13 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         ListPreferenceFixedSummary mFontlistpref;
         ListPreferenceFixedSummary mCbfontlistpref;
         ListPreferenceFixedSummary mNpfontlistpref;
+        ListPreferenceFixedSummary mFontlistXdreampref;
         
         private Preference mXDreamBgImagepref;
         private ColorPickerPreference mXDreamBgColorEnabledpref;
+        
+        private Preference mHoloBgImagepref;
+        private ColorPickerPreference mHoloBgColorEnabledpref;
         
         Map< CharSequence, String > fontsMap = null;
         
@@ -367,7 +390,8 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             mFullScreenCallerImagepref = findPreference("defaultCallerImage");
             mFontlistpref = (ListPreferenceFixedSummary) findPreference(PREF_KEY_FONT_LIST);
             mCbfontlistpref = (ListPreferenceFixedSummary) findPreference(PREF_KEY_CALLBANNER_FONT_LIST);
-           
+            mFontlistXdreampref = (ListPreferenceFixedSummary) findPreference(PREF_KEY_XDREAM_FONT_LIST);
+            
             
             fontsMap = FontManager.enumerateFonts();
     		Collection<CharSequence> fontNameCollection = fontsMap.keySet();
@@ -381,12 +405,23 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             mCbfontlistpref.setEntries(fontNameArray);  
             mCbfontlistpref.setEntryValues(fontNameArray);
             
+            mFontlistXdreampref.setEntries(fontNameArray);  
+            mFontlistXdreampref.setEntryValues(fontNameArray);
+            
             mXDreamBgImagepref = findPreference(PREF_KEY_XDREAM_BG_IMAGE);
             mXDreamBgColorEnabledpref = (ColorPickerPreference) findPreference(PREF_KEY_XDREAM_BG_COLOR);
             
             
             if(mXDreamBgColorEnabledpref!= null && mXDreamBgColorEnabledpref.isEnabled()) {
             	mXDreamBgImagepref.setEnabled(false);
+            }
+            
+            mHoloBgImagepref = findPreference(PREF_KEY_HOLO_BG_IMAGE);
+            mHoloBgColorEnabledpref = (ColorPickerPreference) findPreference(PREF_KEY_HOLO_BG_COLOR);
+            
+            
+            if(mHoloBgColorEnabledpref!= null && mHoloBgColorEnabledpref.isEnabled()) {
+            	mHoloBgImagepref.setEnabled(false);
             }
             //mNpfontlistpref.setEntries(fontNameArray);  
             //mNpfontlistpref.setEntryValues(fontNameArray);
@@ -575,14 +610,18 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                intent.putExtra(EXTRA_SAFE_MEDIA_VOLUME_ENABLED,
                        prefs.getBoolean(PREF_KEY_SAFE_MEDIA_VOLUME, false));
            } else if (key.equals(PREF_KEY_XDREAM_BG_COLOR_ENABLE)) {
-          		System.out.println("PREF_KEY_XDREAM_BG_COLOR_ENABLE");
           		if(mXDreamBgColorEnabledpref!= null && mXDreamBgColorEnabledpref.isEnabled()) {
                 	mXDreamBgImagepref.setEnabled(false);
-                	
                 } else if(mXDreamBgColorEnabledpref!= null) {
                 	mXDreamBgImagepref.setEnabled(true);
                 }
-          }
+          } else if (key.equals(PREF_KEY_HOLO_BG_COLOR_ENABLE)) {
+        		if(mHoloBgColorEnabledpref!= null && mHoloBgColorEnabledpref.isEnabled()) {
+              	mHoloBgImagepref.setEnabled(false);
+              } else if(mHoloBgColorEnabledpref!= null) {
+            	  mHoloBgImagepref.setEnabled(true);
+              }
+        }
            
           
            if (intent.getAction() != null) {
@@ -605,7 +644,10 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             } else if (preference == mXDreamBgImagepref) {
             	intent = new Intent();
     	        intent.setClassName(PACKAGE_NAME, "ind.fem.black.xposed.mods.XDreamImageActivity");
-            } else if (preference == mPrefGplus) {
+            } else if (preference == mHoloBgImagepref) {
+            	intent = new Intent();
+    	        intent.setClassName(PACKAGE_NAME, "ind.fem.black.xposed.mods.HoloImageActivity");
+            }  else if (preference == mPrefGplus) {
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_google_plus)));
             } 
             

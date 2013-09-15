@@ -4,6 +4,7 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 import java.io.File;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,6 +13,8 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.GradientDrawable.Orientation;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -36,12 +39,21 @@ private static void log(String message) {
 	public static void init(final XSharedPreferences prefs, final ClassLoader classLoader) {
 		log("init");
 		final boolean nbgEnabled = prefs.getBoolean("nbgEnabled", false);
-		final int ngbColor = prefs.getInt(XblastSettings.CONST_NGB_COLOR, -1);
+		final int ngbColor = prefs.getInt(XblastSettings.CONST_NGB_COLOR, 0);
+		
+		final boolean gradientSettingsEnable = prefs.getBoolean(XblastSettings.PREF_KEY_GRADIENT_SETTINGS_ENABLE, false);
+		final int gradientColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_GRADIENT_COLOR, 0);
+		final boolean gradientColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_GRADIENT_COLOR_ENABLE, false);
+		final int gradientColorOrientation = Integer.valueOf(prefs.getString(XblastSettings.PREF_KEY_GRADIENT_COLOR_ORIENTATION, "0")); 
+		final Orientation orientation = Black.getGradientOrientation(gradientColorOrientation);
+		
+		
 		try {
 			findAndHookMethod(
 					CLASS_NOTIFICATIONPANAL_VIEW,
 					 classLoader, "onFinishInflate",
 					new XC_MethodHook() {
+						@SuppressLint("NewApi")
 						@Override
 						protected void afterHookedMethod(MethodHookParam param)
 								throws Throwable {
@@ -51,10 +63,23 @@ private static void log(String message) {
 									 	mContext = NotifPV.getContext();									 	
 			                    		NotifPV.setBackground(createImage(mContext, prefs));
 								 	} else {
-								 		if (ngbColor == -1)
-								 			return;
+								 		/*if (ngbColor == 0)
+								 			return;*/
 								 		
-								 		NotifPV.setBackground(new ColorDrawable(ngbColor));
+								 		if(!gradientSettingsEnable) {
+								 			NotifPV.setBackground(new ColorDrawable(ngbColor));
+								 		} else if (gradientSettingsEnable) {
+								 			GradientDrawable mDrawable;
+								 			if(gradientColorEnabled) {
+								 				int colors[] = {ngbColor, gradientColor};
+								 				//int colors[] = {Black.enlight(ngbColor,0.25f), Black.enlight(ngbColor,0.50f), Black.enlight(gradientColor,0.75f), Black.enlight(gradientColor,1.0f)};
+								 				mDrawable = new GradientDrawable(orientation, colors);
+								 			} else {
+								 				int colors[] = {Black.enlight(ngbColor,0.25f), Black.enlight(ngbColor,0.50f), Black.enlight(ngbColor,0.75f), Black.enlight(ngbColor,1.0f)};
+								 				mDrawable = new GradientDrawable(orientation, colors);
+								 			}
+									 	    NotifPV.setBackground(mDrawable);
+								 		}
 								 	}
 								 	log("onFinishInflate completed");
 							} catch (Throwable t) {
@@ -66,6 +91,7 @@ private static void log(String message) {
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
+		
 		
 		/*try {
 			XposedBridge.log("handleLoadNotificationShade completed1");
@@ -84,6 +110,8 @@ private static void log(String message) {
 		}*/
 
 	}
+	
+
 	
 	private static Drawable createImage(Context mContext, final XSharedPreferences prefs) {
 		//mContext = NotifPV.getContext();
@@ -163,11 +191,18 @@ private static void log(String message) {
 		} 
 	}
 	
+	@SuppressLint("NewApi")
 	private static void applyChanges(LayoutInflatedParam liparam,
 			boolean isSuperStatusBar, XSharedPreferences prefs) {
 		
 		final boolean nbgEnabled = prefs.getBoolean("nbgEnabled", false);
-		final int ngbColor = prefs.getInt(XblastSettings.CONST_NGB_COLOR, -1);
+		final int ngbColor = prefs.getInt(XblastSettings.CONST_NGB_COLOR, 0);
+		
+		final boolean gradientSettingsEnable = prefs.getBoolean(XblastSettings.PREF_KEY_GRADIENT_SETTINGS_ENABLE, false);
+		final int gradientColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_GRADIENT_COLOR, 0);
+		final boolean gradientColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_GRADIENT_COLOR_ENABLE, false);
+		final int gradientColorOrientation = Integer.valueOf(prefs.getString(XblastSettings.PREF_KEY_GRADIENT_COLOR_ORIENTATION, "0")); 
+		final Orientation orientation = Black.getGradientOrientation(gradientColorOrientation);
 		
 		if (isSuperStatusBar) {
 			try {				
@@ -179,10 +214,25 @@ private static void log(String message) {
 						 	mContext = mNotificationPanel.getContext();	
 						 	mNotificationPanel.setBackground(createImage(mContext, prefs));
 					 	} else {
-					 		if (ngbColor == -1)
-					 			return;
+					 		/*if (ngbColor == 0)
+					 			return;*/
 					 		
-					 		mNotificationPanel.setBackground(new ColorDrawable(ngbColor));
+					 		if(!gradientSettingsEnable) {
+					 			mNotificationPanel.setBackground(new ColorDrawable(ngbColor));
+					 		} else if (gradientSettingsEnable) {
+					 			GradientDrawable mDrawable;
+					 			if(gradientColorEnabled) {
+					 				int colors[] = {ngbColor, gradientColor};
+					 				//int colors[] = {Black.enlight(ngbColor,0.25f), Black.enlight(ngbColor,0.50f), Black.enlight(gradientColor,0.75f), Black.enlight(gradientColor,1.0f)};
+					 				mDrawable = new GradientDrawable(orientation, colors);
+					 			} else {
+					 				int colors[] = {Black.enlight(ngbColor,0.25f), Black.enlight(ngbColor,0.50f), Black.enlight(ngbColor,0.75f), Black.enlight(ngbColor,1.0f)};
+					 				mDrawable = new GradientDrawable(orientation, colors);
+					 			}
+					 			mNotificationPanel.setBackground(mDrawable);
+					 		}
+					 		
+					 		//mNotificationPanel.setBackground(new ColorDrawable(ngbColor));
 					 	}
 					}
 				

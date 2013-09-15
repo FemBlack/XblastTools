@@ -114,9 +114,14 @@
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             alphaSlider="false"
             showCheckbox="true"
-            
             android:key="battery_color"
             android:title="@string/battery_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            android:key="remaining_sb_icons_color"
+            android:summary="@string/remaining_sb_icon_color_summary"
+            android:title="@string/remaining_sb_icon_color_title" />
     </PreferenceScreen>
     <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -253,7 +258,7 @@
                 showCheckbox="true"
                 android:key="pref_xdream_bg_color"
                 android:title="@string/xdream_bg_color_title" />
-			<Preference
+			 <Preference
 	            android:key="pref_xdream_bg_Image"
 	            android:title="@string/pref_xdream_bg_Image_title" />
 			<de.robv.android.xposed.library.ui.ValueSeekBarPreference
@@ -272,13 +277,31 @@
                 android:key="pref_xdream_clock_color"
                 android:title="@string/xdream_bg_clcok_title" />
 
+            <EditTextPreference
+                android:defaultValue="@string/xblast"
+                android:key="customDreamText"
+                android:summary="@string/custom_Dream_Text_summary"
+                android:title="@string/custom_Dream_Text_title" />
+            
+            <de.robv.android.xposed.library.ui.ListPreferenceFixedSummary
+                android:key="dream_font_list"
+                android:summary="@string/dream_font_summary"
+                android:title="@string/dream_font_title" />
+
+            <de.robv.android.xposed.library.ui.ListPreferenceFixedSummary
+                android:defaultValue="@string/small"
+                android:entries="@array/clock_size_entries"
+                android:entryValues="@array/clock_size_values"
+                android:key="customDreamTextSize"
+                android:title="@string/custom_Dream_Text_size_title" />
+
         </PreferenceScreen>
     <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="carrier_label_key"
         android:title="@string/carrier_label" >
         <EditTextPreference
-            android:defaultValue="@string/default_carrier_label"
+            android:defaultValue="@string/xblast"
             android:key="customCarrierLabelLS"
             android:summary="@string/desc_carrier_label"
             android:title="@string/custom_carrier_label_LS" />
@@ -298,7 +321,7 @@
             android:title="@string/carrier_label_size" />
 
         <EditTextPreference
-            android:defaultValue="@string/default_carrier_label"
+            android:defaultValue="@string/xblast"
             android:key="customCarrierLabelNC"
             android:summary="@string/desc_carrier_label"
             android:title="@string/custom_carrier_label_NC" />
@@ -310,6 +333,56 @@
             android:key="CCLNC_color"
             android:title="@string/CCLNC_color_title" />
     </PreferenceScreen>
+    
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="gradient_key"
+        android:title="@string/gradient_Settings" >
+         <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="gradient_Settings_enable"
+                android:summary="@string/gradient_Settings_enable_summary"
+                android:title="@string/gradient_Settings_enable_title" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:dependency="gradient_Settings_enable"
+            android:key="notifi_gradient_color"
+            android:summary="@string/notifi_gradient_color_summary"
+            android:title="@string/notifi_gradient_color_title" />
+        
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            android:dependency="gradient_Settings_enable"
+            android:key="xdream_gradient_color"
+            android:summary="@string/xdream_gradient_color_summary"
+            android:title="@string/xdream_gradient_color_title" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            android:dependency="gradient_Settings_enable"
+            android:key="holo_gradient_color"
+            android:summary="@string/holo_gradient_color_summary"
+            android:title="@string/holo_gradient_color_title" />
+
+        <PreferenceCategory
+            android:key="Common_gradient_settings"
+            android:dependency="gradient_Settings_enable"
+            android:title="@string/common_gradient_Settings" >
+        <ListPreference
+            android:defaultValue="0"
+            android:dependency="gradient_Settings_enable"
+            android:entries="@array/gradient_color_orientation_entries"
+            android:entryValues="@array/gradient_color_orientation_values"
+            android:key="gradient_color_orientation"
+            android:summary="@string/gradient_color_orientation_summary"
+            android:title="@string/gradient_color_orientation_title" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    
+    
     <PreferenceScreen 
         android:key="pref_cat_volume_button"
         android:title="@string/pref_cat_volume_button_title"
@@ -336,42 +409,7 @@
             android:defaultValue="0" />
 
     </PreferenceScreen>
-    <!--
-         <PreferenceScreen
-                android:key="buildprop"
-                android:title="@string/build_prop_tweaks" >
-                <CheckBoxPreference
-                    android:key="boot_animation"
-                    android:summary="boot_animation_summary"
-                    android:title="@string/boot_animation_title" />
-
-                <EditTextPreference
-                    android:dependency="buildprop_enable"
-                    android:key="buildprop_board"
-                    android:summary="@string/set_a_custom_board_value"
-                    android:title="@string/board" />
-                <EditTextPreference
-                    android:dependency="buildprop_enable"
-                    android:key="buildprop_brand"
-                    android:summary="@string/set_a_custom_brand_value"
-                    android:title="@string/brand" />
-                <EditTextPreference
-                    android:dependency="buildprop_enable"
-                    android:key="buildprop_device"
-                    android:summary="@string/set_a_custom_device_value"
-                    android:title="@string/device" />
-                <EditTextPreference
-                    android:dependency="buildprop_enable"
-                    android:key="buildprop_model"
-                    android:summary="@string/set_a_custom_model_value"
-                    android:title="@string/model" />
-                <EditTextPreference
-                    android:dependency="buildprop_enable"
-                    android:key="buildprop_name"
-                    android:summary="@string/set_a_custom_name_value"
-                    android:title="@string/name" />
-            </PreferenceScreen>
-    -->
+    
     <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="buildprop"
@@ -383,19 +421,7 @@
             android:key="general_category"
             android:title="@string/buildprop_title" >
 
-            <!--
-        <PreferenceScreen
-            android:key="showbuildprop"
-            android:title="@string/showbuild_title"
-            android:summary="@string/showbuild_label">
-
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.aokp.romcontrol"
-                android:targetClass="com.aokp.romcontrol.util.ShowBuildProp" />
-
-        </PreferenceScreen>
-            -->
+           
             <CheckBoxPreference
                 android:defaultValue="false"
                 android:key="boot_animation"
@@ -608,11 +634,20 @@ android:persistent="true" />
             android:key="ram_usage_bar"
             android:summary="@string/ram_usage_bar_summary"
             android:title="@string/ram_usage_bar_title" />
-        <CheckBoxPreference
+       <!--  <CheckBoxPreference
             android:defaultValue="false"
             android:key="holo_solid_black"
             android:summary="@string/holo_bg_solid_black_summary"
-            android:title="@string/holo_bg_solid_black_title" />
+            android:title="@string/holo_bg_solid_black_title" /> -->
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="holo_bg_color"
+            alphaSlider="false"
+            showCheckbox="true"           
+            android:summary="@string/holo_bg_color_summary"
+            android:title="@string/holo_bg_color_title" />
+        <Preference
+	            android:key="holo_bg_Image"
+	            android:title="@string/holo_bg_image_title" />
          <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="toast_text_color"
             showCheckbox="true"            

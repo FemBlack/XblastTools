@@ -154,11 +154,11 @@ public class Traffic extends TextView {
 				
 				DecimalFormat DecimalFormatfnum = new DecimalFormat("###0");
 				if (speed < 1 && speed * 1024 >= 1) {
-					setText(DecimalFormatfnum.format(speed * 1024) + "B/s");
+					setText(" "+ DecimalFormatfnum.format(speed * 1024) + "B/s");
 				} else if (speed >= 1 && speed < 1024) {
-					setText(DecimalFormatfnum.format(speed) + "KB/s");
+					setText(" "+ DecimalFormatfnum.format(speed) + "KB/s");
 				} else if (speed >= 1024) {
-					setText(DecimalFormatfnum.format(speed / 1024) + "MB/s");
+					setText(" "+ DecimalFormatfnum.format(speed / 1024) + "MB/s");
 				} else {
 					setText("");
 				}

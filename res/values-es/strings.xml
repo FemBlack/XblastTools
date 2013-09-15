@@ -394,5 +394,39 @@
     <string name="vol_key_cursor_control_off">Deshabilitado</string>
     <string name="vol_key_cursor_control_on">El cursor se mueve izquierda/derecha</string>
     <string name="vol_key_cursor_control_on_reverse">El cursor se mueve derecha/izquierda</string>
+    
+    <!-- Mover aplicaciones a memoria interna -->
+
+    <string name="move_internal_storage">Mover XBlast Tools a memoria interna</string>
+    <string name="move_message">App necesita ser movida a memoria interna para que funcione correctamente.\n\n(La aplicación comenzará de nuevo, después de seleccionar mover y cierre de la aplicación)</string>
+    <string name="move_Xblast">Moviendo XBlast Tools</string>
+    <string name="move_failed">Ha fallado mover la app a memoria interna!!</string>
+    <string name="quit">Salir</string>
+    <string name="move">Mover</string>
+
+    <!-- Fondo cortina de notificación -->
+    <string name="image">Imagen</string>
+    <string name="color">Color</string>
+    <string name="move">Mover</string>
+    <string name="select_color">Seleccionar Color</string>
+
+    <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Color de Fondo Día-Noche </string>
+    <string name="pref_xdream_bg_Image_title">Imagen de Fondo Día-Noche</string>
+    <string name="xdream_bg_clcok_title">Color Reloj Día-Noche</string>
+    <string name="xdream_image_result_successful">Imagen de fondo cambiada en Día-Noche</string>
+    <string name="xdream_image_result_not_successful">Imagen de fondo no cambiada en Día-Noche</string>
+    <string name="xdream_bg_Image_trans_summary">0-Completamente transparente, 100-Opaca-Aplicado solamente al fondo de imagen de Día-Noche</string>
+    <string name="xdream_bg_Image_trans_title">Transparencia de la imagen de fondo en Día-Noche</string>
+    <string name="custom_Dream_Text_summary">Dejar vacion para ningún valor</string>
+    <string name="custom_Dream_Text_title">Personalizada texto in Día-Noche</string>
+    <string name="custom_Dream_Text_size_title">Personaliza tamaño texto en Día-Noche </string>
+    <string name="dream_font_summary">La fuente seleccionada se aplicará a Reloj &amp; Texto personalizado</string>
+    <string name="dream_font_title">Fuentes Día-Noche</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">Sigueme en G+</string>
+    <string name="gplus_title">Comunidad G+ XBlast </string>
 
 </resources>

@@ -400,4 +400,38 @@
     <string name="vol_key_cursor_control_on">Громкость вверх/вниз передвигает курсор влево/вправо</string>
     <string name="vol_key_cursor_control_on_reverse">Громкость вверх/вниз передвигает курсор вправо/влево</string>
     
+    <!-- Move Apps to Internal Storage -->
+
+    <string name="move_internal_storage">Переместить XBlast Tools во внутр.память</string>
+    <string name="move_message">Приложение необходимо переместить во внутреннюю память для нормальной работоспособности.\n\n(Запустите приложение снова после выбора Переместить и закрытия приложения)</string>
+    <string name="move_Xblast">Перемещение XBlast Tools</string>
+    <string name="move_failed">Сбой перемещения во внутреннюю память!</string>
+    <string name="quit">Выход</string>
+    <string name="move">Переместить</string>
+
+    <!-- Notification Panal Bg -->
+    <string name="image">Изображение</string>
+    <string name="color">Цвет</string>
+    <string name="move">Переместить</string>
+    <string name="select_color">Выбрать цвет</string>
+
+    <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Цвет фона заставки</string>
+    <string name="pref_xdream_bg_Image_title">Фон заставки</string>
+    <string name="xdream_bg_clcok_title">Цвет часов заставки</string>
+    <string name="xdream_image_result_successful">Фон заставки изменён</string>
+    <string name="xdream_image_result_not_successful">Фон заставки не изменён</string>
+    <string name="xdream_bg_Image_trans_summary">0-полностью прозрачный, 100-непрозрачный только для изображения фона заставки</string>
+    <string name="xdream_bg_Image_trans_title">Прозрачность фона заставки</string>
+    <string name="custom_Dream_Text_summary">Оставьте пустым для отсутствия значения</string>
+    <string name="custom_Dream_Text_title">Свой текст на заставке</string>
+    <string name="custom_Dream_Text_size_title">Размер своего текста заставки </string>
+    <string name="dream_font_summary">Выбранный шрифт будет изменён для часов и своего текста</string>
+    <string name="dream_font_title">Шрифт заставки</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">Следуйте за мной на G+</string>
+    <string name="gplus_title">Сообщество XBlast на G+</string>
+    
 </resources>

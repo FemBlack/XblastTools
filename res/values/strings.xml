@@ -138,65 +138,17 @@
      <string name="pref_quick_settings_title">JB Tweaks</string>
      <string name="quick_setting_columns_summary">Number of quick setting tiles per row</string>
      <string name="quick_setting_columns">Quick setting tiles</string>
-     
-      <!--  QuickSettings settings -->
-    <string name="quick_settings_title">Statusbar QuickSettings tiles</string>
-    <string name="quick_settings_summary">Allows to show or hide QuickSettings tiles in Status Bar</string>
-    <string name="qs_tile_user_profile">User profile</string>
-    <string name="qs_tile_airplane_mode">Airplane mode</string>
-    <string name="qs_tile_battery">Battery status</string>
-    <string name="qs_tile_wifi">Wi-Fi</string>
-    <string name="qs_tile_bluetooth">Bluetooth</string>
-    <string name="qs_tile_gps">GPS</string>
-    <string name="qs_tile_mobile_data">Mobile data</string>
-    <string name="qs_tile_network_mode">Network mode</string>
-    <string name="qs_tile_data_usage">Data usage</string>
-    <string name="qs_tile_audio">Audio profiles</string>
-    <string name="qs_tile_brightness">Brightness</string>
-    <string name="qs_tile_screen_timeout">Screen timeout</string>
-    <string name="qs_tile_autorotation">Auto rotation</string>
-    <string name="qs_tile_sync">Synchronization</string>
-    <string name="qs_tile_wifi_ap">Wi-Fi Access Point</string>
-    <string name="qs_tile_torch">Torch</string>
-    <string name="qs_tile_xblasttools">XBlast Tools</string>
-    <string name="qs_tile_sleep">Sleep</string>
-    <string name="qs_tile_quickrecord">Quick Record</string>
     
      <!-- QuickSettings tiles per row -->
     <string name="pref_qs_tiles_per_row_title">Tiles per row</string>
     <string name="pref_qs_tiles_per_row_summary">Defines how many QuickSettings tiles to display per one row. Tiles will be resized accordingly. Applies to portrait mode.</string>
-    
-    <!-- Auto-switch QuickSettings -->
-    <string name="pref_auto_switch_qs_title">Auto-switch QuickSettings</string>
-    <string name="pref_auto_switch_qs_summary">QuickSettings will show automatically when status bar is pulled down while there are no notifications</string>
-
-    <!-- Quick pulldown -->
-    <string name="pref_quick_pulldown_title">Quick pulldown</string>
-    <string name="pref_quick_pulldown_summary">Edge of the status bar pulls down QuickSettings</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="quick_pulldown_left">Left</string>
-    
-    <!-- QuickSettings strings -->
-    <string name="quick_settings_sync_on">Sync on</string>
-    <string name="quick_settings_sync_off">Sync off</string>
-    <string name="quick_settings_wifi_ap_on">Wi-Fi AP on</string>
-    <string name="quick_settings_wifi_ap_off">Wi-Fi AP off</string>
-    <string name="quick_settings_torch_on">Torch on</string>
-    <string name="quick_settings_torch_off">Torch off</string>
-    <string name="quick_settings_torch_off_notif">Touch to turn off</string>
-    <string name="quick_settings_qr_playing">Playing&#8230;</string>
-    <string name="quick_settings_qr_recording">Recording&#8230;</string>
-    <string name="quick_settings_qr_recorded">Recorded</string>
-    <string name="quick_settings_qr_record">Long Press To Record</string>
-    <string name="quick_settings_qr_recording_notif">Touch to stop recording</string>
     
     <string name="notif_normal_color_title">Notification background color</string>
     <string name="notif_pressed_color_title">Notification pressed color</string>
     <string name="notif_normal_color_summary">Color of the notification row background</string>
     <string name="notif_pressed_color_summary">Color of the notification row pressed state</string>
     
-     <string name="boot_animation_summary">Boot Animation will be diabled</string>
+     <string name="boot_animation_summary">Boot Animation will be disabled</string>
      <string name="boot_animation_title">Disable Boot Animation</string>
      
      <string name="disable_adb_notif_summary">ADB Notification will be hidden</string>
@@ -426,8 +378,48 @@
      <string name="xdream_bg_Image_trans_summary">0-Complete transparent, 100-Opaque-Applied only for Day-Dream Background image</string>
      <string name="xdream_bg_Image_trans_title">Day-Dream Background image transparency</string>
      
+     <string name="custom_Dream_Text_summary">Leave empty for No value</string>
+	 <string name="custom_Dream_Text_title">Custom Text in Day-Dream</string>
+	 <string name="custom_Dream_Text_size_title">Custom Text size in Day-Dream </string>
+	 
+	 <string name="dream_font_summary">Selected font will be applied to Clock &amp; Customtext</string>
+     <string name="dream_font_title">Day-Dream Font</string>
+	
      <!-- G+ -->
      <string name="gplus_summary">Follow me on G+</string>
      <string name="gplus_title">XBlast G+ Community</string>
+     
+     <!-- Statusbar Icons color -->
+     <string name="remaining_sb_icon_color_summary">Color will be applied to alarm, silent, vibrate icons</string>
+     <string name="remaining_sb_icon_color_title">Status Bar Icons Color</string>
+     
+     <!-- Gradient Color Settings-->
+     <string name="gradient_Settings">Gradient Settings</string>
+     <string name="gradient_Settings_enable_title">Enable Gradient Settings</string>
+     <string name="gradient_Settings_enable_summary">Gradient Color will be applied to Notification Bg , Day-Dream Bg &amp; Holo background Colors</string>
+     <string name="common_gradient_Settings">Common Settings</string>
+     <string name="xdream_gradient_color_title">Day-Dream Bg Color</string>
+     <string name="xdream_gradient_color_summary">This color will be added with  Day-Dream Bg Color and create a nice gradient effect</string>
+     <string name="notifi_gradient_color_title">Notification Bg Gradient Color</string>
+     <string name="notifi_gradient_color_summary">This color will be added with Notification Bg color and create a nice gradient effect</string>
+     <string name="top_bottom">Top to Bottom</string>
+     <string name="bottom_top">Bottom to Top</string>
+     <string name="right_left">Right to Left</string>
+     <string name="left_right">Left to Right</string>
+     <string name="tr_bl">Top-Right to Bottom-Left </string>
+     <string name="br_tl">Bottom-Right to Top-Left</string>
+     <string name="bl_tr">Bottom-Left to Top-Right</string>
+     <string name="tl_br">Top-Left to Bottom-Right</string>
+     <string name="gradient_color_orientation_summary">Gradient will be drawn based on the Orientation</string>
+     <string name="gradient_color_orientation_title">Gradient Orientation</string>
+     
+     <!-- Holo Bg -->
+     <string name="holo_bg_color_title">Holo background Color</string>
+     <string name="holo_bg_color_summary">Color will be applied to default Holo system theme instead of black-grey gradient</string>
+     <string name="holo_bg_image_title">Holo background Image</string>
+     <string name="holo_image_result_successful">Holo Background Image Changed</string>
+     <string name="holo_image_result_not_successful">Holo Background Image not Changed</string>
+     <string name="holo_gradient_color_title">Holo Background Gradient Color</string>
+     <string name="holo_gradient_color_summary">This color will be added with Holo Bg color and create a nice gradient effect</string>
     
 </resources>

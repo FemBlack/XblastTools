@@ -57,7 +57,10 @@ public class Clock {
 							throws Throwable {
 						try {
 							TextView tv = (TextView) param.thisObject;
-							tv.append(" " + text + " ");
+							if(text != null && text.length() > 0) {
+								tv.append(" " + text);
+							}
+							
 							
 							if(clockColorEnabled) {
 								tv.setTextColor(clockColor);

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="title_activity_settings">设置</string>
+
+    <!-- Strings related to Settings -->
+
+ 	<string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">阴影设置</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">设置</string>
+    <string name="preview">预览</string>
+    <string name="edit_message">输入文字</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="button_effects">选择颜色</string>
+    <string name="shadow_settings">阴影设置</string>
+    <string name="ClockTextColor">时钟和文字颜色</string>
+    <string name="shadowColor">阴影颜色</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    
+    
+    <!-- General settings -->
+    <string name="pref_header_general">通用</string>
+    <string name="pref_title_notif_transperency">通知栏透明度</string>
+    <string name="pref_description_notif_transperency">启动通知栏背景透明度</string>
+	<string name="hide_am_pm">隐藏 AM PM</string>
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">杂项</string>
+    <string name="carrier_label">运营商标签</string>
+    <string name="default_carrier_label">FemBlack</string>
+    <string name="desc_carrier_label">留空使用默认运营商标签</string>
+	<string name="custom_carrier_label_LS">自定义锁屏中运营商标签</string>
+	<string name="custom_carrier_label_NC">自定义通知栏中运营商标签</string>
+	 <!-- About -->
+    <string name="pref_about_title">关于</string>
+    <string name="about_app_title">XBlast Tools</string>
+    <string name="about_app">由 FemBlack@XDA 制作。点击访问官方主题。</string>
+    <string name="about_donate_title">Google Play 版本</string>
+    <string name="about_donate_summary">如果您觉得此应用有用，请捐助我。</string>
+	
+	<string name="fullscreen_caller_photo_title">全屏呼叫照片</string>
+    <string name="fullscreen_caller_photo_summary">在来电屏幕中显示全屏呼叫者照片</string>
+     <string name="hide">隐藏</string>
+    <string name="small">小</string>
+    <string name="medium">中</string>
+    <string name="large">大</string>
+    <string name="carrier_label_size_summary">设置锁屏中运营商标签的文字大小</string>
+    <string name="carrier_label_size">锁屏中运营商标签大小</string>
+    
+    <string name="clock_and_date">时钟与日期</string>
+    <string name="am_pm_style">AM PM 风格</string>
+    
+    
+    <string name="default_caller_image_title">选择默认呼叫者图片</string>
+    <string name="default_caller_image_summary">选择未知联系人以及没有图片的联系人的默认图片</string>
+    <string name="Call_Banner_text_summary">联系人姓名、号码以发光点等都将应用此颜色</string>
+    <string name="Call_Banner_text_title">呼叫横幅文字颜色</string>
+    <string name="default_caller_image_result_successful">默认呼叫者图片已更改</string>
+    <string name="default_caller_image_result_not_successful">默认呼叫者图片未更改</string>
+    <string name="nbg_image_result_successful">通知栏背景图片已更改</string>
+    <string name="nbg_image_result_not_successful">通知栏背景图片未更改</string>
+    
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">软重启</string>
+    <string name="reboot_confirm">您的电话即将重启</string>
+    <string name="reboot_confirm_recovery">您的电话即将重启进入 Recovery</string>
+    <string name="soft_reboot_confirm">您的电话即将重启 SystemUI</string>
+    <string name="fastboot_confirm_recovery">您的电话即将进入 Bootloader</string>
+    <string name="advanced_reboot_title">高级关机菜单</string>
+    <string name="poweroff_advanced_summary">启用高级关机菜单（软重启、重启、进入 Recovery、Fastboot和截屏）</string>
+    
+    <string name="pref_title_notif_bg">通知面板背景</string>
+    <string name="pref_description_notif_bg">启用通知背景图像或颜色</string>
+    <string name="pref_description_notif_bg_color">设置通知背景颜色</string>
+    <string name="pref_description_notif_bg_img">设置通知背景图像</string>
+    <string name="fullscreen_caller_sb_title">禁用状态栏</string>
+    <string name="fullscreen_caller_sb_summary">通话时状态栏将被禁用</string>
+    
+    <string name="Call_Banner_font_summary">联系人姓名、号码等都将应用此字体</string>
+    <string name="Call_Banner_font_title">呼叫横幅文字字体</string>
+    
+    <string name="status_bar">状态栏</string>
+    <string name="notification_panel">通知面板</string>
+    <string name="center_clock_title">时钟居中</string>
+    
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">CRT 关屏特效</string>
+    
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> 剩余</string>   
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> 使用</string>
+    
+    <string name="recents_clear_all_title">清除所有最近任务</string>
+    <string name="recents_clear_all_summary">在最近应用对话框中，启用全部清除按钮</string>
+    <string name="ram_usage_bar_title">最近 RAM 栏</string>
+    <string name="ram_usage_bar_summary">在最近应用对话框中，显示 RAM 使用情况</string>
+    
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">纯色背景</string>
+    <string name="holo_bg_solid_black_summary">对于默认 Holo 系统主题，使用纯黑背景代替黑-灰渐变</string>
+    
+    <string name="nbg_pu_pd_speed_title">通知栏滑上/滑下速度</string>
+    <string name="nbg_pu_pd_speed_summary">提高通知栏滑上/滑下速度</string>
+
+    <string name="statusbar_color_summary">当状态栏透明时。\n注意：如果不处于主屏上时，状态栏可能会显得比较奇怪。这是因为大多数应用并未在状态栏后方放置东西。</string>
+    <string name="statusbar_color_title">状态栏背景颜色</string>
+    <string name="wifi_color_title">Wi-Fi 信号颜色</string>
+    <string name="wifi_inout_color_title">Wi-Fi 出入颜色</string>
+    
+    <string name="mobile_signal_color_summary">移动信号及移动类型将应用此颜色</string>
+    <string name="mobile_signal_color_title">移动信号颜色</string>
+    <string name="mobile_inout_color_title">移动出入颜色</string>
+    <string name="battery_color_title">电池颜色</string>
+    
+    <string name="notif_panel_bg_trans_summary">0-完全透明, 100-不透明-仅应用于通知面板背景图片</string>
+    <string name="notif_panel_bg_trans_title">通知面板背景图片透明度</string>
+    
+    <string name="CCLLS_title">锁屏中运营商标签颜色</string>
+    <string name="CCLNC_color_title">通知栏中运营商标签颜色</string>
+    
+    <string name="rotation_summary">启用所有旋转角度，包括上下颠倒</string>
+    <string name="rotation_title">启用所有旋转角度</string>
+    
+    <string name="sb_clock_color_title">时钟颜色</string>
+    <string name="np_clock_color_title">时钟与日期颜色</string>
+    
+     <string name="custom_text_summary">自定义文本将显示于状态栏与通知面板的时钟旁</string>
+     <string name="custom_text_title">自定义文本</string>
+     
+     <string name="custom_text_np_summary">自定义文本将显示于通知面板的时钟旁</string>
+     <string name="custom_text_np_title">自定义文本</string>
+     
+     <string name="font_summary">状态栏与通知面板的时钟将应用选择的字体</string>
+     <string name="font_np_summary">通知面板的时钟将应用选择的字体</string>
+     <string name="font_title">字体</string>
+     
+     <string name="pref_quick_settings_title">JB 微调</string>
+     <string name="quick_setting_columns_summary">每行中的快速设置方块数量</string>
+     <string name="quick_setting_columns">快速设置方块</string>
+     
+      <!--  QuickSettings settings -->
+    <string name="quick_settings_title">状态栏快速设置方块</string>
+    <string name="quick_settings_summary">允许状态栏中显示或隐藏快速设置方块</string>
+    <string name="qs_tile_user_profile">用户资料</string>
+    <string name="qs_tile_airplane_mode">飞行模式</string>
+    <string name="qs_tile_battery">电池状态</string>
+    <string name="qs_tile_wifi">Wi-Fi</string>
+    <string name="qs_tile_bluetooth">蓝牙</string>
+    <string name="qs_tile_gps">GPS</string>
+    <string name="qs_tile_mobile_data">移动数据</string>
+    <string name="qs_tile_network_mode">网络模式</string>
+    <string name="qs_tile_data_usage">数据流量</string>
+    <string name="qs_tile_audio">声音配置文件</string>
+    <string name="qs_tile_brightness">亮度</string>
+    <string name="qs_tile_screen_timeout">屏幕超时</string>
+    <string name="qs_tile_autorotation">自动旋转</string>
+    <string name="qs_tile_sync">同步</string>
+    <string name="qs_tile_wifi_ap">Wi-Fi 访问点</string>
+    <string name="qs_tile_torch">手电筒</string>
+    <string name="qs_tile_xblasttools">XBlast 工具</string>
+    <string name="qs_tile_sleep">睡眠</string>
+    <string name="qs_tile_quickrecord">快速录音</string>
+    
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">每行方块</string>
+    <string name="pref_qs_tiles_per_row_summary">定义每行中的快速设置方块数。方块将被相应地调整大小。对竖屏模式有效。</string>
+    
+    <!-- Auto-switch QuickSettings -->
+    <string name="pref_auto_switch_qs_title">自动切换快速设置</string>
+    <string name="pref_auto_switch_qs_summary">当滑下状态栏而又没有通知时，自动显示快速设置</string>
+
+    <!-- Quick pulldown -->
+    <string name="pref_quick_pulldown_title">快速下拉</string>
+    <string name="pref_quick_pulldown_summary">滑下状态栏边缘，展开快速设置</string>
+    <string name="quick_pulldown_off">关闭</string>
+    <string name="quick_pulldown_right">右侧</string>
+    <string name="quick_pulldown_left">左侧</string>
+    
+    <!-- QuickSettings strings -->
+    <string name="quick_settings_sync_on">同步开启</string>
+    <string name="quick_settings_sync_off">同步关闭</string>
+    <string name="quick_settings_wifi_ap_on">Wi-Fi AP 开启</string>
+    <string name="quick_settings_wifi_ap_off">Wi-Fi AP 关闭</string>
+    <string name="quick_settings_torch_on">手电筒开启</string>
+    <string name="quick_settings_torch_off">手电筒关闭</string>
+    <string name="quick_settings_torch_off_notif">关闭手电筒</string>
+    <string name="quick_settings_qr_playing">播放中&#8230;</string>
+    <string name="quick_settings_qr_recording">录音中&#8230;</string>
+    <string name="quick_settings_qr_recorded">已记录</string>
+    <string name="quick_settings_qr_record">长按录音</string>
+    <string name="quick_settings_qr_recording_notif">点击停止录音</string>
+    
+    <string name="notif_normal_color_title">通知背景颜色</string>
+    <string name="notif_pressed_color_title">通知按下颜色</string>
+    <string name="notif_normal_color_summary">通知行背景颜色</string>
+    <string name="notif_pressed_color_summary">通知行按下颜色</string>
+    
+     <string name="boot_animation_summary">启动动画将被禁用</string>
+     <string name="boot_animation_title">禁用启动动画</string>
+     
+     <string name="disable_adb_notif_summary">ADB 通知将被隐藏</string>
+     <string name="disable_adb_notif_title">隐藏 ADB 通知</string>
+     
+     <string name="audio_video_summary">提高录音录像质量</string>
+     <string name="audio_video_title">音频和视频破解</string>
+     
+     <string name="ticker_color_title">Ticker 颜色</string>
+     <string name="google_dns_title">Google DNS 破解</string>
+     
+     <string name="notif_Content_color_title">通知内容文本颜色</string>
+     <string name="notif_Title_text_color_title">通知标题文本颜色</string>
+     <string name="toast_text_color_title">Toast 颜色</string>
+     <string name="toast_bg_color_title">Toast 背景颜色</string>
+     <string name="clear_all_position_title">全部清除按钮位置</string>
+     
+     <string name="build_prop_tweaks">build.prop 微调</string>
+     
+    <!-- Traffic -->
+    <string name="traffic_title">网络速度指示器</string>
+    <string name="traffic_summary">网络速度仅在有流量时显示</string>
+    <string name="traffic_color_title">网络速度指示器颜色</string>
+   
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string>
+    <string name="propmodder_title_summary">@null</string>
+    <string name="buildprop_title">Build.prop 微调</string>
+    <string name="nonprop_cat_title">微调会影响 init.d 脚本</string>
+    <string name="pc_tweaks">微调</string>
+    <string name="pc_init_d">启用/禁用微调</string>
+    <string name="pc_init_d_tweaks">自定义微调</string>
+
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">系统微调</string>
+    <string name="pt_enable_init_d">启用启动微调</string>
+    <string name="pt_zipalign">Zipalign APK</string>
+    <string name="pt_enable_sd_boost">启用 SD 加速</string>
+    <string name="pt_sd_boost">预读取量</string>
+    <string name="pt_fix_permissions">修复权限</string>
+    <string name="pt_clear_cache">清除缓存</string>
+    <string name="pt_enable_sysctl">启用 Sysctl</string>
+    <string name="pt_enable_cron">启用 Scheduled tasks</string>
+
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">已经发出警告</string>
+    <string name="main_warning_summary">这片区别会对您的 build.prop 进行修改。它作用于您的 \'/system/build.prop\'  我们不对您的行为负责！您自行承担后果</string>
+    <string name="pref_wifi_scan_interval_title">Wifi 扫描间隔</string>
+    <string name="pref_wifi_scan_interval_summary">当无存储的访问点可用时，Wifi 扫描的间隔时间（需要重启）</string>
+    <string name="pref_wifi_scan_alt_summary">Wifi 扫描间隔: %s</string>
+    <string name="pref_lcd_density_title">LCD 密度</string>
+    <string name="pref_lcd_density_summary">这是 LCD 密度设置。它可能会启用更高分辨率下的视角（需要重启）</string>
+    <string name="pref_max_events_title">窗口管理器的每秒最多事件数</string>
+
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">这是一个运行时参数值，它可以控制每秒钟内系统接受的事件数（需要重启）</string>
+    <string name="pref_max_events_alt_summary">系统事件最大值: %s</string>
+    <string name="pref_usb_mode_title">默认 USB 模式</string>
+    <string name="pref_usb_mode_summary">这是你将手机连接电脑时的默认 USB 模式（需要重启）</string>
+    <string name="pref_ring_delay_title">电话响铃延迟</string>
+    <string name="pref_ring_delay_summary">从系统接受到来电直到铃声响起时的时间（需要重启）</string>
+    <string name="pref_ring_delay_alt_summary">电话响铃延迟: %s</string>
+    <string name="pref_vm_heapsize_title">Dalvik 缓存堆大小</string>
+    <string name="pref_vm_heapsize_summary">这控制了 Dalvik VM 能访问的缓存大小（需要重启）</string>
+    <string name="pref_vm_heapsize_alt_summary">Dalvik VM 缓存大小: %s</string>
+    <string name="propmodder_warning_title">需要 ROOT</string>
+    <string name="propmodder_warning">此程序修改了 /system/build.prop 中的属性。如果你不知道你在做什么，请不要使用它。我们（00bware，PropModder 的作者）不对你的设备负责。已经发出警告。</string>
+    <string name="showbuild_title">显示 build.prop</string>
+    <string name="showbuild_dialog">这是你的 /system/build.prop</string>
+    <string name="showbuild_loading">载入 build.prop\u2026</string>
+    <string name="showbuild_error">载入 build.prop 时发生错误\u2026</string>
+    <string name="showbuild_unknown">未知</string>
+    <string name="showbuild_version">版本</string>
+    <string name="showbuild_label">这将显示 build.prop 以便观察</string>
+    <string name="pref_fast_up_title">HSUPA 上传速度破解</string>
+    <string name="pref_fast_up_summary">*警告* 如果你修改这个值，但是 build.prop 中没有对应的值，那么需要的值将会被加入（需要重启）</string>
+    <string name="pref_fast_up_alt_summary">快速上传活动: %s</string>
+    <string name="pref_disable_boot_anim_title">禁用启动动画</string>
+    <string name="pref_disable_boot_anim_summary">禁用系统启动动画（需要重启）</string>
+    <string name="clear_custom_bootanimation">清除自定义启动动画</string>
+    <string name="set_custom_bootanimation">自定义…</string>
+    <string name="pref_prox_delay_title">距离传感器延迟</string>
+    <string name="pref_prox_delay_summary">通话中屏幕关闭时，如果你将设备从面部移开，这个值控制屏幕亮起前的延迟（需要重启）</string>
+    <string name="pref_prox_delay_alt_summary">距离传感器设置为: %s</string>
+    <string name="pref_logcat_title">禁用 Logcat</string>
+    <string name="pref_logcat_summary_on">Logcat 已禁用，读取 Logcats 将会变得困难</string>
+    <string name="pref_logcat_summary_off">Logcat 已启用，禁用将会对系统性能有轻微提升</string>
+    <string name="pref_mod_version_title">更改你的版本号</string>
+    <string name="pref_mod_version_summary">这只是用于显示性，并不改善系统</string>
+    <string name="pref_mod_version_alt_summary">版本号: %s</string>
+    <string name="pref_mod_version_default">PropModder!!!</string>
+    <string name="pref_sleep_title">PM 睡眠模式</string>
+    <string name="pref_sleep_summary">修改夜间睡眠策略</string>
+    <string name="pref_sleep_alt_summary">当前睡眠模式: %s</string>
+    <string name="pref_jit_title">即时编译器</string>
+    <string name="pref_jit_summary">启用/禁用 Dalvik 虚拟机中的 JIT 编译器</string>
+    <string name="pref_tcp_stack_title">优化 TCP 栈</string>
+    <string name="pref_tcp_stack_summary">修改缓冲区大小以获得理更好的性能</string>
+    <string name="pref_check_in_title">签到服务</string>
+    <string name="pref_check_in_summary">停止向 Google 发送系统使用数据</string>
+    <string name="pref_sdcard_buffer_title">SD 卡速度破解</string>
+    <string name="pref_sdcard_buffer_summary">修改缓冲区大小以获得理更好的性能</string>
+    <string name="pref_sdcard_buffer_alt_summary">SD 卡缓冲区大小: %s</string>
+    <string name="pref_g_speed_title">3G 速度破解</string>
+    <string name="pref_g_speed_summary">取消 3G 速度限制</string>
+    <string name="pref_gpu_title">GPU 加速</string>
+    <string name="pref_gpu_summary">启用硬件加速，使用 GPU 代替 CPU 控制 UI</string>
+    <string name="pref_vvmail_title">VVMail（仅用于 Sense ROM）</string>
+    <string name="pref_vvmail_summary">强制 VVMail 与 Sense ROM 兼容</string>
+    
+     <string name="ps_enable_init_d">启用/禁用启动微调</string>
+     
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">永久移除 LOG（重启后仍有效）</string>
+    <string name="remove_logcat_till_reboot">直到下次重启前移除 LOG（重启后失效）</string>
+    <string name="enable_logcat">启用 LOG （需要重启）</string>
+    <string name="disable">禁用</string>
+    <string name="power_collapse_suspend">电源挂起</string>
+    <string name="power_collapse">电源待机（最佳）</string>
+    <string name="apps_sleep">应用休眠</string>
+    <string name="slow_clock">减缓时钟</string>
+    <string name="wait_for_interrupt">等待中断</string>
+    <string name="sdcard_128_kb">128 kb</string>
+    <string name="sdcard_1024_kb">1024 kb</string>
+    <string name="sdcard_2048_kb">2048 kb (recommended)</string>
+    <string name="sdcard_3072_kb">3072 kb</string>
+    <string name="sdcard_4096_kb">4096 kb</string>
+    <string name="sdcard_5120_kb">5120 kb</string>
+    <string name="sdcard_6144_kb">6144 kb</string>
+    <string name="remove">移除</string>
+    <string name="hsupa_disabled">HSUPA 禁用（有上限）</string>
+    <string name="hsupa_enabled">HSUPA 启用</string>
+    <string name="hsupa_enabled_uncapped">HSUPA 启用（无上限）</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string>
+    <string name="ps_enable_init_d">启用/禁用启动微调</string>
+    <string name="ps_zipalign">每次启动时 Zipalign 任何未对齐的应用</string>
+    <string name="ps_enable_sd_boost">启用/禁用 SD 卡加速</string>
+    <string name="ps_sd_boost">设置预读取值</string>
+    <string name="ps_fix_permissions">每次启动时修复应用权限</string>
+    <string name="ps_clear_cache">每次启动时清除数据缓存</string>
+    <string name="ps_enable_sysctl">启动时启用 Sysctl</string>
+    <string name="ps_enable_cron">启用计划的 Cron 任务</string>
+    
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">闹钟图标可见</string>
+    <string name="hide_alarm_icon_on">闹钟图标隐藏</string>
+    <string name="hide_alarm_icon">隐藏闹钟图标</string>
+    <string name="smart_alarm_icon">智能闹钟图标</string>
+    <string name="smart_alarm_icon_summary">在闹钟之前特定的时间内显示闹钟图标</string>
+    <string name="always_hide">总是隐藏图标</string>
+    <string name="show_15_min_before">在闹钟前的 15 分钟内显示图标</string>
+    <string name="show_30_min_before">在闹钟前的 30 分钟内显示图标</string>
+    <string name="show_60_min_before">在闹钟前的 1 小时内显示图标</string>
+    <string name="show_180_min_before">在闹钟前的 3 小时内显示图标</string>
+    <string name="show_360_min_before">在闹钟前的 6 小时内显示图标</string>
+    <string name="show_720_min_before">在闹钟前的 12 小时内显示图标</string>
+    <string name="show_1440_min_before">在闹钟前的 24 小时内显示图标</string>
+    
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">时钟设置</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">隐藏时钟</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">右下角</string>
+    <string name="clear_all_pos_bottom_left">左下角</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">渐隐效果</string>
+    <string name="horizontal_effect">水平关闭特效</string>
+    <string name="vertical_effect">垂直关闭特效</string>
+    
+    <!-- Backup & Restore  -->
+    <string name="restore">恢复</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="no_backups">无备份</string>
+    <string name="reset">复位</string>
+     <string name="restoring_backup">恢复备份</string>
+    <string name="backup_name">备份名</string>
+    <string name="save_successful">保存成功</string>
+    <string name="save_unsuccessful">保存未成功</string>
+    <string name="clearing_settings">清除设置</string>
+    <string name="reset_successful">复位成功</string>
+    <string name="backup_restored">备份已恢复</string>
+    <string name="reboot_required">需要重启</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">音量键微调</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">耳机安全媒体音量</string>
+    <string name="pref_safe_media_volume_summary">激活/关闭耳机安全媒体音量功能</string>
+    
+    <string name="vol_music_controls_title">音量键跳轨</string>
+    <string name="vol_music_controls_summary">当屏幕关闭时，长按音量键跳轨</string>
+    
+    <string name="vol_key_cursor_control_title">音量键光标控制</string>
+    <string name="vol_key_cursor_control_summary">在文本框中使用音量键控制光标</string>
+    <string name="vol_key_cursor_control_off">禁用</string>
+    <string name="vol_key_cursor_control_on">音量上/下 左/右移光标</string>
+    <string name="vol_key_cursor_control_on_reverse">音量上/下 右/左移光标</string>
+    
+    <!-- Move Apps to Internal Storage -->
+    
+    <string name="move_internal_storage">将 XBlast 工具移动至内置存储</string>
+    <string name="move_message">应用需要被移动至内置存储以正常工作。\n\n（当你选择“移动”并且应用关闭后，再次启动应用）</string>
+    <string name="move_Xblast">移动 XBlast Tools</string>
+    <string name="move_failed">移动应用到内置存储失败！</string>
+    <string name="quit">退出</string>
+    <string name="move">移动</string>
+    
+     <!-- Notification Panal Bg -->
+     <string name="image">图像</string>
+     <string name="color">颜色</string>
+     <string name="move">移动</string>
+     <string name="select_color">选择颜色</string>
+     
+     <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Day-Dream 背景颜色</string>
+    <string name="pref_xdream_bg_Image_title">Day-Dream 背景图像</string>
+    <string name="xdream_bg_clcok_title">Day-Dream 时钟颜色</string>
+    <string name="xdream_image_result_successful">Day-Dream 背景图像已更改</string>
+    <string name="xdream_image_result_not_successful">Day-Dream 背景图像未更改</string>
+    <string name="xdream_bg_Image_trans_summary">0-完全透明, 100-不透明-仅对 Day-Dream 背景图像有效</string>
+    <string name="xdream_bg_Image_trans_title">Day-Dream 背景图像透明度</string>
+    <string name="custom_Dream_Text_summary">留空表示取消</string>
+    <string name="custom_Dream_Text_title">Day-Dream 自定义文本</string>
+    <string name="custom_Dream_Text_size_title">Day-Dream 自定义文本大小</string>
+    <string name="dream_font_summary">时钟及自定义文本将应用该字体</string>
+    <string name="dream_font_title">Day-Dream 字体</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">在 G+ 上关注我</string>
+    <string name="gplus_title">XBlast G+ 社群</string>
+    
+</resources>

@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
+import android.graphics.Typeface;
+import android.os.Build;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -97,7 +99,7 @@ public class CenterClock {
                 @Override
                 public void handleLayoutInflated(LayoutInflatedParam liparam) throws Throwable {
                 	log(" super_status_bar>>>inflated");
-                    mIconArea = (ViewGroup) liparam.view.findViewById(
+          /*          mIconArea = (ViewGroup) liparam.view.findViewById(
                             liparam.res.getIdentifier("system_icon_area", "id", PACKAGE_NAME));
                     log("super_status_bar>>>system_icon_area" + mIconArea);
                     if (mIconArea == null) {
@@ -111,6 +113,17 @@ public class CenterClock {
                     	
                    
                     mRootView = (ViewGroup) mIconArea.getParent().getParent();
+                    if (mRootView == null) return;*/
+                    
+                    String iconAreaId = Build.VERSION.SDK_INT > 16 ?
+                            "system_icon_area" : "icons";
+                    mIconArea = (ViewGroup) liparam.view.findViewById(
+                            liparam.res.getIdentifier(iconAreaId, "id", PACKAGE_NAME));
+                    if (mIconArea == null) return;
+
+                    mRootView = Build.VERSION.SDK_INT > 16 ?
+                            (ViewGroup) mIconArea.getParent().getParent() :
+                            (ViewGroup) mIconArea.getParent();
                     if (mRootView == null) return;
 
                     mClock = (TextView) mIconArea.findViewById(
@@ -171,7 +184,7 @@ public class CenterClock {
                     @Override
                     public void handleLayoutInflated(LayoutInflatedParam liparam) throws Throwable {
                     	log(" tw_super_status_bar>>>inflated");
-                        mIconArea = (ViewGroup) liparam.view.findViewById(
+                       /* mIconArea = (ViewGroup) liparam.view.findViewById(
                                 liparam.res.getIdentifier("icons", "id", PACKAGE_NAME));
                         log("tw_super_status_bar>>>icons" + mIconArea);
                         if (mIconArea == null) {
@@ -184,7 +197,18 @@ public class CenterClock {
                         } 
 
                         mRootView = (ViewGroup) mIconArea.getParent().getParent();
-                        if (mRootView == null) return;
+                        if (mRootView == null) return;*/
+                    	
+                    	 String iconAreaId = Build.VERSION.SDK_INT > 16 ?
+                                 "system_icon_area" : "icons";
+                         mIconArea = (ViewGroup) liparam.view.findViewById(
+                                 liparam.res.getIdentifier(iconAreaId, "id", PACKAGE_NAME));
+                         if (mIconArea == null) return;
+
+                         mRootView = Build.VERSION.SDK_INT > 16 ?
+                                 (ViewGroup) mIconArea.getParent().getParent() :
+                                 (ViewGroup) mIconArea.getParent();
+                         if (mRootView == null) return;
 
                         mClock = (TextView) mIconArea.findViewById(
                                 liparam.res.getIdentifier("clock", "id", PACKAGE_NAME));
@@ -478,6 +502,15 @@ public class CenterClock {
              if(trafficColorEnabled) {
              	mTraffic.setTextColor(trafficColor);
              }
+             final String fontName = prefs.getString(XblastSettings.PREF_KEY_FONT_LIST,"Default");
+             Typeface tf = null; 
+				if (!fontName.equalsIgnoreCase("Default")) {
+					tf = Black.getSelectedFont(fontName);
+				}
+				
+				if (tf != null) {
+					mTraffic.setTypeface(tf);
+				}
              mTraffic.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);
              mTraffic.setLayoutParams(new LinearLayout.LayoutParams(
                      LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT));
@@ -502,12 +535,18 @@ public class CenterClock {
             mIconArea.removeView(mClock);
             ViewGroup vg =  ((ViewGroup)mLayoutClock.getParent());
             View clockView = vg.findViewById(resparam.res.getIdentifier("clock", "id", PACKAGE_NAME));
+            View clockViewInRootView = mRootView.findViewById(resparam.res.getIdentifier("clock", "id", PACKAGE_NAME));
             log("Existing clock view" + clockView);
             if (clockView != null) {
             	 log("Clock vg" + vg);
             	 mLayoutClock.removeView(mClock);
-            	 log("Existing clock view removed");
+            	 log("Existing clock view removed in mLayoutClock");
             }
+            if (clockViewInRootView != null) {
+	           	 mRootView.removeView(mClock);
+	           	 log("Existing clock view removed in mRootView");
+           }
+            
             mLayoutClock.addView(mClock);
             mLayoutClock.setVisibility(View.VISIBLE);
             log("Clock set to center position");

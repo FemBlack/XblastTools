@@ -400,4 +400,38 @@
     <string name="vol_key_cursor_control_on">音量上/下でカーソルを左/右に移動</string>
     <string name="vol_key_cursor_control_on_reverse">音量上/下でカーソルを右/左に移動</string>
     
+    <!-- Move Apps to Internal Storage -->
+
+    <string name="move_internal_storage">XBlast Toolsを内部ストレージに移動</string>
+    <string name="move_message">アプリを内部ストレージに移動しなければ正しく動作しません。\ n\n(XBlast Toolsの移動を選択した後アプリを再起動してください)</string>
+    <string name="move_Xblast">XBlast Toolsの移動</string>
+    <string name="move_failed">内部ストレージへの移動に失敗しました!</string>
+    <string name="quit">終了</string>
+    <string name="move">移動</string>
+
+    <!-- Notification Panal Bg -->
+    <string name="image">画像</string>
+    <string name="color">色</string>
+    <string name="move">移動</string>
+    <string name="select_color">色の選択</string>
+
+    <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">スクリーンセーバーの背景色</string>
+    <string name="pref_xdream_bg_Image_title">スクリーンセーバーの背景画像</string>
+    <string name="xdream_bg_clcok_title">スクリーンセーバーの時計の色</string>
+    <string name="xdream_image_result_successful">スクリーンセーバーの背景 画像を変更しました</string>
+    <string name="xdream_image_result_not_successful">スクリーンセーバ ーの背景画像は変更されていません</string>
+    <string name="xdream_bg_Image_trans_summary">0-完全透過, 100-不透明-スクリーンセーバーの背景画像にのみ適用されます</string>
+    <string name="xdream_bg_Image_trans_title">スクリーンセーバーの背景画像の 透過度</string>
+    <string name="custom_Dream_Text_summary">空にするとなしにします。</string>
+    <string name="custom_Dream_Text_title">スクリーンセーバーでのカスタムテキスト </string>
+    <string name="custom_Dream_Text_size_title">スクリーンセーバーでのカスタ ムテキストサイズ</string>
+    <string name="dream_font_summary">フォントは時計とカスタムテキストに適用されます。 </string>
+    <string name="dream_font_title">スクリーンセーバーのフォント</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">G+でフォロー</string>
+    <string name="gplus_title">XBlast G+コミュニティ</string>
+    
 </resources>

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ind.fem.black.xposed.mods"
     android:installLocation="internalOnly"
-    android:versionCode="5"
-    android:versionName="1.5.3" >
+    android:versionCode="6"
+    android:versionName="1.5.4" >
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -87,6 +87,10 @@
         </activity>        
           <activity
             android:name="ind.fem.black.xposed.mods.NbgImageActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="ind.fem.black.xposed.mods.HoloImageActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         </activity>
         

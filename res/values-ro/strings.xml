@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="title_activity_settings">Setari</string>
+
+    <!-- Strings related to Settings -->
+
+ 	<string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">Setari umbra</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">Setari</string>
+    <string name="preview">Previzualizare</string>
+    <string name="edit_message">Introduceti text</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Anuleaza</string>
+    <string name="button_effects">Alege culoarea</string>
+    <string name="shadow_settings">Setari umbrã</string>
+    <string name="ClockTextColor">Culoarea textului si a ceasului</string>
+    <string name="shadowColor">Culoare umbra</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    
+    
+    <!-- General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_notif_transperency">Transparenta notificarilor</string>
+    <string name="pref_description_notif_transperency">Permite transparenta pentru fundalul notificarilor</string>
+	<string name="hide_am_pm">Ascunde AM PM</string>
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">Altele</string>
+    <string name="carrier_label">Nume de operator tehnic</string>
+    <string name="default_carrier_label">FemBlack</string>
+    <string name="desc_carrier_label">Lasati liber pentru numele de operator tehnic lipsa</string>
+	<string name="custom_carrier_label_LS">Nume de operator tehnic personalizat pentru Ecranul de blocare</string>
+	<string name="custom_carrier_label_NC">Nume de operator tehnic personalizat pentru notificari</string>
+	 <!-- About -->
+    <string name="pref_about_title">Despre</string>
+    <string name="about_app_title">XBlast Tools</string>
+    <string name="about_app">Codat de FemBlack@XDA. Atinge pentru a vizualiza pagina oficiala.</string>
+    <string name="about_donate_title">Versiune Google Play </string>
+    <string name="about_donate_summary">Doneaza &amp; ajuta-ma daca crezi ca aplicatia merita.</string>
+	
+	<string name="fullscreen_caller_photo_title">Poza fullscreen a apelantului</string>
+    <string name="fullscreen_caller_photo_summary">Afiseaza fotografia apelantului pe tot ecranul</string>
+     <string name="hide">Ascunde</string>
+    <string name="small">Mica</string>
+    <string name="medium">Medie</string>
+    <string name="large">Mare</string>
+    <string name="carrier_label_size_summary">Seteaza marimea textului pentru operatorul tehnic in Ecranul de blocare</string>
+    <string name="carrier_label_size">Marimea operatorului tehnic in ecranul de blocare</string>
+    
+    <string name="clock_and_date">Ceas &amp; Data</string>
+    <string name="am_pm_style">Stil AM PM</string>
+    
+    
+    <string name="default_caller_image_title">Selecteaza imaginea prestabilita a apelantului</string>
+    <string name="default_caller_image_summary">Selecteaza imaginea prestabilita pentru apelanti necunosctuti &amp; Contacte care nu au o imagine</string>
+    <string name="Call_Banner_text_summary">Culoarea va fi aplicata pentru  Nume Contact , Numar, Glowdot, etc</string>
+    <string name="Call_Banner_text_title">Culoare text banner appelare</string>
+    <string name="default_caller_image_result_successful">Imaginea prestabilita pentru apelant schimbata</string>
+    <string name="default_caller_image_result_not_successful">Imaginea prestabilita pentru apelant nu a fost schimbata</string>
+    <string name="nbg_image_result_successful">Fundalul imaginii pentru notificari schimbata</string>
+    <string name="nbg_image_result_not_successful">Fundalul imaginii pentru notificari nu a fost schimbata</string>
+    
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">Repornire usoara</string>
+    <string name="reboot_confirm">Telefonul dumneavoastra va reporni</string>
+    <string name="reboot_confirm_recovery">Telefonul dumneavoastra va reporni in recovery</string>
+    <string name="soft_reboot_confirm">Telefonul dumneavoastra va reporni SystemUI</string>
+    <string name="fastboot_confirm_recovery">Telefonul dumneavoastra va reporni in bootloader</string>
+    <string name="advanced_reboot_title">Meniu avansat pentru Power-off</string>
+    <string name="poweroff_advanced_summary">Permite meniu avansat power-off (Repornire Soft, Repornire, Repornire in recovery, Fastboot &amp; Poza ecran)</string>
+    
+    <string name="pref_title_notif_bg">Fundal pentru panoul de notificari</string>
+    <string name="pref_description_notif_bg">Activeaza imagine sau culoare pentru fundalul notificarilor</string>
+    <string name="pref_description_notif_bg_color">Seteaza culoarea pentru fundalul notificarilor</string>
+    <string name="pref_description_notif_bg_img">Seteaza imagine pentru fundalul notificarilor</string>
+    <string name="fullscreen_caller_sb_title">Dezactiveaza bara de stare </string>
+    <string name="fullscreen_caller_sb_summary">Bara de stare va fi dezactivata in timpul convorbirii</string>
+    
+    <string name="Call_Banner_font_summary">Culoarea selectata va fi aplicata pentru nume de Contact, Numar, etc</string>
+    <string name="Call_Banner_font_title">Culoare font banner apelare</string>
+    
+    <string name="status_bar">Bara de stare</string>
+    <string name="notification_panel">Panou de notificari</string>
+    <string name="center_clock_title">Ceas central</string>
+    
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">Efect pentru oprire ecran CRT </string>
+    
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> free</string>   
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> used</string>
+    
+    <string name="recents_clear_all_title">Curata toate sarcinile recente</string>
+    <string name="recents_clear_all_summary">Activeaza buton stergere toate sarcinile dintr-o apasare in activitatea recenta a aplicatiilor</string>
+    <string name="ram_usage_bar_title">Bara RAM recent</string>
+    <string name="ram_usage_bar_summary">Arata RAM-ul utilizat in activitatea recenta a aplicatiilor</string>
+    
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">Fundal negru mat</string>
+    <string name="holo_bg_solid_black_summary">Foloseste fundal negru mat pentru sistemul prestabilit Halo in loc de gri-negru</string>
+    
+    <string name="nbg_pu_pd_speed_title">Viteza de derulare a notificarilor </string>
+    <string name="nbg_pu_pd_speed_summary">Creste viteza de derulare a notificarilor</string>
+
+    <string name="statusbar_color_summary">Cand culoarea barei de stare este transparenta.\nNOTE: Aceasta probabil ca va arata ciudat daca nu sunteti pe ecranul principal deoarece multe aplicatii nu pun nimic in spatele barei de stare</string>
+    <string name="statusbar_color_title">Culoarea de fundal a barei de stare</string>
+    <string name="wifi_color_title">Culoarea semnalului Wi-Fi</string>
+    <string name="wifi_inout_color_title">Culoare Wi-Fi pornit-oprit</string>
+    
+    <string name="mobile_signal_color_summary">Culoarea va fi aplicata pe Semnalul mobilului &amp; Tipul Mobilului</string>
+    <string name="mobile_signal_color_title">Culoarea semnalului mobil</string>
+    <string name="mobile_inout_color_title">Culoarea mobilului pornit-oprit</string>
+    <string name="battery_color_title">Culoarea bateriei</string>
+    
+    <string name="notif_panel_bg_trans_summary">0-Transparent total, 100-Mat-Aplicata doar pentru fundalul panoului de notificare</string>
+    <string name="notif_panel_bg_trans_title">Transparenta fundalului imaginii panoului de notificare</string>
+    
+    <string name="CCLLS_title">Culoare nume operator telefonic in ecran blocat</string>
+    <string name="CCLNC_color_title">Culoare nume operator tehnic in notificari</string>
+    
+    <string name="rotation_summary">Permite toate unghiurile de rotatie, inclusiv invers</string>
+    <string name="rotation_title">Permite toate unghiurile de rotatie</string>
+    
+    <string name="sb_clock_color_title">Culoarea ceasului</string>
+    <string name="np_clock_color_title">Ceas &amp; Culoarea datei</string>
+    
+     <string name="custom_text_summary">Textul personalizat va aparea alaturi de ceas in bara de stare &amp; panoul de notificari</string>
+     <string name="custom_text_title">Text personalizat</string>
+     
+     <string name="custom_text_np_summary">Textul personalizat va aparea alaturi de ceas in panoul de notificari</string>
+     <string name="custom_text_np_title">Text personalizat</string>
+     
+     <string name="font_summary">Fondul personalizat va aparea alaturi de ceas in bara de stare &amp; panoul de notificari</string>
+     <string name="font_np_summary">Fondul personalizat va aparea alaturi de ceas in panoul de notificari </string>
+     <string name="font_title">Fond</string>
+     
+     <string name="pref_quick_settings_title">JB Tweaks</string>
+     <string name="quick_setting_columns_summary">Numarul de setari rapide  pe linie</string>
+     <string name="quick_setting_columns">Setari rapide</string>
+     
+      <!--  QuickSettings settings -->
+    <string name="quick_settings_title">Statusbar QuickSettings tiles</string>
+    <string name="quick_settings_summary">Allows to show or hide QuickSettings tiles in Status Bar</string>
+    <string name="qs_tile_user_profile">Profilul utilizatorului</string>
+    <string name="qs_tile_airplane_mode">Mod avion</string>
+    <string name="qs_tile_battery">Starea bateriei</string>
+    <string name="qs_tile_wifi">Wi-Fi</string>
+    <string name="qs_tile_bluetooth">Bluetooth</string>
+    <string name="qs_tile_gps">GPS</string>
+    <string name="qs_tile_mobile_data">Mobile data</string>
+    <string name="qs_tile_network_mode">Network mode</string>
+    <string name="qs_tile_data_usage">Data usage</string>
+    <string name="qs_tile_audio">Audio profiles</string>
+    <string name="qs_tile_brightness">Brightness</string>
+    <string name="qs_tile_screen_timeout">Screen timeout</string>
+    <string name="qs_tile_autorotation">Auto rotation</string>
+    <string name="qs_tile_sync">Synchronization</string>
+    <string name="qs_tile_wifi_ap">Wi-Fi Access Point</string>
+    <string name="qs_tile_torch">Lanterna</string>
+    <string name="qs_tile_xblasttools">XBlast Tools</string>
+    <string name="qs_tile_sleep">Sleep</string>
+    <string name="qs_tile_quickrecord">Inregistrare rapida</string>
+    
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">Tiles pe rand</string>
+    <string name="pref_qs_tiles_per_row_summary">Cat de multe tiles de setari rapide sunt aratate pe rand. Tiles vor fi redimensionate in conformitate cu asta. Aplicati pentru mod portret.</string>
+    
+    <!-- Auto-switch QuickSettings -->
+    <string name="pref_auto_switch_qs_title">Schimbare automata a setarilor rapide</string>
+    <string name="pref_auto_switch_qs_summary">Setarile rapide vor fi aratate automat cand nu sunt notificari</string>
+
+    <!-- Quick pulldown -->
+    <string name="pref_quick_pulldown_title">Deschidere rapida</string>
+    <string name="pref_quick_pulldown_summary">Marginea barei de status impinge in jos setarile rapide</string>
+    <string name="quick_pulldown_off">Oprit</string>
+    <string name="quick_pulldown_right">Dreapta</string>
+    <string name="quick_pulldown_left">Stanga</string>
+    
+    <!-- QuickSettings strings -->
+    <string name="quick_settings_sync_on">Sync pornit</string>
+    <string name="quick_settings_sync_off">Sync oprit</string>
+    <string name="quick_settings_wifi_ap_on">Wi-Fi AP pornit</string>
+    <string name="quick_settings_wifi_ap_off">Wi-Fi AP oprit</string>
+    <string name="quick_settings_torch_on">Lanterna pornita</string>
+    <string name="quick_settings_torch_off">Lanterna oprita</string>
+    <string name="quick_settings_torch_off_notif">Apasa pentru a opri</string>
+    <string name="quick_settings_qr_playing">Playing&#8230;</string>
+    <string name="quick_settings_qr_recording">Inregistrare&#8230;</string>
+    <string name="quick_settings_qr_recorded">Inregistrat</string>
+    <string name="quick_settings_qr_record">Apasa lung pentru redare</string>
+    <string name="quick_settings_qr_recording_notif">Apasa pentru a opri sa inregistrezi</string>
+    
+    <string name="notif_normal_color_title">Culoarea fundalului de notificari</string>
+    <string name="notif_pressed_color_title">Culoarea notificarii apasate</string>
+    <string name="notif_normal_color_summary">Culoarea fundalului randului de notificare</string>
+    <string name="notif_pressed_color_summary">Culoarea fundalului randului de notificare actual</string>
+    
+     <string name="boot_animation_summary">Animatia de pornire va fi anulata</string>
+     <string name="boot_animation_title">Anuleaza animatia de pornire</string>
+     
+     <string name="disable_adb_notif_summary">Notificarile ADB vor fi ascunse</string>
+     <string name="disable_adb_notif_title">Ascunde notificarile ADB</string>
+     
+     <string name="audio_video_summary">Imbunatateste calitatea inregistrarii audio si video</string>
+     <string name="audio_video_title">Audio si Video Hack</string>
+     
+     <string name="ticker_color_title">Culoare Ticker</string>
+     <string name="google_dns_title">Google DNS Hack</string>
+     
+     <string name="notif_Content_color_title">Culoarea de continut a textului din notificari</string>
+     <string name="notif_Title_text_color_title">Culoarea textului din titlul notificarii</string>
+     <string name="toast_text_color_title">Culoare Toast</string>
+     <string name="toast_bg_color_title">Culoare fundal Toast</string>
+     <string name="clear_all_position_title">Curata toate pozitiile butoanelor</string>
+     
+     <string name="build_prop_tweaks">build.prop Tweaks</string>
+     
+    <!-- Traffic -->
+    <string name="traffic_title">Indicatorul vitezei de Internet</string>
+    <string name="traffic_summary">Viteza de internet va aparea doar cand este trafic</string>
+    <string name="traffic_color_title">Culoarea indicatorului de viteza a Internetului</string>
+   
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string>
+    <string name="propmodder_title_summary">@null</string>
+    <string name="buildprop_title">Build.prop mods</string>
+    <string name="nonprop_cat_title">Mods involving init.d script</string>
+    <string name="pc_tweaks">Tweaks</string>
+    <string name="pc_init_d">Permite/Anuleaza Tweaks</string>
+    <string name="pc_init_d_tweaks">Modifica Tweaks</string>
+
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">System Tweaks</string>
+    <string name="pt_enable_init_d">Permite pornirea automata a tweaks</string>
+    <string name="pt_zipalign">Zipalign apks</string>
+    <string name="pt_enable_sd_boost">Permite SD boost</string>
+    <string name="pt_sd_boost">Citeste valoarea inainte</string>
+    <string name="pt_fix_permissions">Alege permisiunile</string>
+    <string name="pt_clear_cache">Curata cache</string>
+    <string name="pt_enable_sysctl">Permite sysctl</string>
+    <string name="pt_enable_cron">Permite sarcinile programate</string>
+
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">AI FOST AVERTIZAT</string>
+    <string name="main_warning_summary">Aceasta zona face schimbari in build.prop. El modifica  \'/system/build.prop\' NU SUNTEM RESPONSABILI PENTRU ACESTE ACTIUNI! Telefonul tau, responsabilitatea ta</string>
+    <string name="pref_wifi_scan_interval_title">Intervalul de scanare Wifi</string>
+    <string name="pref_wifi_scan_interval_summary">Timpul in care wifi scaneaza cand nu sunt puncte disponibile (necesita repornire)</string>
+    <string name="pref_wifi_scan_alt_summary">Timpul dintre scanarile wifi: %s</string>
+    <string name="pref_lcd_density_title">Densitate LCD</string>
+    <string name="pref_lcd_density_summary">Aceasta densitate a ecranului ofera o vizualizare HD mai buna. (necesita repornire)</string>
+    <string name="pref_max_events_title">Numarul de evenimente maxime pe secunda a manager-ului Windows</string>
+
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">Acesta este valoare care controleaza numarul de evenimente a sistemului pe secunda (necesita repornire)</string>
+    <string name="pref_max_events_alt_summary">Numarul maxim de evenimente ale sistemului: %s</string>
+    <string name="pref_usb_mode_title">Mod prestabilit USB</string>
+    <string name="pref_usb_mode_summary">Aceasta decide care este modul prestabilit USB cand conectati telefonul la calculator (necesita repornire)</string>
+    <string name="pref_ring_delay_title">Amanare sonerie telefon</string>
+    <string name="pref_ring_delay_summary">Intervalul de timp intre inceperea receptionarii unui apel si pornirea soneriei (necesita repornire)</string>
+    <string name="pref_ring_delay_alt_summary">Intervalul de intarziere a soneriei: %s</string>
+    <string name="pref_vm_heapsize_title">Dalvik cache heapsize</string>
+    <string name="pref_vm_heapsize_summary">Aceasta controleaza marimea de Dakvik VM cache la care are acces (necesita repornire)</string>
+    <string name="pref_vm_heapsize_alt_summary">Marimea Dalvik VM cache : %s</string>
+    <string name="propmodder_warning_title">ESTE NECESAR ROOT</string>
+    <string name="propmodder_warning">Acest program produce schimbari in sistem in /system/build.prop NU FOLOSITI DACA NU STITI CE FACETI. Noi (n00bware, producatorii PropModder) nu suntem responsabili de telefonul dumneavoastra. Ati fost avertizat</string>
+    <string name="showbuild_title">Arata build.prop</string>
+    <string name="showbuild_dialog">Acesta este /system/build.prop</string>
+    <string name="showbuild_loading">Incarcare build.prop\u2026</string>
+    <string name="showbuild_error">Eroare incarcare build.prop\u2026</string>
+    <string name="showbuild_unknown">Necunoscut</string>
+    <string name="showbuild_version">Versiune</string>
+    <string name="showbuild_label">Aceasta va arata  build.prop ca sa vedeti ce contine</string>
+    <string name="pref_fast_up_title">HSUPA upload speed hack</string>
+    <string name="pref_fast_up_summary">*ATENTIONARE* daca schimbati valoarea , el va adauga valorile necesare la build.prop daca acestea nu sunt deja prezente (necesita repornire)</string>
+    <string name="pref_fast_up_alt_summary">Accelerare activata: %s</string>
+    <string name="pref_disable_boot_anim_title">Anuleaza animatia de pornire</string>
+    <string name="pref_disable_boot_anim_summary">Anuleaza animatia de pornire a sistemului (necesita repornire)</string>
+    <string name="clear_custom_bootanimation">Curatare animaria pornire predefinita</string>
+    <string name="set_custom_bootanimation">Setare predefinirm...</string>
+    <string name="pref_prox_delay_title">Senzorul de intarziere de proximitate</string>
+    <string name="pref_prox_delay_summary">Cand sunteti intr-o convorbire, ecranul este oprit, cand telefonul de misca de langa fata, aceasta variabila controleaza durata de timp pana cand ecranul se aprinde (necesita repornire)</string>
+    <string name="pref_prox_delay_alt_summary">Senzorul de proximitate setat la: %s</string>
+    <string name="pref_logcat_title">Anulare logcat</string>
+    <string name="pref_logcat_summary_on">Logcat anulat face citirea de logcats dificila</string>
+    <string name="pref_logcat_summary_off">Logcat visibil , anularea provoaca o  mica marire a vitezei in sistem</string>
+    <string name="pref_mod_version_title">Schimba-ti numarul de fabricare</string>
+    <string name="pref_mod_version_summary">Aceasta nu afecteaza sistemul</string>
+    <string name="pref_mod_version_alt_summary">Numarul de fabricare: %s</string>
+    <string name="pref_mod_version_default">PropModder!!!</string>
+    <string name="pref_sleep_title">PM mod de dormit</string>
+    <string name="pref_sleep_summary">Politica de modificare de dormire pe timp de noapte</string>
+    <string name="pref_sleep_alt_summary">Modul de dormire curent: %s</string>
+    <string name="pref_jit_title">Compiler exact acum</string>
+    <string name="pref_jit_summary">permite/anuleaza JIT Compiler in dalvik vm</string>
+    <string name="pref_tcp_stack_title">Optimizare TCP Stack</string>
+    <string name="pref_tcp_stack_summary">Modifica marimea amortizorului pentru o mai buna performanta</string>
+    <string name="pref_check_in_title">Verifica in service</string>
+    <string name="pref_check_in_summary">Opreste trimiterea de data de sistem spre Google</string>
+    <string name="pref_sdcard_buffer_title">Viteza Sdcard  hack</string>
+    <string name="pref_sdcard_buffer_summary">Modifica marimea amortizorului sdcard pentru o mai buna performanta</string>
+    <string name="pref_sdcard_buffer_alt_summary">Marimea amortizorului Sdcard : %s</string>
+    <string name="pref_g_speed_title">Viteza 3G Hack</string>
+    <string name="pref_g_speed_summary">Descopera viteza 3g </string>
+    <string name="pref_gpu_title">Accelerare GPU</string>
+    <string name="pref_gpu_summary">Pentru a permite hardware-ului accelerarea unde GPU controleaza UI in loc de CPU</string>
+    <string name="pref_vvmail_title">VVMail (Sense ROMs ONLY)</string>
+    <string name="pref_vvmail_summary">Forteaza compatibilitatea Sense ROMS cu VVMail</string>
+    
+     <string name="ps_enable_init_d">Permite/anuleaza pornirea automata de tweaks</string>
+     
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">Inlaturare permanente de autendificare (persista in repornire)</string>
+    <string name="remove_logcat_till_reboot">Inlatura autendificare pana la repornire (NU persista in repornire)</string>
+    <string name="enable_logcat">Permite autendificare (necesita repornire)</string>
+    <string name="disable">Anuleaza</string>
+    <string name="power_collapse_suspend">Suspenda prabusirea Power</string>
+    <string name="power_collapse">Prabusire Power (Cel mai bun)</string>
+    <string name="apps_sleep">Adormire aplicatii</string>
+    <string name="slow_clock">Ceas incet</string>
+    <string name="wait_for_interrupt">Asteptare pentru intrerupere</string>
+    <string name="sdcard_128_kb">128 kb</string>
+    <string name="sdcard_1024_kb">1024 kb</string>
+    <string name="sdcard_2048_kb">2048 kb (recomandat)</string>
+    <string name="sdcard_3072_kb">3072 kb</string>
+    <string name="sdcard_4096_kb">4096 kb</string>
+    <string name="sdcard_5120_kb">5120 kb</string>
+    <string name="sdcard_6144_kb">6144 kb</string>
+    <string name="remove">Inlatura</string>
+    <string name="hsupa_disabled">HSUPA anulat (Plafonat)</string>
+    <string name="hsupa_enabled">HSUPA permis</string>
+    <string name="hsupa_enabled_uncapped">HSUPA permis (Neplafonat)</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string>
+    <string name="ps_enable_init_d">Permite / anuleaza pornirea automata tweaks</string>
+    <string name="ps_zipalign">Aliniaza fiecare aplicatie nealiniata la fiecare pornire</string>
+    <string name="ps_enable_sd_boost">Permite/anuleaza viteza SD card  boost</string>
+    <string name="ps_sd_boost">Seteaza valoarea de citire in  kb</string>
+    <string name="ps_fix_permissions">Alege permisiunile pentru aplicatii pentru fiecare pornire</string>
+    <string name="ps_clear_cache">Curata data cache la fiecare pornire</string>
+    <string name="ps_enable_sysctl">Permite sysctl tweaks la pornire</string>
+    <string name="ps_enable_cron">Permite serviciile cron programate</string>
+    
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">Imaginea alarmei este vizibila</string>
+    <string name="hide_alarm_icon_on">Imaginea alarmei este ascunsa</string>
+    <string name="hide_alarm_icon">Ascunde Imaginea alarmei</string>
+    <string name="smart_alarm_icon">Imaginea alarmei destepte</string>
+    <string name="smart_alarm_icon_summary">Arata imaginea alarmei cu un interval de timp inainte de alarma</string>
+    <string name="always_hide">Ascunde mereu imaginea alarmei</string>
+    <string name="show_15_min_before">Arata imaginea alarmei cu 15 minute inainte de alarma</string>
+    <string name="show_30_min_before">Arata imaginea alarmei cu 30 minute inainte de alarma</string>
+    <string name="show_60_min_before">Arata imaginea alarmei cu 1 ora inainte de alarma</string>
+    <string name="show_180_min_before">Arata imaginea alarmei cu 3 ore inainte de alarma</string>
+    <string name="show_360_min_before">Arata imaginea alarmei cu 6 ore inainte de alarma</string>
+    <string name="show_720_min_before">Arata imaginea alarmei cu 12 ore inainte de alarma</string>
+    <string name="show_1440_min_before">Arata imaginea alarmei cu 24 ore inainte de alarma</string>
+    
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">Setari ceas</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">Ascunde ceas</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">Buton dreapta</string>
+    <string name="clear_all_pos_bottom_left">Buton stanga</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">Efect de decolorare</string>
+    <string name="horizontal_effect">Efect orizontal</string>
+    <string name="vertical_effect">Efect vertical</string>
+    
+    <!-- Backup & Restore  -->
+    <string name="restore">Restaureaza</string>
+    <string name="save">Salveaza</string>
+    <string name="delete">Sterge</string>
+    <string name="no_backups">Fara Backups</string>
+    <string name="reset">Reset</string>
+     <string name="restoring_backup">Refa Backup</string>
+    <string name="backup_name">Backup - Nume</string>
+    <string name="save_successful">Salvat cu succes</string>
+    <string name="save_unsuccessful">Nesalvat</string>
+    <string name="clearing_settings">Curata setari</string>
+    <string name="reset_successful">Resetare cu succes</string>
+    <string name="backup_restored">Backup Restaurat</string>
+    <string name="reboot_required">Repornire necesare</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Butoane Tweaks de volum</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">Volum media de siguranta pentru casti</string>
+    <string name="pref_safe_media_volume_summary">Activeaza sau dezactiveaza volumul media de siguranta pentru casti</string>
+    
+    <string name="vol_music_controls_title">Comanda volum pentru salt melodie</string>
+    <string name="vol_music_controls_summary">Salt melodie la apasare lunga pe tasta de volum cand ecranul e oprit</string>
+    
+    <string name="vol_key_cursor_control_title">Comanda de modificare volum</string>
+    <string name="vol_key_cursor_control_summary">Controleaza volumul folosing butoanele de volum in domenii text</string>
+    <string name="vol_key_cursor_control_off">Dezactivat</string>
+    <string name="vol_key_cursor_control_on">Volum mai tare/incet schimba volumul stanga/dreapta</string>
+    <string name="vol_key_cursor_control_on_reverse">Volum mai tare/incet schimba volum dreapta/stanga</string>
+    
+    <!-- Move Apps to Internal Storage -->
+    
+    <string name="move_internal_storage">Muta XBlast Tools in memoria interna</string>
+    <string name="move_message">Aplicatia necesita sa fie mutata in memoria interna pentru a functiona corect.\n\n(Porneste aplicatia din nou dupa ce ai mutat-o si aplicatia s-a inchis)</string>
+    <string name="move_Xblast">Mutare XBlast Tools</string>
+    <string name="move_failed">Mutare esuata!</string>
+    <string name="quit">Iesire</string>
+    <string name="move">Mutare</string>
+    
+     <!-- Notification Panal Bg -->
+     <string name="image">Imagine</string>
+     <string name="color">Culoare</string>
+     <string name="move">Mutare</string>
+     <string name="select_color">Selecteaza culoarea</string>
+     
+     <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Culoarea fundalului pentru Day-Dream</string>
+    <string name="pref_xdream_bg_Image_title">Imaginea de fundal pentru Day-Dream</string>
+    <string name="xdream_bg_clcok_title">Culoare ceas Day-Dream</string>
+    <string name="xdream_image_result_successful">Imagine de fundal schimbata pentru Day-Dream</string>
+    <string name="xdream_image_result_not_successful">Imagine de fundal neschimbata pentru Day-Dream</string>
+    <string name="xdream_bg_Image_trans_summary">0-complet transparent, 100-complet mat a imaginii de fundal pentru Day-Dream</string>
+    <string name="xdream_bg_Image_trans_title">Transparenta imaginii de fundal pentru Day-Dream</string>
+    <string name="custom_Dream_Text_summary">Lasati liber pentru valoare lipsa</string>
+    <string name="custom_Dream_Text_title">Text personalizat pentru Day-Dream</string>
+    <string name="custom_Dream_Text_size_title">Marimea textului personalizat pentru Day-Dream </string>
+    <string name="dream_font_summary">Fondul selectat va fi aplicat pentru Ceas &amp; text personalizat</string>
+    <string name="dream_font_title">Fond pentru Day-Dream</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">Urmareste-ma pe G+</string>
+    <string name="gplus_title">Comunitatea G+ pentru XBlast</string>
+    
+</resources>

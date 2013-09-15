@@ -22,7 +22,7 @@ import de.robv.android.xposed.callbacks.XCallback;
 public class Xmod implements IXposedHookLoadPackage,
 		IXposedHookInitPackageResources, IXposedHookZygoteInit {
 	public static XSharedPreferences prefs;	
-	private static String MODULE_PATH = null;
+	public static String MODULE_PATH = null;
 	private static XModuleResources modRes;
 	
 	public void initZygote(StartupParam startupParam) {		
@@ -37,6 +37,23 @@ public class Xmod implements IXposedHookLoadPackage,
 							XblastSettings.PREF_KEY_ENABLE_ALL_ROTATION,
 							false));
 			
+			/*XResources.setSystemWideReplacement("android", "color",
+					"primary_text_light", Color.RED);
+			XResources.setSystemWideReplacement("android", "color",
+					"background_dark", Color.RED);
+			XResources.setSystemWideReplacement("android", "color",
+					"background_light", Color.RED);
+			XResources.setSystemWideReplacement("android", "color",
+					"bright_foreground_dark_disabled", Color.RED);
+			XResources.setSystemWideReplacement("android", "color",
+					"bright_foreground_light_disabled", Color.RED);
+			XResources.setSystemWideReplacement("android", "color",
+					"dim_foreground_light", Color.RED);
+			XResources.setSystemWideReplacement("android", "color",
+					"dim_foreground_light_disabled", Color.RED);
+			XResources.setSystemWideReplacement("android", "color",
+					"bright_foreground_light", Color.RED);*/
+			
 			if (!Black.findClassInPhone(CrtEffect.CLASS_DISPLAY_POWER_STATE) || !Black.findClassInPhone(CrtEffect.CLASS_ELECTRON_BEAM_STATE)) {
 				if (prefs.getInt("crt_effect_mode", 4) != 4) {
 					XResources.setSystemWideReplacement("android", "bool",
@@ -44,7 +61,9 @@ public class Xmod implements IXposedHookLoadPackage,
 					XposedBridge.log("CRT Effect in Android 4.0.3 Enabled");
 				}
 			}
-			if (prefs.getBoolean(XblastSettings.PREF_KEY_HOLO_BG_SOLID_BLACK, false)) {
+			
+			HoloBg.initZygote(prefs);
+			/*if (prefs.getBoolean(XblastSettings.PREF_KEY_HOLO_BG_SOLID_BLACK, false)) {
 	            XResources.setSystemWideReplacement(
 	                "android", "drawable", "background_holo_dark", modRes.fwd(R.drawable.background_holo_dark_solid));
 	        } else {
@@ -52,7 +71,7 @@ public class Xmod implements IXposedHookLoadPackage,
 	                    "android", "drawable", "background_holo_dark", modRes.fwd(R.drawable.background_holo_dark));
 	        }
 	        XResources.setSystemWideReplacement(
-	                "android", "drawable", "background_holo_light", modRes.fwd(R.drawable.background_holo_light));
+	                "android", "drawable", "background_holo_light", modRes.fwd(R.drawable.background_holo_light));*/
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
@@ -99,6 +118,12 @@ public class Xmod implements IXposedHookLoadPackage,
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
+		
+		/*try {			
+			StatusBarIcons.initZygote(prefs);			
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}*/
 		
 
 	}
@@ -213,6 +238,12 @@ public class Xmod implements IXposedHookLoadPackage,
 		 
 		try {
 			StatusbarColor.init(prefs, lpparam.classLoader);
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
+		
+		try {
+			StatusBarIcons.init(prefs, lpparam.classLoader);
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}

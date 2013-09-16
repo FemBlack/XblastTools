@@ -66,7 +66,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     public static final String PREF_KEY_POWEROFF_ADVANCED = "poweroff";
 	public static final String PREF_KEY_RECENTS_CLEAR_ALL = "recents_clear_all";
 	public static final String PREF_KEY_RAM_BAR_USAGE = "ram_usage_bar";
-	public static final String PREF_KEY_HOLO_BG_SOLID_BLACK = "holo_solid_black";
+	public static final String PREF_KEY_HOLO_BG_SOLID_BLACK = "holo_enable";
 	public static final String PREF_KEY_NBG_PULLUP_PULLDOWN_SPEED = "np_pu_pd_speed";
     public static final String PREF_KEY_STATUSBAR_COLOR_ENABLE = "statusbar_color_enabled";
     public static final String PREF_KEY_ABOUT = "pref_about_app";
@@ -378,11 +378,16 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             mPreferenceManager = getPreferenceManager();
             mPrefs = getPreferenceScreen().getSharedPreferences();
             
+            // pls take care for android version4.0.3 for day dream
             if (Build.VERSION.SDK_INT < 17) {
             	PreferenceScreen xblastScreen = (PreferenceScreen) findPreference("XBlast");
                 PreferenceScreen xDreamScreen = (PreferenceScreen) findPreference("xDream");
+                PreferenceScreen gradientScreen = (PreferenceScreen) findPreference("gradient_key");
                 
                 xblastScreen.removePreference(xDreamScreen);
+                
+                ColorPickerPreference xDreamGradientColor = (ColorPickerPreference) findPreference(PREF_KEY_XDREAM_GRADIENT_COLOR);
+                gradientScreen.removePreference(xDreamGradientColor);
             }
             
             
@@ -405,16 +410,26 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             mCbfontlistpref.setEntries(fontNameArray);  
             mCbfontlistpref.setEntryValues(fontNameArray);
             
-            mFontlistXdreampref.setEntries(fontNameArray);  
-            mFontlistXdreampref.setEntryValues(fontNameArray);
-            
-            mXDreamBgImagepref = findPreference(PREF_KEY_XDREAM_BG_IMAGE);
-            mXDreamBgColorEnabledpref = (ColorPickerPreference) findPreference(PREF_KEY_XDREAM_BG_COLOR);
-            
-            
-            if(mXDreamBgColorEnabledpref!= null && mXDreamBgColorEnabledpref.isEnabled()) {
-            	mXDreamBgImagepref.setEnabled(false);
+            // pls take care for android version4.0.3 for day dream
+            if (Build.VERSION.SDK_INT >= 17) {
+            	if (mFontlistXdreampref != null) {
+            		mFontlistXdreampref.setEntries(fontNameArray);  
+                    mFontlistXdreampref.setEntryValues(fontNameArray);
+            	}
+            	
+                
+                mXDreamBgImagepref = findPreference(PREF_KEY_XDREAM_BG_IMAGE);
+                mXDreamBgColorEnabledpref = (ColorPickerPreference) findPreference(PREF_KEY_XDREAM_BG_COLOR);
+                
+                
+                if(mXDreamBgColorEnabledpref!= null && mXDreamBgColorEnabledpref.isEnabled()) {
+                	if (mXDreamBgImagepref != null) {
+                		mXDreamBgImagepref.setEnabled(false);
+                	}
+                	
+                }
             }
+            
             
             mHoloBgImagepref = findPreference(PREF_KEY_HOLO_BG_IMAGE);
             mHoloBgColorEnabledpref = (ColorPickerPreference) findPreference(PREF_KEY_HOLO_BG_COLOR);

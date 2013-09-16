@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="title_activity_settings">Nastavenia</string>
+
+    <!-- Strings related to Settings -->
+
+ 	<string name="app_name">XBlast Tools</string>
+    <string name="Shadow_settings">Nastavenia tieňa</string>
+    <string name="file_name">FemBlack</string>
+    <string name="action_settings">Nastavenia</string>
+    <string name="preview">Ukážka</string>
+    <string name="edit_message">Zadajte text</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Zrušiť</string>
+    <string name="button_effects">Vyberte farbu</string>
+    <string name="shadow_settings">Nastavenia tieňa</string>
+    <string name="ClockTextColor">Farba hodín a textu</string>
+    <string name="shadowColor">Farba tieňa</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    
+    
+    <!-- General settings -->
+    <string name="pref_header_general">Všeobecné</string>
+    <string name="pref_title_notif_transperency">Priehľadnosť oznamov. oblasti</string>
+    <string name="pref_description_notif_transperency">Zapnite priehľadnosť pre panel oznámení</string>
+	<string name="hide_am_pm">Skryť AM/PM</string>
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">Rôzne</string>
+    <string name="carrier_label">Názov operátora</string>
+    <string name="default_carrier_label">FemBlack</string>
+    <string name="desc_carrier_label">Nechajte prázdne pre originálny názov operátora</string>
+	<string name="custom_carrier_label_LS">Vlastný text na zamyk. obrazovke</string>
+	<string name="custom_carrier_label_NC">Vlastný text v oznamov. oblasti</string>
+	 <!-- About -->
+    <string name="pref_about_title">O aplikácií</string>
+    <string name="about_app_title">XBlast Tools</string>
+    <string name="about_app">Vytvoril FemBlack@XDA. Ťuknite pre navštívenie oficiálneho</string>
+    <string name="about_donate_title">Verzia z obchodu  Play</string>
+    <string name="about_donate_summary">Prispejte a podporte ma ak si myslíte že táto aplikácia za to stojí.</string>
+	
+	<string name="fullscreen_caller_photo_title">Fotka volajúceho na celú obrazovku</string>
+    <string name="fullscreen_caller_photo_summary">Zobrazí fotku volajúceho na obrazovke prichadzajúceho hovoru</string>
+     <string name="hide">Skryť</string>
+    <string name="small">Malý</string>
+    <string name="medium">Stredný</string>
+    <string name="large">Veľký</string>
+    <string name="carrier_label_size_summary">Nastavte veľkosť vlastného textu na zamyk. obrazovke</string>
+    <string name="carrier_label_size">Veľkosť vlastného textu</string>
+    
+    <string name="clock_and_date">Čas a Dátum</string>
+    <string name="am_pm_style">Štýl AM/PM</string>
+    
+    
+    <string name="default_caller_image_title">Vyberte predvolený obrázok volajúceho</string>
+    <string name="default_caller_image_summary">Vyberte predvolený obrázok pre neznáme kontaktz a kontakty bez obrázku</string>
+    <string name="Call_Banner_text_summary">Farba bude použitá na meno volajúceho, číslo atď.</string>
+    <string name="Call_Banner_text_title">Farba textu</string>
+    <string name="default_caller_image_result_successful">Predvolený obrázok sa zmenil</string>
+    <string name="default_caller_image_result_not_successful">Predvolený obrázok sa nezmenil</string>
+    <string name="nbg_image_result_successful">Obrázok pre oznam. oblasť sa zmenil</string>
+    <string name="nbg_image_result_not_successful">Obrázok pre oznam. oblasť sa nezmenil</string>
+    
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">Softvérový Reštart</string>
+    <string name="reboot_confirm">Váš telefón sa reštartuje</string>
+    <string name="reboot_confirm_recovery">Reštart do Recovery</string>
+    <string name="soft_reboot_confirm">Váš telefón reštartuje UI</string>
+    <string name="fastboot_confirm_recovery">Reštart do Bootloader</string>
+    <string name="advanced_reboot_title">Rozšírené vypínacie menu</string>
+    <string name="poweroff_advanced_summary">Povoliť rozšírené vypýnacie menu (Softvérový Reštart, Reštart, Snímka obrazovky atď.)</string>
+    
+    <string name="pref_title_notif_bg">Pozadie panela oznámení</string>
+    <string name="pref_description_notif_bg">Nastavte farbu alebo obrázok</string>
+    <string name="pref_description_notif_bg_color">Farba bude použitá na pozadie panela oznámení</string>
+    <string name="pref_description_notif_bg_img">Obrázok bude použitý na pozadie panela oznámení</string>
+    <string name="fullscreen_caller_sb_title">Zakázať stavovú lištu</string>
+    <string name="fullscreen_caller_sb_summary">Stavová lišta nebude počas hovoru viditeľná</string>
+    
+    <string name="Call_Banner_font_summary">Výbraný typ písma bude použitý na Meno volajúceho, Číslo atď.</string>
+    <string name="Call_Banner_font_title">Typ písma</string>
+    
+    <string name="status_bar">stavová lišta</string>
+    <string name="notification_panel">Oznamovacia oblasť</string>
+    <string name="center_clock_title">Centrovať hodiny</string>
+    
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">CRT efekt</string>
+    
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> voľnej</string>   
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> Použitej:</string>
+    
+    <string name="recents_clear_all_title">Ukončiť všetky aplikácie na pozadí</string>
+    <string name="recents_clear_all_summary">Povoliť tlačidlo na ukončenie všetkých apl. na pozadí</string>
+    <string name="ram_usage_bar_title">Graf voľnej/použitej RAM</string>
+    <string name="ram_usage_bar_summary">Zobrazí využitie RAM v zobrazení nedávnych aplik.</string>
+    
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">Čisté čierne pozadie</string>
+    <string name="holo_bg_solid_black_summary">Použiž čisté čierne pozadie namiesto čierno-sivého prechodu</string>
+    
+    <string name="nbg_pu_pd_speed_title">Rýchlosť otvárania oznam. oblasti</string>
+    <string name="nbg_pu_pd_speed_summary">Zvýši rýchlosť otvárania oznam. oblasti</string>
+
+    <string name="statusbar_color_summary">POZOR: Ak nastavíte priehľadnú stavovú lištu môže to vyzerať divne pretože niektoré aplik. nezobrazujú nič pod stavovou lištou.</string>
+    <string name="statusbar_color_title">Farba stavovej lišty</string>
+    <string name="wifi_color_title">Farba Wi-Fi signálu</string>
+    <string name="wifi_inout_color_title">Farba Wi-Fi šípiek</string>
+    
+    <string name="mobile_signal_color_summary">Farba bude použitá na ikonu signálu a typ siete</string>
+    <string name="mobile_signal_color_title">Farba signálu</string>
+    <string name="mobile_inout_color_title">Farba šípiek signálu</string>
+    <string name="battery_color_title">Farba batérie</string>
+    
+    <string name="notif_panel_bg_trans_summary">0 - Úplne priehľadné, 100 - Neprehliadné</string>
+    <string name="notif_panel_bg_trans_title">Priehľadnosť pozadia oznam. oblasti</string>
+    
+    <string name="CCLLS_title">Farba vl. textu na zamyk. obrazovke</string>
+    <string name="CCLNC_color_title">Farba vl. textu v oznam. oblasti</string>
+    
+    <string name="rotation_summary">Povoliť všetky uhly otočenia, aj hore nohami</string>
+    <string name="rotation_title">Povoliť všetky uhly otočenia</string>
+    
+    <string name="sb_clock_color_title">Farba hodín</string>
+    <string name="np_clock_color_title">Farba hodín a Dátumu</string>
+    
+     <string name="custom_text_summary">Vlastný text bude zobrazený za hodinami na stavovej lište a v oznam. oblasti</string>
+     <string name="custom_text_title">Vlastný text</string>
+     
+     <string name="custom_text_np_summary">Vlastný text bude zobrazený za hodinami v oznam. oblasti</string>
+     <string name="custom_text_np_title">Vlastný text</string>
+     
+     <string name="font_summary">Vybratý typ písma bude zvolený pre hodiny v stavovej lište a v oznam. oblasti</string>
+     <string name="font_np_summary">Vybratý typ písma bude použitý na hodiny v oznam. oblasti</string>
+     <string name="font_title">Písma</string>
+     
+     <string name="pref_quick_settings_title">JB vylepšenia</string>
+     <string name="quick_setting_columns_summary">Počet dlaždíc rýchlych nastavení v rade</string>
+     <string name="quick_setting_columns">Dlaždice rýchleho nastavenia</string>
+     
+      <!--  QuickSettings settings -->
+    <string name="quick_settings_title">Rýchle nastavenia v oznam. oblasti</string>
+    <string name="quick_settings_summary">Umožňuje zobraziť/skryť rýchle nastavenia v oznam. oblasti</string>
+    <string name="qs_tile_user_profile">Používateľský profil</string>
+    <string name="qs_tile_airplane_mode">V Lietadle</string>
+    <string name="qs_tile_battery">Stav batérie</string>
+    <string name="qs_tile_wifi">Wi-Fi</string>
+    <string name="qs_tile_bluetooth">Bluetooth</string>
+    <string name="qs_tile_gps">GPS</string>
+    <string name="qs_tile_mobile_data">Mobilné Dáta</string>
+    <string name="qs_tile_network_mode">Typ siete</string>
+    <string name="qs_tile_data_usage">Využitie dát</string>
+    <string name="qs_tile_audio">Profily</string>
+    <string name="qs_tile_brightness">Jas</string>
+    <string name="qs_tile_screen_timeout">Vypnutie obrazovky</string>
+    <string name="qs_tile_autorotation">Auto. otočenie</string>
+    <string name="qs_tile_sync">Synchronizácia</string>
+    <string name="qs_tile_wifi_ap">Prístupový bod</string>
+    <string name="qs_tile_torch">Svietidlo</string>
+    <string name="qs_tile_xblasttools">XBlast Tools</string>
+    <string name="qs_tile_sleep">Uspať</string>
+    <string name="qs_tile_quickrecord">Nahrávanie</string>
+    
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">Dlaždice v rade</string>
+    <string name="pref_qs_tiles_per_row_summary">Určte koľko dlaždíc má byť zobrazených v rade vedľa seba. Dlaždice budú zmenšené/zväčšené automaticky.</string>
+    
+    <!-- Auto-switch QuickSettings -->
+    <string name="pref_auto_switch_qs_title">Auto. prepínanie rýchlych nastavení</string>
+    <string name="pref_auto_switch_qs_summary">Rýchle nastavenia budú zobrazené automaticky ak v oznam. oblasti niesu žiadne upozornenia.</string>
+
+    <!-- Quick pulldown -->
+    <string name="pref_quick_pulldown_title">Rýchle stiahnutie</string>
+    <string name="pref_quick_pulldown_summary">Roh stavovej lišty autom. stiahne rýchle nastavenia</string>
+    <string name="quick_pulldown_off">Vypnuté</string>
+    <string name="quick_pulldown_right">Pravý</string>
+    <string name="quick_pulldown_left">Ľavý</string>
+    
+    <!-- QuickSettings strings -->
+    <string name="quick_settings_sync_on">Synch. zap.</string>
+    <string name="quick_settings_sync_off">Synch. vyp.</string>
+    <string name="quick_settings_wifi_ap_on">Príst. bod zap.</string>
+    <string name="quick_settings_wifi_ap_off">Príst. bod vyp.</string>
+    <string name="quick_settings_torch_on">Svetlo zap.</string>
+    <string name="quick_settings_torch_off">Svetlo vyp.</string>
+    <string name="quick_settings_torch_off_notif">Ťuknite pre vypnutie</string>
+    <string name="quick_settings_qr_playing">Prehráva sa&#8230;</string>
+    <string name="quick_settings_qr_recording">Nahrávanie&#8230;</string>
+    <string name="quick_settings_qr_recorded">Nahraté</string>
+    <string name="quick_settings_qr_record">Dlho podržte pre nahrávanie</string>
+    <string name="quick_settings_qr_recording_notif">Stlačte pre zastavenie nahrávania</string>
+    
+    <string name="notif_normal_color_title">Farba rýchlych nastavení</string>
+    <string name="notif_pressed_color_title">Farba stlačených rýchl. nastavení</string>
+    <string name="notif_normal_color_summary">Farba rýchlych nastavení</string>
+    <string name="notif_pressed_color_summary">Farba stlačených rýchl. nastavení</string>
+    
+     <string name="boot_animation_summary">Animácia pri spustení bude zakázaná</string>
+     <string name="boot_animation_title">Zakázať anim. spustenia</string>
+     
+     <string name="disable_adb_notif_summary">ADB oznámenie bude skryté</string>
+     <string name="disable_adb_notif_title">Skryť ADB oznámenie</string>
+     
+     <string name="audio_video_summary">Zvýši kvalitu obrazu a zvuku pri natáčaní</string>
+     <string name="audio_video_title">Kvalita zvuku a obrazu</string>
+     
+     <string name="ticker_color_title">Ticker Color</string>
+     <string name="google_dns_title">Google DNS Hack</string>
+     
+     <string name="notif_Content_color_title">Farba textu oznámenia</string>
+     <string name="notif_Title_text_color_title">Farba textu nadpisu</string>
+     <string name="toast_text_color_title">Farba "Toastu"</string>
+     <string name="toast_bg_color_title">Pozadie "Toastu"</string>
+     <string name="clear_all_position_title">Pozícia tlačidla pre rých. ukončenie aplik.</string>
+     
+     <string name="build_prop_tweaks">build.prop vylepšenia</string>
+     
+    <!-- Traffic -->
+    <string name="traffic_title">Indikátor prenos. rýchlosti</string>
+    <string name="traffic_summary">Indikátor prenosovej rýchlosti je zobrazený len ak máte prístup k sieti</string>
+    <string name="traffic_color_title">Farba indikátora rýchlosti</string>
+   
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string>
+    <string name="propmodder_title_summary">@null</string>
+    <string name="buildprop_title">Build.prop módy</string>
+    <string name="nonprop_cat_title">Mods involving init.d script</string>
+    <string name="pc_tweaks">Vylepšenia</string>
+    <string name="pc_init_d">Povoliť/Zakázať vylepšenia</string>
+    <string name="pc_init_d_tweaks">Upraviť vylepšenia</string>
+
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">Systémové vylepšenia</string>
+    <string name="pt_enable_init_d">Povoliť vylepšenia pri štarte</string>
+    <string name="pt_zipalign">Zipalign apks</string>
+    <string name="pt_enable_sd_boost">Povoliť SD boost</string>
+    <string name="pt_sd_boost">Read ahead value</string>
+    <string name="pt_fix_permissions">Opraviť povolenia</string>
+    <string name="pt_clear_cache">Vyčistiť cache</string>
+    <string name="pt_enable_sysctl">Povoliť sysctl</string>
+    <string name="pt_enable_cron">Povoliť plánované úlohy</string>
+
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">BOL/A SI VAROVANÝ/Á</string>
+    <string name="main_warning_summary">Táto možnosť mení vaše \'/system/build.prop\' NENESIEME ŹIADNU ZODPOVEDNOSŤ ZA PRÍPADNÉ ŠKODY</string>
+    <string name="pref_wifi_scan_interval_title">Interval hadania Wi-Fi</string>
+    <string name="pref_wifi_scan_interval_summary">Čas medzi vyhľadávaniami dostupných sietí Wi-Fi (vyžaduje reštart)</string>
+    <string name="pref_wifi_scan_alt_summary">Čas medzi vyhľadávaniami: %s</string>
+    <string name="pref_lcd_density_title">LCD rozlíšenie</string>
+    <string name="pref_lcd_density_summary">LCD hustota ktorá povoľuje ostrejšie rozlíšenie (vyžaduje reštart)</string>
+    <string name="pref_max_events_title">Windows Manager\'s max events per second</string>
+
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">This is a runtime value that controls the number of events the system will allow in a second (requires reboot)</string>
+    <string name="pref_max_events_alt_summary">Max number of system events: %s</string>
+    <string name="pref_usb_mode_title">Default USB mode</string>
+    <string name="pref_usb_mode_summary">This decides what the default setting is when you plug in to a computer via USB (requires reboot)</string>
+    <string name="pref_ring_delay_title">Telephone ringer delay</string>
+    <string name="pref_ring_delay_summary">The amount of time from when the system registers an incoming phone call until the ringer starts (requires reboot)</string>
+    <string name="pref_ring_delay_alt_summary">Incoming call Delay: %s</string>
+    <string name="pref_vm_heapsize_title">Dalvik cache heapsize</string>
+    <string name="pref_vm_heapsize_summary">This controls the size of the cache the Dalvik VM has access to (requires reboot)</string>
+    <string name="pref_vm_heapsize_alt_summary">Dalvik VM cache size: %s</string>
+    <string name="propmodder_warning_title">ROOT IS REQUIRED</string>
+    <string name="propmodder_warning">This program changes system properties in /system/build.prop DO NOT USE if you don\'t know what you are doing. We (n00bware, makers of PropModder) are not responsible for your device PERIOD. You have been warned</string>
+    <string name="showbuild_title">Show build.prop</string>
+    <string name="showbuild_dialog">This is your /system/build.prop</string>
+    <string name="showbuild_loading">Loading build.prop\u2026</string>
+    <string name="showbuild_error">Error loading build.prop\u2026</string>
+    <string name="showbuild_unknown">Unknown</string>
+    <string name="showbuild_version">Version</string>
+    <string name="showbuild_label">This will show the build.prop so you can see whats in it</string>
+    <string name="pref_fast_up_title">HSUPA upload speed hack</string>
+    <string name="pref_fast_up_summary">*WARNING* if you change this value it will add the needed values to your build.prop if they are not already present (requires reboot)</string>
+    <string name="pref_fast_up_alt_summary">Fast up found active: %s</string>
+    <string name="pref_disable_boot_anim_title">Disable Boot Animation</string>
+    <string name="pref_disable_boot_anim_summary">Disable system boot animation (requires reboot)</string>
+    <string name="clear_custom_bootanimation">Clear custom boot animation</string>
+    <string name="set_custom_bootanimation">Set custom...</string>
+    <string name="pref_prox_delay_title">Proximity sensor delay</string>
+    <string name="pref_prox_delay_summary">When you are in-call screen is off when the device moves away from your face this delay value controls how long before screen turns on (requires reboot)</string>
+    <string name="pref_prox_delay_alt_summary">Proximity sensor set to: %s</string>
+    <string name="pref_logcat_title">Disable logcat</string>
+    <string name="pref_logcat_summary_on">Logcat disabled, makes reading logcats diffucult</string>
+    <string name="pref_logcat_summary_off">Logcat visible, disabling does provide a slight boost in the system</string>
+    <string name="pref_mod_version_title">Zmeniť číslo zostavy</string>
+    <string name="pref_mod_version_summary">This is astetic and doesn\'t improve the system</string>
+    <string name="pref_mod_version_alt_summary">Build Number: %s</string>
+    <string name="pref_mod_version_default">PropModder!!!</string>
+    <string name="pref_sleep_title">PM Sleep mode</string>
+    <string name="pref_sleep_summary">Modify Nighttime sleep policy</string>
+    <string name="pref_sleep_alt_summary">Current Sleep Mode: %s</string>
+    <string name="pref_jit_title">Just In Time Compiler</string>
+    <string name="pref_jit_summary">enables/disables JIT Compiler in dalvik vm</string>
+    <string name="pref_tcp_stack_title">Optimalizovať TCP Stack</string>
+    <string name="pref_tcp_stack_summary">Upravte vyrovnávaciu pamäť pre lepší výkon</string>
+    <string name="pref_check_in_title">Check in service</string>
+    <string name="pref_check_in_summary">Zastaviť zasielanie dát do Google</string>
+    <string name="pref_sdcard_buffer_title">Sdcard speed hack</string>
+    <string name="pref_sdcard_buffer_summary">Upravte vyrovnávaciu pamať SD karty pre lepší výkon</string>
+    <string name="pref_sdcard_buffer_alt_summary">Vyrovnávacia pamäť: %s</string>
+    <string name="pref_g_speed_title">3G Speed Hack</string>
+    <string name="pref_g_speed_summary">Uncap 3g speed</string>
+    <string name="pref_gpu_title">GPU Akcelerácia</string>
+    <string name="pref_gpu_summary">Povoliť hardwérovú akceleráciu kde UI ovláda GPU namiesto CPU</string>
+    <string name="pref_vvmail_title">VVMail (IBA sense ROMky)</string>
+    <string name="pref_vvmail_summary">Compatibilita Sesnse ROMiek s VVMail</string>
+    
+     <string name="ps_enable_init_d">Enable/disable start-up tweaks</string>
+     
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">Perminately remove log (persists through reboot)</string>
+    <string name="remove_logcat_till_reboot">Remove log till reboot (will NOT persist through reboot)</string>
+    <string name="enable_logcat">Enable logging (requires reboot)</string>
+    <string name="disable">Disable</string>
+    <string name="power_collapse_suspend">Power Collapse Suspend</string>
+    <string name="power_collapse">Power Collapse (Best)</string>
+    <string name="apps_sleep">Apps Sleep</string>
+    <string name="slow_clock">Slow Clock</string>
+    <string name="wait_for_interrupt">Wait For Interrupt</string>
+    <string name="sdcard_128_kb">128 kb</string>
+    <string name="sdcard_1024_kb">1024 kb</string>
+    <string name="sdcard_2048_kb">2048 kb (recommended)</string>
+    <string name="sdcard_3072_kb">3072 kb</string>
+    <string name="sdcard_4096_kb">4096 kb</string>
+    <string name="sdcard_5120_kb">5120 kb</string>
+    <string name="sdcard_6144_kb">6144 kb</string>
+    <string name="remove">Remove</string>
+    <string name="hsupa_disabled">HSUPA Disabled (Capped)</string>
+    <string name="hsupa_enabled">HSUPA Enabled</string>
+    <string name="hsupa_enabled_uncapped">HSUPA Enabled (Uncapped)</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string>
+    <string name="ps_enable_init_d">Enable/disable start-up tweaks</string>
+    <string name="ps_zipalign">Zipalign any unaligned apps on each boot</string>
+    <string name="ps_enable_sd_boost">Enable/disable SD card speed boost</string>
+    <string name="ps_sd_boost">Set value of read ahead in kb</string>
+    <string name="ps_fix_permissions">Fix permissions for apps on each boot</string>
+    <string name="ps_clear_cache">Clear data cache on each boot</string>
+    <string name="ps_enable_sysctl">Enable sysctl tweaks on boot</string>
+    <string name="ps_enable_cron">Enable scheduled cron jobs</string>
+    
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">Ikona je viditeľná</string>
+    <string name="hide_alarm_icon_on">Ikona je skrytá</string>
+    <string name="hide_alarm_icon">Skryť ikonu budíka</string>
+    <string name="smart_alarm_icon">Inteligentná ikona</string>
+    <string name="smart_alarm_icon_summary">Zobraziť ikonu v nastavenom čase pred budením</string>
+    <string name="always_hide">Úplne skryť ikonu</string>
+    <string name="show_15_min_before">Zobraziť ikonu 15 minút pred budením</string>
+    <string name="show_30_min_before">Zobraziť ikonu 30 minút pred budením</string>
+    <string name="show_60_min_before">Zobraziť ikonu 1 hodinu pred budením</string>
+    <string name="show_180_min_before">Zobraziť ikonu 3 hodiny pred budením</string>
+    <string name="show_360_min_before">Zobraziť ikonu 6 hodín pred budením</string>
+    <string name="show_720_min_before">Zobraziť ikonu 12 hodín pred budením</string>
+    <string name="show_1440_min_before">Zobraziť ikonu 24 hodín pred budením</string>
+    
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">Nastavenia hodín</string>
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">Skryť hodiny</string>
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">Vpravo dole</string>
+    <string name="clear_all_pos_bottom_left">Vľavo dole</string>
+    
+    <!-- CRT Effect  -->
+    <string name="fade_effect">Efekt stmavnutia</string>
+    <string name="horizontal_effect">Horizontálne</string>
+    <string name="vertical_effect">Vertikálne</string>
+    
+    <!-- Backup & Restore  -->
+    <string name="restore">Obnoviť</string>
+    <string name="save">Uložiť</string>
+    <string name="delete">Vymazať</string>
+    <string name="no_backups">Žiadne zálohy</string>
+    <string name="reset">Reset</string>
+     <string name="restoring_backup">Obnova zálohy</string>
+    <string name="backup_name">Názov zálohy</string>
+    <string name="save_successful">Ukladanie úspešné</string>
+    <string name="save_unsuccessful">Ukladanie neúspešné</string>
+    <string name="clearing_settings">Čistenie nastavení..</string>
+    <string name="reset_successful">Reset úspešný</string>
+    <string name="backup_restored">Záloha obnovená</string>
+    <string name="reboot_required">Vyžaduje Reštart</string>
+    
+    
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Možnosti tlač. hlasitosti</string>
+    
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">Bezpečná hodnota hlasitosti</string>
+    <string name="pref_safe_media_volume_summary">Aktovuje/deaktibuje varovanie o bezpečnej hodnote hlasitosti</string>
+    
+    <string name="vol_music_controls_title">Tlač. hlasitosti prepína skladby</string>
+    <string name="vol_music_controls_summary">Prepnúť skladby dlhým podržaním tlač. hlastiosti</string>
+    
+    <string name="vol_key_cursor_control_title">Ovládanie kurzora tlač. hlasitosti</string>
+    <string name="vol_key_cursor_control_summary">Ovládajte kurzor pomocou tlačidla hlasitosti</string>
+    <string name="vol_key_cursor_control_off">Zakázané</string>
+    <string name="vol_key_cursor_control_on">Tlačidlo hlasitosti hore/dole pohybuje kurzor doľava/doprava</string>
+    <string name="vol_key_cursor_control_on_reverse">Tlačidlo hlasitosti hore/dole pohybuje kurzor doprava/doľava</string>
+    
+</resources>

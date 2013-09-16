@@ -5,6 +5,7 @@ import ind.fem.black.xposed.dialogs.SaveDialog;
 import java.io.File;
 
 import android.content.res.XResources;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
@@ -16,8 +17,11 @@ import de.robv.android.xposed.XposedBridge;
 public class HoloBg {
 	
 	private static GradientDrawable mDrawable;
+	public static final String HOLO_DIR = "Holo";
+	/*private static String[] holo = new String[] {
+			"background_holo_dark","background_holo_light","tw_background_holo_dark","tw_background_holo_light" };*/
 	private static String[] holo = new String[] {
-			"background_holo_dark","background_holo_light","tw_background_holo_dark","tw_background_holo_light" };
+		"background_holo_dark","tw_background_holo_dark" };
 	public static void initZygote(final XSharedPreferences prefs) {
        // XModuleResources modRes = XModuleResources.createInstance(Xmod.MODULE_PATH, null);
         
@@ -40,7 +44,7 @@ public class HoloBg {
 				.getGradientOrientation(gradientColorOrientation);
 		
 		final String path = Environment.getExternalStorageDirectory()
-				.getAbsolutePath() + File.separator + SaveDialog.BACKUP_DIR;
+				.getAbsolutePath() + File.separator + SaveDialog.BACKUP_DIR + File.separator + HOLO_DIR;
 		if (holoBgColorEnabled) {
 			
      		if(!gradientSettingsEnable) {
@@ -136,7 +140,7 @@ public class HoloBg {
 	     	   			File myFile = new File(wallpaperFile);
 	     	   			
 	     	   			if(!myFile.exists()) {
-	     	   				return new ColorDrawable();
+	     	   				return new ColorDrawable(Color.BLACK);
 	     	   			}
      						return Drawable.createFromPath(wallpaperFile);
      					}

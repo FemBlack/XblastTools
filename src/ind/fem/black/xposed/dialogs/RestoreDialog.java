@@ -4,6 +4,7 @@ import ind.fem.black.xposed.adapters.BackupAdapter;
 import ind.fem.black.xposed.mods.R;
 
 import java.io.File;
+import java.io.FilenameFilter;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -138,9 +139,10 @@ public class RestoreDialog extends DialogFragment {
 		return dialog;
 
 	}
-
+	private static final String FILE_TEXT_EXT = ".fem";
 	private boolean setupData() {
-		backups = dir.listFiles();
+		GenericExtFilter filter = new GenericExtFilter(FILE_TEXT_EXT);
+		backups = dir.listFiles(filter);
 		if (backups == null || backups.length == 0) {
 			return false;
 		}
@@ -154,5 +156,19 @@ public class RestoreDialog extends DialogFragment {
 
 		public void onRestoreBackup(File file);
 	}
+	
+	// inner class, generic extension filter
+		public class GenericExtFilter implements FilenameFilter {
+	 
+			private String ext;
+	 
+			public GenericExtFilter(String ext) {
+				this.ext = ext;
+			}
+	 
+			public boolean accept(File dir, String name) {
+				return (name.endsWith(ext));
+			}
+		}
 
 }

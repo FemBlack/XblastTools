@@ -421,5 +421,6 @@
      <string name="holo_image_result_not_successful">Holo Background Image not Changed</string>
      <string name="holo_gradient_color_title">Holo Background Gradient Color</string>
      <string name="holo_gradient_color_summary">This color will be added with Holo Bg color and create a nice gradient effect</string>
-    
+     <string name="holo_enable_title">Enable Holo background</string>
+     
 </resources>

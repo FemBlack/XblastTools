@@ -61,8 +61,10 @@ public class Xmod implements IXposedHookLoadPackage,
 					XposedBridge.log("CRT Effect in Android 4.0.3 Enabled");
 				}
 			}
+			if (prefs.getBoolean(XblastSettings.PREF_KEY_HOLO_BG_SOLID_BLACK, false)) {
+				HoloBg.initZygote(prefs);
+			}
 			
-			HoloBg.initZygote(prefs);
 			/*if (prefs.getBoolean(XblastSettings.PREF_KEY_HOLO_BG_SOLID_BLACK, false)) {
 	            XResources.setSystemWideReplacement(
 	                "android", "drawable", "background_holo_dark", modRes.fwd(R.drawable.background_holo_dark_solid));

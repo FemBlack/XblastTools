@@ -70,7 +70,9 @@ public class HoloImageActivity extends Activity {
         }
         try {
         	String path = Environment.getExternalStorageDirectory()
-    				.getAbsolutePath() + File.separator + SaveDialog.BACKUP_DIR;
+    				.getAbsolutePath() + File.separator + SaveDialog.BACKUP_DIR + File.separator + HoloBg.HOLO_DIR;
+        	File dir = new File(path);
+    		dir.mkdirs();
         	intent.putExtra("output", Uri.fromFile(new File(path, "holo.png")));
         	/*intent.setAction("android.intent.action.GET_CONTENT");
         	intent.addCategory("android.intent.category.OPENABLE");*/

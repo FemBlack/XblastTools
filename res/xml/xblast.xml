@@ -634,19 +634,21 @@ android:persistent="true" />
             android:key="ram_usage_bar"
             android:summary="@string/ram_usage_bar_summary"
             android:title="@string/ram_usage_bar_title" />
-       <!--  <CheckBoxPreference
+         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="holo_solid_black"
-            android:summary="@string/holo_bg_solid_black_summary"
-            android:title="@string/holo_bg_solid_black_title" /> -->
+            android:key="holo_enable"
+            
+            android:title="@string/holo_enable_title" /> 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="holo_bg_color"
             alphaSlider="false"
-            showCheckbox="true"           
+            showCheckbox="true"
+            android:dependency="holo_enable"           
             android:summary="@string/holo_bg_color_summary"
             android:title="@string/holo_bg_color_title" />
         <Preference
 	            android:key="holo_bg_Image"
+	            android:dependency="holo_enable"
 	            android:title="@string/holo_bg_image_title" />
          <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="toast_text_color"

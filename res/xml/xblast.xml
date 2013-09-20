@@ -672,10 +672,24 @@ android:persistent="true" />
             android:key="pref_about_donate"
             android:summary="@string/about_donate_summary"
             android:title="@string/about_donate_title" />
+         <Preference
+            android:key="rate_my_app"
+            android:summary="@string/rate_app_summary"
+            android:title="@string/rate_app_title" />
           <Preference
             android:key="pref_about_gplus"
             android:summary="@string/gplus_summary"
             android:title="@string/gplus_title" />
+          <Preference
+            android:key="pref_special_thanks"
+            android:title="@string/special_thanks_title" />
+          <Preference
+            android:key="pref_changelog"
+            android:title="@string/change_log_title" />
+          <Preference
+            android:key="apache2_license"
+            android:summary="@string/apache2_license_summary"
+            android:title="@string/apache2_license_title" />
     </PreferenceScreen>
 
 </PreferenceScreen>

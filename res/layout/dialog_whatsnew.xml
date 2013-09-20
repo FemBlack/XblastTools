@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:id="@+id/aboutscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Bug fixes\n★ Fixed FC for android 4.3 build.prop tweaks\n★ Updated all the translations" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.8"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Bug fixes\n★ Added option to enable disable holo theme" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Bug fixes" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.6"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Fixed over-lay problem\n★ Added Slovakia  translation" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Fixed FC for some of the devcices" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Choose color for alarm icon ,vibrate,Bluetooth,silent\n★ Added Custom text  &amp; font options to Day dream\n★ Change Holo background to any color or image\n★ Added new Gradient Settings for notification panel bg,day dream &amp; holo\n★ Added Chinese (simplified),German,Romanian translations" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Added New Module For Day dream\n★ Select Day dream background color or image\n★ Select Day dream Clock color\n★ Added Dutch translation" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Fixed FC for some of the devcicesI\n★ Added Polish language translation" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Backup  &amp; Restore Options\n★ Hide Clock\n★ Skip tracks on volume keys long-press while screen is off\n★ Controls cursor using volume keys in text fields\n★ Safe headset media volume\n★ Added Spanish,Russian,Portuguese &amp; Japanese language translations" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.5.0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Color picker with check box option" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.9"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Option for Clear all button to put bottom right or left in recent tasks\n★ Choose Ticker text color\n★ Choose Toast text color  &amp; bgcolor\n★ build.prob tweaks\n★ Choose Notification text  &amp; content color (this is experimentel)\n★ New Color picker with hex code option\n★ Network speed will be displayed in status bar  &amp; Choose color for it\n★ Smart alarm icon option" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.8"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ New UI\n★ Changed the name of the app to XBlastTools" />
+
+            
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Rambar usage in recent panel/n★ Button to Clear all recent tasks\n★ Notification Pull-down/Pullup Speed\n★ Solid black background\n★ Advanced Power-off menu(Soft Reboot, Reboot, Reboot to recovery, Fast boot &amp; Screenshot) \n★ Choose WiFi   &amp; mobile in out color\n★  Color will be applied to mobile type" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.6"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ User can choose any Notification panel bg image or color\n★ Center Clock\n★ Enable or disable status bar during the full screen call\n★ Apply  any  font for name,phone number etc for full screen caller\n★ CRT Screen off effect (No Effect,Horizontal Effect &amp; Vertical Effect) " />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Set default caller image for full-screen caller function\n★ Hide Am Pm\n★ Set color for name, phone number etc\n★ full-screen caller can hide status bar\n★ Complete transparency for status bar" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Change the carrier name size in lock-screen" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ User can have Full screen caller picture in your phone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Change the carrier name in lock-screen &amp; notification panel\n★ Apply color to carrier name in lock-screen &amp; notification panel" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4.1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Bug fix\n★ Did some improvements " />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ User can choose any color for Battery,Wifi-signal &amp; Mobile-signal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ User can choose status bar background color\n★ User can make full transparent for notification panel\n★ User can enable 180 rotation of phones(can rotate in all directions)." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Added font selection for clock  &amp; Date field in status bar &amp; notification bar\n★ User can add bar code fonts for clock &amp; Date field in status bar &amp; notification bar\n★ User can add your favorite fonts into your /sdcard/fonts/ folder, it will be listed in the app" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Did some improvements\n★ Color will be applied to Date as well in notification" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/changes_1.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

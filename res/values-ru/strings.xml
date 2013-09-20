@@ -434,4 +434,38 @@
     <string name="gplus_summary">Следуйте за мной на G+</string>
     <string name="gplus_title">Сообщество XBlast на G+</string>
     
+    <!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">Цвет будет применен к значкам будильника, беззвучного режима и вибрации</string>
+    <string name="remaining_sb_icon_color_title">Цвет значков статусбара</string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">Настройки градиента</string>
+    <string name="gradient_Settings_enable_title">Вкл настройки градиента</string>
+    <string name="gradient_Settings_enable_summary">Цвет градиента будет применен к фону уведомлений, фону заставки и цветам фона Holo</string>
+    <string name="common_gradient_Settings">Общие установки</string>
+    <string name="xdream_gradient_color_title">Цвет градиента заставки</string>
+    <string name="xdream_gradient_color_summary">Цвет будет добавлен к цвету фона заставки для создания эффекта градиента</string>
+    <string name="notifi_gradient_color_title"> Цвет градиента уведомлений</string>
+    <string name="notifi_gradient_color_summary"> Цвет будет добавлен к цвету фона уведомлений для создания эффекта градиента </string>
+    <string name="top_bottom">Сверху вниз</string>
+    <string name="bottom_top">Снизу вверх</string>
+    <string name="right_left">Справа налево</string>
+    <string name="left_right">Слева направо</string>
+    <string name="tr_bl">Сверху справа к низу слева </string>
+    <string name="br_tl">Снизу справа к верху слева</string>
+    <string name="bl_tr">Снизу слева к верху справа</string>
+    <string name="tl_br">Сверху слева к низу справа</string>
+    <string name="gradient_color_orientation_summary">Градиент будет нарисован с использованием данного направления</string>
+    <string name="gradient_color_orientation_title">Направлени е градиента</string>
+
+    <!-- Holo Bg -->
+    <string name="holo_bg_color_title">Цвет фона Holo</string>
+    <string name="holo_bg_color_summary">Цвет будет применен к системной теме Holo по умолчанию вместо черно-серого градиента</string>
+    <string name="holo_bg_image_title">Изображение фона Holo</string>
+    <string name="holo_image_result_successful"> Изображение фона Holo изменено</string>
+    <string name="holo_image_result_not_successful"> Изображение фона Holo не изменено</string>
+    <string name="holo_gradient_color_title"> Цвет градиента Holo</string>
+    <string name="holo_gradient_color_summary"> Цвет будет добавлен к цвету фона Holo для создания эффекта градиента </string>
+    <string name="holo_enable_title">Вкл фон Holo</string>
+    
 </resources>

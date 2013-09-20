@@ -434,4 +434,37 @@
     <string name="gplus_summary">Siga-me no G+</string>
     <string name="gplus_title">Comunidade XBlast G+</string>
     
+    <!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">A cor será aplicada ao alarme, silencioso, ícones de vibração</string>
+    <string name="remaining_sb_icon_color_title">Cor dos ícones da barra de status</string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">Definições de gradiente</string>
+    <string name="gradient_Settings_enable_title">Ativar as definições de gradiente</string>
+    <string name="gradient_Settings_enable_summary">A cor de gradiente será aplicada ao palno de fundo das notificações, plano de fundo do Day-Dream Bg &amp; cores do plano de fundo holo</string>
+    <string name="common_gradient_Settings">Definições comuns</string>
+    <string name="xdream_gradient_color_title">Cor do plano de fundo do Day-Dream</string>
+    <string name="xdream_gradient_color_summary">Esta cor será adicionada com a cor do plano de fundo do Day-Dream e cria um efeito de gradiente agradável</string>
+    <string name="notifi_gradient_color_title">Cor de gradiente do plano de fundo das notificações</string>
+    <string name="notifi_gradient_color_summary">Esta cor será adicionada com a cor do plano de fundo das notificações e cria um efeito de gradiente agradável</string>
+    <string name="top_bottom">De cima para baixo</string>
+    <string name="bottom_top">De baixo para cima</string>
+    <string name="right_left">Da direita para a esquerda</string>
+    <string name="left_right">Da esquerda para a direita</string>
+    <string name="tr_bl">Do superior direito para o inferior esquerdo</string>
+    <string name="br_tl">Do inferior direito para o superior esquerdo</string>
+    <string name="bl_tr">Do inferior esquerdo para o superior direito</string>
+    <string name="tl_br">Do superior esquerdo para o inferior direito</string>
+    <string name="gradient_color_orientation_summary">O gradiente será desenhado com base na orientação</string>
+    <string name="gradient_color_orientation_title">Orientação do gradiente</string>
+
+    <!-- Holo Bg -->
+    <string name="holo_bg_color_title">Cor do plano de fundo holo</string>
+    <string name="holo_bg_color_summary">A cor será aplicada ao tema holo padrão do sistema em vez do gradiente preto-cinzento</string>
+    <string name="holo_bg_image_title">Imagem do plano de fundo holo</string>
+    <string name="holo_image_result_successful">A imagem holo do plano de fundo foi alterada</string>
+    <string name="holo_image_result_not_successful">A imagem holo do plano de fundo não foi alterada</string>
+    <string name="holo_gradient_color_title">Cor de gradiente holo do plano de fundo</string>
+    <string name="holo_gradient_color_summary">Esta cor será adicionada com a cor do plano de fundo holo e cria um efeito de gradiente agradável</string>
+    <string name="holo_enable_title">Ativar o plano de fundo holo</string>
 </resources>

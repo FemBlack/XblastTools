@@ -112,7 +112,7 @@
     <string name="mobile_inout_color_title">"Mobiler Empfangl Farbe An/ Aus "</string>
     <string name="battery_color_title">"Akkuanzeige Farbe"</string>
     
-    <string name="notif_panel_bg_trans_summary">"0=Komplett transparent / 100=Nicht transparent, nur für Benachrichtigungsanzeige Hintergund Bild"</string>
+    <string name="notif_panel_bg_trans_summary">"0=Komplett transparent / 100=Nicht transparent, nur für Benachrichtigungsanzeige Hintergrund Bild"</string>
     <string name="notif_panel_bg_trans_title">"Benachrichtigungshintergrund Anzeige Bild Transparenz"</string>
     
     <string name="CCLLS_title">"Netzbetreiber Logo Farbe im Sperrbildschirm"</string>
@@ -413,6 +413,58 @@
      <string name="color">"Farbe"</string>
      <string name="move">"Bewegen"</string>
      <string name="select_color">"Farbe auswählen"</string>
+     
+    <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Day-Dream Hintergrundfarbe</string>
+    <string name="pref_xdream_bg_Image_title">Day-Dream Hintergrundbild</string>
+    <string name="xdream_bg_clcok_title">Day-Dream Uhrfarbe</string>
+    <string name="xdream_image_result_successful">Day-Dream Hintergrundbild geändert</string>
+    <string name="xdream_image_result_not_successful">Day-Dream Hintergrundbild nicht geändert</string>
+    <string name="xdream_bg_Image_trans_summary">0-Komplett transparent, 100-Deckend- nur für Day-Dream Hintergrundbild</string>
+    <string name="xdream_bg_Image_trans_title">Day-Dream Hintergrundbild Transparenz</string>
+    <string name="custom_Dream_Text_summary">Leerlassen für Standard</string>
+    <string name="custom_Dream_Text_title">Eigener Text in Day-Dream</string>
+    <string name="custom_Dream_Text_size_title">Eigener Text Fontgröße in Day-Dream </string>
+    <string name="dream_font_summary">Wendet Font auf Uhr und Eigenen Text an</string>
+    <string name="dream_font_title">Day-Dream Font</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">Fole mir auf G+</string>
+    <string name="gplus_title">XBlast G+ Community</string>
+     
+     <!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">Farbe anwenden auf Alarm, Lautlos, Vibrieren Icons</string>
+    <string name="remaining_sb_icon_color_title">Statusleisten Symbol Farbe</string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">Verlauf Einstellungen</string>
+    <string name="gradient_Settings_enable_title">Aktiviert Verlaufseinstellungen</string>
+    <string name="gradient_Settings_enable_summary">Wendet Verlaufsfarbe auf Notifikationleisten Hintergrund, Day-Dream (Hgr), Holo (Hgr) Farben an</string>
+    <string name="common_gradient_Settings">Allgemeine Einstellungen</string>
+    <string name="xdream_gradient_color_title">Day-Dream Hintergrundfarbe</string>
+    <string name="xdream_gradient_color_summary">Wendet Farbe mit Day-Dream Hintergrundfarbe an und bewirkt einen netten Verlaufseffekt</string>
+    <string name="notifi_gradient_color_title">Notifikationsle iste Hintergrund Farbverlauf</string>
+    <string name="notifi_gradient_color_summary">Wendet Farbe mit Notifikationleisten Hintergrundfarbe an und bewirkt einen netten Verlaufseffekt</string>
+    <string name="top_bottom">Oben nach Unten</string>
+    <string name="bottom_top">Unten nach Oben</string>
+    <string name="right_left">Rechts nach Links</string>
+    <string name="left_right">Links nach Rechts</string>
+    <string name="tr_bl">Oben-rechts nach Unten-links</string>
+    <string name="br_tl">Unten-rechts nach Oben-links</string>
+    <string name="bl_tr">Unten-rechts nach Oben-rechts</string>
+    <string name="tl_br">Oben-links nach Unten-rechts</string>
+    <string name="gradient_color_orientation_summary">Verlauf anhand der Orientierung</string>
+    <string name="gradient_color_orientation_title">Verlaufsor ientierung</string>
     
-    
+    <!-- Holo Bg -->
+	<string name="holo_bg_color_title">Holo Hintergrundfarbe</string>
+	<string name="holo_bg_color_summary">Wendet Farbe auf Holo System Thema an, anstatt schwarz-grau Verlauf</string>
+	<string name="holo_bg_image_title">Holo Hintergrundbild</string>
+	<string name="holo_image_result_successful">Verändertes Holo Hintergrundbild</string>
+	<string name="holo_image_result_not_successful">Unveränder tes Holo Hintergrundbild</string>
+	<string name="holo_gradient_color_title">Holo Hintergrundfarbverlauf</string>
+	<string name="holo_gradient_color_summary">Wendet Farbe mit Holo Hintergrundfarbe an und bewirkt einen netten Verlaufseffekt</string>
+	<string name="holo_enable_title">Wendet Holo Hintergrund an</string>
+
 </resources>

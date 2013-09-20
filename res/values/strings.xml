@@ -423,4 +423,16 @@
      <string name="holo_gradient_color_summary">This color will be added with Holo Bg color and create a nice gradient effect</string>
      <string name="holo_enable_title">Enable Holo background</string>
      
+     <!-- Apache2 License -->
+     <string name="apache2_license_title">Apache2 License</string>
+     <string name="apache2_license_summary">Touch to visit Apache2 License.</string>
+     
+     <!-- Rate my app -->
+     <string name="rate_app_title">Rate XBlast in Playstore</string>
+     <string name="rate_app_summary">It gives more value to this app &amp; ME</string>
+     
+     <!-- Special Thanks -->
+     <string name="special_thanks_title">Special Thanks</string>
+     <string name="change_log_title">Change Logs</string>
+     
 </resources>

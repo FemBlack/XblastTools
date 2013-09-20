@@ -434,4 +434,38 @@
     <string name="gplus_summary">Volg me op G+</string>
     <string name="gplus_title">XBlast G+ Community</string>
     
+    <!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">Kleur zal toegepast worden op alarm, stil, vibratie iconen</string>
+    <string name="remaining_sb_icon_color_title">Status Bar Icoon Kleur</string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">Overgang Instellingen</string>
+    <string name="gradient_Settings_enable_title">Inschakelen Overgang Instellingen</string>
+    <string name="gradient_Settings_enable_summary">Overgang kleur zal toegepast worden op Notificatie Ag , Dag-Droom Ag &amp; Holo achtergrond kleur</string>
+    <string name="common_gradient_Settings">Standaard Instellingen</string>
+    <string name="xdream_gradient_color_title">Dag-Droom Ag Kleur</string>
+    <string name="xdream_gradient_color_summary">Deze kleur zal toegevoegd worden aan Dag-Droom Ag Kleur en een mooi overgang-effect creëren</string>
+    <string name="notifi_gradient_color_title">Notification Bg Gradient Color</string>
+    <string name="notifi_gradient_color_summary">Deze kleur zal toegevoegd worden aan Notificatie Ag kleur en een mooi overgang-effect creëren</string>
+    <string name="top_bottom">Boven naar Onder</string>
+    <string name="bottom_top">Onder naar Boven</string>
+    <string name="right_left">Rechts naar Links</string>
+    <string name="left_right">Links naar Rechts</string>
+    <string name="tr_bl">Boven-Rechts naar Onder-Links </string>
+    <string name="br_tl">Boven-Rechts naar Boven-Links</string>
+    <string name="bl_tr">Boven-Links naar Boven-Rechts</string>
+    <string name="tl_br">Boven-Links naar Onder-Rechts</string>
+    <string name="gradient_color_orientation_summary">Overgang zal getrokken worden gebaseerd op de Oriëntatie</string>
+    <string name="gradient_color_orientation_title">Overgang Orientatie</string>
+
+    <!-- Holo Bg -->
+    <string name="holo_bg_color_title">Holo achtergrond Kleur</string>
+    <string name="holo_bg_color_summary">Kleur zal toegepast worden op het standaard Holo systeem thema in plaats van de zwart-grijs overgang</string>
+    <string name="holo_bg_image_title">Holo Achtergrond afbeelding</string>
+    <string name="holo_image_result_successful">Holo Achtergrond Afbeelding Verandert</string>
+    <string name="holo_image_result_not_successful">Holo Achtergrond Afbeelding Niet Verandert</string>
+    <string name="holo_gradient_color_title">Holo Achtergrond Overgang Kleur</string>
+    <string name="holo_gradient_color_summary">Deze kleur zal toegevoegd worden aan de Holo Ag Kleur en een mooi overgang-effect creëren</string>
+    <string name="holo_enable_title">Holo achtergrond Inschakelen</string>
+    
 </resources>

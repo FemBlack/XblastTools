@@ -434,4 +434,37 @@
     <string name="gplus_summary">在 G+ 上关注我</string>
     <string name="gplus_title">XBlast G+ 社群</string>
     
+    <!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">闹钟、静音和震动图标将 应用此颜色</string>
+    <string name="remaining_sb_icon_color_title">状态栏图标颜色</string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">渐变设置</string>
+    <string name="gradient_Settings_enable_title">启用渐变设置</string>
+    <string name="gradient_Settings_enable_summary">通知背景、Day-Dream 背景和 Holo 背景将应用此颜色</string>
+    <string name="common_gradient_Settings">通常设置</string>
+    <string name="xdream_gradient_color_title">Day-Dream 背景颜色</string>
+    <string name="xdream_gradient_color_summary">Day-Dream 背景将加入此颜色，建立起漂亮的渐变效果</string>
+    <string name="notifi_gradient_color_title">通知背景渐变颜色</string>
+    <string name="notifi_gradient_color_summary">通知背景将加入此颜色，建立 起漂亮的渐变效果</string>
+    <string name="top_bottom">顶部到底部</string>
+    <string name="bottom_top">底部到顶部</string>
+    <string name="right_left">右侧到左侧</string>
+    <string name="left_right">左侧到右侧</string>
+    <string name="tr_bl">右上到左下</string>
+    <string name="br_tl">右下到左上</string>
+    <string name="bl_tr">左下到右上</string>
+    <string name="tl_br">左上到右下</string>
+    <string name="gradient_color_orientation_summary">渐变将按方向绘制 </string>
+    <string name="gradient_color_orientation_title">渐变方向</string>
+
+    <!-- Holo Bg -->
+    <string name="holo_bg_color_title">Holo 背景颜色</string>
+    <string name="holo_bg_color_summary">默认 Holo 系统主题将应用此颜色，代替黑-灰渐变</string>
+    <string name="holo_bg_image_title">Holo 背景图像</string>
+    <string name="holo_image_result_successful">Holo 背景图像已更改</string>
+    <string name="holo_image_result_not_successful">Holo 背景图像未更改</string>
+    <string name="holo_gradient_color_title">Holo 背景渐变颜色</string>
+    <string name="holo_gradient_color_summary">Holo 背景将加入此颜色，建立起漂亮的渐变效果</string>
+    <string name="holo_enable_title">启用 Holo 背景</string>
 </resources>

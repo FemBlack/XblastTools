@@ -33,8 +33,11 @@ public class SafeVolume {
     };
 
     public static void initZygote(final XSharedPreferences prefs) {
-
+    	try {
         XResources.setSystemWideReplacement("android", "bool", "config_safe_media_volume_enabled", true);
+    	} catch (Throwable t) {
+			XposedBridge.log("config_safe_media_volume_enabled is not available");
+		}
 
         /*if (prefs.getBoolean(XblastSettings.PREF_KEY_MUSIC_VOLUME_STEPS, false)) {
             initMusicStream();

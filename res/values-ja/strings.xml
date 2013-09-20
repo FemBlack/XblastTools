@@ -434,4 +434,38 @@
     <string name="gplus_summary">G+でフォロー</string>
     <string name="gplus_title">XBlast G+コミュニティ</string>
     
+    <!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">アラーム、バイブなどの アイコンに適用されます。</string>
+    <string name="remaining_sb_icon_color_title">ステータスバーアイコンの色 </string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">グラデーションの設定</string>
+    <string name="gradient_Settings_enable_title">グラデーションの設定の有 効化</string>
+    <string name="gradient_Settings_enable_summary">通知背景色、Holo 背景色やスクリーンセーバー背景色に適用されます。</string>
+    <string name="common_gradient_Settings">一般設定</string>
+    <string name="xdream_gradient_color_title">ｽｸﾘｰﾝｾｰﾊﾞｰ背景ｸﾞﾗ ﾃﾞｰｼｮﾝ色</string>
+    <string name="xdream_gradient_color_summary">スクリーンセーバーの背景色 に追加されます。</string>
+    <string name="notifi_gradient_color_title">通知背景グラデーション色</string>
+    <string name="notifi_gradient_color_summary">通知背景色に追加されます。 </string>
+    <string name="top_bottom">上から下</string>
+    <string name="bottom_top">下から上</string>
+    <string name="right_left">右から左</string>
+    <string name="left_right">左から右</string>
+    <string name="tr_bl">右上から左下</string>
+    <string name="br_tl">右下から左上</string>
+    <string name="bl_tr">左下から右上</string>
+    <string name="tl_br">左上から右下</string>
+    <string name="gradient_color_orientation_summary">この方向でグラデ ーションが追加されます。</string>
+    <string name="gradient_color_orientation_title">グラデーションの方向 </string>
+
+    <!-- Holo Bg -->
+    <string name="holo_bg_color_title">Holo背景色</string>
+    <string name="holo_bg_color_summary">Holoシステムテーマの背景色に適用されま す。</string>
+    <string name="holo_bg_image_title">Holo背景画像</string>
+    <string name="holo_image_result_successful">Holo背景画像を変更しまし た。</string>
+    <string name="holo_image_result_not_successful">Holo背景画像は変 更されませんでした。</string>
+    <string name="holo_gradient_color_title">Holo背景グラデーション色</string>
+    <string name="holo_gradient_color_summary">Holo背景色に追加されます。 </string>
+    <string name="holo_enable_title">Holo背景を有効化</string>
+    
 </resources>

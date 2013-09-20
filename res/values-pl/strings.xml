@@ -28,7 +28,7 @@
 	<string name="hide_am_pm">Ukryj AM/PM</string>
     <!-- settings for Notifications -->
     <string name="pref_header_misc">Pozostałe</string>
-    <string name="carrier_label">Panek Operatora</string>
+    <string name="carrier_label">Panel Operatora</string>
     <string name="default_carrier_label">FemBlack</string>
     <string name="desc_carrier_label">Pozostaw puste dla domyślnej nazwy panelu operatora.</string>
 	<string name="custom_carrier_label_LS">Własny Napis. Ekran Startowy</string>
@@ -433,5 +433,39 @@
     <!-- G+ -->
     <string name="gplus_summary">Śledź mnie na G+</string>
     <string name="gplus_title">XBlast G+ Społeczność</string>
+    
+    <!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">Kolor zostanie zastosowany dla ikony Alarmu, Wibracje i Wyłączonego głośnika (Cisza).</string>
+    <string name="remaining_sb_icon_color_title">Ikony Kolor</string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">Ustawienia Gradient-u</string>
+    <string name="gradient_Settings_enable_title">Aktywuj Gradient</string>
+    <string name="gradient_Settings_enable_summary">Wybrany kolor dla Gradientu zostanie zastosowany dla tła powiadomień , tła Day-Dream &amp; Holo kolor tła.</string>
+    <string name="common_gradient_Settings">Ustawienia Ogólne</string>
+    <string name="xdream_gradient_color_title">Kolor Tła</string>
+    <string name="xdream_gradient_color_summary">Kolor ten zostanie dodany wraz z tłem z Day-Dream, aby stworzyć efekt wypełnienia obszaru płynnym przejściem między kolorami.</string>
+    <string name="notifi_gradient_color_title">Kolor Tła Powiadomień</string>
+    <string name="notifi_gradient_color_summary">Kolor ten zostanie dodany wraz z kolorem tła powiadomień, aby stworzyć efekt wypełnienia obszaru płynnym przejściem między kolorami.</string>
+    <string name="top_bottom">Z góry na dół</string>
+    <string name="bottom_top">Z dołu do góry</string>
+    <string name="right_left">Od prawej do lewej</string>
+    <string name="left_right">Od lewej do prawej</string>
+    <string name="tr_bl">Z prawej góry do lewego dołu</string>
+    <string name="br_tl">Z prawego dołu do lewej góry</string>
+    <string name="bl_tr">Z lewego dołu do prawej góry</string>
+    <string name="tl_br">Z lewej góry do prawego dołu</string>
+    <string name="gradient_color_orientation_summary">Gradient zostanie ustalony na podstawie pozycji.</string>
+    <string name="gradient_color_orientation_title">Ustal Pozycję</string>
+
+    <!-- Holo Bg -->
+    <string name="holo_bg_color_title">Holo - Kolor Tła</string>
+    <string name="holo_bg_color_summary">Kolor zostanie zastosowany do domyślnego motywu Holo, zamiast gradientu czarno-szary</string>
+    <string name="holo_bg_image_title">Holo - Obraz Tła</string>
+    <string name="holo_image_result_successful">Zmieniono obraz tła</string>
+    <string name="holo_image_result_not_successful">Nie zmieniono obrazu tła</string>
+    <string name="holo_gradient_color_title">Holo - Kolor Tła</string>
+    <string name="holo_gradient_color_summary">Kolor ten zostanie dodany wraz z kolorem tła Holo, aby stworzyć efekt wypełnienia obszaru płynnym przejściem między kolorami.</string>
+    <string name="holo_enable_title">Holo - Aktywuj Tło</string>
     
 </resources>

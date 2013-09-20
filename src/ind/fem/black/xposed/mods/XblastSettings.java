@@ -18,6 +18,7 @@ import java.util.Map.Entry;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.ProgressDialog;
@@ -47,8 +48,10 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.text.InputFilter;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -185,7 +188,13 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     public static final String PREF_KEY_HOLO_BG_IMAGE = "holo_bg_Image";
     public static final String PREF_KEY_HOLO_GRADIENT_COLOR = "holo_gradient_color";
     public static final String PREF_KEY_HOLO_GRADIENT_COLOR_ENABLE = "holo_gradient_color_enabled";
+    public static final String PREF_KEY_APACHE2 = "apache2_license";
+    public static final String PREF_KEY_RATE_ME = "rate_my_app";
+    public static final String PREF_KEY_CHANGE_LOGS = "pref_changelog";
+    public static final String PREF_KEY_SPECIAL_THANKS = "pref_special_thanks";
     
+    //private static final String EXTERNAL_CACHE_DIR = "/storage/sdcard0/Android/data"+ File.separator + PACKAGE_NAME + File.separator + "cache";
+    private static final String EXTERNAL_CACHE_DIR = "/storage/sdcard0/Android/data/ind.fem.black.xposed.mods/cache";
 	
 	private static Context mContext;
 	private static PreferenceManager mPreferenceManager;
@@ -208,14 +217,55 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
       checkPrerequisite();
     }
 
+    
+    
     public static class PrefsFragment extends PreferenceFragment implements OnSharedPreferenceChangeListener, Preference.OnPreferenceChangeListener {
        
         //private SharedPreferences mPrefs;
        
-        
+    	private void showWhatsNewDialog() {
+    		LayoutInflater inflater = LayoutInflater.from(mContext);
+
+    		View view = inflater.inflate(R.layout.dialog_whatsnew, null);
+
+    		Builder builder = new AlertDialog.Builder(mContext);
+
+    		builder.setView(view).setTitle(R.string.change_log_title)
+    				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+    					@Override
+    					public void onClick(DialogInterface dialog, int which) {
+    						dialog.dismiss();
+    					}
+    				});
+
+    		builder.create().show();
+        }
+    	
+    	private void showSpecialThanksDialog() {
+    		LayoutInflater inflater = LayoutInflater.from(mContext);
+
+    		View view = inflater.inflate(R.layout.special_thanks, null);
+
+    		Builder builder = new AlertDialog.Builder(mContext);
+
+    		builder.setView(view).setTitle(R.string.special_thanks_title)
+    				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+    					@Override
+    					public void onClick(DialogInterface dialog, int which) {
+    						dialog.dismiss();
+    					}
+    				});
+
+    		builder.create().show();
+        }
+    	
         private Preference mPrefAbout;
         private Preference mPrefAboutDonate;
+        private Preference mPrefRateMe;
+        private Preference mPrefSpecialThanks;
+        private Preference mPrefChangeLog;
         private Preference mPrefGplus;
+        private Preference mPrefApache2License;
         Preference mNbgpref;
         Preference mFullScreenCallerImagepref;
         ListPreferenceFixedSummary mFontlistpref;
@@ -356,7 +406,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
         private CheckBoxPreference mHideadbPref;
         private CheckBoxPreference mAudioVideo;
         private CheckBoxPreference mGoogleDns;
-
+        
        /* private File tmpDir = new File("/system/tmp");
         private File init_d = new File("/system/etc/init.d");
         private File initScriptLogcat = new File(INIT_SCRIPT_LOGCAT);
@@ -482,6 +532,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             
             
             String version = "";
+			
             try {
                 PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
                 version = " v" + pInfo.versionName;
@@ -493,7 +544,12 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             }
             
             mPrefAboutDonate =  findPreference(PREF_KEY_ABOUT_DONATE);
+            mPrefRateMe =  findPreference(PREF_KEY_RATE_ME);
+            mPrefSpecialThanks =  findPreference(PREF_KEY_SPECIAL_THANKS);
+            mPrefChangeLog =  findPreference(PREF_KEY_CHANGE_LOGS);
+            
             mPrefGplus = findPreference(PREF_KEY_GOOGLE_PLUS);
+            mPrefApache2License = findPreference(PREF_KEY_APACHE2);
             
             //prefSet = getPreferenceScreen();
             
@@ -651,7 +707,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
 
             if (preference == mPrefAbout) {
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_app)));
-            } else if (preference == mPrefAboutDonate) {
+            } else if (preference == mPrefAboutDonate || preference == mPrefRateMe) {
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_version)));
             } else if (preference == mFullScreenCallerImagepref) {
             	intent = new Intent();
@@ -664,7 +720,13 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     	        intent.setClassName(PACKAGE_NAME, "ind.fem.black.xposed.mods.HoloImageActivity");
             }  else if (preference == mPrefGplus) {
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_google_plus)));
-            } 
+            } else if (preference == mPrefApache2License) {
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_apache2_license)));
+            } else if (preference == mPrefChangeLog) {
+            	showWhatsNewDialog();
+            } else if (preference == mPrefSpecialThanks) {
+            	showSpecialThanksDialog();
+            }
             
             boolean value;
            /* if (preference == mLogcatPref) {
@@ -1193,6 +1255,17 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
 		
 
 	}
+	
+	 public File getExternalCacheDir()
+	  {
+	    super.getExternalCacheDir();
+	    
+	    if (Build.VERSION.SDK_INT > 17) {
+	      return new File(EXTERNAL_CACHE_DIR);
+	    }
+	    
+	    return super.getExternalCacheDir();
+	  }
 	
 	private boolean appIsInstalledInMountASEC() {
 		//System.out.println("black......" + getApplicationInfo().sourceDir);

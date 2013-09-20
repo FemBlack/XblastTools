@@ -36,7 +36,7 @@
 	 <!-- About -->
     <string name="pref_about_title">O aplikácií</string>
     <string name="about_app_title">XBlast Tools</string>
-    <string name="about_app">Vytvoril FemBlack@XDA. Ťuknite pre navštívenie oficiálneho</string>
+    <string name="about_app">Vytvoril FemBlack@XDA. SK preklad soxxo@XDA. Ťuknite pre navštívenie oficiálnej stránky na XDA</string>
     <string name="about_donate_title">Verzia z obchodu  Play</string>
     <string name="about_donate_summary">Prispejte a podporte ma ak si myslíte že táto aplikácia za to stojí.</string>
 	
@@ -54,7 +54,7 @@
     
     
     <string name="default_caller_image_title">Vyberte predvolený obrázok volajúceho</string>
-    <string name="default_caller_image_summary">Vyberte predvolený obrázok pre neznáme kontaktz a kontakty bez obrázku</string>
+    <string name="default_caller_image_summary">Vyberte predvolený obrázok pre neznáme kontakty a kontakty bez obrázku</string>
     <string name="Call_Banner_text_summary">Farba bude použitá na meno volajúceho, číslo atď.</string>
     <string name="Call_Banner_text_title">Farba textu</string>
     <string name="default_caller_image_result_successful">Predvolený obrázok sa zmenil</string>
@@ -81,7 +81,7 @@
     <string name="Call_Banner_font_summary">Výbraný typ písma bude použitý na Meno volajúceho, Číslo atď.</string>
     <string name="Call_Banner_font_title">Typ písma</string>
     
-    <string name="status_bar">stavová lišta</string>
+    <string name="status_bar">Stavová lišta</string>
     <string name="notification_panel">Oznamovacia oblasť</string>
     <string name="center_clock_title">Centrovať hodiny</string>
     
@@ -326,7 +326,7 @@
     <string name="sdcard_4096_kb">4096 kb</string>
     <string name="sdcard_5120_kb">5120 kb</string>
     <string name="sdcard_6144_kb">6144 kb</string>
-    <string name="remove">Remove</string>
+    <string name="remove">Zakázať</string>
     <string name="hsupa_disabled">HSUPA Disabled (Capped)</string>
     <string name="hsupa_enabled">HSUPA Enabled</string>
     <string name="hsupa_enabled_uncapped">HSUPA Enabled (Uncapped)</string> <!-- Start up tweaks -->
@@ -370,7 +370,7 @@
     
     <!-- Backup & Restore  -->
     <string name="restore">Obnoviť</string>
-    <string name="save">Uložiť</string>
+    <string name="save">Zálohovať</string>
     <string name="delete">Vymazať</string>
     <string name="no_backups">Žiadne zálohy</string>
     <string name="reset">Reset</string>
@@ -389,7 +389,7 @@
     
     <!-- Safe headset media volume -->
     <string name="pref_safe_media_volume_title">Bezpečná hodnota hlasitosti</string>
-    <string name="pref_safe_media_volume_summary">Aktovuje/deaktibuje varovanie o bezpečnej hodnote hlasitosti</string>
+    <string name="pref_safe_media_volume_summary">Aktivuje/deaktivuje varovanie o bezpečnej hodnote hlasitosti</string>
     
     <string name="vol_music_controls_title">Tlač. hlasitosti prepína skladby</string>
     <string name="vol_music_controls_summary">Prepnúť skladby dlhým podržaním tlač. hlastiosti</string>
@@ -399,5 +399,72 @@
     <string name="vol_key_cursor_control_off">Zakázané</string>
     <string name="vol_key_cursor_control_on">Tlačidlo hlasitosti hore/dole pohybuje kurzor doľava/doprava</string>
     <string name="vol_key_cursor_control_on_reverse">Tlačidlo hlasitosti hore/dole pohybuje kurzor doprava/doľava</string>
+    
+    <!-- Move Apps to Internal Storage -->
+
+    <string name="move_internal_storage">Presunúť XBlast do internej pamäte</string>
+    <string name="move_message">Aplikácia musí byť presunutá do internej pamäte aby fungovala správne.\n\n(Otvorte aplikáciu znova po presunutí)</string>
+    <string name="move_Xblast">Presúvanie Xblast Tools</string>
+    <string name="move_failed">Aplikáciu Xblast Tools sa nepodarilo presunúť</string>
+    <string name="quit">Ukončiť</string>
+    <string name="move">Presunúť</string>
+
+    <!-- Notification Panal Bg -->
+    <string name="image">Obrázok</string>
+    <string name="color">Farba</string>
+    <string name="move">Presunúť</string>
+    <string name="select_color">Vybrať farbu</string>
+
+    <!-- XDream -->
+    <string name="xdream_title">XDream</string>
+    <string name="xdream_bg_color_title">Day-Dream farba pozadia</string>
+    <string name="pref_xdream_bg_Image_title">Day-Dream obrázok pozadia</string>
+    <string name="xdream_bg_clcok_title">Day-Dream farba hodín</string>
+    <string name="xdream_image_result_successful">Day-Dream obrázok pozadia sa zmenil</string>
+    <string name="xdream_image_result_not_successful">Day-Dream obrázok pozadia sa nezmenil</string>
+    <string name="xdream_bg_Image_trans_summary">0-Úplne priehľadný , 100-Neprehľadný-Použité len na Day-Dream obrázok pozadia</string>
+    <string name="xdream_bg_Image_trans_title">Priiehľadnosť Day-Dream obrázku pozadia</string>
+    <string name="custom_Dream_Text_summary">Nechajte prázdne pre žiaden text</string>
+    <string name="custom_Dream_Text_title">Vlastný text v Day-Dream</string>
+    <string name="custom_Dream_Text_size_title">Veľkosť vlastného textu v Day-Dream</string>
+    <string name="dream_font_summary">Vybraný typ písma bude použitý na hodiny a vlastný text</string>
+    <string name="dream_font_title">Typ písma pre Day-Dream</string>
+
+    <!-- G+ -->
+    <string name="gplus_summary">Sledujte ma na G+</string>
+    <string name="gplus_title">XBlast G+ komunita</string>
+<!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">Farba bude použitá na ikonu budíka a zvuku</string>
+    <string name="remaining_sb_icon_color_title">Farba ikôn na stavovej lište</string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">Nastavenia far. prechodu</string>
+    <string name="gradient_Settings_enable_title">Povoliť farebný prechod</string>
+    <string name="gradient_Settings_enable_summary">Farebný prechod bude použitý na pozadie upozornení, Holo pozadie a DayDream pozadie</string>
+    <string name="common_gradient_Settings">Všeobecné nastavenia</string>
+    <string name="xdream_gradient_color_title">DayDream far. prechod</string>
+    <string name="xdream_gradient_color_summary">Farba bude použitá na pozadie DayDream a vytvorí skvelý farebný prechod</string>
+    <string name="notifi_gradient_color_title">Prechod lišty upozornení</string>
+    <string name="notifi_gradient_color_summary">Farba bude použitá na pozadie lišty upozornení a vytvorí skvelý farebný prechod</string>
+    <string name="top_bottom">Zhora nadol</string>
+    <string name="bottom_top">Zdola nahor</string>
+    <string name="right_left">Sprava doľava</string>
+    <string name="left_right">Zľava doprava</string>
+    <string name="tr_bl">Z vrchu z prava doľava dole</string>
+    <string name="br_tl">Z dola z prava hore doľava</string>
+    <string name="bl_tr">Zdola z ľava hore v pravo</string>
+    <string name="tl_br">Zhora z ľava dole vpravo</string>
+    <string name="gradient_color_orientation_summary">Prechod sa zmení podľa orientácie telefónu</string>
+    <string name="gradient_color_orientation_title">Orientácia prechodu</string>
+
+    <!-- Holo Bg -->
+    <string name="holo_bg_color_title">Farba Holo pozadia</string>
+    <string name="holo_bg_color_summary">Farba bude použitá na predvolené pozadie namiesto čierno-sivého prechodu</string>
+    <string name="holo_bg_image_title">Obrázok namiesto Holo pozadia</string>
+    <string name="holo_image_result_successful">Obrázok úspešne zmenený</string>
+    <string name="holo_image_result_not_successful">Obrázok nezmenený</string>
+    <string name="holo_gradient_color_title">Farebný prechod Holo pozadia</string>
+    <string name="holo_gradient_color_summary">Farba bude použitá na predvolené "Holo" pozadie a vytvorí skvelý farebný prechod</string>
+    <string name="holo_enable_title">Povoliť Holo pozadie</string>
     
 </resources>

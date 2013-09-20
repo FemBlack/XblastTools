@@ -434,4 +434,39 @@
     <string name="gplus_summary">Urmareste-ma pe G+</string>
     <string name="gplus_title">Comunitatea G+ pentru XBlast</string>
     
+    
+    <!-- Statusbar Icons color -->
+    <string name="remaining_sb_icon_color_summary">Culoarea va fi aplicata iconitelor de mod alarma, silentios si vibreaza</string>
+    <string name="remaining_sb_icon_color_title">Culoarea iconitelor din bara de status</string>
+
+    <!-- Gradient Color Settings -->
+    <string name="gradient_Settings">Setari gradiente </string>
+    <string name="gradient_Settings_enable_title">Permite setarile gradiente</string>
+    <string name="gradient_Settings_enable_summary">Culoarea gradianta va fi aplicata fundalului notificarilor , Day-Dream &amp; Culoarea fundalului Holo</string>
+    <string name="common_gradient_Settings">Setari obisnuite</string>
+    <string name="xdream_gradient_color_title">Culoare fundal Day-Dream</string>
+    <string name="xdream_gradient_color_summary">Aceasta culoare va fi adaugata cu fundalul Day-Dream . Coloreaza si creaza un efect gradient personalizat</string>
+    <string name="notifi_gradient_color_title">Culoarea gradiente a fundalului notificarilor</string>
+    <string name="notifi_gradient_color_summary">Aceasta culoare va fi adaugata pentru fundal notificarilor. Coloreaza si creaza un efect gradient personalizat</string>
+    <string name="top_bottom">De la varf la baza</string>
+    <string name="bottom_top">De la baza la varf</string>
+    <string name="right_left">De la dreapta la stanga</string>
+    <string name="left_right">De la stanga la dreapta</string>
+    <string name="tr_bl">De la varf dreapta la baza stanga </string>
+    <string name="br_tl">De la baza dreapta la varf stanga</string>
+    <string name="bl_tr">De la baza stanga la varf dreapta</string>
+    <string name="tl_br">De la varf stanga la baza dreapta</string>
+    <string name="gradient_color_orientation_summary">Gradient ul va fi desenat in functie de orientare</string>
+    <string name="gradient_color_orientation_title">Orientarea gradientului</string>
+
+    <!-- Holo Bg -->
+    <string name="holo_bg_color_title">Culoare fundal Holo</string>
+    <string name="holo_bg_color_summary">Culoarea va fi aplicata pentru tema sistemului Halo predefinita in loc de gradientul negru-gri</string>
+    <string name="holo_bg_image_title">Imagine fundal Holo</string>
+    <string name="holo_image_result_successful">Imagine fundal Holo schimbata</string>
+    <string name="holo_image_result_not_successful">Imagine fundal Holo neschimbata</string>
+    <string name="holo_gradient_color_title">Culoarea fundalului gradient Holo</string>
+    <string name="holo_gradient_color_summary">Aceasta culoare va fi adaugata fundalului Halo. Coloreaza si creaza un efect gradient personalizat</string>
+    <string name="holo_enable_title">Permite fundal Holo</string>
+    
 </resources>

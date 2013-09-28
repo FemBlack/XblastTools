@@ -1,5 +1,6 @@
 package ind.fem.black.xposed.mods;
 
+import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -268,7 +269,8 @@ public class RecentPanelMod {
 		return rambarView;
     }
     
-    private final static Runnable updateRamBarTask = new Runnable() {
+    @SuppressLint("NewApi")
+	private final static Runnable updateRamBarTask = new Runnable() {
         public void run() {        	
         	 
              if (!prefsLocal.getBoolean(XblastSettings.PREF_KEY_RAM_BAR_USAGE, false))

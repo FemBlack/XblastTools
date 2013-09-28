@@ -4,5 +4,26 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="shortcut_picker_left_padding">70dip</dimen>
-
+     
+     
+     <dimen name="zero">0.0dip</dimen>
+     <item type="dimen" name="status_bar_icon_drawing_alpha">0%</item>     
+     <dimen name="quick_settings_cell_height">210dp</dimen>
+     <dimen name="status_bar_height">15dip</dimen>
+     
+     <dimen name="navigation_bar_height_52">52dp</dimen>
+     <dimen name="navigation_bar_height_50">50dp</dimen>
+     <dimen name="navigation_bar_height_48">48dp</dimen>
+     <dimen name="navigation_bar_height_44">44dp</dimen>
+     <dimen name="navigation_bar_height_40">40dp</dimen>
+     <dimen name="navigation_bar_height_38">38dp</dimen>
+     <dimen name="navigation_bar_height_36">36dp</dimen>
+     <dimen name="navigation_bar_height_34">34dp</dimen>
+     <dimen name="navigation_bar_height_32">32dp</dimen>
+     <dimen name="navigation_bar_height_30">30dp</dimen>
+     <dimen name="navigation_bar_height_28">28dp</dimen>
+     <dimen name="navigation_bar_height_26">26dp</dimen>
+     <dimen name="navigation_bar_height_24">24dp</dimen>
+     <dimen name="navigation_bar_height_0">0dp</dimen>
+    
 </resources>

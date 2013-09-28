@@ -21,6 +21,7 @@
     <string name="twenty_four_hour_time_format">HH:mm</string>
     
     
+    
     <!-- General settings -->
     <string name="pref_header_general">Všeobecné</string>
     <string name="pref_title_notif_transperency">Priehľadnosť oznamov. oblasti</string>
@@ -467,4 +468,58 @@
     <string name="holo_gradient_color_summary">Farba bude použitá na predvolené "Holo" pozadie a vytvorí skvelý farebný prechod</string>
     <string name="holo_enable_title">Povoliť Holo pozadie</string>
     
+    <!-- Low battery warning -->
+    <string name="low_battery_warning_policy_title">Upozorneni e slabej batérie</string>
+    <string name="low_battery_warning_full">Upozornenie a zvuk</string>
+    <string name="low_battery_warning_popup">Iba upozornenie</string>
+    <string name="low_battery_warning_sound">Iba zvuk</string>
+    <string name="low_battery_warning_off">Vyp.</string>
+
+    <!-- Apache2 License -->
+    <string name="apache2_license_title">Apache2 Licencia</string>
+    <string name="apache2_license_summary">Ťuknite pre ukážku Apache2 Licencie</string>
+
+    <!-- Rate my app -->
+    <string name="rate_app_title">Ohodnoťte XBlast v Obchode Play</string>
+    <string name="rate_app_summary">Pridá mojej aplikácii na hodnote</string>
+
+    <!-- Special Thanks -->
+    <string name="special_thanks_title">Špeciálne poďakovania</string>
+    <string name="change_log_title">Zmeny</string>
+
+    <!-- Restart & Soft Reboot -->
+    <string name="restart_softreboot_title">Reštart &amp; Soft. Reštart</string>
+    <string name="restart_softreboot_options">Zvoľte možnosť ktorú potrebujete</string>
+
+    <!-- QS -->
+    <string name="quick_Settings_Tiles_gap_title">Odstrániť medzery medzi dlaždicami</string>
+    <string name="remove_handle_title">Hide handle divider line</string>
+    <string name="hide_notif_icons_title">Odstrániť ikony upozornení</string>
+    <string name="hide_notif_icons_summary"> Ľavá strana stavovej lišty bude čistá</string>
+    <string name="icons">Ikony</string>
+
+    <!-- Share App -->
+    <string name="share_app_title">Zdieľať XBlast so všetkými</string>
+    <string name="try_app">Skús XBlast Tools z Obchodu Play</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_height">Veľkosť tlačidiel</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_38">38dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_34">34dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_26">26dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">0dp</string>
+    <string name="navigation_bar_title">Tlačidlá na obrazovke</string>
+    <string name="nav_bar_color_title">Farba pozadia</string>
+    <string name="nav_button_color_title">Farba tlačidiel</string>	<string name="nav_glow_color_title">Farba jasu</string>
+	<string name="navigation_bar_theme">Soft. tlačidlá</string>    
 </resources>

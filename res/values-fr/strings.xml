@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> 
+      
+    <string name="title_activity_settings">Paramètres</string> 
+  
+    <!-- Strings related to Settings -->
+  
+    <string name="app_name">XBlast Tools</string> 
+    <string name="Shadow_settings">Paramètres de l\'ombre</string> 
+    <string name="file_name">FemBlack</string> 
+    <string name="action_settings">Paramètres</string> 
+    <string name="preview">Aperçu</string> 
+    <string name="edit_message">Entrez le texte</string> 
+    <string name="ok">OK</string> 
+    <string name="cancel">Annuler</string> 
+    <string name="button_effects">Sélectionnez la couleur</string> 
+    <string name="shadow_settings">Paramètres de l\'ombre</string> 
+    <string name="ClockTextColor">Couleur de l\'heure et du texte</string> 
+    <string name="shadowColor">Couleur de l\'ombre</string> 
+    <string name="twelve_hour_time_format">h:mm a</string> 
+    <string name="twenty_four_hour_time_format">HH:mm</string> 
+      
+      
+    <!-- General settings -->
+    <string name="pref_header_general">Général</string> 
+    <string name="pref_title_notif_transperency">Transparence des notifications</string> 
+    <string name="pref_description_notif_transperency">Activer la transparence des notifications</string> 
+    <string name="hide_am_pm">Cacher AM PM</string> 
+    <!-- settings for Notifications -->
+    <string name="pref_header_misc">Divers</string> 
+    <string name="carrier_label">Label personnalisé</string> 
+    <string name="default_carrier_label">FemBlack</string> 
+    <string name="desc_carrier_label">Laisser vide pour le label par défaut</string> 
+    <string name="custom_carrier_label_LS">Label personnalisé à l\'écran de verrouillage</string> 
+    <string name="custom_carrier_label_NC">Label personnalisé dans les notifications</string> 
+     <!-- About -->
+    <string name="pref_about_title">A propos</string> 
+    <string name="about_app_title">XBlast Tools</string> 
+    <string name="about_app">Codé par FemBlack@XDA. Touchez pour visiter le thread.</string> 
+    <string name="about_donate_title">Version Google Play</string> 
+    <string name="about_donate_summary">Donation &amp; aidez-moi si vous aimez cette application.</string> 
+      
+    <string name="fullscreen_caller_photo_title">Photo du correspondant plein écran</string> 
+    <string name="fullscreen_caller_photo_summary">Montre la photo du correspondant en plein écran</string> 
+     <string name="hide">Caché</string> 
+    <string name="small">Petit</string> 
+    <string name="medium">Moyen</string> 
+    <string name="large">Grand</string> 
+    <string name="carrier_label_size_summary">Taille du label personnalisé sur l\'écran de verrouillage</string> 
+    <string name="carrier_label_size">Taille du label : verrouillage</string> 
+      
+    <string name="clock_and_date">Heure &amp; Date</string> 
+    <string name="am_pm_style">Style de l\'affichage AM PM</string> 
+      
+      
+    <string name="default_caller_image_title">Changer l\'image du correspondant par défaut</string> 
+    <string name="default_caller_image_summary">Sélectionnez une image par défaut pour les contacts inconnus &amp; ceux sans photo.</string> 
+    <string name="Call_Banner_text_summary">La couleur sera appliquée à Contact, Numéro, etc</string> 
+    <string name="Call_Banner_text_title">Couleur du texte de l\'appel entrant</string> 
+    <string name="default_caller_image_result_successful">Image par défaut modifiée</string> 
+    <string name="default_caller_image_result_not_successful">Image par défaut non modifiée</string> 
+    <string name="nbg_image_result_successful">Image de fond (notifications) modifiée</string> 
+    <string name="nbg_image_result_not_successful">Image de fond (notifications) modifiée</string> 
+      
+    <!-- Reboot confirmation -->
+    <string name="soft_reboot">Redémarrage rapide</string> 
+    <string name="reboot_confirm">L\'appareil va redémarrer</string> 
+    <string name="reboot_confirm_recovery">L\'appareil va redémarrer en Recovery</string> 
+    <string name="soft_reboot_confirm">L\'appareil va recharger l\'interface système</string> 
+    <string name="fastboot_confirm_recovery">L\'appareil va charger le Bootloader</string> 
+    <string name="advanced_reboot_title">Menu : redémarrage avancé</string> 
+    <string name="poweroff_advanced_summary">Active le menu de redémarrage avancé(Redémarrage rapide, Redémarrage, Redémarrage en Recovery, Fastboot &amp; Capture d\'écran)</string> 
+      
+    <string name="pref_title_notif_bg">Fond du panneau de notification</string> 
+    <string name="pref_description_notif_bg">Activer une image ou couleur comme fond des notifications</string> 
+    <string name="pref_description_notif_bg_color">Sélectionner une couleur</string> 
+    <string name="pref_description_notif_bg_img">Sélectionner une image</string> 
+    <string name="fullscreen_caller_sb_title">Désactiver la barre d\'état</string> 
+    <string name="fullscreen_caller_sb_summary">La barre d\'état sera désactivée durant les appels</string> 
+      
+    <string name="Call_Banner_font_summary">La police sélectionnée sera appliquée au Contact, Numéro, etc</string> 
+    <string name="Call_Banner_font_title">Police du texte de l\'appel entrant</string> 
+      
+    <string name="status_bar">Barre d\'état</string> 
+    <string name="notification_panel">Panneau des notifications</string> 
+    <string name="center_clock_title">Centrer l\'heure</string> 
+      
+        <!-- CRT effect screen off animation -->
+    <string name="crt_off_effect">Effet CRT à l\'extinction de l\'écran</string> 
+      
+    <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> libre(s)</string>    
+    <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> utilisé(s)</string> 
+      
+    <string name="recents_clear_all_title">Effacer les tâches récentes</string> 
+    <string name="recents_clear_all_summary">Active un bouton dans Applications Récentes pour effacer toutes les tâches récentes</string> 
+    <string name="ram_usage_bar_title">Barre de RAM</string> 
+    <string name="ram_usage_bar_summary">Montre l\'utilisation de RAM dans Applications Récentes</string> 
+      
+     <!-- Solid black Holo background -->
+    <string name="holo_bg_solid_black_title">Fond noir plein</string> 
+    <string name="holo_bg_solid_black_summary">Utiliser un fond noir plein comme thème système Holo au lieu du noir-gris d\'origine</string> 
+      
+    <string name="nbg_pu_pd_speed_title">Vitesse de glissement des notifications</string> 
+    <string name="nbg_pu_pd_speed_summary">Augmenter la vitesse de glissement du panneau des notifications</string> 
+  
+    <string name="statusbar_color_summary">Quand la barre d\'état est transparente.\nNOTE: Risque d\'être étrange lorsque vous n\'êtes pas sur l\'écran d\'accueil puisque les applications ne mettent en général rien derrière cette barre.</string> 
+    <string name="statusbar_color_title">Couleur de fond de la barre d\'état</string> 
+    <string name="wifi_color_title">Couleur du signal WiFi</string> 
+    <string name="wifi_inout_color_title">Couleur de l\'E/S WiFi</string> 
+      
+    <string name="mobile_signal_color_summary">La couleur sera appliquée au signal mobile &amp; type de réseau</string> 
+    <string name="mobile_signal_color_title">Couleur du signal mobile</string> 
+    <string name="mobile_inout_color_title">Couleur de l\'E/S mobile</string> 
+    <string name="battery_color_title">Couleur de la batterie</string> 
+      
+    <string name="notif_panel_bg_trans_summary">0-Transparent, 100-Opaque-Appliqué uniquement aux images de fond pour les notifications</string> 
+    <string name="notif_panel_bg_trans_title">Transparence de l\'image de fond du panneau de notifications</string> 
+      
+    <string name="CCLLS_title">Couleur du label personnalisé sur l\'écran de verrouillage</string> 
+    <string name="CCLNC_color_title">Couleur du label personnalisé dans les notifications</string> 
+      
+    <string name="rotation_summary">Activer la rotation dans tous les sens, y compris à l\'envers</string> 
+    <string name="rotation_title">Activer tous les angles de rotation</string> 
+      
+    <string name="sb_clock_color_title">Couleur de l\'heure</string> 
+    <string name="np_clock_color_title">Couleur Heure &amp; Date</string> 
+      
+     <string name="custom_text_summary">Le texte personnalisé sera montré près de l\'heure de la barre d\'état &amp; au panneau de notifications</string> 
+     <string name="custom_text_title">Texte personnalisé</string> 
+       
+     <string name="custom_text_np_summary">Le texte personnalisé sera montré près de l\'heure du panneau de notifications</string> 
+     <string name="custom_text_np_title">Texte personnalisé</string> 
+       
+     <string name="font_summary">La police sélectionnée sera appliquée à l\'heure de la barre de status &amp; au panneau de notifications</string> 
+     <string name="font_np_summary">la police sélectionnée sera appliquée à l\'heure du panneau de notifications</string> 
+     <string name="font_title">Polices</string> 
+       
+     <string name="pref_quick_settings_title">Ajustements JB</string> 
+     <string name="quick_setting_columns_summary">Nombre de raccourcis par rangée du volet des paramètres</string> 
+     <string name="quick_setting_columns">Raccourcis des paramètres</string> 
+      
+     <!-- QuickSettings tiles per row -->
+    <string name="pref_qs_tiles_per_row_title">Raccourcis par volet</string> 
+    <string name="pref_qs_tiles_per_row_summary">Définit combien de raccourcis afficher par volet. Ils seront redimensionnés en conséquence. S\'applique au mode portrait.</string> 
+      
+    <string name="notif_normal_color_title">Couleur de fond des notifications</string> 
+    <string name="notif_pressed_color_title">Couleur des notifications sélectionnées</string> 
+    <string name="notif_normal_color_summary">Couleur de fond de la liste des notifications</string> 
+    <string name="notif_pressed_color_summary">Couleur de fond de la liste des notifications sélectionnées</string> 
+      
+     <string name="boot_animation_summary">L\'animation de démarrage sera désactivée</string> 
+     <string name="boot_animation_title">Désactiver l\'animation au démarrage</string> 
+       
+     <string name="disable_adb_notif_summary">Les notifications ADB seront cachées</string> 
+     <string name="disable_adb_notif_title">Cacher les notifications ADB</string> 
+       
+     <string name="audio_video_summary">Améliore la qualité de l\'enregistrement audio et vidéo</string> 
+     <string name="audio_video_title">Modifications audio et vidéo</string> 
+       
+     <string name="ticker_color_title">Couleur plus épaisse</string> 
+     <string name="google_dns_title">Forcer l\'utilisation des DNS Google</string> 
+       
+     <string name="notif_Content_color_title">Couleur du contenu des notifications</string> 
+     <string name="notif_Title_text_color_title">Couleur du titre des notifications</string> 
+     <string name="toast_text_color_title">Couleur du Toast</string> 
+     <string name="toast_bg_color_title">Couleur du fond de Toast</string> 
+     <string name="clear_all_position_title">Position du bouton Nettoyer Tout</string> 
+       
+     <string name="build_prop_tweaks">Ajustements du build.prop</string> 
+       
+    <!-- Traffic -->
+    <string name="traffic_title">Indicateur de vitesse du réseau</string> 
+    <string name="traffic_summary">L\'indicateur apparaît uniquement lorsqu\'il y a du trafic réseau</string> 
+    <string name="traffic_color_title">Couleur de l\'indicateur de vitesse du réseau</string> 
+     
+    <!-- PropModder -->
+    <string name="propmodder_title">PropModder</string> 
+    <string name="propmodder_title_summary">@null</string> 
+    <string name="buildprop_title">Mods Build.prop</string> 
+    <string name="nonprop_cat_title">Mods utilisant les scripts init.d</string> 
+    <string name="pc_tweaks">Ajustements</string> 
+    <string name="pc_init_d">Activer/Désactiver les ajustements</string> 
+    <string name="pc_init_d_tweaks">Personnaliser les ajustements</string> 
+  
+    <!-- Start up tweaks -->
+    <string name="pt_init_d">Ajustements du système</string> 
+    <string name="pt_enable_init_d">Activer les ajustements du démarrage</string> 
+    <string name="pt_zipalign">Zipalign les apk</string> 
+    <string name="pt_enable_sd_boost">Activer le boost SD</string> 
+    <string name="pt_sd_boost">Valeur de la lecture anticipée</string> 
+    <string name="pt_fix_permissions">Réparer les permissions</string> 
+    <string name="pt_clear_cache">Nettoyer le cache</string> 
+    <string name="pt_enable_sysctl">Activer sysctl</string> 
+    <string name="pt_enable_cron">Activer les tâches programmées</string> 
+  
+    <!-- WARN THE MASSES THIS CAN BE DANGEROUS!!! -->
+    <string name="main_warning_title">VOUS AVEZ ETE PREVENUS</string> 
+    <string name="main_warning_summary">Cette zône va modifier le build.prop. Cela change votre \'/system/build.prop\' NOUS NE SOMMES PAS RESPONSABLES DE VOS ACTIONS! Votre appareil, vos reponsabilités.</string> 
+    <string name="pref_wifi_scan_interval_title">Intervalle du scan WiFi</string> 
+    <string name="pref_wifi_scan_interval_summary">Le temps entre chaque scan WiFi quand aucun point d\'accès connu n\'est à portée (redémarrage requis)</string> 
+    <string name="pref_wifi_scan_alt_summary">Temps entre les scans WiFi: %s</string> 
+    <string name="pref_lcd_density_title">Densité LCD</string> 
+    <string name="pref_lcd_density_summary">Contrôler la densité de l\'écran, permettant un visuel Haute Définition (redémarrage requis)</string> 
+    <string name="pref_max_events_title">Evènements maximum par seconde du gestionnaire de fenêtres</string> 
+  
+    <!--TODO find good explanation of this value -->
+    <string name="pref_max_events_summary">Une valeur runtime qui contrôle le nombre d\'évènements que le système va autoriser par seconde (redémarrage requis)</string> 
+    <string name="pref_max_events_alt_summary">Nombre maximum d\'évènements système: %s</string> 
+    <string name="pref_usb_mode_title">Mode USB par défaut</string> 
+    <string name="pref_usb_mode_summary">Contrôle quels paramètres par défaut utiliser lorsque vous vous connectez à un ordinateur par USB (redémarrage requis)</string> 
+    <string name="pref_ring_delay_title">Retarder la sonnerie des appels</string> 
+    <string name="pref_ring_delay_summary">Le nombre de temps qu\'il faut au système pour lancer la sonnerie durant un appel (redémarrage requis)</string> 
+    <string name="pref_ring_delay_alt_summary">Retarder les appels entrants: %s</string> 
+    <string name="pref_vm_heapsize_title">Taille du cache Dalvik</string> 
+    <string name="pref_vm_heapsize_summary">Contrôle la taille du cache Dalvik VM (redémarrage requis)</string> 
+    <string name="pref_vm_heapsize_alt_summary">Taille du cache Dalvik VM: %s</string> 
+    <string name="propmodder_warning_title">LE ROOT EST OBLIGATOIRE</string> 
+    <string name="propmodder_warning">Ce programme change les propriétés système dans /system/build.prop NE PAS UTILISER si vous ne savez pas ce que vous faites. Nous(n00bware, créateurs de PropModder) ne sommes pas responsables de votre appareil, POINT. Vous avez été prévenus</string> 
+    <string name="showbuild_title">Montrer le build.prop</string> 
+    <string name="showbuild_dialog">Ceci est votre /system/build.prop</string> 
+    <string name="showbuild_loading">Chargement de build.prop\u2026</string> 
+    <string name="showbuild_error">Erreur au chargement de build.prop\u2026</string> 
+    <string name="showbuild_unknown">Inconnu</string> 
+    <string name="showbuild_version">Version</string> 
+    <string name="showbuild_label">Montre le build.prop pour que vous puissiez voir ce qui s\'y trouve</string> 
+    <string name="pref_fast_up_title">Modification de la vitesse d\'upload HSUPA</string> 
+    <string name="pref_fast_up_summary">*ATTENTION* Si vous changez ces valeurs, elles seront ajoutées au build.prop si elles ne sont pas présentes (redémarrage requis)</string> 
+    <string name="pref_fast_up_alt_summary">Vitesse d\'upload active jusqu\'à: %s</string> 
+    <string name="pref_disable_boot_anim_title">Désactiver l\'anim\'tion au démarrage</string> 
+    <string name="pref_disable_boot_anim_summary">Désactiver l\'animation au démarrage du système (redémarrage requis)</string> 
+    <string name="clear_custom_bootanimation">Nettoyer les animations de démarrage personnalisées</string> 
+    <string name="set_custom_bootanimation">Utiliser une animation personnalisée...</string> 
+    <string name="pref_prox_delay_title">Délai du capteur de proximité</string> 
+    <string name="pref_prox_delay_summary">En communication, l\'écran est éteint lorsque l\'appareil s\'éloigne de votre oreille, cette valeur contrôle le temps voulu pour rallumer l\'écran (redémarrage requis)</string> 
+    <string name="pref_prox_delay_alt_summary">Capteur de proximité défini à: %s</string> 
+    <string name="pref_logcat_title">Désactiver logcat</string> 
+    <string name="pref_logcat_summary_on">Logcat désactivé, rend la lecture des logcats difficile</string> 
+    <string name="pref_logcat_summary_off">Logcat activé, le désactiver permet une légère accélération du système</string> 
+    <string name="pref_mod_version_title">Changer le numéro de Build</string> 
+    <string name="pref_mod_version_summary">C\'est esthétique et ne change rien au système</string> 
+    <string name="pref_mod_version_alt_summary">Numéro de Build: %s</string> 
+    <string name="pref_mod_version_default">PropModder!!!</string> 
+    <string name="pref_sleep_title">Mode de veille</string> 
+    <string name="pref_sleep_summary">Modifier la politique de la veille</string> 
+    <string name="pref_sleep_alt_summary">Mode de veille actuel: %s</string> 
+    <string name="pref_jit_title">Compilateur Just In Time</string> 
+    <string name="pref_jit_summary">activer/désactiver le compilateur JIT dans Dalvik VM</string> 
+    <string name="pref_tcp_stack_title">Optimiser la pile TCP</string> 
+    <string name="pref_tcp_stack_summary">Modifier la taille de la mémoire tampon pour améliorer les performances</string> 
+    <string name="pref_check_in_title">Service Check In</string> 
+    <string name="pref_check_in_summary">Arrêter d\'envoyer des données d\'utilisation du système à Google</string> 
+    <string name="pref_sdcard_buffer_title">Améliorer la vitesse des carte SD</string> 
+    <string name="pref_sdcard_buffer_summary">Modifier la mémoire tampon de la carte SD pour de meilleurs performances</string> 
+    <string name="pref_sdcard_buffer_alt_summary">Mémoire tampon de la carte SD: %s</string> 
+    <string name="pref_g_speed_title">Amélioration de la vitesse 3G</string> 
+    <string name="pref_g_speed_summary">Retirer la limitation de la vitesse 3g</string> 
+    <string name="pref_gpu_title">Accélération par le GPU</string> 
+    <string name="pref_gpu_summary">Activer l\'accélération matérielle de l\'interface gérée par le chipset graphique au lieu du processeur</string> 
+    <string name="pref_vvmail_title">VVMail (UNIQUEMENT Rom Sense)</string> 
+    <string name="pref_vvmail_summary">Forcer la compatibilité de la Rom Sense avec VVMail</string> 
+      
+     <string name="ps_enable_init_d">Activer/désactiver les ajustements du démarrage</string> 
+       
+      <!-- Promodder and initD arrays explainations -->
+    <string name="remove_logcat">Totalement désactiver les logs (même après un redémarrage)</string> 
+    <string name="remove_logcat_till_reboot">désactiver les logs (réactivés au redémarrage)</string> 
+    <string name="enable_logcat">Activer les logs (redémarrage requis)</string> 
+    <string name="disable">Désactiver</string> 
+    <string name="power_collapse_suspend">Power Collapse Suspension</string> 
+    <string name="power_collapse">Power Collapse (Best)</string> 
+    <string name="apps_sleep">Arrêter les applications</string> 
+    <string name="slow_clock">Ralentir la fréquence d\'horloge</string> 
+    <string name="wait_for_interrupt">Wait for Interrupt</string> 
+    <string name="sdcard_128_kb">128 kb</string> 
+    <string name="sdcard_1024_kb">1024 kb</string> 
+    <string name="sdcard_2048_kb">2048 kb (recommandé)</string> 
+    <string name="sdcard_3072_kb">3072 kb</string> 
+    <string name="sdcard_4096_kb">4096 kb</string> 
+    <string name="sdcard_5120_kb">5120 kb</string> 
+    <string name="sdcard_6144_kb">6144 kb</string> 
+    <string name="remove">Enlever</string> 
+    <string name="hsupa_disabled">HSUPA Désactivé (Plafonné)</string> 
+    <string name="hsupa_enabled">HSUPA Activé</string> 
+    <string name="hsupa_enabled_uncapped">HSUPA Activé (Non plafonné)</string> <!-- Start up tweaks -->
+    <string name="ps_init_d">@null</string> 
+    <string name="ps_enable_init_d">Activer/désactiver les ajustements de démarrage</string> 
+    <string name="ps_zipalign">Zipalign chaque application non-alignée au démarrage</string> 
+    <string name="ps_enable_sd_boost">Activer/désactiver le boost de la carte SD</string> 
+    <string name="ps_sd_boost">Définir la valeur de la lecture anticipée en kb</string> 
+    <string name="ps_fix_permissions">Réparer les permissions à chaque démarrage</string> 
+    <string name="ps_clear_cache">Nettoyer le cache des données à chaque démarrage</string> 
+    <string name="ps_enable_sysctl">Activer les réglages sysctl au démarrage</string> 
+    <string name="ps_enable_cron">Activer les tâches planifiées cron</string> 
+      
+     <!-- Smart Alarm Icon -->
+    <string name="hide_alarm_icon_off">L\'icône du réveil est visible</string> 
+    <string name="hide_alarm_icon_on">l\'icône du réveil est cachée</string> 
+    <string name="hide_alarm_icon">Cacher l\'icône du réveil</string> 
+    <string name="smart_alarm_icon">Icône du réveil intelligente</string> 
+    <string name="smart_alarm_icon_summary">Montrer l\'icône du réveil à un moment spécifique</string> 
+    <string name="always_hide">Toujours cacher l\'icône</string> 
+    <string name="show_15_min_before">Montrer l\'icône 15min avant que le réveil sonne</string> 
+    <string name="show_30_min_before">Montrer l\'icône 30min avant que le réveil sonne</string> 
+    <string name="show_60_min_before">Montrer l\'icône 1h avant que le réveil sonne</string> 
+    <string name="show_180_min_before">Montrer l\'icône 3h avant que le réveil sonne</string> 
+    <string name="show_360_min_before">Montrer l\'icône 6h avant que le réveil sonne</string> 
+    <string name="show_720_min_before">Montrer l\'icône 12h avant que le réveil sonne</string> 
+    <string name="show_1440_min_before">Montrer l\'icône 24h avant que le réveil sonne</string> 
+      
+     <!-- Clock settings category -->
+    <string name="pref_cat_clock_settings_title">Paramètres de l\'heure</string> 
+    <!-- Clock: hide clock -->
+    <string name="pref_clock_hide_title">Cacher l\'heure</string> 
+     <!-- Clear All Position  -->
+    <string name="clear_all_pos_bottom_right">En bas à droite</string> 
+    <string name="clear_all_pos_bottom_left">En bas à gauche</string> 
+      
+    <!-- CRT Effect  -->
+    <string name="fade_effect">Effet d\'estompement</string> 
+    <string name="horizontal_effect">Effet horizontal</string> 
+    <string name="vertical_effect">Effet vertical</string> 
+      
+    <!-- Backup & Restore  -->
+    <string name="restore">Restaurer</string> 
+    <string name="save">Sauvegarder</string> 
+    <string name="delete">Supprimer</string> 
+    <string name="no_backups">Pas de sauvegardes</string> 
+    <string name="reset">Réinitialiser</string> 
+     <string name="restoring_backup">Restaurer depuis une sauvegarde</string> 
+    <string name="backup_name">Nom de la sauvegarde</string> 
+    <string name="save_successful">Sauvegarde réussie</string> 
+    <string name="save_unsuccessful">Sauvegarde échouée</string> 
+    <string name="clearing_settings">Paramètres de nettoyage</string> 
+    <string name="reset_successful">Réinitialisation réussie</string> 
+    <string name="backup_restored">Restauration faite</string> 
+    <string name="reboot_required">Redémarrage requis</string> 
+      
+      
+     <!-- Volume Button Tweaks -->
+    <string name="pref_cat_volume_button_title">Réglages des boutons de volume</string> 
+      
+    <!-- Safe headset media volume -->
+    <string name="pref_safe_media_volume_title">Sécurité du volume des écouteurs/casque</string> 
+    <string name="pref_safe_media_volume_summary">Activer ou désactiver la fonctionnalité de sécurité du volume des écouteurs/casque</string> 
+      
+    <string name="vol_music_controls_title">Touches du volume pour changer de piste</string> 
+    <string name="vol_music_controls_summary">Changer de piste par un appui long sur les boutons de volume</string> 
+      
+    <string name="vol_key_cursor_control_title">Contrôle du curseur par les touches volume</string> 
+    <string name="vol_key_cursor_control_summary">Contrôler le curseur lors de la frappe avec les boutons de volume</string> 
+    <string name="vol_key_cursor_control_off">Désactivé</string> 
+    <string name="vol_key_cursor_control_on">Volume haut/bas pour bouger à gauche/droite</string> 
+    <string name="vol_key_cursor_control_on_reverse">Volume haut/bas pour bouger à droite/gauche</string> 
+      
+    <!-- Move Apps to Internal Storage -->
+      
+    <string name="move_internal_storage">Déplacer XBlast Tools dans la mémoire interne</string> 
+    <string name="move_message">L\'application doit être déplacée dans la mémoire interne pour fonctionner correctement.\n\n(Redémarrez l\'application après le déplacement)</string> 
+    <string name="move_Xblast">Déplacement de XBlast Tools</string> 
+    <string name="move_failed">Echec lors du déplacement!</string> 
+    <string name="quit">Quitter</string> 
+    <string name="move">Déplacer</string> 
+      
+     <!-- Notification Panal Bg -->
+     <string name="image">Image</string> 
+     <string name="color">Couleur</string> 
+     <string name="move">Déplacer</string> 
+     <string name="select_color">Sélectionner la couleur</string> 
+       
+     <!-- XDream -->
+     <string name="xdream_title">XDream</string> 
+     <string name="xdream_bg_color_title">Couleur de fond Day-Dream</string> 
+     <string name="pref_xdream_bg_Image_title">Image de fond Day-Dream</string> 
+     <string name="xdream_bg_clcok_title">Couleur de l\'horloge Day-Dream</string> 
+     <string name="xdream_image_result_successful">Image de fond Day-Dream modifiée</string> 
+     <string name="xdream_image_result_not_successful">Image de fond Day-Dream non modifiée</string> 
+       
+     <string name="xdream_bg_Image_trans_summary">0-Transparence, 100-Opaque-Appliqué uniquement à l\'image de fond Day-Dream</string> 
+     <string name="xdream_bg_Image_trans_title">Transparence de l\'image de fond Day-Dream</string> 
+       
+     <string name="custom_Dream_Text_summary">Laissez vide pour ne rien afficher</string> 
+     <string name="custom_Dream_Text_title">Texte personnalisé dans Day-Dream</string> 
+     <string name="custom_Dream_Text_size_title">Taille du texte personnalisé dans Day-Dream </string> 
+       
+     <string name="dream_font_summary">La police sélectionnée sera appliquée à l\'Heure &amp; au Texte</string> 
+     <string name="dream_font_title">Police de Day-Dream</string> 
+      
+     <!-- G+ -->
+     <string name="gplus_summary">Retrouvez-moi sur G+</string> 
+     <string name="gplus_title">Communeauté XBlast sur G+</string> 
+       
+     <!-- Statusbar Icons color -->
+     <string name="remaining_sb_icon_color_summary">La couleur sera appliquée au icônes réveil, silencieux, vibreur</string> 
+     <string name="remaining_sb_icon_color_title">Couleur des icônes de la barre d\'état</string> 
+       
+     <!-- Gradient Color Settings-->
+     <string name="gradient_Settings">Paramètres du dégradé</string> 
+     <string name="gradient_Settings_enable_title">Activer les paramètres du dégradé</string> 
+     <string name="gradient_Settings_enable_summary">Le dégradé de couleurs sera appliqué au fond des notifications, Day-Dream &amp; aux couleurs de fond Holo</string> 
+     <string name="common_gradient_Settings">Paramètres généraux</string> 
+     <string name="xdream_gradient_color_title">Couleur de fond Day-Dream</string> 
+     <string name="xdream_gradient_color_summary">Cette couleur sera ajoutée à la couleur de fond de Day-Dream pour créer un dégradé</string> 
+     <string name="notifi_gradient_color_title">Couleur du dégradé du fond des notifications</string> 
+     <string name="notifi_gradient_color_summary">Cette couleur sera ajoutée à la couleur de fond des Notifications pour créer un dégradé</string> 
+     <string name="top_bottom">Haut en Bas</string> 
+     <string name="bottom_top">Bas en Haut</string> 
+     <string name="right_left">Droite à Gauche</string> 
+     <string name="left_right">Gauche à Droite</string> 
+     <string name="tr_bl">Haut-droit à Bas-gauche</string> 
+     <string name="br_tl">Bas-droit à Haut-gauche</string> 
+     <string name="bl_tr">Bas-gauche à Haut-droit</string> 
+     <string name="tl_br">Haut-gauche à Bas-droit</string> 
+     <string name="gradient_color_orientation_summary">Le dégradé sera dessiné selon l\'orientation choisie</string> 
+     <string name="gradient_color_orientation_title">Orientation du dégradé</string> 
+       
+     <!-- Holo Bg -->
+     <string name="holo_bg_color_title">Couleur du fond Holo</string> 
+     <string name="holo_bg_color_summary">La couleur sera appliquée au thème du système Holo par défaut au lieu du noir-gris original</string> 
+     <string name="holo_bg_image_title">Image de fond Holo</string> 
+     <string name="holo_image_result_successful">Image de fond Holo modifiée</string> 
+     <string name="holo_image_result_not_successful">Image de fond Holo non modifiée</string> 
+     <string name="holo_gradient_color_title">Couleur du dégradé du fond Holo</string> 
+     <string name="holo_gradient_color_summary">Cette couleur sera ajoutée à la couleur de fond Holo pour créer un dégradé</string> 
+       
+     <!-- Apache2 License -->
+     <string name="apache2_license_title">Licence Apache2</string> 
+     <string name="apache2_license_summary">Appuyez pour consulter la Licence Apache2.</string> 
+      
+</resources> 

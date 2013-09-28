@@ -21,6 +21,7 @@
     <string name="twenty_four_hour_time_format">HH:mm</string>
     
     
+    
     <!-- General settings -->
     <string name="pref_header_general">Geral</string>
     <string name="pref_title_notif_transperency">Transparência da notificação</string>
@@ -467,4 +468,61 @@
     <string name="holo_gradient_color_title">Cor de gradiente holo do plano de fundo</string>
     <string name="holo_gradient_color_summary">Esta cor será adicionada com a cor do plano de fundo holo e cria um efeito de gradiente agradável</string>
     <string name="holo_enable_title">Ativar o plano de fundo holo</string>
+    
+    <!-- Low battery warning -->
+    <string name="low_battery_warning_policy_title">Aviso de bateria fraca</string>
+    <string name="low_battery_warning_full">Pop-up e som</string>
+    <string name="low_battery_warning_popup">Apenas pop-up</string>
+    <string name="low_battery_warning_sound">Apenas som</string>
+    <string name="low_battery_warning_off">Desligado</string>
+
+    <!-- Apache2 License -->
+    <string name="apache2_license_title">Licença Apache2</string>
+    <string name="apache2_license_summary">Toque para visitar a licença Apache2.</string>
+
+    <!-- Rate my app -->
+    <string name="rate_app_title">Classifique o XBlast na Playstore</string>
+    <string name="rate_app_summary">Dá mais valor a esta aplicação &amp; ME</string>
+
+    <!-- Special Thanks -->
+    <string name="special_thanks_title">Obrigado Especial</string>
+    <string name="change_log_title">Alterações</string>
+
+    <!-- Restart & Soft Reboot -->
+    <string name="restart_softreboot_title">Reiniciar &amp; Reinício suave</string>
+    <string name="restart_softreboot_options">Por favor, escolha a opção desejada</string>
+
+    <!-- QS -->
+    <string name="quick_Settings_Tiles_gap_title">Remover os espaços entre os azulejos</string>
+    <string name="remove_handle_title">Ocultar a linha divisória</string>
+    <string name="hide_notif_icons_title">Ocultar os ícones de notificação na barra status</string>
+    <string name="hide_notif_icons_summary">Os ícones de notificação do lado esquerdo da barra de status serão ocultados</string>
+    <string name="icons">Ícones</string>
+
+    <!-- Share App -->
+    <string name="share_app_title">Partilhe o XBlast com todos</string>
+    <string name="try_app">Experimente o XBlast Tools na Play Store.</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_height">Altura do botão</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp (padrão)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_38">38dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_34">34dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_26">26dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">0dp</string>
+    <string name="navigation_bar_title">Barra de navegação</string>
+    <string name="nav_bar_color_title">Cor do plano de fundo</string>
+    <string name="nav_button_color_title">Cor do botão</string>
+    <string name="nav_glow_color_title">Cor do brilho</string>
+    <string name="navigation_bar_theme">Teclas de função</string>
+
 </resources>

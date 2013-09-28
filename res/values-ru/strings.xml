@@ -21,6 +21,8 @@
     <string name="twenty_four_hour_time_format">HH:mm</string>
     
     
+    
+    
     <!-- General settings -->
     <string name="pref_header_general">Общие</string>
     <string name="pref_title_notif_transperency">Прозрачность уведомлений</string>
@@ -467,5 +469,61 @@
     <string name="holo_gradient_color_title"> Цвет градиента Holo</string>
     <string name="holo_gradient_color_summary"> Цвет будет добавлен к цвету фона Holo для создания эффекта градиента </string>
     <string name="holo_enable_title">Вкл фон Holo</string>
+    
+    <!-- Low battery warning -->
+    <string name="low_battery_warning_policy_title">Предупреждение о низком заряде</string>
+    <string name="low_battery_warning_full">Уведомление и звук</string>
+    <string name="low_battery_warning_popup">Только уведомление</string>
+    <string name="low_battery_warning_sound">Только звук</string>
+    <string name="low_battery_warning_off">Не предупреждать</string>
+    
+    <!-- Apache2 License -->
+    <string name="apache2_license_title">Лицензия Apache2</string>
+    <string name="apache2_license_summary">Нажать для перехода к лицензии Apache2.</string>
+
+    <!-- Rate my app -->
+    <string name="rate_app_title">Оценить XBlast в Playstore</string>
+    <string name="rate_app_summary">Это придаёт больше значимости данному приложению и МНЕ</string>
+
+    <!-- Special Thanks -->
+    <string name="special_thanks_title">Особая благодарность</string>
+    <string name="change_log_title">История изменений</string>
+
+    <!-- Restart & Soft Reboot -->
+    <string name="restart_softreboot_title">Обычная и мягкая перезагрузка</string>
+    <string name="restart_softreboot_options">Пожалуйста, выберите опцию</string>
+
+    <!-- QS -->
+    <string name="quick_Settings_Tiles_gap_title">Убрать промежутки между плитками</string>
+    <string name="remove_handle_title">Убрать разделительную линию</string>
+    <string name="hide_notif_icons_title">Убрать значки уведомлений</string>
+    <string name="hide_notif_icons_summary">Значки уведомлений в строке состояния по левой стороне будут скрыты</string>
+    <string name="icons">Значки</string>
+
+    <!-- Share App -->
+    <string name="share_app_title">Поделиться XBlast со всеми</string>
+    <string name="try_app">Попробовать XBlast Tools в Play Store.</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_height">Высота клавиш</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_38">38dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_34">34dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_26">26dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">0dp</string>
+    <string name="navigation_bar_title">Панель навигации</string>
+    <string name="nav_bar_color_title">Цвет фона</string>
+    <string name="nav_button_color_title">Цвет клавиш</string>
+    <string name="nav_glow_color_title">Цвет свечения</string>
+    <string name="navigation_bar_theme">Клавиши</string>
     
 </resources>

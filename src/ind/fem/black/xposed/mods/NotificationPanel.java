@@ -3,12 +3,12 @@ package ind.fem.black.xposed.mods;
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 import static de.robv.android.xposed.XposedHelpers.getObjectField;
 import android.app.Notification;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.XResources;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.TextView;
@@ -16,6 +16,7 @@ import android.widget.Toast;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XSharedPreferences;
 import de.robv.android.xposed.XposedBridge;
+import de.robv.android.xposed.callbacks.XC_InitPackageResources.InitPackageResourcesParam;
 
 public class NotificationPanel {
 	
@@ -29,7 +30,7 @@ public class NotificationPanel {
 	        XposedBridge.log(TAG + ": " + message);
 	    }
 	
-	public static void notificationTextColor(final XSharedPreferences prefs) {
+	/*public static void notificationTextColor1(final XSharedPreferences prefs) {
 			
 			try {
 				findAndHookMethod(Notification.class, "setLatestEventInfo" , Context.class, CharSequence.class, CharSequence.class, PendingIntent.class, new XC_MethodHook() {
@@ -70,9 +71,24 @@ public class NotificationPanel {
 			}
 			
 			
-		}
+		}*/
 	
-	 public static void toastColor(final XSharedPreferences prefs) {
+	  public static void handleInit(InitPackageResourcesParam resparam, final XSharedPreferences prefs) {
+		try {
+
+			boolean removehandle = prefs.getBoolean("removehandle", false);
+
+			if (removehandle) {
+				resparam.res.setReplacement(Black.SYSTEM_UI, "dimen",
+						"close_handle_height", Xmod.modRes.fwd(R.dimen.zero));
+			}
+
+		} catch (Exception e) {
+			log(e.toString());
+		}
+		}
+	  
+	  public static void toastColor(final XSharedPreferences prefs) {
 		 try {
 				findAndHookMethod(Toast.class, "show" , new XC_MethodHook() {
 					
@@ -110,7 +126,7 @@ public class NotificationPanel {
 	 
 	    public static void initZygote(XSharedPreferences prefs) {
 	        log("initZygote");
-	      
+	        
 			try {
 				notificationTextColor(prefs);
 				toastColor(prefs);
@@ -169,55 +185,145 @@ public class NotificationPanel {
 
 	    }
 	    
-	   /* public static void doHook(XSharedPreferences prefs,
-				InitPackageResourcesParam resparam, XModuleResources moduleResources) {
-	    	NotificationPanel.prefs = prefs;
-	    	NotificationPanel.resparam = resparam;
-	    	NotificationPanel.moduleResources = moduleResources;
-	    	//setCloseHandleBar();
-	    }*/
-	    
-	    /*private static void setCloseHandleBar() {
-			resparam.res.setReplacement(Black.SYSTEM_UI, "drawable",
-					"status_bar_close", new XResources.DrawableLoader() {
-						@Override
-						public Drawable newDrawable(XResources res, int id)
-								throws Throwable {
+	    public static void notificationTextColor(final XSharedPreferences prefs) {
+	    	try {
+				final int sdk = Build.VERSION.SDK_INT;
+				final int titleColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_TITLE_COLOR, 0);
+				final boolean titleColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_TITLE_COLOR_ENABLE, false);
+				final int contentColor = prefs.getInt(XblastSettings.PREF_KEY_NOTIF_CONTENT_COLOR, 0);
+				final boolean contentColorEnabled = prefs.getBoolean(XblastSettings.PREF_KEY_NOTIF_CONTENT_COLOR_ENABLE, false);
+				
+				XC_MethodHook notifyHook = new XC_MethodHook() {
+					@Override
+					protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+						
 
-							Drawable[] layers = new Drawable[2];
-							if (prefs.getBoolean(
-									"notificationHandleBackgroundColorEnabled",
-									true)) {
-								layers[0] = new ColorDrawable(prefs.getInt(
-										"notificationHandleBackgroundColor",
-										Color.RED));
-							} else {
-								layers[0] = new ColorDrawable(Color.BLACK);
+						Notification n;
+						if (sdk <= 15 || sdk >= 18)
+							n = (Notification) param.args[6];
+						else
+							n = (Notification) param.args[5];
+
+						Context mContext = (Context) getObjectField(param.thisObject, "mContext");
+						
+						Resources res = mContext.getResources();
+						int titleId = res.getIdentifier("title", "id", "android");
+						int textId = res.getIdentifier("text", "id", "android");
+						int infoId = res.getIdentifier("info", "id", "android");
+						int timeId = res.getIdentifier("time", "id", "android");
+						int textId2 = res.getIdentifier("text2", "id", "android");
+						int inbox_more = res.getIdentifier("inbox_more", "id", "android");
+						int inbox_text0 = res.getIdentifier("inbox_text0", "id", "android");
+						int inbox_text1 = res.getIdentifier("inbox_text1", "id", "android");
+						int inbox_text2 = res.getIdentifier("inbox_text2", "id", "android");
+						int inbox_text3 = res.getIdentifier("inbox_text3", "id", "android");
+						int inbox_text4 = res.getIdentifier("inbox_text4", "id", "android");
+						int inbox_text5 = res.getIdentifier("inbox_text5", "id", "android");
+						int inbox_text6 = res.getIdentifier("inbox_text6", "id", "android");
+						//int right_icon = res.getIdentifier("icon", "id", "android");
+						
+						int big_text = res.getIdentifier("big_text", "id", "android");
+						
+							try {
+								RemoteViews bigContentView = (RemoteViews) getObjectField(n, "bigContentView");
+								RemoteViews contentView = (RemoteViews) getObjectField(n, "contentView");
+								/*if (n.largeIcon != null) {
+									Bitmap mutableBitmap = n.largeIcon.copy(Bitmap.Config.ARGB_8888, true);
+									mutableBitmap.eraseColor(Color.RED);
+									n.largeIcon = mutableBitmap;
+								}*/
+								
+								//Drawable drawable = res.getDrawable(n.icon);
+								
+								if (contentView != null ) {
+									
+									if (titleColorEnabled) {
+										contentView.setTextColor(titleId, titleColor);
+										contentView.setTextColor(textId, titleColor);
+										contentView.setTextColor(textId2, titleColor);
+										if(n.when > 0) {
+											contentView.setTextColor(timeId, titleColor);
+										}
+									}
+									if (contentColorEnabled) {
+										//contentView.setTextColor(infoId, contentColor);
+										contentView.setTextColor(infoId, contentColor);
+										contentView.setTextColor(inbox_more, contentColor);
+										contentView.setTextColor(inbox_text0, contentColor);
+										contentView.setTextColor(big_text, contentColor);
+										
+										contentView.setTextColor(inbox_text0, contentColor);
+										contentView.setTextColor(inbox_text1, contentColor);
+										contentView.setTextColor(inbox_text2, contentColor);
+										contentView.setTextColor(inbox_text3, contentColor);
+										contentView.setTextColor(inbox_text4, contentColor);
+										contentView.setTextColor(inbox_text5, contentColor);
+										contentView.setTextColor(inbox_text6, contentColor);
+									}
+									
+									
+									
+									
+									/*drawable.setColorFilter(Color.RED,Mode.SRC_IN);
+									Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+									contentView.setImageViewBitmap(n.icon, bitmap);*/
+									
+								}
+								if (bigContentView != null ) {
+									
+									if (titleColorEnabled) {
+										bigContentView.setTextColor(titleId, titleColor);
+										bigContentView.setTextColor(textId, titleColor);
+										bigContentView.setTextColor(textId2, titleColor);
+										if(n.when > 0) {
+											bigContentView.setTextColor(timeId, titleColor);
+										}
+									}
+									if (contentColorEnabled) {
+										//bigContentView.setTextColor(infoId, contentColor);
+										bigContentView.setTextColor(infoId, contentColor);
+										bigContentView.setTextColor(inbox_more, contentColor);
+										bigContentView.setTextColor(inbox_text0, contentColor);
+										bigContentView.setTextColor(big_text, contentColor);
+										
+										bigContentView.setTextColor(inbox_text0, contentColor);
+										bigContentView.setTextColor(inbox_text1, contentColor);
+										bigContentView.setTextColor(inbox_text2, contentColor);
+										bigContentView.setTextColor(inbox_text3, contentColor);
+										bigContentView.setTextColor(inbox_text4, contentColor);
+										bigContentView.setTextColor(inbox_text5, contentColor);
+										bigContentView.setTextColor(inbox_text6, contentColor);
+									}
+									
+									
+								}
+								/*log("bigContentView>>>>" + bigContentView);
+								log("contentView" + contentView);*/
+							} catch (Exception e) {
+								XposedBridge.log(e);
 							}
-							Drawable closeOn = moduleResources
-									.getDrawable(ind.fem.black.xposed.mods.R.drawable.status_bar_close);
-							closeOn.setColorFilter(
-									prefs.getInt("notificationHandleColor",
-											Color.GREEN),
-									PorterDuff.Mode.MULTIPLY);
-							layers[1] = closeOn;
-
-							return new LayerDrawable(layers);
-						}
-					});*/
-			/*if (prefs.getBoolean("notificationHandleBackgroundColorEnabled", false)) {
-				resparam.res.setReplacement(Black.SYSTEM_UI, "drawable",
-						"close_handler_divider", new XResources.DrawableLoader() {
-							@Override
-							public Drawable newDrawable(XResources res, int id)
-									throws Throwable {
-								return new ColorDrawable(prefs.getInt(
-										"notificationHandleBackgroundColor",
-										Color.BLACK));
-							}
-						});
-			}*/
-
-		//}
-	
+						
+					}
+				};
+				if (sdk <= 15) {
+					findAndHookMethod("com.android.server.NotificationManagerService", null, "enqueueNotificationInternal", String.class, int.class, int.class,
+							String.class, int.class, int.class, Notification.class, int[].class,
+							notifyHook);
+				} else if (sdk == 16) {
+					findAndHookMethod("com.android.server.NotificationManagerService", null, "enqueueNotificationInternal", String.class, int.class, int.class,
+							String.class, int.class, Notification.class, int[].class,
+							notifyHook);
+				} else if (sdk == 17) {
+					findAndHookMethod("com.android.server.NotificationManagerService", null, "enqueueNotificationInternal", String.class, int.class, int.class,
+							String.class, int.class, Notification.class, int[].class, int.class,
+							notifyHook);
+				} else if (sdk >= 18) {
+					findAndHookMethod("com.android.server.NotificationManagerService", null, "enqueueNotificationInternal", String.class, String.class,
+							int.class, int.class, String.class, int.class, Notification.class, int[].class, int.class,
+							notifyHook);
+				}
+			} catch (Throwable t) {
+				XposedBridge.log(t);
+			}
+	    }
 }

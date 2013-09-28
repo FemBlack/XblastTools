@@ -23,7 +23,7 @@ public class Xmod implements IXposedHookLoadPackage,
 		IXposedHookInitPackageResources, IXposedHookZygoteInit {
 	public static XSharedPreferences prefs;	
 	public static String MODULE_PATH = null;
-	private static XModuleResources modRes;
+	public static XModuleResources modRes;
 	
 	public void initZygote(StartupParam startupParam) {		
 		loadPrefs();
@@ -37,6 +37,8 @@ public class Xmod implements IXposedHookLoadPackage,
 							XblastSettings.PREF_KEY_ENABLE_ALL_ROTATION,
 							false));
 			
+			/*XResources.setSystemWideReplacement("android", "dimen", "status_bar_height", modRes.fwd(R.dimen.status_bar_height));
+			XResources.setSystemWideReplacement("android", "dimen", "status_bar_icon_size", modRes.fwd(R.dimen.status_bar_height));*/
 			/*XResources.setSystemWideReplacement("android", "color",
 					"primary_text_light", Color.RED);
 			XResources.setSystemWideReplacement("android", "color",
@@ -74,6 +76,14 @@ public class Xmod implements IXposedHookLoadPackage,
 	        }
 	        XResources.setSystemWideReplacement(
 	                "android", "drawable", "background_holo_light", modRes.fwd(R.drawable.background_holo_light));*/
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
+		
+		try {
+			if ((prefs.getBoolean(XblastSettings.SOFT_KEYS, false))){
+				NavigationBar.initZygote(prefs);	
+			}
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
@@ -121,11 +131,11 @@ public class Xmod implements IXposedHookLoadPackage,
 			XposedBridge.log(t);
 		}
 		
-		/*try {			
-			StatusBarIcons.initZygote(prefs);			
+		try {			
+			LowBatteryWarning.initZygote(prefs);		
 		} catch (Throwable t) {
 			XposedBridge.log(t);
-		}*/
+		}
 		
 
 	}
@@ -245,6 +255,12 @@ public class Xmod implements IXposedHookLoadPackage,
 		}
 		
 		try {
+			//NavigationBar.init(prefs, lpparam.classLoader);
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
+		
+		try {
 			StatusBarIcons.init(prefs, lpparam.classLoader);
 		} catch (Throwable t) {
 			XposedBridge.log(t);
@@ -263,9 +279,7 @@ public class Xmod implements IXposedHookLoadPackage,
 		}
 		
 		try {
-			//if (lpparam.packageName.equals(Black.SYSTEM_UI))
-			//QuickSettingsMod.init(prefs, lpparam.classLoader);
-			//BuildProp.handlePacakge(prefs);
+			LowBatteryWarning.init(prefs, lpparam.classLoader);
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
@@ -311,16 +325,24 @@ public class Xmod implements IXposedHookLoadPackage,
 		final int statusBarColor = prefs.getInt(
 				XblastSettings.PREF_KEY_STATUSBAR_COLOR, 0);
 		
+		
 		try {
-			//StatusbarColor.handlePackage(resparam, prefs);
+			if ((prefs.getBoolean(XblastSettings.SOFT_KEYS, false))){
+				NavigationBar.handleInit(resparam, prefs);
+			}
+		} catch (Throwable t) {
+			XposedBridge.log("status_bar_background is not available");
+		}
+		
+		
+		try {
+			if(Build.VERSION.SDK_INT > 15) {
+				NotificationPanel.handleInit(resparam , prefs);	
+			}
+					
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
-		/*final boolean notifBgTransEnabled = prefs.getBoolean(
-				TextEffectsActivity.CONST_NOTIF_TRANS_ENABLE, false);*/
-		/*final boolean statusBarColorEnabled = prefs.getBoolean(
-				XblastSettings.PREF_KEY_STATUSBAR_COLOR_ENABLE, false);*/
-		
 		
 		try {
 			//if (Build.VERSION.SDK_INT == 17) {
@@ -346,9 +368,16 @@ public class Xmod implements IXposedHookLoadPackage,
 		}
 		
 		try {
-			if(prefs.getInt("quickSettingsColumns", 3) > 3) {
+			if(Build.VERSION.SDK_INT > 16) {
 				QuickSettingsMod.handleInit(resparam , prefs);
 			}
+		} catch (Throwable t) {
+			XposedBridge.log(t);
+		}
+		
+		try {
+			StatusBarIcons.handleInit(resparam, prefs);
+			
 		} catch (Throwable t) {
 			XposedBridge.log(t);
 		}
@@ -407,5 +436,6 @@ public class Xmod implements IXposedHookLoadPackage,
 		XposedBridge.log("ROM Name>>>" + android.os.Build.DISPLAY);
 		XposedBridge.log("RELEASE Name>>>" + android.os.Build.VERSION.RELEASE);
 		XposedBridge.log("SDK_INT Name>>>" + android.os.Build.VERSION.SDK_INT);
+		XposedBridge.log("Phone has softkeys>>>" + prefs.getBoolean(XblastSettings.SOFT_KEYS, false));
 	}
 }

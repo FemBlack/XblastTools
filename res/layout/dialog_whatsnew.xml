@@ -20,6 +20,19 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:text="@string/version_number_1.6.0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="★ Bug fixes\n★ Added new Navigation module\n★ Choose bg color for navigation bar\n★ Choose Navigation button color\n★ Choose Navigation button glow color\n★ Choose Navigation height\n★ Choose soft keys\n★ Improvements in Notification module\n★ Hide left side icons in status bar\n★ hide Notification handle\n★ Hide gaps in quicksettings\n★ Added Italien &amp; French translations" />
+            
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="@string/version_number_1.5.9"
                 android:textStyle="bold" />
 

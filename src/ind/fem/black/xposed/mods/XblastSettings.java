@@ -31,6 +31,7 @@ import android.content.SharedPreferences.Editor;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -52,6 +53,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewConfiguration;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -192,6 +194,26 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     public static final String PREF_KEY_RATE_ME = "rate_my_app";
     public static final String PREF_KEY_CHANGE_LOGS = "pref_changelog";
     public static final String PREF_KEY_SPECIAL_THANKS = "pref_special_thanks";
+    public static final String PREF_KEY_FLASHING_LED_DISABLE = "pref_flashing_led_disable";
+    public static final String PREF_KEY_CHARGING_LED_DISABLE = "pref_charging_led_disable";
+    public static final String PREF_KEY_LOW_BATTERY_WARNING_POLICY = "pref_low_battery_warning_policy";
+    public static final int BATTERY_WARNING_POPUP = 1;
+    public static final int BATTERY_WARNING_SOUND = 2;
+    public static final String PREF_KEY_RESTART_SOFTREBOOT = "restart_softreboot";
+    public static final String PREF_KEY_NAVIGATION_HEIGHT = "pref_navigation_height";
+    public static final String PREF_KEY_NAVIGATION_THEME = "pref_navigation_theme";
+    public final static String SOFT_KEYS = "hasSoftKeys";
+    public final static String PREF_KEY_SHARE_APP = "pref_share";
+    
+    public static final String PREF_KEY_NAV_BG_COLOR = "nav_bar_color";
+    public static final String PREF_KEY_NAV_BG_COLOR_ENABLE = "nav_bar_color_enabled";
+    public static final String EXTRA_NB_BGCOLOR = "navBgColor";
+    public static final String PREF_KEY_NAV_BUTTON_COLOR = "nav_button_color";
+    public static final String PREF_KEY_NAV_BUTTON_COLOR_ENABLE = "nav_button_color_enabled";
+    public static final String EXTRA_NB_BUTTONCOLOR = "navButtonColor";
+    public static final String PREF_KEY_NAV_GLOW_COLOR = "nav_glow_color";
+    public static final String PREF_KEY_NAV_GLOW_COLOR_ENABLE = "nav_glow_color_enabled";
+    public static final String EXTRA_NB_GLOWCOLOR = "navGlowColor";
     
     //private static final String EXTERNAL_CACHE_DIR = "/storage/sdcard0/Android/data"+ File.separator + PACKAGE_NAME + File.separator + "cache";
     private static final String EXTERNAL_CACHE_DIR = "/storage/sdcard0/Android/data/ind.fem.black.xposed.mods/cache";
@@ -210,6 +232,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             getFragmentManager().beginTransaction().replace(android.R.id.content, new PrefsFragment()).commit();
     }
     
+	  
     @Override
     public void onResume()
     {
@@ -221,7 +244,9 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     
     public static class PrefsFragment extends PreferenceFragment implements OnSharedPreferenceChangeListener, Preference.OnPreferenceChangeListener {
        
-        //private SharedPreferences mPrefs;
+    	private static boolean hasSoftNavigation(Context context) {
+    		return !ViewConfiguration.get(context).hasPermanentMenuKey();
+    	}
        
     	private void showWhatsNewDialog() {
     		LayoutInflater inflater = LayoutInflater.from(mContext);
@@ -231,7 +256,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     		Builder builder = new AlertDialog.Builder(mContext);
 
     		builder.setView(view).setTitle(R.string.change_log_title)
-    				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+    				.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
     					@Override
     					public void onClick(DialogInterface dialog, int which) {
     						dialog.dismiss();
@@ -249,7 +274,7 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     		Builder builder = new AlertDialog.Builder(mContext);
 
     		builder.setView(view).setTitle(R.string.special_thanks_title)
-    				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+    				.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
     					@Override
     					public void onClick(DialogInterface dialog, int which) {
     						dialog.dismiss();
@@ -259,11 +284,57 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
     		builder.create().show();
         }
     	
+    	private void showRebootDialog() {
+    		
+    		Resources res = mContext.getResources();
+    		int rebootStrId = res.getIdentifier("factorytest_reboot", "string", Black.ANDROID);
+    		
+    		AlertDialog alertDialog = new AlertDialog.Builder(mContext).create();
+
+    	    alertDialog.setTitle(getString(R.string.restart_softreboot_title));
+
+    	    alertDialog.setMessage(getString(R.string.restart_softreboot_options));
+
+    	    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, getString(R.string.soft_reboot), new DialogInterface.OnClickListener() {
+
+    	      public void onClick(DialogInterface dialog, int id) {
+
+    	    	  RootTools.restartAndroid();
+
+    	    } }); 
+
+    	    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE,getString(R.string.cancel), new DialogInterface.OnClickListener() {
+
+    	      public void onClick(DialogInterface dialog, int id) {
+
+    	       
+
+    	    }}); 
+
+    	    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL,  res.getString(rebootStrId), new DialogInterface.OnClickListener() {
+
+						public void onClick(DialogInterface dialog, int id) {
+
+							try {
+								Runtime.getRuntime().exec(new String[]{"su","-c","reboot now"});
+							} catch (IOException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+
+						}
+					});
+    	    
+    	    alertDialog.show();
+        }
+    	
         private Preference mPrefAbout;
+        private Preference mPrefShare;
         private Preference mPrefAboutDonate;
         private Preference mPrefRateMe;
         private Preference mPrefSpecialThanks;
         private Preference mPrefChangeLog;
+        private Preference mPrefReboot;
         private Preference mPrefGplus;
         private Preference mPrefApache2License;
         Preference mNbgpref;
@@ -543,10 +614,14 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
                 mPrefAbout.setTitle(getActivity().getTitle() + version);
             }
             
+            mPrefs.edit().putBoolean(SOFT_KEYS, hasSoftNavigation(mContext)).commit();
+            
             mPrefAboutDonate =  findPreference(PREF_KEY_ABOUT_DONATE);
             mPrefRateMe =  findPreference(PREF_KEY_RATE_ME);
             mPrefSpecialThanks =  findPreference(PREF_KEY_SPECIAL_THANKS);
             mPrefChangeLog =  findPreference(PREF_KEY_CHANGE_LOGS);
+            mPrefReboot =  findPreference(PREF_KEY_RESTART_SOFTREBOOT);
+            mPrefShare = (Preference) findPreference(PREF_KEY_SHARE_APP);
             
             mPrefGplus = findPreference(PREF_KEY_GOOGLE_PLUS);
             mPrefApache2License = findPreference(PREF_KEY_APACHE2);
@@ -668,7 +743,16 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
            Intent intent = new Intent();
            if (key.equals(PREF_KEY_STATUSBAR_COLOR)) {
                intent.setAction(ACTION_PREF_STATUSBAR_BGCOLOR_CHANGED);
-               intent.putExtra(EXTRA_SB_BGCOLOR, prefs.getInt(PREF_KEY_STATUSBAR_COLOR, Color.BLACK));
+               intent.putExtra(EXTRA_SB_BGCOLOR, prefs.getInt(PREF_KEY_STATUSBAR_COLOR, 0));
+           } else if (key.equals(PREF_KEY_NAV_BG_COLOR)) {
+        	   intent.setAction(ACTION_PREF_STATUSBAR_BGCOLOR_CHANGED);
+               intent.putExtra(EXTRA_NB_BGCOLOR, prefs.getInt(PREF_KEY_NAV_BG_COLOR, 0));
+           } else if (key.equals(PREF_KEY_NAV_BUTTON_COLOR)) {
+        	   intent.setAction(ACTION_PREF_STATUSBAR_BGCOLOR_CHANGED);
+               intent.putExtra(EXTRA_NB_BUTTONCOLOR, prefs.getInt(PREF_KEY_NAV_BUTTON_COLOR, 0));
+           } else if (key.equals(PREF_KEY_NAV_GLOW_COLOR)) {
+        	   intent.setAction(ACTION_PREF_STATUSBAR_BGCOLOR_CHANGED);
+               intent.putExtra(EXTRA_NB_GLOWCOLOR, prefs.getInt(PREF_KEY_NAV_GLOW_COLOR, 0));
            } else if (key.equals(PREF_KEY_STATUSBAR_CLOCK_AMPM_HIDE)) {
                intent.setAction(ACTION_PREF_CLOCK_CHANGED);
                intent.putExtra(EXTRA_AMPM_HIDE, prefs.getBoolean(
@@ -726,6 +810,15 @@ public class XblastSettings extends Activity implements RestoreDialogListener{
             	showWhatsNewDialog();
             } else if (preference == mPrefSpecialThanks) {
             	showSpecialThanksDialog();
+            } else if (preference == mPrefReboot) {
+            	showRebootDialog();
+            } else if (preference == mPrefShare) {
+            	intent = new Intent(android.content.Intent.ACTION_SEND); 
+            	intent.setType("text/plain");
+                String shareBody = getString(R.string.try_app) + " " + getString(R.string.url_store_complete_version);
+                intent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.app_name));
+                intent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+            //startActivity(Intent.createChooser(sharingIntent, "Share via"));
             }
             
             boolean value;

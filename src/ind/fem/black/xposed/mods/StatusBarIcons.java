@@ -8,6 +8,7 @@ import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XSharedPreferences;
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
+import de.robv.android.xposed.callbacks.XC_InitPackageResources.InitPackageResourcesParam;
 
 public class StatusBarIcons {
 
@@ -65,6 +66,18 @@ public class StatusBarIcons {
 		log("Completed");
 	}
 
-	
+	 public static void handleInit(InitPackageResourcesParam resparam, final XSharedPreferences prefs) {
+			try {
+
+				boolean hideNotifIcons = prefs.getBoolean("hideNotifIcons", false);
+
+				if (hideNotifIcons) {
+					resparam.res.setReplacement(Black.SYSTEM_UI, "dimen", "status_bar_icon_drawing_alpha", Xmod.modRes.fwd(R.dimen.status_bar_icon_drawing_alpha));
+				}
+
+			} catch (Exception e) {
+				log(e.toString());
+			}
+			}
 
 }

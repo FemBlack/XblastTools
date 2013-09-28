@@ -469,4 +469,59 @@
     <string name="holo_gradient_color_summary">Aceasta culoare va fi adaugata fundalului Halo. Coloreaza si creaza un efect gradient personalizat</string>
     <string name="holo_enable_title">Permite fundal Holo</string>
     
+    <!-- Low battery warning -->
+    <string name="low_battery_warning_policy_title">Atentie baterie scazuta</string>
+    <string name="low_battery_warning_full">Notificare si sunet</string>
+    <string name="low_battery_warning_popup">Doar notificare</string>
+    <string name="low_battery_warning_sound">Doar sunet</string>
+    <string name="low_battery_warning_off">Oprit</string>
+
+    <!-- Apache2 License -->
+    <string name="apache2_license_title">Licenta Apache2</string>
+    <string name="apache2_license_summary">Apasa pentru a vizita licenta Apache2 .</string>
+
+    <!-- Rate my app -->
+    <string name="rate_app_title">Voteaza XBlast in Playstore</string>
+    <string name="rate_app_summary">Asta ii da valoarea ca si aplicatie &amp; ME</string>
+
+    <!-- Special Thanks -->
+    <string name="special_thanks_title">Multumim mult</string>
+    <string name="change_log_title">Schimba jurnalul</string>
+
+    <!-- Restart & Soft Reboot -->
+    <string name="restart_softreboot_title">Repornire &amp; Repornire Soft</string>
+    <string name="restart_softreboot_options">Alegeti va rog optiunea pe care o doriti</string>
+
+    <!-- QS -->
+    <string name="quick_Settings_Tiles_gap_title">Stergeti spatiile dintre linii</string>
+    <string name="remove_handle_title">Ascunde linie separatoare</string>
+    <string name="hide_notif_icons_title">Ascunde notificarile din bara de status</string>
+    <string name="hide_notif_icons_summary">Notificarile din partea de stanga vor fi ascunse</string>
+    <string name="icons">Iconitele notificarilor</string>
+
+    <!-- Share App -->
+    <string name="share_app_title">Distribuie XBlast cu toti</string>
+    <string name="try_app">Incearca XBlast Tools din Play Store.</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_height">Buton inaltime</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_38">38dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_34">34dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_26">26dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">0dp</string>
+    <string name="navigation_bar_title">Bara de navigare</string>
+    <string name="nav_bar_color_title">Culoarea fundalului</string>
+    <string name="nav_button_color_title">Culoarea butonului</string>
+    <string name="nav_glow_color_title">Culoarea sclipirii</string>
+    <string name="navigation_bar_theme">Butonele de Soft</string>    
 </resources>

@@ -21,6 +21,7 @@
     <string name="twenty_four_hour_time_format">HH:mm</string>
     
     
+    
     <!-- General settings -->
     <string name="pref_header_general">Ogólne</string>
     <string name="pref_title_notif_transperency">Przeźroczystość Powiadomienia</string>
@@ -467,5 +468,61 @@
     <string name="holo_gradient_color_title">Holo - Kolor Tła</string>
     <string name="holo_gradient_color_summary">Kolor ten zostanie dodany wraz z kolorem tła Holo, aby stworzyć efekt wypełnienia obszaru płynnym przejściem między kolorami.</string>
     <string name="holo_enable_title">Holo - Aktywuj Tło</string>
+    
+    <!-- Low battery warning -->
+    <string name="low_battery_warning_policy_title">Ostrzeżenie O Niskim Poziomie Baterii</string>
+    <string name="low_battery_warning_full">Okno powiadomień i dźwięk</string>
+    <string name="low_battery_warning_popup">Tylko okno powiadomień</string>
+    <string name="low_battery_warning_sound">Tylko dźwięk</string>
+    <string name="low_battery_warning_off">Wyłącz</string>
+
+    <!-- Apache2 License -->
+    <string name="apache2_license_title">Licencja - Apache2</string>
+    <string name="apache2_license_summary">Dotknij, aby odwiedzić Apache2.</string>
+
+    <!-- Rate my app -->
+    <string name="rate_app_title">Oceń XBlast W Google Play</string>
+    <string name="rate_app_summary">Zapewnij większą popularność/wartość dla tej aplikacji &amp; dla mnie.</string>
+
+    <!-- Special Thanks -->
+    <string name="special_thanks_title">Specjalne Podziękowania</string>
+    <string name="change_log_title">Ostanie Zmiany</string>
+
+    <!-- Restart & Soft Reboot -->
+    <string name="restart_softreboot_title">Reboot &amp; Soft Reboot</string>
+    <string name="restart_softreboot_options">Proszę wybrać odpowiednią opcję.</string>
+
+    <!-- QS -->
+    <string name="quick_Settings_Tiles_gap_title">Usuń Luki Między Tytułami</string>
+    <string name="remove_handle_title">Ukryj - Linię Podziału</string>
+    <string name="hide_notif_icons_title">Ukryj Ikony Powiadomień W Pasku Stanu</string>
+    <string name="hide_notif_icons_summary">Ikony po lewej stronie powiadomień na pasku stanu zostaną ukryte.</string>
+    <string name="icons">Ikony</string>
+
+    <!-- Share App -->
+    <string name="share_app_title">Podziel Się XBlast Ze Znajomymi</string>
+    <string name="try_app">Wypróbuj XBlast Tools w Google Play.</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_height">Wysokość przycisku</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp (domyślny)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_38">38dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_34">34dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_26">26dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">0dp</string>
+    <string name="navigation_bar_title">Pasek Nawigacji</string>
+    <string name="nav_bar_color_title">Kolor Tła</string>
+    <string name="nav_button_color_title">Kolor Przycisku</string>
+    <string name="nav_glow_color_title">Kolor Poświaty</string>
+    <string name="navigation_bar_theme">Klawisze</string>
     
 </resources>

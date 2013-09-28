@@ -16,6 +16,13 @@
             android:summary="@string/font_summary"
             android:title="@string/font_title" />
 
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+            android:key="statusbar_color"
+            android:summary="@string/statusbar_color_summary"
+            android:title="@string/statusbar_color_title" />
+        
         <PreferenceScreen
             android:key="pref_cat_clock_settings"
             android:title="@string/pref_cat_clock_settings_title">
@@ -46,7 +53,11 @@
 
         </PreferenceScreen>
         
-        <CheckBoxPreference
+        <PreferenceScreen
+            android:key="pref_cat_traffic"
+            android:title="@string/traffic_title">
+
+            <CheckBoxPreference
             android:defaultValue="false"
             android:key="traffic"
             android:summary="@string/traffic_summary"
@@ -59,6 +70,11 @@
             android:dependency="traffic"
             android:key="traffic_color"
             android:title="@string/traffic_color_title" />
+
+        </PreferenceScreen>
+        
+        
+        
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             alphaSlider="false"
             showCheckbox="true"
@@ -66,7 +82,13 @@
             android:key="ticker_color"
             android:title="@string/ticker_color_title" />
 
-        <CheckBoxPreference
+       
+        
+        <PreferenceScreen
+            android:key="pref_cat_icons"
+            android:title="@string/icons">
+        
+             <CheckBoxPreference
             android:defaultValue="false"
             android:key="hideAlarmClockIcon"
             android:summaryOff="@string/hide_alarm_icon_off"
@@ -82,13 +104,7 @@
             android:summary="@string/smart_alarm_icon_summary"
             android:title="@string/smart_alarm_icon" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            alphaSlider="true"
-            showCheckbox="true"
-            android:key="statusbar_color"
-            android:summary="@string/statusbar_color_summary"
-            android:title="@string/statusbar_color_title" />
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
+             <net.margaritov.preference.colorpicker.ColorPickerPreference
             alphaSlider="false"
             showCheckbox="true"
             
@@ -122,6 +138,14 @@
             android:key="remaining_sb_icons_color"
             android:summary="@string/remaining_sb_icon_color_summary"
             android:title="@string/remaining_sb_icon_color_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="hideNotifIcons"
+            android:summary="@string/hide_notif_icons_summary"
+            android:title="@string/hide_notif_icons_title" />
+
+        </PreferenceScreen>
+        
     </PreferenceScreen>
     <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -202,7 +226,57 @@
             android:key="np_pu_pd_speed"
             android:summary="@string/nbg_pu_pd_speed_summary"
             android:title="@string/nbg_pu_pd_speed_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="removehandle"
+            android:title="@string/remove_handle_title" />
     </PreferenceScreen>
+    
+    <PreferenceScreen
+            android:key="pref_cat_nav"
+            android:title="@string/navigation_bar_title">
+
+           <!--  <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="nav_bar_trans"
+            android:summary="@string/nav_bar_trans_summary"
+            android:title="@string/nav_bar_trans_title" /> -->
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            showCheckbox="true"
+           
+            android:key="nav_bar_color"
+            android:title="@string/nav_bar_color_title" />
+        
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            android:key="nav_button_color"
+            android:title="@string/nav_button_color_title" />
+        
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="false"
+            showCheckbox="true"
+            android:key="nav_glow_color"
+            android:title="@string/nav_glow_color_title" />
+        
+         <ListPreference
+            android:key="pref_navigation_height"
+            android:title="@string/navigation_bar_height"
+            android:entries="@array/nav_buttons_height_entries"
+            android:entryValues="@array/nav_buttons_height_values"
+            android:defaultValue="48" />
+         
+         <ListPreference
+            android:key="pref_navigation_theme"
+            android:title="@string/navigation_bar_theme"
+            android:entries="@array/nav_buttons_theme_entries"
+            android:entryValues="@array/nav_buttons_theme_values"
+            android:defaultValue="0" />
+
+        </PreferenceScreen>
+        
     <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="fullscreen_caller_photo_key"
@@ -593,6 +667,10 @@ android:persistent="true" />
             android:key="quickSettingsColumns"
             android:summary="@string/quick_setting_columns_summary"
             android:title="@string/quick_setting_columns" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="quickSettingsTilesGap"
+            android:title="@string/quick_Settings_Tiles_gap_title" />
 
     </PreferenceScreen>
     <PreferenceScreen
@@ -659,7 +737,17 @@ android:persistent="true" />
             showCheckbox="true"
             android:key="toast_bg_color"            
             android:title="@string/toast_bg_color_title" />
+        <ListPreference
+            android:key="pref_low_battery_warning_policy"
+            android:title="@string/low_battery_warning_policy_title"
+            android:entries="@array/low_battery_warning_policy_entries"
+            android:entryValues="@array/low_battery_warning_policy_values"
+            android:defaultValue="3" />
+       
     </PreferenceScreen>
+    <Preference
+            android:key="restart_softreboot"
+            android:title="@string/restart_softreboot_title" />
     <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="pref_about_key"
@@ -686,6 +774,9 @@ android:persistent="true" />
           <Preference
             android:key="pref_changelog"
             android:title="@string/change_log_title" />
+           <Preference
+            android:key="pref_share"
+            android:title="@string/share_app_title" />
           <Preference
             android:key="apache2_license"
             android:summary="@string/apache2_license_summary"

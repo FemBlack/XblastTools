@@ -523,6 +523,10 @@ public class CenterClock {
     private static void setClockPosition(boolean center, final InitPackageResourcesParam resparam) {
         if (mClockCentered == center || mClock == null ||
                 mIconArea == null || mLayoutClock == null) {
+        	log("mClock : " + mClock);
+        	log("mIconArea : " + mIconArea);
+        	log("mLayoutClock : " + mLayoutClock);
+        	
         	log("setClockPosition returned without center clock");
             return;
         }
@@ -546,8 +550,20 @@ public class CenterClock {
 	           	 mRootView.removeView(mClock);
 	           	 log("Existing clock view removed in mRootView");
            }
+            try {
+            	mLayoutClock.addView(mClock);
+            } catch (Throwable e) {
+                XposedBridge.log("The specified child already has a parent. You must call removeView() on the child's parent first.");                
+                /*try {
+                	XposedBridge.log("First" + mLayoutClock.getParent()) ;
+                	((ViewGroup) mLayoutClock.getParent()).removeView(mLayoutClock);
+                	 mLayoutClock.addView(mClock);
+                } catch (Throwable e1) {
+                    XposedBridge.log("The specified child already has a parent. You must call removeView() on the child's parent first.Entering catch block");
+                    //((ViewGroup) mLayoutClock.getParent()).removeView(mLayoutClock);
+                }*/
+            }
             
-            mLayoutClock.addView(mClock);
             mLayoutClock.setVisibility(View.VISIBLE);
             log("Clock set to center position");
         } else {

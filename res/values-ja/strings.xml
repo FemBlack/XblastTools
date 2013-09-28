@@ -468,4 +468,59 @@
     <string name="holo_gradient_color_summary">Holo背景色に追加されます。 </string>
     <string name="holo_enable_title">Holo背景を有効化</string>
     
+    <!-- Low battery warning -->
+    <string name="low_battery_warning_policy_title">バッテリー残量低下警 告</string>
+    <string name="low_battery_warning_full">ポップアップ＋警告</string>
+    <string name="low_battery_warning_popup">ポップアップのみ</string>
+    <string name="low_battery_warning_sound">警告音のみ</string>
+    <string name="low_battery_warning_off">オフ</string>
+
+    <!-- Apache2 License -->
+    <string name="apache2_license_title">Apache2ライセンス</string>
+    <string name="apache2_license_summary">タッチでApache2ライセンスを表示 します。</string>
+
+    <!-- Rate my app -->
+    <string name="rate_app_title">XBlastをPlayストアで評価</string>
+    <string name="rate_app_summary">開発者のやる気が高まります。</string>
+
+    <!-- Special Thanks -->
+    <string name="special_thanks_title">スペシャルサンクス</string>
+    <string name="change_log_title">更新履歴</string>
+
+    <!-- Restart & Soft Reboot -->
+    <string name="restart_softreboot_title">再起動とソフトリブート</string>
+    <string name="restart_softreboot_options">オプションを選んでください。</string>
+
+    <!-- QS -->
+    <string name="quick_Settings_Tiles_gap_title">タイル間の隙間をなくす</string>
+    <string name="remove_handle_title">つまみの境界線を非表示化</string>
+    <string name="hide_notif_icons_title">ステータスバーの通知アイコンを非表示化</string>
+    <string name="hide_notif_icons_summary">ステータスバーの左側のアイコンが非表 示になります。</string>
+    <string name="icons">アイコン</string>
+
+    <!-- Share App -->
+    <string name="share_app_title">XBlastを共有</string>
+    <string name="try_app">PlayストアのXBlast Toolsを試してみてください。</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_height">ボタンの高さ</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp (標準)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_38">38dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_34">34dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_26">26dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">0dp</string>
+    <string name="navigation_bar_title">ナビバー</string>
+    <string name="nav_bar_color_title">背景色</string>
+    <string name="nav_button_color_title">ボタンの色</string>
+    <string name="nav_glow_color_title">グローの色</string>
+    <string name="navigation_bar_theme">ソフトキー</string>
 </resources>

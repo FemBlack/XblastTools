@@ -466,5 +466,61 @@
 	<string name="holo_gradient_color_title">Holo Hintergrundfarbverlauf</string>
 	<string name="holo_gradient_color_summary">Wendet Farbe mit Holo Hintergrundfarbe an und bewirkt einen netten Verlaufseffekt</string>
 	<string name="holo_enable_title">Wendet Holo Hintergrund an</string>
+	
+    <!-- Batter leer Warnung -->
+    <string name="low_battery_warning_policy_title">Batterie leer Warnung</string>
+    <string name="low_battery_warning_full">Pop-up und Sound</string>
+    <string name="low_battery_warning_popup">Nur Pop-up</string>
+    <string name="low_battery_warning_sound">Nur Sound</string>
+    <string name="low_battery_warning_off">Aus</string>
+
+    <!-- Apache2 Lizens -->
+    <string name="apache2_license_title">Apache2 Lizens</string>
+    <string name="apache2_license_summary">Besuche Apache2 Lizens</string>
+
+    <!-- Bewerte meine App -->
+    <string name="rate_app_title">Bewerte XBlast im Playstore</string>
+    <string name="rate_app_summary">Macht diese App bekannter und gebt mir Feedback</string>
+
+    <!-- Besonderer Dank -->
+    <string name="special_thanks_title">Besonderer Dank</string>
+    <string name="change_log_title">Ändere Logs</string>
+
+    <!-- Neustart & Soft Reboot -->
+    <string name="restart_softreboot_title">Neustart &amp; Soft Reboot</string>
+    <string name="restart_softreboot_options">Wähle eine Option</string>
+
+    <!-- Schnelleinstellungen (SE) -->
+    <string name="quick_Settings_Tiles_gap_title">Keine Lücke zwischen SE Kacheln</string>
+    <string name="remove_handle_title">Keine Trennungslinie zwischen SE</string>
+    <string name="hide_notif_icons_title">Keine Benachrichtigunngs Icons in Statusleiste</string>
+    <string name="hide_notif_icons_summary">Keine Benachrichtigungs Icons auf linker Seite in Statusleiste</string>
+    <string name="icons">Icons</string>
+
+    <!-- Teile App -->
+    <string name="share_app_title">Teile XBlast mit anderen</string>
+    <string name="try_app">Besuche XBlast Tools im Play Store</string>
+
+    <!-- Navigationsleiste -->
+    <string name="navigation_bar_height">Button Höhe</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp (Standard)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_38">38dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_34">34dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_26">26dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">0dp</string>
+    <string name="navigation_bar_title">Navigationsleiste</string>
+    <string name="nav_bar_color_title">Hintergrundfarbe</string>
+    <string name="nav_button_color_title">Button Farbe</string>
+    <string name="nav_glow_color_title">Leucht Farbe</string>
+    <string name="navigation_bar_theme">Soft keys</string>
 
 </resources>

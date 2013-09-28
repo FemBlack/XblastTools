@@ -325,7 +325,7 @@ public class AdvRebootMenu {
         }
     }
 
-    private static String softReboot() {
+    public static String softReboot() {
 		return CallerImageActivity.executeScript("soft_reboot.sh");
 	}
     

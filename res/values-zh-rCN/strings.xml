@@ -21,6 +21,7 @@
     <string name="twenty_four_hour_time_format">HH:mm</string>
     
     
+    
     <!-- General settings -->
     <string name="pref_header_general">通用</string>
     <string name="pref_title_notif_transperency">通知栏透明度</string>
@@ -467,4 +468,61 @@
     <string name="holo_gradient_color_title">Holo 背景渐变颜色</string>
     <string name="holo_gradient_color_summary">Holo 背景将加入此颜色，建立起漂亮的渐变效果</string>
     <string name="holo_enable_title">启用 Holo 背景</string>
+    
+    <!-- Low battery warning -->
+    <string name="low_battery_warning_policy_title">低电量警告</string>
+    <string name="low_battery_warning_full">弹出窗口并播放声音</string>
+    <string name="low_battery_warning_popup">仅弹出窗口</string>
+    <string name="low_battery_warning_sound">仅播放声音</string>
+    <string name="low_battery_warning_off">关闭</string>
+
+    <!-- Apache2 License -->
+    <string name="apache2_license_title">Apache2 授权</string>
+    <string name="apache2_license_summary">点击以检阅 Apache2 授权。</string>
+
+    <!-- Rate my app -->
+    <string name="rate_app_title">在 Play 商店中评价 XBlast</string>
+    <string name="rate_app_summary">给予我和此应用更多的价值</string>
+
+    <!-- Special Thanks -->
+    <string name="special_thanks_title">特别致谢</string>
+    <string name="change_log_title">更新日志</string>
+
+    <!-- Restart & Soft Reboot -->
+    <string name="restart_softreboot_title">重启与软重启</string>
+    <string name="restart_softreboot_options">请选择你期望的选项</string>
+
+    <!-- QS -->
+    <string name="quick_Settings_Tiles_gap_title">移除方块间隙</string>
+    <string name="remove_handle_title">隐藏手柄分隔线</string>
+    <string name="hide_notif_icons_title">隐藏状态栏中的通知图标</string>
+    <string name="hide_notif_icons_summary">状态栏左侧的通知图标将被隐藏</string>
+    <string name="icons">Icons</string>
+
+    <!-- Share App -->
+    <string name="share_app_title">与其他人分享 XBlast</string>
+    <string name="try_app">在 Play 商店中试一试 XBlast 工具。</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_height">按钮高度</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp（默认）</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_38">38dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_34">34dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_26">26dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">0dp</string>
+    <string name="navigation_bar_title">导航栏</string>
+    <string name="nav_bar_color_title">背景颜色</string>
+    <string name="nav_button_color_title">按钮颜色</string>
+    <string name="nav_glow_color_title">发光颜色</string>
+    <string name="navigation_bar_theme">软按键</string>
+
 </resources>

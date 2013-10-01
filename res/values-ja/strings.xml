@@ -36,7 +36,7 @@
 	 <!-- About -->
     <string name="pref_about_title">このアプリについて</string>
     <string name="about_app_title">XBlast Tools</string>
-    <string name="about_app">Coded by FemBlack@XDA. タップで公式スレに移動します</string>
+    <string name="about_app">開発者: FemBlack@XDA タップで公式スレに移動します</string>
     <string name="about_donate_title">Google Play バージョン</string>
     <string name="about_donate_summary">寄付 &amp; お気に召したらサポートをお願いいたします。</string>
 	
@@ -403,7 +403,7 @@
     <!-- Move Apps to Internal Storage -->
 
     <string name="move_internal_storage">XBlast Toolsを内部ストレージに移動</string>
-    <string name="move_message">アプリを内部ストレージに移動しなければ正しく動作しません。\ n\n(XBlast Toolsの移動を選択した後アプリを再起動してください)</string>
+    <string name="move_message">アプリを内部ストレージに移動しなければ正しく動作しません。\n\n(XBlast Toolsの移動を選択した後アプリを再起動してください)</string>
     <string name="move_Xblast">XBlast Toolsの移動</string>
     <string name="move_failed">内部ストレージへの移動に失敗しました!</string>
     <string name="quit">終了</string>
@@ -420,14 +420,14 @@
     <string name="xdream_bg_color_title">スクリーンセーバーの背景色</string>
     <string name="pref_xdream_bg_Image_title">スクリーンセーバーの背景画像</string>
     <string name="xdream_bg_clcok_title">スクリーンセーバーの時計の色</string>
-    <string name="xdream_image_result_successful">スクリーンセーバーの背景 画像を変更しました</string>
-    <string name="xdream_image_result_not_successful">スクリーンセーバ ーの背景画像は変更されていません</string>
+    <string name="xdream_image_result_successful">スクリーンセーバーの背景画像を変更しました</string>
+    <string name="xdream_image_result_not_successful">スクリーンセーバーの背景画像は変更されていません</string>
     <string name="xdream_bg_Image_trans_summary">0-完全透過, 100-不透明-スクリーンセーバーの背景画像にのみ適用されます</string>
-    <string name="xdream_bg_Image_trans_title">スクリーンセーバーの背景画像の 透過度</string>
+    <string name="xdream_bg_Image_trans_title">スクリーンセーバーの背景画像の透過度</string>
     <string name="custom_Dream_Text_summary">空にするとなしにします。</string>
-    <string name="custom_Dream_Text_title">スクリーンセーバーでのカスタムテキスト </string>
-    <string name="custom_Dream_Text_size_title">スクリーンセーバーでのカスタ ムテキストサイズ</string>
-    <string name="dream_font_summary">フォントは時計とカスタムテキストに適用されます。 </string>
+    <string name="custom_Dream_Text_title">スクリーンセーバーでのカスタムテキスト</string>
+    <string name="custom_Dream_Text_size_title">スクリーンセーバーでのカスタムテキストサイズ</string>
+    <string name="dream_font_summary">フォントは時計とカスタムテキストに適用されます。</string>
     <string name="dream_font_title">スクリーンセーバーのフォント</string>
 
     <!-- G+ -->
@@ -435,18 +435,18 @@
     <string name="gplus_title">XBlast G+コミュニティ</string>
     
     <!-- Statusbar Icons color -->
-    <string name="remaining_sb_icon_color_summary">アラーム、バイブなどの アイコンに適用されます。</string>
-    <string name="remaining_sb_icon_color_title">ステータスバーアイコンの色 </string>
+    <string name="remaining_sb_icon_color_summary">アラーム、バイブなどのアイコンに適用されます。</string>
+    <string name="remaining_sb_icon_color_title">ステータスバーアイコンの色</string>
 
     <!-- Gradient Color Settings -->
     <string name="gradient_Settings">グラデーションの設定</string>
-    <string name="gradient_Settings_enable_title">グラデーションの設定の有 効化</string>
-    <string name="gradient_Settings_enable_summary">通知背景色、Holo 背景色やスクリーンセーバー背景色に適用されます。</string>
+    <string name="gradient_Settings_enable_title">グラデーションの設定の有効化</string>
+    <string name="gradient_Settings_enable_summary">通知背景色、Holo背景色やスクリーンセーバー背景色に適用されます。</string>
     <string name="common_gradient_Settings">一般設定</string>
-    <string name="xdream_gradient_color_title">ｽｸﾘｰﾝｾｰﾊﾞｰ背景ｸﾞﾗ ﾃﾞｰｼｮﾝ色</string>
-    <string name="xdream_gradient_color_summary">スクリーンセーバーの背景色 に追加されます。</string>
+    <string name="xdream_gradient_color_title">ｽｸﾘｰﾝｾｰﾊﾞｰ背景ｸﾞﾗﾃﾞｰｼｮﾝ色</string>
+    <string name="xdream_gradient_color_summary">スクリーンセーバーの背景色に追加されます。</string>
     <string name="notifi_gradient_color_title">通知背景グラデーション色</string>
-    <string name="notifi_gradient_color_summary">通知背景色に追加されます。 </string>
+    <string name="notifi_gradient_color_summary">通知背景色に追加されます。</string>
     <string name="top_bottom">上から下</string>
     <string name="bottom_top">下から上</string>
     <string name="right_left">右から左</string>
@@ -455,21 +455,21 @@
     <string name="br_tl">右下から左上</string>
     <string name="bl_tr">左下から右上</string>
     <string name="tl_br">左上から右下</string>
-    <string name="gradient_color_orientation_summary">この方向でグラデ ーションが追加されます。</string>
-    <string name="gradient_color_orientation_title">グラデーションの方向 </string>
+    <string name="gradient_color_orientation_summary">この方向でグラデーションが追加されます。</string>
+    <string name="gradient_color_orientation_title">グラデーションの方向</string>
 
     <!-- Holo Bg -->
     <string name="holo_bg_color_title">Holo背景色</string>
-    <string name="holo_bg_color_summary">Holoシステムテーマの背景色に適用されま す。</string>
+    <string name="holo_bg_color_summary">Holoシステムテーマの背景色に適用されます。</string>
     <string name="holo_bg_image_title">Holo背景画像</string>
-    <string name="holo_image_result_successful">Holo背景画像を変更しまし た。</string>
-    <string name="holo_image_result_not_successful">Holo背景画像は変 更されませんでした。</string>
+    <string name="holo_image_result_successful">Holo背景画像を変更しました。</string>
+    <string name="holo_image_result_not_successful">Holo背景画像は変更されませんでした。</string>
     <string name="holo_gradient_color_title">Holo背景グラデーション色</string>
-    <string name="holo_gradient_color_summary">Holo背景色に追加されます。 </string>
+    <string name="holo_gradient_color_summary">Holo背景色に追加されます。</string>
     <string name="holo_enable_title">Holo背景を有効化</string>
     
     <!-- Low battery warning -->
-    <string name="low_battery_warning_policy_title">バッテリー残量低下警 告</string>
+    <string name="low_battery_warning_policy_title">バッテリー残量低下警告</string>
     <string name="low_battery_warning_full">ポップアップ＋警告</string>
     <string name="low_battery_warning_popup">ポップアップのみ</string>
     <string name="low_battery_warning_sound">警告音のみ</string>
@@ -477,7 +477,7 @@
 
     <!-- Apache2 License -->
     <string name="apache2_license_title">Apache2ライセンス</string>
-    <string name="apache2_license_summary">タッチでApache2ライセンスを表示 します。</string>
+    <string name="apache2_license_summary">タッチでApache2ライセンスを表示します。</string>
 
     <!-- Rate my app -->
     <string name="rate_app_title">XBlastをPlayストアで評価</string>
@@ -495,7 +495,7 @@
     <string name="quick_Settings_Tiles_gap_title">タイル間の隙間をなくす</string>
     <string name="remove_handle_title">つまみの境界線を非表示化</string>
     <string name="hide_notif_icons_title">ステータスバーの通知アイコンを非表示化</string>
-    <string name="hide_notif_icons_summary">ステータスバーの左側のアイコンが非表 示になります。</string>
+    <string name="hide_notif_icons_summary">ステータスバーの左側のアイコンが非表示になります。</string>
     <string name="icons">アイコン</string>
 
     <!-- Share App -->
